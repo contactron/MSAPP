@@ -1,0 +1,475 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.msapp-wrapper {
+  display: flex; /* or inline-flex */
+  border: 2px solid #ccc;
+  margin-left: 1rem;
+}
+
+.msappheader1 {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.sidenav {
+    height: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    overflow-x: hidden;
+    padding: 1.5rem;
+    background: #E3E9F2;
+    border-right: 2px solid #ccc;
+}
+
+/*.sidenav label {
+  font-size: 1rem;
+}
+*/
+.main {
+    font-size: 28px; 
+    padding: 2rem 4rem;
+    width: 100%;
+}
+
+
+.msappheaders2 {
+    margin-top: .5rem;
+}
+
+select {
+    height: 2.5rem;
+    border-radius: 0px;
+}
+
+
+th, td {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+
+/*Filter Box Styling*/
+
+.swatch_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: .25rem;
+}
+
+/*.swatch_container span:first-of-type {
+  margin-left: 0;
+}
+
+.swatch_container span:last-of-type {
+  margin-right: 0;
+}*/
+
+.swatch {
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+/*  width: 30%;*/
+  text-align: center;
+}
+
+.swatch input[type=checkbox] {
+  display: none;
+}
+
+.swatch input[type=checkbox] +label {
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 500;
+  justify-content: flex-start;
+  line-height: 1.3;
+  width: 100%;
+  margin: 0px;
+  padding: 0.125rem 0.125rem;
+
+}
+
+.swatch input[type=checkbox] +label:before {
+  display: none;
+}
+
+.swatch_colorbox {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 5px
+}
+
+.Bnum_yellow {
+  background: yellow;
+}
+
+.Bnum_black {
+  background: #000;
+}
+
+.Bnum_red {
+  background: #d32a33;
+}
+
+.Bnum_blue {
+  background: #22478d;
+}
+
+.Bnum_brown {
+  background: #603e36;
+}
+
+.Bnum_gold {
+  background: #8e7050;
+}
+
+.Bnum_gray {
+  background: #919191;
+}
+
+.Bnum_green {
+  background: #18792e;
+}
+
+.Bnum_purple {
+  background: #ab4e88;
+}
+
+.Bnum_orange {
+  background: #d6641d;
+}
+
+.Bnum_clear {
+  background: #eee;
+}
+
+.Bnum_white {
+  background: #fff;
+}
+
+.SetFilterText {
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.sliderattribute {
+    font-size: .9rem;
+    font-weight: 600;
+    margin: 1.2rem 0 -.25rem 0;
+}
+
+.sliderlabel {
+  vertical-align:middle;
+  display:inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform:uppercase;
+  color: #222;
+  }
+
+.slidercontainer {
+    margin: 0 0 1rem 0;
+}
+
+.sliderbar {
+    vertical-align: text-bottom;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 145px;
+    height: 3px;
+    border-radius: 3px;
+    background: #999;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #043f8d;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #043f8d;
+    cursor: pointer;
+}
+
+
+/* B Number Results Styling*/
+
+/* Style the button that is used to open and close the collapsible content */
+.BnumRow {
+    background-color: #E3E9F2;
+    color: #444;
+/*    padding: 18px 0;*/
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: left;
+/*    outline: none;*/
+    font-size: 12pt;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.BnumRow:hover {
+  background-color: #ccc;
+}
+
+.BnumRow:before {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
+    font-weight:700;
+    color: white;
+    float: left;
+    margin: 0 14px;
+    padding-top: 14px;
+}
+
+.BnumRow:before:active {
+  content: "\2212";
+}
+
+.BnumHeaderContainer {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  max-width: 100%;
+}
+
+.Bnum_Number {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-right: 10px;
+  max-width: 100%;
+  -webkit-flex: 0 0 auto;
+}
+
+.Bnum_Description {
+  margin-bottom: 0;
+  margin-right: .3125rem;
+  max-width: 100%;
+  -webkit-flex: 0 0 auto;
+}
+
+/*Bnum Details Styles*/
+
+.BnumDetailsContainer {
+  margin: 0;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.BnumDetailsMainSection {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+/*  border: 1px solid #ccc;*/
+/*  margin-bottom: 16px;*/
+}
+
+.BnumDetailsSubSection {
+/*  border: 1px solid #ccc;*/
+  display: flex;
+  flex-direction: column;
+  margin: .625rem;
+  background: #Fefefe;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  width: 30%;
+  font-size: .875rem;
+}
+
+.BnumDetailsSubheader {
+  color: #000;
+  font-size: 1.125rem;
+}
+
+.BnumDetailSubsectionHeader {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 .5rem 0;
+}
+
+.BnumDetailList {
+  margin-bottom: 0;
+
+}
+
+.BnumDetailListItem {
+  margin: 0 0 0 16px;
+  line-height: 12px;
+  font-size: 14px;
+}
+
+/*.BnumDetailSpecProp {
+  border: 1px solid #999;
+  width: 100px;
+  height: 25px;
+}*/
+
+.materialtypeimage {
+  width: 125px;
+  height: 125px;
+  border: 1px solid #ccc;
+}
+
+.SpecPropList {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.SpecPropListItem {
+  list-style-type: none;
+  padding-right: .75rem;
+/*  border: 1px solid #ccc;*/
+  font-size: .75rem;
+  margin: 0;
+/*  line-height: normal; */
+/*  background: #E6E6E6;*/
+/*  font-weight: 400;*/
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.SpecPropIcon {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 36px;
+  width: 36px;
+  padding-top: 36px;
+  margin-right: .625rem;
+  overflow: hidden;
+  background: #fff url(default_icon.png) no-repeat;
+  vertical-align: middle;
+/*  border-right: 1px solid #999;*/
+}
+
+.SpecPropIcon_HR {
+  background: url(heat_resistant_icon.png) no-repeat;
+}
+
+.SpecPropIcon_CR {
+  background: url(cold_resistant_icon.png) no-repeat;
+}
+
+.SpecPropIcon_FR {
+  background: url(flameretardent_icon.png) no-repeat;
+}
+
+.SpecPropIcon_RM{
+  background: url(removable_icon.png) no-repeat;
+}
+
+/*.SpecProp_red {
+  background: pink;
+}
+
+.SpecProp_green {
+  background: green;
+}*/
+
+.BnumMaterialImage {
+  margin-right: 1.25rem; 
+  max-width: 100px;
+  height: 120px;
+  float: left;
+}
+
+.BnumConstruction {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: .5rem;
+  font-size: .875rem;
+}
+
+.BnumConstructionHeading {
+  margin: 0.75rem 0 0;
+}
+
+.BnumConstructionThickness {
+  padding-right: 0.375rem;
+  text-align: center;
+  font-size: .875rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.BnumConstructionSvg {
+  width: 150px;
+  padding-right: 0.375rem;
+}
+
+.BnumConstructionMaterials {
+  font-size: 14px;
+  margin: 0;
+}
+
+.colorbox_small {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  margin: 0 0 .5rem .5rem;
+}
+
+.BnumChemRating {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px 10px;
+  display: block;
+}
+
+.BnumChemRatingBad {
+  background: #E46765;
+}
+
+.BnumChemRatingPoor {
+  background: #ED9998;
+}
+
+.BnumChemRatingAverage {
+  background: #ccc;
+}
+
+.BnumChemRatingGood {
+  background: #B2D8A5;
+}
+
+.BnumChemRatingExcellent {
+  background: #6CA359;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
