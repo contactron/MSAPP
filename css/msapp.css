@@ -58,19 +58,10 @@ th, td {
   padding-top: .25rem;
 }
 
-/*.swatch_container span:first-of-type {
-  margin-left: 0;
-}
-
-.swatch_container span:last-of-type {
-  margin-right: 0;
-}*/
-
 .swatch {
   display: flex;
   justify-content: center;
   margin: 4px;
-/*  width: 30%;*/
   text-align: center;
 }
 
@@ -367,10 +358,12 @@ th, td {
   font-size: 14px;
 }
 
-.materialtypeimage {
+.BnumTypeimage {
+  float: left;
+  margin-right: 1.5rem;
   width: 125px;
   height: 125px;
-  border: 1px solid #ccc;
+/*  border: 1px solid #ccc;*/
 }
 
 .SpecPropList {

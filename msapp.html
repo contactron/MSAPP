@@ -184,13 +184,24 @@
 						<!--Bnum Profile Section -->	
 						<div class="BnumDetailsMainSection">
 
-							<!--Material Image Section -->
+							<!--Material Type Section -->
 					
 							<div class="BnumDetailsSubSection">	
 								<div>
 									<p class="BnumDetailSubsectionHeader">Material Type</p>
-									<img class="materialtypeimage" src="img/{{ x.type }}.png">
-								</div>							
+								</div>		
+								<div>
+									<img class="BnumTypeimage" src="img/{{ x.type }}.png">
+									<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.type }}</p>
+
+									<!--Bnum Rec Apps Section -->
+
+									<p class="BnumAttrHeading"><strong>Applications</strong></p>
+									<ul ng-repeat="i in x.applications" ng-cloak>
+										<li class="BnumDetailListItem">{{ i }}
+									</ul>
+								</div>
+
 							</div>
 
 							<!--Construction Section -->
@@ -223,16 +234,6 @@
 								<div>
 									<p class="BnumDetailSubsectionHeader">Compliance</p>
 									<ul ng-repeat="i in x.compliance" ng-cloak>
-										<li class="BnumDetailListItem">{{ i }}
-									</ul>
-								</div>							
-							</div>
-
-							<!--Bnum Rec Apps Section -->
-							<div class="BnumDetailsSubSection">	
-								<div>
-									<p class="BnumDetailSubsectionHeader">Applications</p>
-									<ul ng-repeat="i in x.applications" ng-cloak>
 										<li class="BnumDetailListItem">{{ i }}
 									</ul>
 								</div>							
