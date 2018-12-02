@@ -206,15 +206,15 @@
 									<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.material }}</p>
 									<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
 								</div>
-								<p class="BnumConstructionHeading"><strong>Material Thickness: </strong>{{ x.thickness }}</p>
-								<p class="BnumConstructionHeading"><strong>Standard Colors</strong></p>
+								<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thickness }}</p>
+								<p class="BnumAttrHeading"><strong>Standard Colors</strong></p>
 								<div class="swatch_container">
 									<div ng-repeat="i in x.color" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
 										<span class="MSappTooltiptext">{{ i }}</span>
 										
 									</div>
 								</div>
-								<p class="disclaimer" ng-show="x.tapecolorable=='yes'">This material can be custom colored.</p>
+								<p class="BnumDisclaimer" ng-show="x.tapecolorable=='yes'">This material can be custom colored.</p>
 
 							</div>
 							
