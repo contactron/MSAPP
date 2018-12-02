@@ -216,6 +216,50 @@ th, td {
     cursor: pointer;
 }
 
+/* Tool Tip Stylings */
+
+.MSappTooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.MSappTooltip .MSappTooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.4s, bottom 0.4s ;
+    transition-timing-function: ease-out;
+}
+
+.MSappTooltip .MSappTooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.MSappTooltip:hover .MSappTooltiptext {
+    visibility: visible;
+    opacity: 1;
+    bottom: 150%;
+}
+
 
 /* B Number Results Styling*/
 
