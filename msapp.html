@@ -174,22 +174,17 @@
 					
 					<!--Bnum Details Section -->
 					<div class="BnumDetailsContainer" ng-show="showDetails">
-						
-						<!--Bnum Description Section -->
-						<h4 class="BnumDetailsSubheader">Description:</h4>
-						<div class="BnumDetailsMainSection">
-							<p>{{ x.longdescription }}</p>
-						</div>
+
 						
 						<!--Bnum Profile Section -->	
 						<div class="BnumDetailsMainSection">
 
-							<!--Material Type Section -->
+							<!--Material Profle Section -->
 					
 							<div class="BnumDetailsSubSection">	
-								<div>
-									<p class="BnumDetailSubsectionHeader">Material Type</p>
-								</div>		
+								
+								<p class="BnumDetailSubsectionHeader">Material Profile:</p>
+								<p class="BnumDetailMaterialDescription">{{ x.longdescription }}</p>								
 								<div>
 									<img class="BnumTypeimage" src="img/{{ x.type }}.png">
 									<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.type }}</p>
@@ -227,24 +222,35 @@
 								</div>
 								<p class="BnumDisclaimer" ng-show="x.tapecolorable=='yes'">*This material can be custom colored.</p>
 
-							</div>
-							
-							<!--Bnum Rec Compliance Section -->
+							</div>	
+
 							<div class="BnumDetailsSubSection">	
+
+								<!--Bnum Rec Compliance Section -->
+
 								<div>
 									<p class="BnumDetailSubsectionHeader">Compliance</p>
-									<ul ng-repeat="i in x.compliance" ng-cloak>
-										<li class="BnumDetailListItem">{{ i }}
-									</ul>
-								</div>							
+									<img ng-repeat="i in x.compliance" ng-cloak class="CompIcon" src="img/{{ i }}_icon.png">
+									<br>
+									<br>
+								</div>
+
+								<!-- Alternate Spec Props -->
+
+								<p class="BnumDetailSubsectionHeader">Special Properties</p>
+								<ul class="SpecPropList" ng-repeat="i in x.specialproperties" ng-cloak>
+									<li class="SpecPropListItem">
+									<img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
+								</ul>
 							</div>
 
 							<!-- Alternate Spec Props -->
 							<div class="BnumDetailsSubSection">
 								<p class="BnumDetailSubsectionHeader">Special Properties</p>
-									<ul class="SpecPropList" ng-repeat="i in x.specialproperties" ng-cloak>
-										<li class="SpecPropListItem" ><img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
-									</ul>							
+								<ul class="SpecPropList" ng-repeat="i in x.specialproperties" ng-cloak>
+									<li class="SpecPropListItem">
+									<img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
+								</ul>							
 							</div>	
 
 							<!--Chem Resistance Section -->

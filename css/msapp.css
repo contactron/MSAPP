@@ -1,5 +1,4 @@
 body {
-    font-family: "Lato", sans-serif;
 }
 
 .msapp-wrapper {
@@ -314,7 +313,7 @@ th, td {
   margin: 0;
   padding: 30px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #f2f2f2;
   border-top: 1px solid #ccc;
 }
 
@@ -329,9 +328,9 @@ th, td {
   flex-direction: column;
   margin: .625rem;
   background: #Fefefe;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid #ccc;
-  width: 45%;
+  width: 30%;
   min-width: 375px;
   font-size: .875rem;
 }
@@ -347,15 +346,21 @@ th, td {
   margin: 0 0 .5rem 0;
 }
 
+.BnumDetailMaterialDescription {
+  line-height: 1.25rem;
+}
+
+
 .BnumDetailList {
   margin-bottom: 0;
 
 }
 
 .BnumDetailListItem {
-  margin: 0 0 0 16px;
+  margin: 0;
   line-height: 12px;
   font-size: 14px;
+  list-style-position: inside;
 }
 
 .BnumTypeimage {
@@ -396,6 +401,7 @@ th, td {
   vertical-align: middle;
 }
 
+
 .SpecPropIcon_HR {
   background: url(heat_resistant_icon.png) no-repeat;
 }
@@ -408,8 +414,35 @@ th, td {
   background: url(flameretardent_icon.png) no-repeat;
 }
 
-.SpecPropIcon_RM{
+.SpecPropIcon_RM {
   background: url(removable_icon.png) no-repeat;
+}
+
+.CompIcon {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50px;
+  margin-right: 1rem;
+  overflow: hidden;
+
+  vertical-align: middle;
+}
+
+.Compliance_UL{
+  background: url(UL_icon.png) no-repeat;
+}
+
+.Compliance_CUL{
+  background: url(CUL_icon.png) no-repeat;
+}
+
+.Compliance_CSA{
+  background: url(CSA_icon.png) no-repeat;
+}
+
+.Compliance_ROHS{
+  background: url(ROHS_icon.png) no-repeat;
 }
 
 .BnumMaterialImage {
