@@ -1,6 +1,22 @@
 body {
 }
 
+li {
+  line-height: 1.375;
+}
+
+select {
+    height: 2.5rem;
+    border-radius: 0px;
+}
+
+th, td {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+
+
 .msapp-wrapper {
   display: flex; /* or inline-flex */
   border: 2px solid #ccc;
@@ -36,18 +52,6 @@ body {
 .msappheaders2 {
     margin-top: .5rem;
 }
-
-select {
-    height: 2.5rem;
-    border-radius: 0px;
-}
-
-
-th, td {
-  font-size: 12px;
-  line-height: 12px;
-}
-
 
 /*Filter Box Styling*/
 
@@ -341,7 +345,7 @@ th, td {
 }
 
 .BnumDetailSubsectionHeader {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   margin: 0 0 .5rem 0;
 }
@@ -358,7 +362,6 @@ th, td {
 
 .BnumDetailListItem {
   margin: 0;
-  line-height: 12px;
   font-size: 14px;
   list-style-position: inside;
 }
@@ -425,7 +428,6 @@ th, td {
   height: 50px;
   margin-right: 1rem;
   overflow: hidden;
-
   vertical-align: middle;
 }
 
@@ -525,6 +527,13 @@ th, td {
 
 .BnumChemRatingExcellent {
   background: #6CA359;
+}
+
+.TDSSVG {
+  width: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: .5rem;
 }
 
 @media screen and (max-height: 450px) {

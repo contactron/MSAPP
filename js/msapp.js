@@ -102,7 +102,7 @@ var Bnums = [
     ]
   },
   {
-    "num": "B­-202",
+    "num": "B­-595",
     "description": "Another description for B-202",
     "type": "SleeveRoll",
     "material": "Polyester",
@@ -167,19 +167,19 @@ var Bnums = [
     "tapecolorable": "no",
     "chemresistance": [
       {
-        "chemical": "Acetone",
+        "category": "Fuels",
         "rating": "Good"
       },
       {
-        "chemical": "Gasoline",
+        "category": "Oils",
         "rating": "Poor"
       },
       {
-        "chemical": "Kerosene",
+        "category": "Solvents",
         "rating": "Good"
-      },
-      { "chemical": "Zeon",
-        "rating": "Good"
+      },      {
+        "category": "Cleaners",
+        "rating": "Bad"
       }
     ],
     "adhesion": [
