@@ -165,7 +165,7 @@
 
 	            <div ng-repeat="x in Bnum" ng-cloak class="BnumRow">
 					
-					<!--Each Bnum Row Starts Here -->
+				<!--Each Bnum Row Starts Here -->
 					
 					<!--Bnum Header Section -->
 	          		<div ng-click="showDetails = ! showDetails" class="BnumHeaderContainer">
@@ -199,11 +199,9 @@
 
 							</div>
 
-							<!--Construction Section -->
-
-							<div class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Material Construction</p>
-
+							<!-- Label Construction Section -->
+							<div ng-show="x.type == 'Label'" class="BnumDetailsSubSection">
+								<p class="BnumDetailSubsectionHeader">Label Construction</p>
 								
 								<div class="BnumConstruction">
 									<svg class="BnumMaterialImage" viewBox="107.675 62.275 284.65 330.336" width="284.65" height="330.336" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" fill="#ffffe6" d="M248.257 247.966l-140.582 71.152 141.163 73.493 143.487-73.961-142.326-71.152-1.161.936z"/><path stroke="#000" fill="#eee" d="M248.257 155.354l-140.581 71.152L248.839 300l143.486-73.962-142.326-71.152-1.16.936z"/><path stroke="#000" fill="#fff" d="M248.258 62.743l-140.582 71.152 141.162 73.493 143.486-73.961L250 62.275l-1.162.936z"/>
@@ -223,6 +221,33 @@
 								<p class="BnumDisclaimer" ng-show="x.tapecolorable=='yes'">*This material can be custom colored.</p>
 
 							</div>	
+
+							<!-- Tag Construction Section -->
+							<div ng-show="x.type == 'Tag'" class="BnumDetailsSubSection">
+								<p class="BnumDetailSubsectionHeader">Tag Construction</p>
+							</div>
+
+							<!-- Sleeve Construction Section -->
+							<div ng-show="x.type == 'Sleeve'" class="BnumDetailsSubSection">
+								<p class="BnumDetailSubsectionHeader">Sleeve Construction</p>
+							</div>
+
+							<!-- Wiremarker Construction Section -->
+							<div ng-show="x.type == 'Wiremarker'" class="BnumDetailsSubSection">
+								<p class="BnumDetailSubsectionHeader">Wiremarker Construction</p>
+							</div>
+
+							<!-- Selflam Construction Section -->
+							<div ng-show="x.type == 'Selflam'" class="BnumDetailsSubSection">
+								<p class="BnumDetailSubsectionHeader">Selflam Construction</p>
+							</div>
+
+							<!-- Sign Construction Section -->
+							<div ng-show="x.type == 'Sign'" class="BnumDetailsSubSection">
+								<p class="BnumDetailSubsectionHeader">Sign Construction</p>
+							</div>
+
+
 
 							<div class="BnumDetailsSubSection">	
 

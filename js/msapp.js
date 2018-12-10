@@ -3,8 +3,108 @@
 var Bnums = [
   {
     "num": "B­-402",
-    "description": "THERMAL TRANSFER PRINTABLE WHITE PAPER LABEL STOCK",
-    "type": "SleeveRoll",
+    "description": "Fake Sign Material Example",
+    "type": "Sign",
+    "material": "Polyester",
+    "finish": "Matte",
+    "adhesive": "Acrylic",
+    "thickness": ".0001 in",
+    "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
+    "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
+    "compliance": ["UL"],
+    "applications": ["Electrical", "Lean", "Datacomm"],
+    "color": ["white"],
+    "tapecolorable": "yes",
+    "chemresistance": [
+      {
+        "category": "Fuels",
+        "rating": "Good"
+      },
+      {
+        "category": "Oils",
+        "rating": "Poor"
+      },
+      {
+        "category": "Solvents",
+        "rating": "Good"
+      },
+      {
+        "category": "Cleaners",
+        "rating": "Bad"
+      }
+    ],
+    "adhesion": [
+      {
+        "category": "Steel",
+        "rating": "Good"
+      },
+      {
+        "category": "Powder Coated Metal",
+        "rating": "Poor"
+      },
+      {
+        "category": "Polypropylene",
+        "rating": "Good"
+      },      {
+        "category": "Textured ABS",
+        "rating": "Bad"
+      }
+    ]
+  },
+  {
+    "num": "B­-744",
+    "description": "Fake Selflam Material Example",
+    "type": "Selflam",
+    "material": "Polyester",
+    "finish": "Matte",
+    "adhesive": "Acrylic",
+    "thickness": ".0001 in",
+    "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
+    "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
+    "compliance": ["UL"],
+    "applications": ["Electrical", "Lean", "Datacomm"],
+    "color": ["white"],
+    "tapecolorable": "yes",
+    "chemresistance": [
+      {
+        "category": "Fuels",
+        "rating": "Good"
+      },
+      {
+        "category": "Oils",
+        "rating": "Poor"
+      },
+      {
+        "category": "Solvents",
+        "rating": "Good"
+      },
+      {
+        "category": "Cleaners",
+        "rating": "Bad"
+      }
+    ],
+    "adhesion": [
+      {
+        "category": "Steel",
+        "rating": "Good"
+      },
+      {
+        "category": "Powder Coated Metal",
+        "rating": "Poor"
+      },
+      {
+        "category": "Polypropylene",
+        "rating": "Good"
+      },      {
+        "category": "Textured ABS",
+        "rating": "Bad"
+      }
+    ]
+  },
+  {
+    "num": "B­-902",
+    "description": "Fake Wiremarker Material Example",
+    "type": "Wiremarker",
     "material": "Polyester",
     "finish": "Matte",
     "adhesive": "Acrylic",
@@ -53,8 +153,8 @@ var Bnums = [
   },
   {
     "num": "B­-459",
-    "description": "THERMAL TRANSFER PRINTABLE MATTE WHITE POLYESTER LABEL STOCK",
-    "type": "LabelRoll",    
+    "description": "Fake Tag Material Example",
+    "type": "Tag",    
     "material": "Vinyl",
     "finish": "Gloss",
     "adhesive": "Acrylic",
@@ -103,8 +203,8 @@ var Bnums = [
   },
   {
     "num": "B­-595",
-    "description": "Another description for B-202",
-    "type": "SleeveRoll",
+    "description": "Fake Sleeve Material Example",
+    "type": "Sleeve",
     "material": "Polyester",
     "finish": "Gloss",
     "adhesive": "Acrylic",
@@ -153,8 +253,8 @@ var Bnums = [
 
   {
     "num": "B­-259",
-    "description": "Another description for B-259",
-    "type": "LabelRoll",
+    "description": "Fake Label Material Example",
+    "type": "Label",
     "material": "Paper",
     "finish": "Gloss",
     "adhesive": "Glue",
