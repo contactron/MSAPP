@@ -5,12 +5,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Brady Material Selection App POC</title>
+        <title>Brady Material Selection App POC Nav</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--         <link rel="stylesheet" href="css/styles.min.css"> -->
         <link rel="stylesheet" href="https://www.bradyid.com/content/styles.min.css?version=314">
         <link rel="stylesheet" href="css/msapp.css">
-
     </head>
 
 	<body>
@@ -27,126 +25,54 @@
 	                    </a>
                 </div>
 
-				<div>
-					<label>Base Material
-						<select ng-model="selectedMaterial" ng-options="x for x in Filters[0].values" ng-change="addFilter(Filters[0].id,selectedMaterial)"></select>
-	                </label>
-				</div>
-				<div>
-					<label>Finish
-						<select ng-model="selectedFinish" ng-options="x for x in Filters[1].values" ng-change="addFilter(Filters[1].id,selectedFinish)"></select>
-	                </label>
-				</div>
-			    <p class="attribute">Maximum Service Temp</p>
-	            <div class="slidercontainer">
-		            <div class="sliderlabel">70&#176;F</div>
-		            <div class="sliderbar"><input type="range" min="70" max="650" value="300" class="slider"></div>
-		            <div class="sliderlabel">650&#176;F</div>
+				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open">
+	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
+	                </header>
+	                <div class="BR-Filter__Item__Options">
+
+	                    <span ng-repeat="i in Filters[0].values" ng-click="addFilter(Filters[0].id,selectedMaterial)">
+	                        <input type="checkbox" ng-disabled="false" ng-checked="false">
+	                        <label class="BR-FilterCheckbox" for="{{ i }}" id="{{ i }}">
+	                            {{ i }}
+	                        </label>
+	                    </span>
+	                </div>
 	            </div>
 
-				<div>Color   
+
+				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open">
+	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
+	                </header>
+	                <div class="BR-Filter__Item__Options">
+
+	                    <span ng-repeat="i in Filters[1].values" ng-click="addFilter(Filters[1].id,selectedFinish)">
+	                        <input type="checkbox" ng-disabled="false" ng-checked="false">
+	                        <label class="BR-FilterCheckbox" for="{{ i }}" id="{{ i }}">
+	                            {{ i }}
+	                        </label>
+	                    </span>
+	                </div>
+	            </div>
+
+
+				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open">
+	                    <p class="BR-Filter__Item__Header__Name">Color</p>
+	                </header>
 
 					<div class="swatch_container">
-					    <span class="swatch">
+					    <span ng-repeat="i in Filters[2].values" class="swatch">
 							<input type="checkbox">
 							<label>
-								<span class="swatch_colorbox Bnum_red"></span>
+								<span class="swatch_colorbox" ng-class="Bnum_{{ i }}"></span>
 								<!-- <span class="swatch_text">Green</span> -->
 							</label>
 						</span>
-
-					    <span class="swatch">
-							<input type="checkbox" checked="checked">
-							<label>
-								<span class="swatch_colorbox Bnum_yellow"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>
-
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_green"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>	
-				<!-- 	</div> -->
-
-	<!-- 				<div class="swatch_container"> -->
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_white"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>
-
-					    <span class="swatch">
-							<input type="checkbox" checked="checked">
-							<label>
-								<span class="swatch_colorbox Bnum_brown"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>
-
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_orange"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>	
-<!-- 					</div>
-
-					<div class="swatch_container"> -->
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_clear"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>
-
-					    <span class="swatch">
-							<input type="checkbox" checked="checked">
-							<label>
-								<span class="swatch_colorbox Bnum_purple"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>
-
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_black"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>							
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_white"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>						
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_gold"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>	
-					    <span class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox Bnum_blue"></span>
-								<!-- <span class="swatch_text">Green</span> -->
-							</label>
-						</span>	
 					</div>
-
-
 				</div>
+
 
 			</div>
 
