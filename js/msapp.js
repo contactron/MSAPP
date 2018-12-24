@@ -13,7 +13,7 @@ var Bnums = [
     "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
     "compliance": ["UL"],
     "applications": ["Electrical", "Lean", "Datacomm"],
-    "color": ["white"],
+    "colors": ["white"],
     "tapecolorable": "yes",
     "chemresistance": [
       {
@@ -63,7 +63,7 @@ var Bnums = [
     "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
     "compliance": ["UL"],
     "applications": ["Electrical", "Lean", "Datacomm"],
-    "color": ["white"],
+    "colors": ["white"],
     "tapecolorable": "yes",
     "chemresistance": [
       {
@@ -113,7 +113,7 @@ var Bnums = [
     "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
     "compliance": ["UL"],
     "applications": ["Electrical", "Lean", "Datacomm"],
-    "color": ["white"],
+    "colors": ["white"],
     "tapecolorable": "yes",
     "chemresistance": [
       {
@@ -163,7 +163,7 @@ var Bnums = [
     "specialproperties": ["Flame Retardent", "Heat Resistant", "Removable", "Cold Resistant"],
     "compliance": ["UL", "ROHS"],
     "applications": ["Electrical", "Lab", "Safety"],
-    "color": ["green", "red", "brown"],
+    "colors": ["green", "red", "brown"],
     "tapecolorable": "yes",
     "chemresistance": [
       {
@@ -213,7 +213,7 @@ var Bnums = [
     "specialproperties": ["Cold Resistant", "Removable", "Flame Retardent"],
     "compliance": ["UL", "CSA", "ROHS"],
     "applications": ["Wire & Cable", "Lab", "Hazardous Materials"],
-    "color": ["blue", "yellow", "brown", "white"],
+    "colors": ["blue", "yellow", "brown", "white"],
     "tapecolorable": "yes",
     "chemresistance": [
       {
@@ -263,7 +263,7 @@ var Bnums = [
     "specialproperties": ["Flame Retardent", "Removable"],
     "compliance": ["UL", "CSA", "ROHS"],
     "applications": ["Wire & Cable", "Lean", "Safety", "LOTO"],
-    "color": ["blue", "yellow", "orange", "white", "clear", "green", "purple"],
+    "colors": ["blue", "yellow", "orange", "white", "clear", "green", "purple"],
     "tapecolorable": "no",
     "chemresistance": [
       {
@@ -337,6 +337,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
 // This function loops through all the Bnums looking for each filter. 
 // It then collects the possible values for each filter and adds them to the Filters array. 
+// It has to differentiate between Bnum properties that have one or more values (arrays)
 // This is used to populate the dropdowns with the possible values from the data
   $scope.init = function () {
       //loop across the Filters array
@@ -345,12 +346,26 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         var currentfilter = Filters[i].id;
         // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
         for(var j=0; j < Bnums.length; j++) {
-          //check to see if the value is already in the values array. 
-          if (Filters[i].values.indexOf(Bnums[j][currentfilter]) == -1) { 
-            // not already there so add it        
-            Filters[i].values.push(Bnums[j][currentfilter]);
+          //check to see if the filter is an array (can have multiple values)
+          //if not, its easier
+          if (!Array.isArray(Bnums[j][currentfilter])) {
+            //check to see if the value is already in the values array. 
+            if (Filters[i].values.indexOf(Bnums[j][currentfilter]) == -1) { 
+              // not already there so add it        
+              Filters[i].values.push(Bnums[j][currentfilter]);
+            };
+          // if it is an array, we need to parse through the array for each value
+          } else {
+            //loop through the values in the Bnum property
+            for(var k=0; k < Bnums[j][currentfilter].length; k++) {
+              //check to see if the value is already in the values array. 
+              if (Filters[i].values.indexOf(Bnums[j][currentfilter][k]) == -1) { 
+              // not already there so add it        
+              Filters[i].values.push(Bnums[j][currentfilter][k]);
+              };
+            };
           };
-        };;
+        };
         // now sort the values so they will be presented in alphabetical order
         Filters[i].values.sort();
       };
@@ -360,18 +375,14 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   $scope.updateTable = function() {
     // create a temporary B# list of all B#sa to filter down
     var TempBnums = $scope.AllBnums;
-    // console.log(TempBnums);
     // call the function to filter the temp full B# list by the setFilters list
     for(var i=0; i < $scope.setFilters.length; i++) {
       // loop through the list of attribute/value pairs filter TempBnums repeatedly for each pair
         var temp1 = $scope.setFilters[i].FilterId;
         var temp2 = $scope.setFilters[i].FilterValue;
-        // console.log(temp1 + " " + temp2);
-        // console.log("TempBnums prior to filtering = " + TempBnums);
         var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
     };
     // reset the Bnum list to the new filtered list of Bnums
-    // console.log("TempBnums after filtering = " + TempBnums);
     $scope.Bnum = TempBnums;
     // reassess possible filter values and gray them out in the input controls
   };
