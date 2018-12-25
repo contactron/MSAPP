@@ -335,12 +335,15 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   // define an array to hold the list applied filters
   $scope.setFilters = [];
 
-// This function loops through all the Bnums looking for each filter. 
-// It then collects the possible values for each filter and adds them to the Filters array. 
-// It has to differentiate between Bnum properties that have one or more values (arrays)
-// This is used to populate the dropdowns with the possible values from the data
+
   $scope.init = function () {
-      //loop across the Filters array
+      // Begin intitialing by building an array of all the possible filtering values.
+      // Loop through all the Bnums looking for each filter. 
+      // It then collects the possible values for each filter and adds them to the Filters array. 
+      // It has to differentiate between Bnum properties that have one or more values (arrays)
+      // This is used to populate the dropdowns with the possible values from the data
+
+      // loop across the Filters array
       for(var i=0; i < Filters.length; i++){
         // take the id from each Filter to find the values in the Bnum data
         var currentfilter = Filters[i].id;
@@ -368,6 +371,8 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         };
         // now sort the values so they will be presented in alphabetical order
         Filters[i].values.sort();
+        // sort the Bnum array as well
+        $scope.sortBnums();
       };
     };
 
@@ -382,6 +387,9 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         var temp2 = $scope.setFilters[i].FilterValue;
         var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
     };
+
+    // Sort the Bnum list by the num property so it is presented in alpha/numeric order
+    
     // reset the Bnum list to the new filtered list of Bnums
     $scope.Bnum = TempBnums;
     // reassess possible filter values and gray them out in the input controls
@@ -408,6 +416,18 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     $scope.updateTable();
   };
 
+  $scope.sortBnums = function() {
+    // Sort the Bnum list by the num property so it is presented in alpha/numeric order
+    Bnums.sort(function(a, b){
+      var numA=a.num.toLowerCase(), numB=b.num.toLowerCase()
+      if (numA < numB) //sort string ascending
+          return -1 
+      if (numA > numB)
+          return 1
+      return 0 //default return value (no sorting)
+    });
+  }
+
   $scope.init();
 
 });
@@ -415,13 +435,9 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
 
 
-
-
-
-
 // QUESTIONS FOR JASON
 //======================
-// 1.
+// 1. 
 
 
 
