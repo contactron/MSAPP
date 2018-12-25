@@ -137,9 +137,11 @@
 									<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
 								</div>
 								<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thickness }}</p>
+
+								<!-- Color Swatches Section -->
 								<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapecolorable=='yes'">*</span></strong></p>
 								<div class="swatch_container">
-									<div ng-repeat="i in x.color" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
+									<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
 										<span class="MSappTooltiptext">{{ i }}</span>
 										
 									</div>
@@ -267,7 +269,6 @@
 
 
 		<!-- Load js files -->
-<!--         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
         <script src="https://www.bradyid.com/JS/smartsitescripts.min.js?v=1109194456"></script>  
 		<script src="js/msapp.js"></script>
 

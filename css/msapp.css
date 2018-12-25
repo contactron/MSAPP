@@ -151,65 +151,6 @@ th, td {
   margin-right: 5px;
 }
 
-.sliderattribute {
-    font-size: .9rem;
-    font-weight: 600;
-    margin: 1.2rem 0 -.25rem 0;
-}
-
-.sliderlabel {
-  vertical-align:middle;
-  display:inline-block;
-  font-size: .75rem;
-  font-weight: 700;
-  text-transform:uppercase;
-  color: #222;
-  }
-
-.slidercontainer {
-    margin: 0 0 1rem 0;
-}
-
-.sliderbar {
-    vertical-align: text-bottom;
-    display: inline-block;
-    padding: 0 5px 0 5px;
-}
-
-.slider {
-    -webkit-appearance: none;
-    width: 145px;
-    height: 3px;
-    border-radius: 3px;
-    background: #999;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-
-.slider:hover {
-    opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #043f8d;
-    cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #043f8d;
-    cursor: pointer;
-}
-
 /* Tool Tip Stylings */
 
 .MSappTooltip {
