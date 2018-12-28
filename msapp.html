@@ -26,7 +26,7 @@
                 </div>
 
                 <!-- Base Material Checkbox Filter -->
-				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
+				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
@@ -41,7 +41,7 @@
 	            </div>
 
 	            <!-- Finish Checkbox Filter -->
-				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
+				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
@@ -56,17 +56,17 @@
 	            </div>
 
 	            <!-- Color Swatch Checkbox Filter -->
-				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
+				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Color</p>
 	                </header>
 
 					<div class="swatch_container">
-					    <span ng-repeat="i in Filters[2].values" class="swatch">
-							<input type="checkbox">
-							<label>
-								<span class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
-									<span class="MSappTooltiptext">{{ i }}</span>
+					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="addFilter(Filters[2].id,fv)">
+							<input id="{{ fv }}" type="checkbox" value="{{ fv }}">
+							<label ng-for="{{ fv }}">
+								<span class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv=='yellow', Bnum_black: fv=='black', Bnum_blue: fv=='blue', Bnum_red: fv=='red', Bnum_brown: fv=='brown', Bnum_gray: fv=='gray', Bnum_gold: fv=='gold', Bnum_green: fv=='green', Bnum_purple: fv=='purple', Bnum_orange: fv=='orange', Bnum_clear: fv=='clear', Bnum_white: fv=='white'}">
+									<span class="MSappTooltiptext">{{ fv }}</span>
 								</span>
 								
 							</label>

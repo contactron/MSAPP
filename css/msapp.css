@@ -55,6 +55,10 @@ th, td {
 
 /*Filter Box Styling*/
 
+.MSA__Filter__Item {
+  margin: .875rem 0;
+}
+
 .swatch_container {
   display: flex;
   flex-wrap: wrap;
