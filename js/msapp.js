@@ -397,6 +397,8 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
   $scope.addFilter = function(filterId, filterValue) {
     // take the inputs to create a attribute/value pair identifying the attribute and its set value
+    console.log(filterId);
+    console.log(filterValue);
     attrvaluepair = {
       "FilterId": filterId,
       "FilterValue": filterValue

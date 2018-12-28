@@ -25,38 +25,37 @@
 	                    </a>
                 </div>
 
+                <!-- Base Material Checkbox Filter -->
 				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-
-	                    <span ng-repeat="i in Filters[0].values" ng-click="addFilter(Filters[0].id,selectedMaterial)">
-	                        <input type="checkbox" ng-disabled="false" ng-checked="false">
-	                        <label class="BR-FilterCheckbox" for="{{ i }}" id="{{ i }}">
-	                            {{ i }}
+	                    <span ng-repeat="fv in Filters[0].values" ng-click="addFilter(Filters[0].id,fv)">
+	                        <input id="{{ fv }}" type="checkbox" value="{{ fv }}">
+	                        <label class="BR-FilterCheckbox" ng-for="{{ fv }}">
+	                            {{ fv }}
 	                        </label>
 	                    </span>
 	                </div>
 	            </div>
 
-
+	            <!-- Finish Checkbox Filter -->
 				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-
-	                    <span ng-repeat="i in Filters[1].values" ng-click="addFilter(Filters[1].id,selectedFinish)">
-	                        <input type="checkbox" ng-disabled="false" ng-checked="false">
-	                        <label class="BR-FilterCheckbox" for="{{ i }}" id="{{ i }}">
-	                            {{ i }}
+	                    <span ng-repeat="fv in Filters[1].values" ng-click="addFilter(Filters[1].id,fv)">
+	                        <input id="{{ fv }}" type="checkbox" value="{{ fv }}">
+	                        <label class="BR-FilterCheckbox" ng-for="{{ fv }}">
+	                            {{ fv }}
 	                        </label>
 	                    </span>
-	                </div>
+	                </div>    
 	            </div>
 
-
+	            <!-- Color Swatch Checkbox Filter -->
 				<div class="BR-Filter__Item ng-scope"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Color</p>
@@ -79,7 +78,7 @@
 			</div>
 
 
-			<!-- No Results -->
+			<!-- No Results Screen -->
 
 			<div class="main" ng-cloak ng-show="Bnum.length < 1">
 				There are no results.
