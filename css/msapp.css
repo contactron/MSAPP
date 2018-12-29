@@ -38,10 +38,6 @@ th, td {
     border-right: 2px solid #ccc;
 }
 
-/*.sidenav label {
-  font-size: 1rem;
-}
-*/
 .main {
     font-size: 28px; 
     padding: 2rem 4rem;
@@ -55,6 +51,7 @@ th, td {
 
 /*Filter Box Styling*/
 
+/*Override BradyID styling for better presentation in the app*/
 .MSA__Filter__Item {
   margin: .875rem 0;
 }
@@ -101,6 +98,8 @@ th, td {
   margin-bottom: 5px
 }
 
+
+/*Color definitions for swatches*/
 .Bnum_yellow {
   background: yellow;
 }
@@ -155,7 +154,7 @@ th, td {
   margin-right: 5px;
 }
 
-/* Tool Tip Stylings */
+/* Swatch Tool Tip Stylings */
 
 .MSappTooltip {
     position: relative;

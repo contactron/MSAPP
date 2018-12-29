@@ -306,20 +306,20 @@ var Filters = [
   {
     "id": "material",
     "displayname": "Material",
-    "presentation": "Dropdown",
-    "values": [] // This is a bit of a hack to get the default value in
+    "presentation": "Checkbox", // not used as of yet
+    "values": []
   },
   {
     "id": "finish",
     "displayname": "Finish",
-    "presentation": "Dropdown",
-    "values": [] // This is a bit of a hack to get the default value in
+    "presentation": "Checkbox", // not used as of yet
+    "values": []
   },
   {
     "id": "colors",
     "displayname": "Colors",
-    "presentation": "Swatch",
-    "values": [] // This is a bit of a hack to get the default value in
+    "presentation": "Swatch", // not used as of yet
+    "values": []
   }
 ];
 
@@ -331,7 +331,6 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   $scope.AllBnums = Bnums;
   $scope.Bnum = Bnums;
   $scope.Filters = Filters;
-  $scope.selectedMaterial;
   // define an array to hold the list applied filters
   $scope.setFilters = [];
 
@@ -346,25 +345,35 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       // loop across the Filters array
       for(var i=0; i < Filters.length; i++){
         // take the id from each Filter to find the values in the Bnum data
-        var currentfilter = Filters[i].id;
+        var currentfilterid = Filters[i].id;
         // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
         for(var j=0; j < Bnums.length; j++) {
           //check to see if the filter is an array (can have multiple values)
           //if not, its easier
-          if (!Array.isArray(Bnums[j][currentfilter])) {
+          if (!Array.isArray(Bnums[j][currentfilterid])) {
             //check to see if the value is already in the values array. 
-            if (Filters[i].values.indexOf(Bnums[j][currentfilter]) == -1) { 
-              // not already there so add it        
-              Filters[i].values.push(Bnums[j][currentfilter]);
+            var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid]);
+            if (pos == -1) { 
+              // not already there so add to the filter array
+              Filters[i].values.push(
+              {
+                "id": Bnums[j][currentfilterid],
+                "applied": "false"
+              });
             };
           // if it is an array, we need to parse through the array for each value
           } else {
             //loop through the values in the Bnum property
-            for(var k=0; k < Bnums[j][currentfilter].length; k++) {
+            for(var k=0; k < Bnums[j][currentfilterid].length; k++) {
               //check to see if the value is already in the values array. 
-              if (Filters[i].values.indexOf(Bnums[j][currentfilter][k]) == -1) { 
+              //
+              var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid][k]);
+              if (pos == -1) { 
               // not already there so add it        
-              Filters[i].values.push(Bnums[j][currentfilter][k]);
+                Filters[i].values.push({
+                  "id": Bnums[j][currentfilterid][k],
+                  "applied": "false"
+                });
               };
             };
           };
@@ -375,6 +384,12 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         $scope.sortBnums();
       };
     };
+
+  // Constructor to create a filter value and set its initial attributes
+  // $scope.Filtervalue = function(value) {
+  //   this.value = value;
+  //   this.applied = "false";
+  // };
 
 
   $scope.updateTable = function() {
