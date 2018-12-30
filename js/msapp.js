@@ -358,7 +358,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
               Filters[i].values.push(
               {
                 "id": Bnums[j][currentfilterid],
-                "applied": "false"
+                "applied": false
               });
             };
           // if it is an array, we need to parse through the array for each value
@@ -385,13 +385,6 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       };
     };
 
-  // Constructor to create a filter value and set its initial attributes
-  // $scope.Filtervalue = function(value) {
-  //   this.value = value;
-  //   this.applied = "false";
-  // };
-
-
   $scope.updateTable = function() {
     // create a temporary B# list of all B#sa to filter down
     var TempBnums = $scope.AllBnums;
@@ -410,19 +403,27 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // reassess possible filter values and gray them out in the input controls
   };
 
-  $scope.addFilter = function(filterId, filterValue) {
+  $scope.addFilter = function(position, filterId, filterValue) {
     // take the inputs to create a attribute/value pair identifying the attribute and its set value
+    console.log(position);
     console.log(filterId);
     console.log(filterValue);
+
     attrvaluepair = {
+      "Position": position,
       "FilterId": filterId,
       "FilterValue": filterValue
     };
     // Add the attribute/value pair to the array of set filters 
     $scope.setFilters.push(attrvaluepair);
+    // Set filter value in Filters list to "applied" for managing checked/unchecked
+    // - Find the position of the filter value in the values array for the filter
+    var valueposition = Filters[position].values.map(function(e) { return e.id; }).indexOf(filterValue);
+    // - Set the value of the 'applied' attribute to "true" so it will appear checked
+    $scope.Filters[position].values[valueposition].applied = true;
+    // Refilter the B# table using the updated setFilters array 
     $scope.updateTable();
   };
-
 
   $scope.removeFilter = function(filter) {
     for( var i = 0; i < $scope.setFilters.length; i++){ 

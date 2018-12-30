@@ -31,8 +31,8 @@
 	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[0].values" ng-click="addFilter(Filters[0].id,fv.id)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}">
+	                    <span ng-repeat="fv in Filters[0].values" ng-click="addFilter('0',Filters[0].id,fv.id)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
 	                        </label>
@@ -46,8 +46,8 @@
 	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[1].values" ng-click="addFilter(Filters[1].id,fv.id)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}">
+	                    <span ng-repeat="fv in Filters[1].values" ng-click="addFilter('1',Filters[1].id,fv.id)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
 	                        </label>
@@ -62,7 +62,7 @@
 	                </header>
 
 					<div class="swatch_container">
-					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="addFilter(Filters[2].id,fv.id)">
+					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="addFilter('2',Filters[2].id,fv.id)">
 							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}">
 							<label ng-for="{{ fv.id }}">
 								<span class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
