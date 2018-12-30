@@ -394,10 +394,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         var temp1 = $scope.setFilters[i].FilterId;
         var temp2 = $scope.setFilters[i].FilterValue;
         var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
-    };
-
-    // Sort the Bnum list by the num property so it is presented in alpha/numeric order
-    
+    };    
     // reset the Bnum list to the new filtered list of Bnums
     $scope.Bnum = TempBnums;
     // reassess possible filter values and gray them out in the input controls
@@ -405,10 +402,6 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
   $scope.addFilter = function(position, filterId, filterValue) {
     // take the inputs to create a attribute/value pair identifying the attribute and its set value
-    console.log(position);
-    console.log(filterId);
-    console.log(filterValue);
-
     attrvaluepair = {
       "Position": position,
       "FilterId": filterId,
@@ -426,8 +419,14 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   };
 
   $scope.removeFilter = function(filter) {
+    // Loop through setFilters array looking for the f
     for( var i = 0; i < $scope.setFilters.length; i++){ 
        if ( $scope.setFilters[i] == filter) {
+         // Update the Filters value applied property to "false"
+         // - Find the setfilter in the Filters array
+         var valueposition = Filters[filter.Position].values.map(function(e) { return e.id; }).indexOf(filter.FilterValue);
+         $scope.Filters[filter.Position].values[valueposition].applied = false;
+         // Remove the filter from the setFilters array
          $scope.setFilters.splice(i, 1); 
        };
     };
