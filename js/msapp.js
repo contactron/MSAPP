@@ -372,7 +372,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
               // not already there so add it        
                 Filters[i].values.push({
                   "id": Bnums[j][currentfilterid][k],
-                  "applied": "false"
+                  "applied": false
                 });
               };
             };
@@ -385,6 +385,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       };
     };
 
+  // Update the B# list shown to the user
   $scope.updateTable = function() {
     // create a temporary B# list of all B#sa to filter down
     var TempBnums = $scope.AllBnums;
@@ -400,32 +401,44 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // reassess possible filter values and gray them out in the input controls
   };
 
-  $scope.addFilter = function(position, filterId, filterValue) {
+  // Toggle checked filters and remove from the set filters stage if needed
+  $scope.toggleFilter = function(position, filterId, filterValue) {
     // take the inputs to create a attribute/value pair identifying the attribute and its set value
     attrvaluepair = {
       "Position": position,
-      "FilterId": filterId,
-      "FilterValue": filterValue
+      "FilterId": filterId.id,
+      "FilterValue": filterValue.id
     };
-    // Add the attribute/value pair to the array of set filters 
-    $scope.setFilters.push(attrvaluepair);
-    // Set filter value in Filters list to "applied" for managing checked/unchecked
-    // - Find the position of the filter value in the values array for the filter
-    var valueposition = Filters[position].values.map(function(e) { return e.id; }).indexOf(filterValue);
-    // - Set the value of the 'applied' attribute to "true" so it will appear checked
-    $scope.Filters[position].values[valueposition].applied = true;
+    //Find the position of the filter value in the values array for the filter
+    var valueposition = Filters[position].values.map(function(e) { return e.id; }).indexOf(filterValue.id);
+    // Determine if the filter is checked or not and act accordingly
+    // If it is checked, uncheck it and remove from the setFilters array
+    if (filterValue.applied) {
+      // Set the value of the 'applied' attribute to "false" so it will appear unchecked
+      $scope.Filters[position].values[valueposition].applied = false;
+      // Call the removeFilter function to remove the filter from the setFilters array/stage
+      $scope.removeFilter(position, filterId.id, filterValue.id);
+    // if not checked, then check it and add the setFilters array
+    } else {
+      // Add the attribute/value pair to the array of set filters 
+      $scope.setFilters.push(attrvaluepair);
+      // Set the value of the 'applied' attribute to "true" so it will appear checked
+      $scope.Filters[position].values[valueposition].applied = true;
+    };
+
     // Refilter the B# table using the updated setFilters array 
     $scope.updateTable();
   };
 
-  $scope.removeFilter = function(filter) {
-    // Loop through setFilters array looking for the f
+  // Remove a filter from the setfilters stage
+  $scope.removeFilter = function(position, filterId, filterValue) {
+    // Loop through setFilters array looking for the filter valuepair
     for( var i = 0; i < $scope.setFilters.length; i++){ 
-       if ( $scope.setFilters[i] == filter) {
+       if (($scope.setFilters[i].FilterId == filterId) && ($scope.setFilters[i].FilterValue == filterValue)) {
          // Update the Filters value applied property to "false"
          // - Find the setfilter in the Filters array
-         var valueposition = Filters[filter.Position].values.map(function(e) { return e.id; }).indexOf(filter.FilterValue);
-         $scope.Filters[filter.Position].values[valueposition].applied = false;
+         var valueposition = Filters[position].values.map(function(e) { return e.id; }).indexOf(filterValue);
+         $scope.Filters[position].values[valueposition].applied = false;
          // Remove the filter from the setFilters array
          $scope.setFilters.splice(i, 1); 
        };
@@ -433,6 +446,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     $scope.updateTable();
   };
 
+  // Sort the list of Bnums
   $scope.sortBnums = function() {
     // Sort the Bnum list by the num property so it is presented in alpha/numeric order
     Bnums.sort(function(a, b){
@@ -448,15 +462,6 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   $scope.init();
 
 });
-
-
-
-
-// QUESTIONS FOR JASON
-//======================
-// 1. 
-
-
 
 
 

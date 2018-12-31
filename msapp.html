@@ -18,12 +18,12 @@
 			<!-- Filter Box -->
 			<div class="sidenav">
 				<h2 class="msappheaders2">Material Filters</h2>
-
-				<div class="BR-FilterStage__Actors">
-					<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter)">
+                <div class="BR-FilterStage__Actors">
+					<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
 	                        <span class="SetFilterText"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
 	                    </a>
                 </div>
+
 
                 <!-- Base Material Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
@@ -31,7 +31,7 @@
 	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[0].values" ng-click="addFilter('0',Filters[0].id,fv.id)">
+	 					<span ng-repeat="fv in Filters[0].values" ng-click="toggleFilter('0',Filters[0],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
@@ -46,7 +46,7 @@
 	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[1].values" ng-click="addFilter('1',Filters[1].id,fv.id)">
+	                    <span ng-repeat="fv in Filters[1].values" ng-click="toggleFilter('1',Filters[1],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
@@ -62,8 +62,8 @@
 	                </header>
 
 					<div class="swatch_container">
-					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="addFilter('2',Filters[2].id,fv.id)">
-							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}">
+					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="toggleFilter('2',Filters[2],fv)">
+							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 							<label ng-for="{{ fv.id }}">
 								<span class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
 									<span class="MSappTooltiptext">{{ fv.id }}</span>
