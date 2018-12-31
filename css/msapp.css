@@ -98,6 +98,9 @@ th, td {
   margin-bottom: 5px
 }
 
+.swatch_colorbox:hover {
+  border-color: #000;
+}
 
 /*Color definitions for swatches*/
 .Bnum_yellow {
