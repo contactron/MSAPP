@@ -64,16 +64,13 @@
 					<div class="swatch_container">
 					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="toggleFilter('2',Filters[2],fv)">
 							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
-							<label ng-for="{{ fv.id }}">
-								<span class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
-									<span class="MSappTooltiptext">{{ fv.id }}</span>
-								</span>
-								
-							</label>
+								<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
+									<span class="MSappTooltiptext">{{ fv.id }}</span>					
+								</label>
+							</input>
 						</span>
 					</div>
 				</div>
-
 
 			</div>
 
