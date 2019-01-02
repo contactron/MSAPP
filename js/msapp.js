@@ -336,54 +336,58 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
 
   $scope.init = function () {
-      // Begin intitialing by building an array of all the possible filtering values.
-      // Loop through all the Bnums looking for each filter. 
-      // It then collects the possible values for each filter and adds them to the Filters array. 
-      // It has to differentiate between Bnum properties that have one or more values (arrays)
-      // This is used to populate the dropdowns with the possible values from the data
+    // Setup filters and values
+    $scope.capturefilters();
+    // Sort the B# list alphabetically by B# name
+    $scope.sortBnums();
+  };
 
-      // loop across the Filters array
-      for(var i=0; i < Filters.length; i++){
-        // take the id from each Filter to find the values in the Bnum data
-        var currentfilterid = Filters[i].id;
-        // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
-        for(var j=0; j < Bnums.length; j++) {
-          //check to see if the filter is an array (can have multiple values)
-          //if not, its easier
-          if (!Array.isArray(Bnums[j][currentfilterid])) {
+  $scope.capturefilters = function () {
+    // Buildi an array of all the possible filtering values to populate the dropdowns with the possible values from the data
+    // Loop through all the Bnums looking for each filter. 
+    // Collect the possible values for each filter and adds them to the Filters array. 
+    // Differentiate between Bnum properties that have one or more values (arrays)
+
+    // Loop across the Filters array
+    for(var i=0; i < Filters.length; i++){
+      // take the id from each Filter to find the values in the Bnum data
+      var currentfilterid = Filters[i].id;
+      // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
+      for(var j=0; j < Bnums.length; j++) {
+        //check to see if the filter is an array (can have multiple values)
+        //if not, its easier
+        if (!Array.isArray(Bnums[j][currentfilterid])) {
+          //check to see if the value is already in the values array. 
+          var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid]);
+          if (pos == -1) { 
+            // not already there so add to the filter array
+            Filters[i].values.push(
+            {
+              "id": Bnums[j][currentfilterid],
+              "applied": false
+            });
+          };
+        // if it is an array, we need to parse through the array for each value
+        } else {
+          //loop through the values in the Bnum property
+          for(var k=0; k < Bnums[j][currentfilterid].length; k++) {
             //check to see if the value is already in the values array. 
-            var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid]);
+            //
+            var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid][k]);
             if (pos == -1) { 
-              // not already there so add to the filter array
-              Filters[i].values.push(
-              {
-                "id": Bnums[j][currentfilterid],
+            // not already there so add it        
+              Filters[i].values.push({
+                "id": Bnums[j][currentfilterid][k],
                 "applied": false
               });
             };
-          // if it is an array, we need to parse through the array for each value
-          } else {
-            //loop through the values in the Bnum property
-            for(var k=0; k < Bnums[j][currentfilterid].length; k++) {
-              //check to see if the value is already in the values array. 
-              //
-              var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid][k]);
-              if (pos == -1) { 
-              // not already there so add it        
-                Filters[i].values.push({
-                  "id": Bnums[j][currentfilterid][k],
-                  "applied": false
-                });
-              };
-            };
           };
         };
-        // now sort the values so they will be presented in alphabetical order
-        Filters[i].values.sort();
-        // sort the Bnum array as well
-        $scope.sortBnums();
       };
+      // Sort filters so they are presented alphabetically
+      Filters[i].values.sort();
     };
+  };
 
   // Update the B# list shown to the user
   $scope.updateTable = function() {

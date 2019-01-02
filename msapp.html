@@ -18,8 +18,11 @@
 			<!-- Filter Box -->
 			<div class="sidenav">
 				<h2 class="msappheaders2">Material Filters</h2>
+
+				<!-- Filter stage -->
                 <div class="BR-FilterStage__Actors">
 					<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
+	                        <!-- <span ng-if="filter.FilterID == 'colors'" class="colorbox_small"></span> -->
 	                        <span class="SetFilterText"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
 	                    </a>
                 </div>
