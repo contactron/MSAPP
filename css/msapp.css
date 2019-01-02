@@ -98,6 +98,11 @@ th, td {
   border: 2px solid #000;
 }
 
+/*create more space between swatches and dividing line*/
+.swatch:last-of-type {
+  margin-bottom: 1.25rem;
+}
+
 /*Color definitions for swatches*/
 .Bnum_yellow {
   background: yellow;
