@@ -304,6 +304,18 @@ var Bnums = [
 
 var Filters = [
   {
+    "id": "type",
+    "displayname": "Material Type",
+    "presentation": "Checkbox", // not used as of yet
+    "values": []
+  },
+  {
+    "id": "applications",
+    "displayname": "Applications",
+    "presentation": "Checkbox", // not used as of yet
+    "values": []
+  },
+  {
     "id": "material",
     "displayname": "Material",
     "presentation": "Checkbox", // not used as of yet
@@ -328,10 +340,13 @@ var Filters = [
 var app = angular.module('MaterialApp', []);
 
 app.controller('MaterialCtrl', function($scope, $filter) {
+  // Define a variable to hold the complete list of all B#s in the model
   $scope.AllBnums = Bnums;
+  // Define a variable to hold the filtered list of B#s that get displayed in the table
   $scope.Bnum = Bnums;
+  // Define a variable to hold a list of all attributes that will be used for filtering along with their values
   $scope.Filters = Filters;
-  // define an array to hold the list applied filters
+  // define an variable to hold the list applied filters
   $scope.setFilters = [];
 
 
@@ -342,8 +357,8 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     $scope.sortBnums();
   };
 
-  $scope.capturefilters = function () {
-    // Buildi an array of all the possible filtering values to populate the dropdowns with the possible values from the data
+  $scope.capturefilters = function() {
+    // Build an array of all the possible filtering values to populate the dropdowns with the possible values from the data
     // Loop through all the Bnums looking for each filter. 
     // Collect the possible values for each filter and adds them to the Filters array. 
     // Differentiate between Bnum properties that have one or more values (arrays)
@@ -353,31 +368,31 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       // take the id from each Filter to find the values in the Bnum data
       var currentfilterid = Filters[i].id;
       // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
-      for(var j=0; j < Bnums.length; j++) {
+      for(var j=0; j < $scope.Bnum.length; j++) {
         //check to see if the filter is an array (can have multiple values)
         //if not, its easier
-        if (!Array.isArray(Bnums[j][currentfilterid])) {
+        if (!Array.isArray($scope.Bnum[j][currentfilterid])) {
           //check to see if the value is already in the values array. 
-          var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid]);
+          var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf($scope.Bnum[j][currentfilterid]);
           if (pos == -1) { 
             // not already there so add to the filter array
             Filters[i].values.push(
             {
-              "id": Bnums[j][currentfilterid],
+              "id": $scope.Bnum[j][currentfilterid],
               "applied": false
             });
           };
         // if it is an array, we need to parse through the array for each value
         } else {
           //loop through the values in the Bnum property
-          for(var k=0; k < Bnums[j][currentfilterid].length; k++) {
+          for(var k=0; k < $scope.Bnum[j][currentfilterid].length; k++) {
             //check to see if the value is already in the values array. 
             //
-            var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnums[j][currentfilterid][k]);
+            var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf($scope.Bnum[j][currentfilterid][k]);
             if (pos == -1) { 
             // not already there so add it        
               Filters[i].values.push({
-                "id": Bnums[j][currentfilterid][k],
+                "id": $scope.Bnum[j][currentfilterid][k],
                 "applied": false
               });
             };
@@ -391,7 +406,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
   // Update the B# list shown to the user
   $scope.updateTable = function() {
-    // create a temporary B# list of all B#sa to filter down
+    // create a temporary B# list of all B#s to filter down
     var TempBnums = $scope.AllBnums;
     // call the function to filter the temp full B# list by the setFilters list
     for(var i=0; i < $scope.setFilters.length; i++) {
@@ -405,7 +420,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // reassess possible filter values and gray them out in the input controls
   };
 
-  // Toggle checked filters and remove from the set filters stage if needed
+  // Toggle checked filters on/off and remove from the set filters stage if needed
   $scope.toggleFilter = function(position, filterId, filterValue) {
     // take the inputs to create a attribute/value pair identifying the attribute and its set value
     attrvaluepair = {

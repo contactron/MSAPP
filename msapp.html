@@ -28,13 +28,45 @@
                 </div>
 
 
+                <!-- Material Type Checkbox Filter -->
+				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open">
+	                    <p class="BR-Filter__Item__Header__Name">Material Type</p>
+	                </header>
+	                <div class="BR-Filter__Item__Options">
+	 					<span ng-repeat="fv in Filters[0].values" ng-click="toggleFilter('0',Filters[0],fv)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+	                            {{ fv.id }}
+	                        </label>
+	                    </span>
+	                </div>
+	            </div>
+
+	            <!-- Application Checkbox Filter -->
+				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open">
+	                    <p class="BR-Filter__Item__Header__Name">Application</p>
+	                </header>
+	                <div class="BR-Filter__Item__Options">
+	                    <span ng-repeat="fv in Filters[1].values" ng-click="toggleFilter('1',Filters[1],fv)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+	                            {{ fv.id }}
+	                        </label>
+	                    </span>
+	                </div>    
+	            </div>
+
+
+
                 <!-- Base Material Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
 	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	 					<span ng-repeat="fv in Filters[0].values" ng-click="toggleFilter('0',Filters[0],fv)">
+	 					<span ng-repeat="fv in Filters[2].values" ng-click="toggleFilter('2',Filters[2],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
@@ -49,7 +81,7 @@
 	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[1].values" ng-click="toggleFilter('1',Filters[1],fv)">
+	                    <span ng-repeat="fv in Filters[3].values" ng-click="toggleFilter('3',Filters[3],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
@@ -65,7 +97,7 @@
 	                </header>
 
 					<div class="swatch_container">
-					    <span ng-repeat="fv in Filters[2].values" class="swatch" ng-click="toggleFilter('2',Filters[2],fv)">
+					    <span ng-repeat="fv in Filters[4].values" class="swatch" ng-click="toggleFilter('4',Filters[4],fv)">
 							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
 								<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
 									<span class="MSappTooltiptext">{{ fv.id }}</span>					
