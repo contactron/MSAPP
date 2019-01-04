@@ -353,32 +353,32 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
 
   $scope.init = function () {
-    // Setup filters and values
-    $scope.capturefilters($scope.Bnum);
+    // Setup filters and values 
+    $scope.capturefilters($scope.AllBnums, $scope.Filters);
     // Sort the B# list alphabetically by B# name
     $scope.sortBnums();
   };
 
-  $scope.capturefilters = function(Bnumlist) {
+  $scope.capturefilters = function(Bnumlist, Filterlist) {
     // Build an array of all the possible filtering values to populate the dropdowns with the possible values from the data
     // Loop through all the Bnums looking for each filter. 
     // Collect the possible values for each filter and adds them to the Filters array. 
     // Differentiate between Bnum properties that have one or more values (arrays)
 
     // Loop across the Filters array
-    for(var i=0; i < Filters.length; i++){
+    for(var i=0; i < Filterlist.length; i++){
       // take the id from each Filter to find the values in the Bnum data
-      var currentfilterid = Filters[i].id;
+      var currentfilterid = Filterlist[i].id;
       // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
       for(var j=0; j < Bnumlist.length; j++) {
         //check to see if the filter is an array (can have multiple values)
         //if not, its easier
         if (!Array.isArray(Bnumlist[j][currentfilterid])) {
           //check to see if the value is already in the values array. 
-          var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid]);
+          var pos = Filterlist[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid]);
           if (pos == -1) { 
             // not already there so add to the filter array
-            Filters[i].values.push(
+            Filterlist[i].values.push(
             {
               "id": Bnumlist[j][currentfilterid],
               "applied": false
@@ -390,10 +390,10 @@ app.controller('MaterialCtrl', function($scope, $filter) {
           for(var k=0; k < Bnumlist[j][currentfilterid].length; k++) {
             //check to see if the value is already in the values array. 
             //
-            var pos = Filters[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid][k]);
+            var pos = Filterlist[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid][k]);
             if (pos == -1) { 
             // not already there so add it        
-              Filters[i].values.push({
+              Filterlist[i].values.push({
                 "id": Bnumlist[j][currentfilterid][k],
                 "applied": false
               });
@@ -402,7 +402,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         };
       };
       // Sort filters so they are presented alphabetically
-      Filters[i].values.sort();
+      Filterlist[i].values.sort();
     };
   };
 
@@ -466,6 +466,19 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     };
     $scope.updateTable();
   };
+
+
+  // Disable filter values that are no longer available for the filtered list of B#s
+  $scope.disablefiltervalues = function() {
+
+    $scope.capturefilters($scope.Bnum);
+
+
+  };
+
+
+
+
 
   // Sort the list of Bnums
   $scope.sortBnums = function() {
