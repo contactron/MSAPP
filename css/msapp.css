@@ -1,24 +1,6 @@
-body {
-}
-
-li {
-  line-height: 1.375;
-}
-
-select {
-    height: 2.5rem;
-    border-radius: 0px;
-}
-
-th, td {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-
 
 .msapp-wrapper {
-  display: flex; /* or inline-flex */
+  display: flex;
   border: 2px solid #ccc;
   margin-left: 1rem;
 }
@@ -96,6 +78,11 @@ th, td {
 
 .swatch input[type=checkbox]:checked +label {
   border: 2px solid #000;
+}
+
+.swatch input[type=checkbox]:disabled +label {
+  border: 1px solid #000;
+  opacity: .5;
 }
 
 /*create more space between swatches and dividing line*/
@@ -318,7 +305,6 @@ th, td {
   margin-right: 1.5rem;
   width: 125px;
   height: 125px;
-/*  border: 1px solid #ccc;*/
 }
 
 .SpecPropList {
@@ -482,9 +468,3 @@ th, td {
   vertical-align: middle;
   padding-right: .5rem;
 }
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
