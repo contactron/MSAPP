@@ -347,14 +347,15 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   // Define a variable to hold the full list of all possible filters/valuesa
   $scope.AllFilters = Filters;
   // Define a variable to hold a list of all attributes that will be used for filtering along with their values
-  $scope.Filters = Filters;
-  // define an variable to hold the list applied filters
+  $scope.Filters = [];
+  // Define an variable to hold the list applied filters
+  // This will be used to present the filters to the user
   $scope.setFilters = [];
 
 
   $scope.init = function () {
     // Setup filters and values 
-    $scope.capturefilters($scope.AllBnums, $scope.Filters);
+    $scope.AllFilters = $scope.capturefilters($scope.AllBnums, $scope.AllFilters);
     // Sort the B# list alphabetically by B# name
     $scope.sortBnums();
   };
@@ -366,11 +367,16 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // Differentiate between Bnum properties that have one or more values (arrays)
 
     // Loop across the Filters array
-    for(var i=0; i < Filterlist.length; i++){
+
+    // var TempList = $scope.deepcopy(Filterlist);
+    var TempList = Filterlist;  
+    for (var i=0; i < Filterlist.length; i++) {
+      // reset filter values to none for the current filter. We'll build it back up from the Bnum list sent.
+      Filterlist[i].values = [];
       // take the id from each Filter to find the values in the Bnum data
       var currentfilterid = Filterlist[i].id;
       // loop across Bnums looking for at the current filter and adding the value from the B# into the Filters.values array
-      for(var j=0; j < Bnumlist.length; j++) {
+      for (var j=0; j < Bnumlist.length; j++) {
         //check to see if the filter is an array (can have multiple values)
         //if not, its easier
         if (!Array.isArray(Bnumlist[j][currentfilterid])) {
@@ -378,32 +384,35 @@ app.controller('MaterialCtrl', function($scope, $filter) {
           var pos = Filterlist[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid]);
           if (pos == -1) { 
             // not already there so add to the filter array
-            Filterlist[i].values.push(
+            TempList[i].values.push(
             {
               "id": Bnumlist[j][currentfilterid],
-              "applied": false
+              "applied": false,
+              "disabled": false
             });
           };
         // if it is an array, we need to parse through the array for each value
         } else {
           //loop through the values in the Bnum property
-          for(var k=0; k < Bnumlist[j][currentfilterid].length; k++) {
+          for (var k=0; k < Bnumlist[j][currentfilterid].length; k++) {
             //check to see if the value is already in the values array. 
             //
             var pos = Filterlist[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid][k]);
             if (pos == -1) { 
             // not already there so add it        
-              Filterlist[i].values.push({
+              TempList[i].values.push({
                 "id": Bnumlist[j][currentfilterid][k],
-                "applied": false
+                "applied": false,
+                "disabled": false
               });
             };
           };
         };
       };
-      // Sort filters so they are presented alphabetically
-      Filterlist[i].values.sort();
     };
+    // Sort filters so they are presented alphabetically
+      // TempList[i].values.sort(); // this is broken
+      return TempList;
   };
 
   // Update the B# list shown to the user
@@ -416,7 +425,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
         var temp1 = $scope.setFilters[i].FilterId;
         var temp2 = $scope.setFilters[i].FilterValue;
         var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
-    };    
+    };
     // reset the Bnum list to the new filtered list of Bnums
     $scope.Bnum = TempBnums;
     // reassess possible filter values and gray them out in the input controls
@@ -431,12 +440,12 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       "FilterValue": filterValue.id
     };
     //Find the position of the filter value in the values array for the filter
-    var valueposition = Filters[position].values.map(function(e) { return e.id; }).indexOf(filterValue.id);
+    var valueposition = $scope.AllFilters[position].values.map(function(e) { return e.id; }).indexOf(filterValue.id);
     // Determine if the filter is checked or not and act accordingly
     // If it is checked, uncheck it and remove from the setFilters array
     if (filterValue.applied) {
       // Set the value of the 'applied' attribute to "false" so it will appear unchecked
-      $scope.Filters[position].values[valueposition].applied = false;
+      $scope.AllFilters[position].values[valueposition].applied = false;
       // Call the removeFilter function to remove the filter from the setFilters array/stage
       $scope.removeFilter(position, filterId.id, filterValue.id);
     // if not checked, then check it and add the setFilters array
@@ -444,11 +453,13 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       // Add the attribute/value pair to the array of set filters 
       $scope.setFilters.push(attrvaluepair);
       // Set the value of the 'applied' attribute to "true" so it will appear checked
-      $scope.Filters[position].values[valueposition].applied = true;
+      $scope.AllFilters[position].values[valueposition].applied = true;
     };
 
     // Refilter the B# table using the updated setFilters array 
     $scope.updateTable();
+
+    $scope.disablefiltervalues();
   };
 
   // Remove a filter from the setfilters stage
@@ -458,26 +469,57 @@ app.controller('MaterialCtrl', function($scope, $filter) {
        if (($scope.setFilters[i].FilterId == filterId) && ($scope.setFilters[i].FilterValue == filterValue)) {
          // Update the Filters value applied property to "false"
          // - Find the setfilter in the Filters array
-         var valueposition = Filters[position].values.map(function(e) { return e.id; }).indexOf(filterValue);
-         $scope.Filters[position].values[valueposition].applied = false;
+         var valueposition = $scope.AllFilters[position].values.map(function(e) { return e.id; }).indexOf(filterValue);
+         $scope.AllFilters[position].values[valueposition].applied = false;
          // Remove the filter from the setFilters array
          $scope.setFilters.splice(i, 1); 
        };
     };
     $scope.updateTable();
+    $scope.disablefiltervalues();
   };
 
 
   // Disable filter values that are no longer available for the filtered list of B#s
   $scope.disablefiltervalues = function() {
+    // Capture a list of available filter values using the filtered (subset) Bnum List
+    // We'll compare these to the full list of filter values to turn off values that aren't available
+    // Clear out Filters array;
+    var valuetofind = "";
+    console.log("All filters list: " + $scope.AllFilters);
+    $scope.Filters = $scope.capturefilters($scope.Bnum, $scope.AllFilters);
+    console.log("returned filter list: " + $scope.Filters);
+ 
+    // Define a temporary variable to hold the full list of filter values. 
+    // var TempFilters = $scope.deepcopy($scope.AllFilters);
+    var TempFilters = $scope.AllFilters;
 
-    $scope.capturefilters($scope.Bnum);
-
-
+    // Loop through the full list of filters
+    for(var i=0; i < TempFilters.length; i++) {
+      // For each Filter in the full list, loop through the subset list to see if it is there
+      for(var j=0; j < $scope.Filters.length; j++) {
+        // if you find it in the subset, then check to see what values are present for that filter
+        if (TempFilters[i].id == $scope.Filters[j].id) {
+          // Loop through all the possible values for this filter. 
+          for(var k=0; k < TempFilters[i].values.length; k++) {
+            // Are they in the subset? 
+            valuetofind = TempFilters[i].values[k];
+            // console.log(TempFilters[i].values[k]);
+            if (($scope.Filters[j].values.map(function(e) { return e.values; }).indexOf(valuetofind)) == -1) {
+              // Its not in the subset so disable the value
+              TempFilters[i].values[k].disabled = true;
+            };
+          }
+        } else {
+          // The filter itself was not found in the subset. This only happens if you have filtered to zero results
+        }
+      }
+        /// left off here
+    };    
+    // Set the Filters array to the new filtered list of filter values with the appropriate values disabled
+    // $scope.AllFilters = $scope.deepcopy(TempFilters);
+    $scope.AllFilters = TempFilters;
   };
-
-
-
 
 
   // Sort the list of Bnums
@@ -491,6 +533,17 @@ app.controller('MaterialCtrl', function($scope, $filter) {
           return 1
       return 0 //default return value (no sorting)
     });
+  };
+
+
+  $scope.deepcopy = function(o) {
+    var output, v, key;
+    output = Array.isArray(o) ? [] : {};
+    for (key in o) {
+       v = o[key];
+       output[key] = (typeof v === "object") ? $scope.deepcopy(v) : v;
+    }
+    return output;
   }
 
   $scope.init();

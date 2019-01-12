@@ -34,8 +34,8 @@
 	                    <p class="BR-Filter__Item__Header__Name">Material Type</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	 					<span ng-repeat="fv in Filters[0].values" ng-click="toggleFilter('0',Filters[0],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+	 					<span ng-repeat="fv in AllFilters[0].values" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
 	                        </label>
@@ -49,8 +49,8 @@
 	                    <p class="BR-Filter__Item__Header__Name">Application</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[1].values" ng-click="toggleFilter('1',Filters[1],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+	                    <span ng-repeat="fv in AllFilters[1].values" ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
 	                        </label>
@@ -66,8 +66,8 @@
 	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	 					<span ng-repeat="fv in Filters[2].values" ng-click="toggleFilter('2',Filters[2],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+	 					<span ng-repeat="fv in AllFilters[2].values" ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
 	                        </label>
@@ -81,8 +81,8 @@
 	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in Filters[3].values" ng-click="toggleFilter('3',Filters[3],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+	                    <span ng-repeat="fv in AllFilters[3].values" ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
+	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }}
 	                        </label>
@@ -97,8 +97,8 @@
 	                </header>
 
 					<div class="swatch_container">
-					    <span ng-repeat="fv in Filters[4].values" class="swatch" ng-click="toggleFilter('4',Filters[4],fv)">
-							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="">
+					    <span ng-repeat="fv in AllFilters[4].values" class="swatch" ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
+							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
 									<span class="MSappTooltiptext">{{ fv.id }}</span>					
 								</label>
