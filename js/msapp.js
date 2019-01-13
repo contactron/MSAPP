@@ -346,6 +346,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   $scope.Bnum = Bnums;
   // Define a variable to hold the full list of all possible filters/valuesa
   $scope.AllFilters = Filters;
+  // $scope.AllFilters = $scope.deepcopy(Filters);
   // Define a variable to hold a list of all attributes that will be used for filtering along with their values
   $scope.Filters = [];
   // Define an variable to hold the list applied filters
@@ -368,7 +369,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
     // Loop across the Filters array
 
-    // var TempList = $scope.deepcopy(Filterlist);
+    Filterlist = $scope.deepcopy(Filterlist);
     var TempList = Filterlist;  
     for (var i=0; i < Filterlist.length; i++) {
       // reset filter values to none for the current filter. We'll build it back up from the Bnum list sent.
@@ -486,39 +487,22 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // We'll compare these to the full list of filter values to turn off values that aren't available
     // Clear out Filters array;
     var valuetofind = "";
-    console.log("All filters list: " + $scope.AllFilters);
     $scope.Filters = $scope.capturefilters($scope.Bnum, $scope.AllFilters);
-    console.log("returned filter list: " + $scope.Filters);
- 
-    // Define a temporary variable to hold the full list of filter values. 
-    // var TempFilters = $scope.deepcopy($scope.AllFilters);
-    var TempFilters = $scope.AllFilters;
-
     // Loop through the full list of filters
-    for(var i=0; i < TempFilters.length; i++) {
-      // For each Filter in the full list, loop through the subset list to see if it is there
-      for(var j=0; j < $scope.Filters.length; j++) {
-        // if you find it in the subset, then check to see what values are present for that filter
-        if (TempFilters[i].id == $scope.Filters[j].id) {
-          // Loop through all the possible values for this filter. 
-          for(var k=0; k < TempFilters[i].values.length; k++) {
-            // Are they in the subset? 
-            valuetofind = TempFilters[i].values[k];
-            // console.log(TempFilters[i].values[k]);
-            if (($scope.Filters[j].values.map(function(e) { return e.values; }).indexOf(valuetofind)) == -1) {
-              // Its not in the subset so disable the value
-              TempFilters[i].values[k].disabled = true;
-            };
-          }
+    for(var i=0; i < $scope.AllFilters.length; i++) {
+      // For each Filter in the full list, loop through list of possible values
+      for(var j=0; j < $scope.AllFilters[i].values.length; j++) {
+        // Are they in the subset? 
+        valuetofind = $scope.AllFilters[i].values[j].id;
+        // console.log($scope.Filters[i].values[j].id.indexOf(valuetofind));
+        if (($scope.Filters[i].values.map(function(e) { return e.id; }).indexOf(valuetofind)) == -1) {
+          // Its not in the subset so disable the value
+          $scope.AllFilters[i].values[j].disabled = true;
         } else {
-          // The filter itself was not found in the subset. This only happens if you have filtered to zero results
-        }
-      }
-        /// left off here
-    };    
-    // Set the Filters array to the new filtered list of filter values with the appropriate values disabled
-    // $scope.AllFilters = $scope.deepcopy(TempFilters);
-    $scope.AllFilters = TempFilters;
+          $scope.AllFilters[i].values[j].disabled = false;
+        };
+      };    
+    }; 
   };
 
 
