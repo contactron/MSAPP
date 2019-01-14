@@ -367,8 +367,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // Collect the possible values for each filter and adds them to the Filters array. 
     // Differentiate between Bnum properties that have one or more values (arrays)
 
-    // Loop across the Filters array
-
+    // Make a deepcopy of the full array
     Filterlist = $scope.deepcopy(Filterlist);
     var TempList = Filterlist;  
     for (var i=0; i < Filterlist.length; i++) {
@@ -397,7 +396,6 @@ app.controller('MaterialCtrl', function($scope, $filter) {
           //loop through the values in the Bnum property
           for (var k=0; k < Bnumlist[j][currentfilterid].length; k++) {
             //check to see if the value is already in the values array. 
-            //
             var pos = Filterlist[i].values.map(function(e) { return e.id; }).indexOf(Bnumlist[j][currentfilterid][k]);
             if (pos == -1) { 
             // not already there so add it        
@@ -492,12 +490,13 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     for(var i=0; i < $scope.AllFilters.length; i++) {
       // For each Filter in the full list, loop through list of possible values
       for(var j=0; j < $scope.AllFilters[i].values.length; j++) {
-        // Are they in the subset? 
+        // Get the first id to look for
         valuetofind = $scope.AllFilters[i].values[j].id;
-        // console.log($scope.Filters[i].values[j].id.indexOf(valuetofind));
+        // Check to see if the value is in the list of values in the subset array;
         if (($scope.Filters[i].values.map(function(e) { return e.id; }).indexOf(valuetofind)) == -1) {
           // Its not in the subset so disable the value
           $scope.AllFilters[i].values[j].disabled = true;
+          // It is so enable it
         } else {
           $scope.AllFilters[i].values[j].disabled = false;
         };
