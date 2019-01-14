@@ -83,6 +83,7 @@
 .swatch input[type=checkbox]:disabled +label {
   border: 0px solid #000;
   opacity: .3;
+  cursor: not-allowed;
 }
 
 /* Hide color swatch tool tip when the swatch is disabled */
