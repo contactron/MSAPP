@@ -414,10 +414,17 @@ app.controller('MaterialCtrl', function($scope, $filter) {
           };
         };
       };
+      // Sort filters so they are presented alphabetically
+      Filterlist[i].values.sort(function(a, b){
+        var numA=a.id.toLowerCase(), numB=b.id.toLowerCase()
+        if (numA < numB) //sort string ascending
+            return -1 
+        if (numA > numB)
+            return 1
+        return 0 //default return value (no sorting)
+      });
     };
-    // Sort filters so they are presented alphabetically
-      // TempList[i].values.sort(); // this is broken
-      return Filterlist;
+    return Filterlist;
   };
 
   // Update the B# list shown to the user
@@ -515,6 +522,19 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
   // Sort the list of Bnums
   $scope.sortBnums = function() {
+    // Sort the Bnum list by the num property so it is presented in alpha/numeric order
+    Bnums.sort(function(a, b){
+      var numA=a.num.toLowerCase(), numB=b.num.toLowerCase()
+      if (numA < numB) //sort string ascending
+          return -1 
+      if (numA > numB)
+          return 1
+      return 0 //default return value (no sorting)
+    });
+  };
+
+  // Sort the list of Filter values
+  $scope.sortFilters = function() {
     // Sort the Bnum list by the num property so it is presented in alpha/numeric order
     Bnums.sort(function(a, b){
       var numA=a.num.toLowerCase(), numB=b.num.toLowerCase()
