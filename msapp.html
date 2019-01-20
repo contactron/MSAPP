@@ -37,7 +37,7 @@
 	 					<span ng-repeat="fv in AllFilters[0].values" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }}
+	                            {{ fv.id }} ({{ fv.count }})
 	                        </label>
 	                    </span>
 	                </div>
@@ -52,7 +52,7 @@
 	                    <span ng-repeat="fv in AllFilters[1].values" ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }}
+	                            {{ fv.id }} ({{ fv.count }})
 	                        </label>
 	                    </span>
 	                </div>    
@@ -69,7 +69,7 @@
 	 					<span ng-repeat="fv in AllFilters[2].values" ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }}
+	                            {{ fv.id }} ({{ fv.count }})
 	                        </label>
 	                    </span>
 	                </div>
@@ -84,7 +84,7 @@
 	                    <span ng-repeat="fv in AllFilters[3].values" ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }}
+	                            {{ fv.id }} ({{ fv.count }})
 	                        </label>
 	                    </span>
 	                </div>    
