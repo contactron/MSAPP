@@ -13,6 +13,7 @@
 
 	<body>
 		<h1 class="msappheader1">Material Selection App POC</h1>
+
 		<div ng-app="MaterialApp" ng-controller="MaterialCtrl" class="msapp-wrapper">
 
 			<!-- Filter Box -->
@@ -31,7 +32,8 @@
                 <!-- Material Type Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Material Type</p>
+	                    <p class="BR-Filter__Item__Header__Name">Material Type<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
+
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	 					<span ng-repeat="fv in AllFilters[0].values" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
@@ -46,7 +48,7 @@
 	            <!-- Application Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Application</p>
+	                    <p class="BR-Filter__Item__Header__Name">Application<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	                    <span ng-repeat="fv in AllFilters[1].values" ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
@@ -63,7 +65,7 @@
                 <!-- Base Material Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
+	                    <p class="BR-Filter__Item__Header__Name">Base Material<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	 					<span ng-repeat="fv in AllFilters[2].values" ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
@@ -78,7 +80,7 @@
 	            <!-- Finish Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
+	                    <p class="BR-Filter__Item__Header__Name">Finish<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	                    <span ng-repeat="fv in AllFilters[3].values" ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
@@ -93,7 +95,7 @@
 	            <!-- Color Swatch Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Color</p>
+	                    <p class="BR-Filter__Item__Header__Name">Color<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
 	                </header>
 
 					<div class="swatch_container">

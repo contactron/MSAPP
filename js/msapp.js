@@ -497,6 +497,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     // We'll compare these to the full list of filter values to turn off values that aren't available
     // Clear out Filters array;
     var valuetofind = "";
+    // Get all the filter values for the Bnum subset
     $scope.Filters = $scope.capturefilters($scope.Bnum);
     // Loop through the full list of filters
     for(var i=0; i < $scope.AllFilters.length; i++) {
@@ -504,16 +505,21 @@ app.controller('MaterialCtrl', function($scope, $filter) {
       for(var j=0; j < $scope.AllFilters[i].values.length; j++) {
         // Get the first id to look for
         let valuetofind = $scope.AllFilters[i].values[j].id;
-        let posofvalueinsubset = $scope.Filters[i].values.map(function(e) { return e.id; }).indexOf(valuetofind)
         // Check to see if the value is in the list of values in the subset array;
+        let posofvalueinsubset = $scope.Filters[i].values.map(function(e) { return e.id; }).indexOf(valuetofind)
         if (posofvalueinsubset == -1) {
           // Its not in the subset so disable the value and set count to 0
           $scope.AllFilters[i].values[j].disabled = true;
           $scope.AllFilters[i].values[j].count = 0;
           // It is in the subset so enable it and set the count value
         } else {
-          $scope.AllFilters[i].values[j].disabled = false;
           $scope.AllFilters[i].values[j].count = $scope.Filters[i].values[posofvalueinsubset].count;
+          if (($scope.Filters[i].values[posofvalueinsubset].count == $scope.Bnum.length) && !$scope.AllFilters[i].values[j].applied) {
+            // the same value is found in all remainging B#s and the filter has not been selected
+            $scope.AllFilters[i].values[j].disabled = true;
+          } else {
+          $scope.AllFilters[i].values[j].disabled = false;
+          };
         };
       };    
     }; 
