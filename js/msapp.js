@@ -526,6 +526,26 @@ app.controller('MaterialCtrl', function($scope, $filter) {
   };
 
 
+$scope.Accordion = function(header) {
+    var clicked = header.target;
+    var panel = "";
+    if (clicked.tagName == 'P') {
+      // set the target div if the <p> text was clicked 
+      var panel = clicked.parentElement.nextElementSibling;
+    } else {
+      // set the target div if the <div> was clicked
+      panel = clicked.nextElementSibling;
+    };
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+      panel.style.opacity = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.opacity = 1;
+    }; 
+  };
+
+
   // Sort the list of Bnums
   $scope.sortBnums = function() {
     // Sort the Bnum list by the num property so it is presented in alpha/numeric order
@@ -539,18 +559,6 @@ app.controller('MaterialCtrl', function($scope, $filter) {
     });
   };
 
-  // Sort the list of Filter values
-  $scope.sortFilters = function() {
-    // Sort the Bnum list by the num property so it is presented in alpha/numeric order
-    Bnums.sort(function(a, b){
-      var numA=a.num.toLowerCase(), numB=b.num.toLowerCase()
-      if (numA < numB) //sort string ascending
-          return -1 
-      if (numA > numB)
-          return 1
-      return 0 //default return value (no sorting)
-    });
-  };
 
   // Deep copy of complex objects. Needed to support several function.
   $scope.deepcopy = function(o) {
@@ -561,7 +569,7 @@ app.controller('MaterialCtrl', function($scope, $filter) {
        output[key] = (typeof v === "object") ? $scope.deepcopy(v) : v;
     }
     return output;
-  }
+  };
 
   $scope.init();
 

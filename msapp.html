@@ -32,7 +32,7 @@
                 <!-- Material Type Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Material Type<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Material Type<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
 
 	                </header>
 	                <div class="BR-Filter__Item__Options">
@@ -48,7 +48,7 @@
 	            <!-- Application Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Application<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Application<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	                    <span ng-repeat="fv in AllFilters[1].values" ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
@@ -65,7 +65,7 @@
                 <!-- Base Material Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Base Material<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Base Material<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	 					<span ng-repeat="fv in AllFilters[2].values" ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
@@ -80,7 +80,7 @@
 	            <!-- Finish Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Finish<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Finish<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
 	                </header>
 	                <div class="BR-Filter__Item__Options">
 	                    <span ng-repeat="fv in AllFilters[3].values" ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
@@ -95,7 +95,7 @@
 	            <!-- Color Swatch Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Color<img class="MSapp__InfoButton" src="https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/info_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Color<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
 	                </header>
 
 					<div class="swatch_container">
@@ -129,14 +129,18 @@
 				<!--Each Bnum Row Starts Here -->
 					
 					<!--Bnum Header Section -->
-	          		<div ng-click="showDetails = ! showDetails" class="BnumHeaderContainer">
+	          		<div ng-click="Accordion($event)" class="BnumHeaderContainer">
 						<p class="Bnum_Number">{{ x.num }}: </p><p class="Bnum_Description">{{ x.description }}</p>
 					</div>
 					
 					<!--Bnum Details Section -->
-					<div class="BnumDetailsContainer" ng-show="showDetails">
-
+					<!-- <div class="BnumDetailsContainer" ng-show="showDetails"> -->
+					<div class="BnumDetailsContainer">
 						
+
+
+
+
 						<!--Bnum Profile Section -->	
 						<div class="BnumDetailsMainSection">
 
@@ -289,7 +293,6 @@
 									<li>Regulatory and Agency Approvals
 								</ul>
 								<!-- Replace "B-" on B# as it has encoded characters that break the link to the TDS -->
-
 								<a href="https://tds.bradyid.com/TDSdocs/B-{{ x.num.slice(3) }}.pdf" target="_blank">
 								<svg class="TDSSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/><path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M480 224l-96-96h96z"/><path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/><g fill="#fff"><path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/></g><path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/></svg>
 								<strong>{{ x.num }} Technical Data Sheet<strong></a>
