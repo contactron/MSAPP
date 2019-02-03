@@ -34,6 +34,14 @@
 /*Filter Box Styling*/
 
 /*Override BradyID styling for better presentation in the app*/
+
+.MSA__Filter__Accordion {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height .3s, opacity .2s;
+}
+
 .MSA__Filter__Item {
   margin: .875rem 0;
 }
@@ -253,14 +261,11 @@
 
 .BnumDetailsContainer {
   margin: 0;
-/*  padding: 30px;*/
   overflow: hidden;
   background-color: #f2f2f2;
-/*  border-top: 1px solid #ccc;*/
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.3s ease-out;
-  transition: opacity 0.5s ease-in-out;
+  transition: max-height .3s, opacity .2s;
 }
 
 .BnumDetailsMainSection {

@@ -30,13 +30,14 @@
 
 
                 <!-- Material Type Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Material Type<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
-
+				<div class="BR-Filter__Item MSA__Filter__Item">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+	                    <p class="BR-Filter__Item__Header__Name">Material Type
+	                    	<!-- <img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""> -->	                    
+						</p>
 	                </header>
-	                <div class="BR-Filter__Item__Options">
-	 					<span ng-repeat="fv in AllFilters[0].values" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
+	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+	 					<span ng-repeat="fv in AllFilters[0].values" ng-cloak ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }} ({{ fv.count }})
@@ -46,12 +47,13 @@
 	            </div>
 
 	            <!-- Application Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Application<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
+				<div class="BR-Filter__Item MSA__Filter__Item">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+	                    <p class="BR-Filter__Item__Header__Name">Application
+	                    </p>
 	                </header>
-	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in AllFilters[1].values" ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
+	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+	                    <span ng-repeat="fv in AllFilters[1].values" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }} ({{ fv.count }})
@@ -63,12 +65,12 @@
 
 
                 <!-- Base Material Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Base Material<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
+				<div class="BR-Filter__Item MSA__Filter__Item">
+	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 	                </header>
-	                <div class="BR-Filter__Item__Options">
-	 					<span ng-repeat="fv in AllFilters[2].values" ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
+	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+	 					<span ng-repeat="fv in AllFilters[2].values" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }} ({{ fv.count }})
@@ -78,12 +80,12 @@
 	            </div>
 
 	            <!-- Finish Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item "  accordion-filter="">
+				<div class="BR-Filter__Item MSA__Filter__Item" ng-click="Accordion($event)">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Finish<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 	                </header>
-	                <div class="BR-Filter__Item__Options">
-	                    <span ng-repeat="fv in AllFilters[3].values" ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
+	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+	                    <span ng-repeat="fv in AllFilters[3].values" ng-cloak ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
 	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 	                            {{ fv.id }} ({{ fv.count }})
@@ -93,13 +95,13 @@
 	            </div>
 
 	            <!-- Color Swatch Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item"  accordion-filter="">
+				<div class="BR-Filter__Item MSA__Filter__Item" ng-click="Accordion($event)">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Color<img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""></p>
+	                    <p class="BR-Filter__Item__Header__Name">Color</p>
 	                </header>
 
-					<div class="swatch_container">
-					    <span ng-repeat="fv in AllFilters[4].values" class="swatch" ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
+					<div class="swatch_container MSA__Filter__Accordion">
+					    <span ng-repeat="fv in AllFilters[4].values" class="swatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
 							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
 									<span class="MSappTooltiptext">{{ fv.id }}</span>					
@@ -130,7 +132,8 @@
 					
 					<!--Bnum Header Section -->
 	          		<div ng-click="Accordion($event)" class="BnumHeaderContainer">
-						<p class="Bnum_Number">{{ x.num }}: </p><p class="Bnum_Description">{{ x.description }}</p>
+						<p class="Bnum_Number">{{ x.num }}: </p>
+						<p class="Bnum_Description">{{ x.description }}</p>
 					</div>
 					
 					<!--Bnum Details Section -->
