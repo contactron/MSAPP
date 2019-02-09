@@ -18,22 +18,37 @@
 
 			<!-- Filter Box -->
 			<div class="sidenav">
-				<h2 class="msappheaders2">Material Filters</h2>
+<!-- 				<h2 class="msappheaders2">Material Filters</h2> -->
+
+				<!-- Filter Controls -->
+
+				<div class="BR-Filter__Controls">
+	                <p class="BR-Filter__ControlButton MSA-Filter__ControlButton" ng-click="">Collapse All</p>
+	                <p class="BR-Filter__ControlButton MSA-Filter__ControlButton" ng-click="">Reset</p>
+           		</div>
+
+				<!-- Filter Title Area -->
+
+				<div class="BR-Filter__Title">
+                	<p class="BR-Filter__Title__Name">Filter by:</p>	
+            	</div>
 
 				<!-- Filter stage -->
-                <div class="BR-FilterStage__Actors">
-					<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
-	                        <!-- <span ng-if="filter.FilterID == 'colors'" class="colorbox_small"></span> -->
-	                        <span class="SetFilterText"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
-	                    </a>
-                </div>
+				<div class="BR-FilterStage">
+	                <div class="BR-FilterStage__Actors">
+						<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
+		                        <!-- <span ng-if="filter.FilterID == 'colors'" class="colorbox_small"></span> -->
+		                        <span class="SetFilterText"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
+		                    </a>
+	                </div>
+	            </div>
 
 
                 <!-- Material Type Checkbox Filter -->
 				<div class="BR-Filter__Item MSA__Filter__Item">
 	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
 	                    <p class="BR-Filter__Item__Header__Name">Material Type
-	                    	<!-- <img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""> -->	                    
+	                    	<!-- <img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""> -->                   
 						</p>
 	                </header>
 	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">

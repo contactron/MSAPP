@@ -356,9 +356,23 @@ app.controller('MaterialCtrl', function($scope, $filter) {
 
   $scope.init = function () {
     // Setup filters and values 
+    $scope.getbnumdata();
     $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
     // Sort the B# list alphabetically by B# name
     $scope.sortBnums();
+  };
+
+  // Load the Bnum data from an external JSON file
+  $scope.getbnumdata = function () {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (xhttp.readyState==4 && xhttp.status==200) {
+        var javaobj=JSON.parse(xhttp.response);
+        console.log(javaobj);
+      };
+      xhttp.open("GET", "data/Bnumdata.json", true);
+      xhttp.send();
+    }
   };
 
   $scope.capturefilters = function(Bnumlist) {
