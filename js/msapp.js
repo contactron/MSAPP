@@ -1,379 +1,43 @@
-
-// Model Section
-var Bnums = [
-  {
-    "num": "B­-402",
-    "description": "Fake Sign Material Example",
-    "type": "Sign",
-    "material": "Polyester",
-    "finish": "Matte",
-    "adhesive": "Acrylic",
-    "thickness": ".0001 in",
-    "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
-    "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
-    "compliance": ["UL"],
-    "applications": ["Electrical", "Lean", "Datacomm"],
-    "colors": ["white"],
-    "tapecolorable": "yes",
-    "chemresistance": [
-      {
-        "category": "Fuels",
-        "rating": "Good"
-      },
-      {
-        "category": "Oils",
-        "rating": "Poor"
-      },
-      {
-        "category": "Solvents",
-        "rating": "Good"
-      },
-      {
-        "category": "Cleaners",
-        "rating": "Bad"
-      }
-    ],
-    "adhesion": [
-      {
-        "category": "Steel",
-        "rating": "Good"
-      },
-      {
-        "category": "Powder Coated Metal",
-        "rating": "Poor"
-      },
-      {
-        "category": "Polypropylene",
-        "rating": "Good"
-      },      {
-        "category": "Textured ABS",
-        "rating": "Bad"
-      }
-    ]
-  },
-  {
-    "num": "B­-744",
-    "description": "Fake Selflam Material Example",
-    "type": "Selflam",
-    "material": "Polyester",
-    "finish": "Matte",
-    "adhesive": "Acrylic",
-    "thickness": ".0001 in",
-    "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
-    "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
-    "compliance": ["UL"],
-    "applications": ["Electrical", "Lean", "Datacomm"],
-    "colors": ["white"],
-    "tapecolorable": "yes",
-    "chemresistance": [
-      {
-        "category": "Fuels",
-        "rating": "Good"
-      },
-      {
-        "category": "Oils",
-        "rating": "Poor"
-      },
-      {
-        "category": "Solvents",
-        "rating": "Good"
-      },
-      {
-        "category": "Cleaners",
-        "rating": "Bad"
-      }
-    ],
-    "adhesion": [
-      {
-        "category": "Steel",
-        "rating": "Good"
-      },
-      {
-        "category": "Powder Coated Metal",
-        "rating": "Poor"
-      },
-      {
-        "category": "Polypropylene",
-        "rating": "Good"
-      },      {
-        "category": "Textured ABS",
-        "rating": "Bad"
-      }
-    ]
-  },
-  {
-    "num": "B­-902",
-    "description": "Fake Wiremarker Material Example",
-    "type": "Wiremarker",
-    "material": "Polyester",
-    "finish": "Matte",
-    "adhesive": "Acrylic",
-    "thickness": ".0001 in",
-    "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
-    "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
-    "compliance": ["UL"],
-    "applications": ["Electrical", "Lean", "Datacomm"],
-    "colors": ["white"],
-    "tapecolorable": "yes",
-    "chemresistance": [
-      {
-        "category": "Fuels",
-        "rating": "Good"
-      },
-      {
-        "category": "Oils",
-        "rating": "Poor"
-      },
-      {
-        "category": "Solvents",
-        "rating": "Good"
-      },
-      {
-        "category": "Cleaners",
-        "rating": "Bad"
-      }
-    ],
-    "adhesion": [
-      {
-        "category": "Steel",
-        "rating": "Good"
-      },
-      {
-        "category": "Powder Coated Metal",
-        "rating": "Poor"
-      },
-      {
-        "category": "Polypropylene",
-        "rating": "Good"
-      },      {
-        "category": "Textured ABS",
-        "rating": "Bad"
-      }
-    ]
-  },
-  {
-    "num": "B­-459",
-    "description": "Fake Tag Material Example",
-    "type": "Tag",    
-    "material": "Vinyl",
-    "finish": "Gloss",
-    "adhesive": "Acrylic",
-    "thickness": ".0006 in",
-    "longdescription": "B-459 is another very great material from Brady Corporation. It has a number of unique properties, blah, blah, blah.",
-    "specialproperties": ["Flame Retardent", "Heat Resistant", "Removable", "Cold Resistant"],
-    "compliance": ["UL", "ROHS"],
-    "applications": ["Electrical", "Lab", "Safety"],
-    "colors": ["green", "red", "brown"],
-    "tapecolorable": "yes",
-    "chemresistance": [
-      {
-        "category": "Fuels",
-        "rating": "Good"
-      },
-      {
-        "category": "Oils",
-        "rating": "Poor"
-      },
-      {
-        "category": "Solvents",
-        "rating": "Good"
-      },
-      {
-        "category": "Cleaners",
-        "rating": "Bad"
-      }
-    ],
-    "adhesion": [
-      {
-        "category": "Steel",
-        "rating": "Good"
-      },
-      {
-        "category": "Powder Coated Metal",
-        "rating": "Poor"
-      },
-      {
-        "category": "Polypropylene",
-        "rating": "Good"
-      },      {
-        "category": "Textured ABS",
-        "rating": "Bad"
-      }
-    ]
-  },
-  {
-    "num": "B­-595",
-    "description": "Fake Sleeve Material Example",
-    "type": "Sleeve",
-    "material": "Polyester",
-    "finish": "Gloss",
-    "adhesive": "Acrylic",
-    "thickness": ".0025 in",
-    "longdescription": "B-202. Wow, this ia great material. I really can't express adequately how great this material is, blah, blah, blah.",
-    "specialproperties": ["Cold Resistant", "Removable", "Flame Retardent"],
-    "compliance": ["UL", "CSA", "ROHS"],
-    "applications": ["Wire & Cable", "Lab", "Hazardous Materials"],
-    "colors": ["blue", "yellow", "brown", "white"],
-    "tapecolorable": "yes",
-    "chemresistance": [
-      {
-        "category": "Fuels",
-        "rating": "Good"
-      },
-      {
-        "category": "Oils",
-        "rating": "Poor"
-      },
-      {
-        "category": "Solvents",
-        "rating": "Good"
-      },      {
-        "category": "Cleaners",
-        "rating": "Bad"
-      }
-    ],
-    "adhesion": [
-      {
-        "category": "Steel",
-        "rating": "Good"
-      },
-      {
-        "category": "Powder Coated Metal",
-        "rating": "Poor"
-      },
-      {
-        "category": "Polypropylene",
-        "rating": "Good"
-      },      {
-        "category": "Textured ABS",
-        "rating": "Bad"
-      }
-    ]
-  },
-
-  {
-    "num": "B­-259",
-    "description": "Fake Label Material Example",
-    "type": "Label",
-    "material": "Paper",
-    "finish": "Gloss",
-    "adhesive": "Glue",
-    "thickness": ".0034 in",
-    "longdescription": "B-259. Ok, tbh, this is not our best material. In fact, it pains me slightly to even mentioned it. Let's maybe move on to the next material.",
-    "specialproperties": ["Flame Retardent", "Removable"],
-    "compliance": ["UL", "CSA", "ROHS"],
-    "applications": ["Wire & Cable", "Lean", "Safety", "LOTO"],
-    "colors": ["blue", "yellow", "orange", "white", "clear", "green", "purple"],
-    "tapecolorable": "no",
-    "chemresistance": [
-      {
-        "category": "Fuels",
-        "rating": "Good"
-      },
-      {
-        "category": "Oils",
-        "rating": "Poor"
-      },
-      {
-        "category": "Solvents",
-        "rating": "Good"
-      },      {
-        "category": "Cleaners",
-        "rating": "Bad"
-      }
-    ],
-    "adhesion": [
-      {
-        "category": "Steel",
-        "rating": "Good"
-      },
-      {
-        "category": "Powder Coated Metal",
-        "rating": "Poor"
-      },
-      {
-        "category": "Polypropylene",
-        "rating": "Good"
-      },      {
-        "category": "Textured ABS",
-        "rating": "Bad"
-      }
-    ]
-  }
-];
-
-var Filters = [
-  {
-    "id": "type",
-    "displayname": "Material Type",
-    "presentation": "Checkbox", // not used as of yet
-    "values": []
-  },
-  {
-    "id": "applications",
-    "displayname": "Applications",
-    "presentation": "Checkbox", // not used as of yet
-    "values": []
-  },
-  {
-    "id": "material",
-    "displayname": "Material",
-    "presentation": "Checkbox", // not used as of yet
-    "values": []
-  },
-  {
-    "id": "finish",
-    "displayname": "Finish",
-    "presentation": "Checkbox", // not used as of yet
-    "values": []
-  },
-  {
-    "id": "colors",
-    "displayname": "Colors",
-    "presentation": "Swatch", // not used as of yet
-    "values": []
-  }
-];
-
-
 // Controller
 var app = angular.module('MaterialApp', []);
 
 app.controller('MaterialCtrl', function($scope, $filter) {
-  // Define a variable to hold the complete list of all B#s in the model
-  $scope.AllBnums = Bnums;
-  // Define a variable to hold the filtered list of B#s that get displayed in the table
-  $scope.Bnum = Bnums;
-  // Define a variable to hold the full list of all possible filters/valuesa
-  $scope.AllFilters = Filters;
-  // $scope.AllFilters = $scope.deepcopy(Filters);
-  // Define a variable to hold a list of all attributes that will be used for filtering along with their values
-  $scope.Filters = [];
-  // Define an variable to hold the list applied filters
-  // This will be used to present the filters to the user
-  $scope.setFilters = [];
 
+  // load Bnum data from JSON file, set initial variables, handled json loading errors
+  $scope.init= function () {
+    request = new XMLHttpRequest();
+    request.open('GET', '/data/MSApp.json', true);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400){
+        console.log("Success! All is good in server land.");
+        // Success!
+        var loadedjson = JSON.parse(request.responseText);
+        // Bnum holds the filtered list of B#s
+        $scope.Bnum = loadedjson.Bnums;       
+        // AllBnums variable holds complete list of all B#s in the model
+        $scope.AllBnums = loadedjson.Bnums;
+        // AllFilters holds all possible filters and values
+        $scope.AllFilters = loadedjson.Filters;
+        // Filters is used to manage the set filters
+        $scope.Filters = [];
+        // setFilters is used for the stage
+        $scope.setFilters = [];
+        $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
+        // Sort the B# list alphabetically by B# name
+        $scope.sortBnums();
 
-  $scope.init = function () {
-    // Setup filters and values 
-    $scope.getbnumdata();
-    $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
-    // Sort the B# list alphabetically by B# name
-    $scope.sortBnums();
+      } else {
+        // Server found but there was an error
+        console.log("Error! The server was not happy with us.");
+      }
+    };
+    request.onerror = function() {
+      // Did not reach the server. 
+      console.log("Error! The server was not available.");
+    };
+    request.send();
   };
 
-  // Load the Bnum data from an external JSON file
-  $scope.getbnumdata = function () {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (xhttp.readyState==4 && xhttp.status==200) {
-        var javaobj=JSON.parse(xhttp.response);
-        console.log(javaobj);
-      };
-      xhttp.open("GET", "data/Bnumdata.json", true);
-      xhttp.send();
-    }
-  };
 
   $scope.capturefilters = function(Bnumlist) {
     // Build an array of all filtering values available in the sent Bnum list
@@ -563,7 +227,7 @@ $scope.Accordion = function(header) {
   // Sort the list of Bnums
   $scope.sortBnums = function() {
     // Sort the Bnum list by the num property so it is presented in alpha/numeric order
-    Bnums.sort(function(a, b){
+    $scope.Bnum.sort(function(a, b){
       var numA=a.num.toLowerCase(), numB=b.num.toLowerCase()
       if (numA < numB) //sort string ascending
           return -1 
