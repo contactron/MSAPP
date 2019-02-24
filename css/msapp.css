@@ -1,56 +1,24 @@
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
 
-.msapp-wrapper {
-  display: flex;
-  border: 2px solid #ccc;
-  margin-left: 1rem;
-}
 
-.msappheader1 {
-    width: 100%;
-    padding: 0 2rem;
-}
 
-.sidenav {
-    height: 100%;
-    min-width: 300px;
-    max-width: 300px;
-    overflow-x: hidden;
-    padding: 1.5rem;
-    background: #E3E9F2;
-    border-right: 2px solid #ccc;
-}
 
+
+/*for no results screen*/
 .main {
     font-size: 28px; 
     padding: 2rem 4rem;
     width: 100%;
 }
 
-
-.msappheaders2 {
-    margin-top: .5rem;
-}
-
 /*Filter Box Styling*/
 
-/*Override BradyID styling for better presentation in the app*/
-
-.MSA-Filter__ControlButton {
-  padding: 0 0 .5rem 0;
-}
+/*Leverage BradyID styles where possible*/
 
 .MSA__Filter__Accordion {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   transition: max-height .3s, opacity .2s;
-}
-
-.MSA__Filter__Item {
-  margin: 1.25rem 0 0 0;
 }
 
 .MSapp__InfoButton {
@@ -216,15 +184,15 @@
   background: #fff;
 }
 
-.SetFilterText {
-  font-weight: 700;
-  font-size: 14px;
-  margin-right: 5px;
+/* B Number Results Styling*/
+
+.BR-MatSelApp__Results {
+  padding-left: 2rem;
 }
 
-
-
-/* B Number Results Styling*/
+.msappheaders2 {
+    margin-top: .5rem;
+}
 
 /* Style the button that is used to open and close the collapsible content */
 .BnumRow {
@@ -284,12 +252,10 @@
 .BnumDetailsSubSection {
   display: flex;
   flex-direction: column;
-  margin: .625rem;
   background: #Fefefe;
   padding: 1.5rem;
   border: 1px solid #ccc;
-  width: 30%;
-  min-width: 375px;
+  width: 33.33%;
   font-size: .875rem;
 }
 

@@ -12,323 +12,340 @@
     </head>
 
 	<body>
-		<h1 class="msappheader1">Material Selection App POC</h1>
+		<!-- Simulate BradyID containers -->
+		<section class="BR-Body js-Body">
+			<section class="BR-Main">
+				<section>
+					<!-- Controller Div -->
+					<div ng-app="MaterialApp" ng-controller="MaterialCtrl">
 
-		<div ng-app="MaterialApp" ng-controller="MaterialCtrl" class="msapp-wrapper">
+						<!-- Banner compononet to simulate BradyID -->
+						<div class="BR-HierarchyBanner">
+				            <div class="BR-LayoutConstraint">
+				                <h1 class="BR-HierarchyBanner__Title">Material Selection App Proof of Concept</h1>
+				            </div>
+				        </div>
 
-			<!-- Filter Box -->
-			<div class="sidenav">
-<!-- 				<h2 class="msappheaders2">Material Filters</h2> -->
+						<div class="BR-LayoutConstraint">
+							<div class="BR-Search">
+								<section class="BR-Search__FilterAndResults">
 
-				<!-- Filter Controls -->
+									<!-- Filter Section -->
+									<aside class="BR-Search__Filter BR-Filter">
 
-				<div class="BR-Filter__Controls">
-	                <p class="BR-Filter__ControlButton MSA-Filter__ControlButton" ng-click="">Collapse All</p>
-	                <p class="BR-Filter__ControlButton MSA-Filter__ControlButton" ng-click="">Reset</p>
-           		</div>
+										<!-- Filter Stage -->
+							            <div class="BR-Filter__Controls">
+							                <p class="BR-Filter__ControlButton ng-binding" ng-click="">
+							                    Collapse All
+							                </p>
+							                <p class="BR-Filter__ControlButton">Reset</p>
+							            </div>
 
-				<!-- Filter Title Area -->
+											<!-- Filter Title Area -->
 
-				<div class="BR-Filter__Title">
-                	<p class="BR-Filter__Title__Name">Filter by:</p>	
-            	</div>
+											<div class="BR-Filter__Title">
+							                	<p class="BR-Filter__Title__Name">Filter by:</p>	
+							            	</div>
 
-				<!-- Filter stage -->
-				<div class="BR-FilterStage">
-	                <div class="BR-FilterStage__Actors">
-						<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
-		                        <!-- <span ng-if="filter.FilterID == 'colors'" class="colorbox_small"></span> -->
-		                        <span class="SetFilterText"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
-		                    </a>
-	                </div>
-	            </div>
-
-
-                <!-- Material Type Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
-	                    <p class="BR-Filter__Item__Header__Name">Material Type
-	                    	<!-- <img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""> -->                   
-						</p>
-	                </header>
-	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
-	 					<span ng-repeat="fv in AllFilters[0].values" ng-cloak ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }} ({{ fv.count }})
-	                        </label>
-	                    </span>
-	                </div>
-	            </div>
-
-	            <!-- Application Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
-	                    <p class="BR-Filter__Item__Header__Name">Application
-	                    </p>
-	                </header>
-	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
-	                    <span ng-repeat="fv in AllFilters[1].values" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }} ({{ fv.count }})
-	                        </label>
-	                    </span>
-	                </div>    
-	            </div>
+											<!-- Filter stage -->
+											<div class="BR-FilterStage">
+								                <div class="BR-FilterStage__Actors">
+													<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
+									                        <!-- <span ng-if="filter.FilterID == 'colors'" class="colorbox_small"></span> -->
+									                        <span class="BR-FilterStage__Actors__Item__Text"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
+									                    </a>
+								                </div>
+								            </div>
 
 
+							                <!-- Material Type Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+								                    <p class="BR-Filter__Item__Header__Name">Material Type
+								                    	<!-- <img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""> -->                   
+													</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								 					<span ng-repeat="fv in AllFilters[0].values" ng-cloak ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>
+								            </div>
 
-                <!-- Base Material Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
-	                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
-	                </header>
-	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
-	 					<span ng-repeat="fv in AllFilters[2].values" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }} ({{ fv.count }})
-	                        </label>
-	                    </span>
-	                </div>
-	            </div>
+								            <!-- Application Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+								                    <p class="BR-Filter__Item__Header__Name">Application
+								                    </p>
+								                </header>
+								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[1].values" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
 
-	            <!-- Finish Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item" ng-click="Accordion($event)">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Finish</p>
-	                </header>
-	                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
-	                    <span ng-repeat="fv in AllFilters[3].values" ng-cloak ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
-	                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-	                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-	                            {{ fv.id }} ({{ fv.count }})
-	                        </label>
-	                    </span>
-	                </div>    
-	            </div>
 
-	            <!-- Color Swatch Checkbox Filter -->
-				<div class="BR-Filter__Item MSA__Filter__Item" ng-click="Accordion($event)">
-	                <header class="BR-Filter__Item__Header BR-Filter--Open">
-	                    <p class="BR-Filter__Item__Header__Name">Color</p>
-	                </header>
 
-					<div class="swatch_container MSA__Filter__Accordion">
-					    <span ng-repeat="fv in AllFilters[4].values" class="swatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
-							<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-								<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
-									<span class="MSappTooltiptext">{{ fv.id }}</span>					
-								</label>
-							</input>
-						</span>
+							                <!-- Base Material Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+								                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								 					<span ng-repeat="fv in AllFilters[2].values" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>
+								            </div>
+
+								            <!-- Finish Checkbox Filter -->
+											<div class="BR-Filter__Item" ng-click="Accordion($event)">
+								                <header class="BR-Filter__Item__Header BR-Filter--Open">
+								                    <p class="BR-Filter__Item__Header__Name">Finish</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[3].values" ng-cloak ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+
+								            <!-- Color Swatch Checkbox Filter -->
+											<div class="BR-Filter__Item" ng-click="Accordion($event)">
+								                <header class="BR-Filter__Item__Header BR-Filter--Open">
+								                    <p class="BR-Filter__Item__Header__Name">Color</p>
+								                </header>
+
+												<div class="swatch_container MSA__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[4].values" class="swatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
+														<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+															<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
+																<span class="MSappTooltiptext">{{ fv.id }}</span>					
+															</label>
+														</input>
+													</span>
+												</div>
+											</div>
+
+										</aside>
+
+
+										<!-- No Results Screen -->
+
+										<div class="main" ng-cloak ng-show="Bnum.length < 1">
+											There are no results.
+										</div>
+
+
+										<!-- B# Results Table -->
+										<main class="BR-Search__Results BR-MatSelApp__Results" ng-cloak ng-show="Bnum.length >= 1">
+
+											<h3 ng-cloak class="msappheaders2">{{ Bnum.length }} Brady material(s) match your criteria</h3>
+
+								            <div ng-repeat="x in Bnum" ng-cloak class="BnumRow">
+												
+											<!--Each Bnum Row Starts Here -->
+												
+												<!--Bnum Header Section -->
+								          		<div ng-click="Accordion($event)" class="BnumHeaderContainer">
+													<p class="Bnum_Number">{{ x.num }}: </p>
+													<p class="Bnum_Description">{{ x.description }}</p>
+												</div>
+												
+												<!--Bnum Details Section -->
+												<!-- <div class="BnumDetailsContainer" ng-show="showDetails"> -->
+												<div class="BnumDetailsContainer">
+													
+
+
+
+
+													<!--Bnum Profile Section -->	
+													<div class="BnumDetailsMainSection">
+
+														<!--Material Profle Section -->
+												
+														<div class="BnumDetailsSubSection">	
+															
+															<p class="BnumDetailSubsectionHeader">Material Profile:</p>
+															<p class="BnumDetailMaterialDescription">{{ x.longdescription }}</p>								
+															<div>
+																<img class="BnumTypeimage" src="img/{{ x.type }}.png">
+																<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.type }}</p>
+
+																<!--Bnum Rec Apps Section -->
+
+																<p class="BnumAttrHeading"><strong>Applications</strong></p>
+																<ul ng-repeat="i in x.applications" ng-cloak>
+																	<li class="BnumDetailListItem">{{ i }}
+																</ul>
+															</div>
+
+														</div>
+
+														<!-- Label Construction Section -->
+														<div ng-show="x.type == 'Label'" class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Label Construction</p>
+															
+															<div class="BnumConstruction">
+																<svg class="BnumMaterialImage" viewBox="107.675 62.275 284.65 330.336" width="284.65" height="330.336" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" fill="#ffffe6" d="M248.257 247.966l-140.582 71.152 141.163 73.493 143.487-73.961-142.326-71.152-1.161.936z"/><path stroke="#000" fill="#eee" d="M248.257 155.354l-140.581 71.152L248.839 300l143.486-73.962-142.326-71.152-1.16.936z"/><path stroke="#000" fill="#fff" d="M248.258 62.743l-140.582 71.152 141.162 73.493 143.486-73.961L250 62.275l-1.162.936z"/>
+																</svg>
+																<p class="BnumConstructionHeading"><strong>Finish: </strong>{{ x.finish }}</p>
+																<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.material }}</p>
+																<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
+															</div>
+															<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thickness }}</p>
+
+															<!-- Color Swatches Section -->
+															<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapecolorable=='yes'">*</span></strong></p>
+															<div class="swatch_container">
+																<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
+																	<span class="MSappTooltiptext">{{ i }}</span>
+																	
+																</div>
+															</div>
+															<p class="BnumDisclaimer" ng-show="x.tapecolorable=='yes'">*This material can be custom colored.</p>
+
+														</div>	
+
+														<!-- Tag Construction Section -->
+														<div ng-show="x.type == 'Tag'" class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Tag Construction</p>
+														</div>
+
+														<!-- Sleeve Construction Section -->
+														<div ng-show="x.type == 'Sleeve'" class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Sleeve Construction</p>
+														</div>
+
+														<!-- Wiremarker Construction Section -->
+														<div ng-show="x.type == 'Wiremarker'" class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Wiremarker Construction</p>
+														</div>
+
+														<!-- Selflam Construction Section -->
+														<div ng-show="x.type == 'Selflam'" class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Selflam Construction</p>
+														</div>
+
+														<!-- Sign Construction Section -->
+														<div ng-show="x.type == 'Sign'" class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Sign Construction</p>
+														</div>
+
+
+
+														<div class="BnumDetailsSubSection">	
+
+															<!--Bnum Rec Compliance Section -->
+
+															<div>
+																<p class="BnumDetailSubsectionHeader">Compliance</p>
+																<img ng-repeat="i in x.compliance" ng-cloak class="CompIcon" src="img/{{ i }}_icon.png">
+																<br>
+																<br>
+															</div>
+
+															<!-- Alternate Spec Props -->
+
+															<p class="BnumDetailSubsectionHeader">Special Properties</p>
+															<ul class="SpecPropList" ng-repeat="i in x.specialproperties" ng-cloak>
+																<li class="SpecPropListItem">
+																<img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
+															</ul>
+														</div>
+
+
+														<!--Chem Resistance Section -->
+														<div class="BnumDetailsSubSection">	
+															<p class="BnumDetailSubsectionHeader">Chemical Resistance</p>
+															<table>
+												                <thead>
+												                    <tr>
+												                        <th>Category</th>
+												                        <th>Rating</th>
+												                    </tr>
+												                </thead>
+												                <tbody>
+																	<tr ng-repeat="i in x.chemresistance" ng-cloak>
+																	 	<td>
+																	 		{{ i.category }}
+																	 	</td>
+																	 	<td>
+																			<span class=" BnumChemRating BnumChemRating{{ i.rating }}">{{ i.rating }}</span>
+																		</td>
+																	</tr>
+												                </tbody>
+												            </table>							
+														</div>
+
+														<!--Adhesion Specs Section -->
+														<div class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">Adhesion</p>
+															<table>
+												                <thead>
+												                    <tr>
+												                        <th>Surface</th>
+												                        <th>Rating</th>
+												                    </tr>
+												                </thead>
+												                <tbody>
+																	<tr ng-repeat="i in x.adhesion" ng-cloak>
+																	 	<td>
+																	 		{{ i.category }}
+																	 	</td>
+																	 	<td>
+																			<span class=" BnumChemRating BnumChemRating{{ i.rating }}">{{ i.rating }}</span>
+																		</td>
+																	</tr>
+																	
+												                </tbody>
+												            </table>									
+														</div>
+
+														<!-- More Info Section -->
+														<div class="BnumDetailsSubSection">
+															<p class="BnumDetailSubsectionHeader">More Information</p>
+															<p>Consult our <strong>Material Technical Data Sheets</strong> for detailed information including:</p>
+															<ul>
+																<li>Detailed testing results for Adhesion and Chemical Resistance
+																<li>Regulatory and Agency Approvals
+															</ul>
+															<!-- Replace "B-" on B# as it has encoded characters that break the link to the TDS -->
+															<a href="https://tds.bradyid.com/TDSdocs/B-{{ x.num.slice(3) }}.pdf" target="_blank">
+															<svg class="TDSSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/><path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M480 224l-96-96h96z"/><path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/><g fill="#fff"><path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/></g><path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/></svg>
+															<strong>{{ x.num }} Technical Data Sheet<strong></a>
+														</div>	
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</main>
+
 					</div>
-				</div>
-
-			</div>
-
-
-			<!-- No Results Screen -->
-
-			<div class="main" ng-cloak ng-show="Bnum.length < 1">
-				There are no results.
-			</div>
-
-
-			<!-- B# Results Table -->
-
-			<div class="main" ng-cloak ng-show="Bnum.length >= 1">
-				<h3 ng-cloak class="msappheaders2">{{ Bnum.length }} Brady material(s) match your criteria</h3>
-
-	            <div ng-repeat="x in Bnum" ng-cloak class="BnumRow">
-					
-				<!--Each Bnum Row Starts Here -->
-					
-					<!--Bnum Header Section -->
-	          		<div ng-click="Accordion($event)" class="BnumHeaderContainer">
-						<p class="Bnum_Number">{{ x.num }}: </p>
-						<p class="Bnum_Description">{{ x.description }}</p>
-					</div>
-					
-					<!--Bnum Details Section -->
-					<!-- <div class="BnumDetailsContainer" ng-show="showDetails"> -->
-					<div class="BnumDetailsContainer">
-						
-
-
-
-
-						<!--Bnum Profile Section -->	
-						<div class="BnumDetailsMainSection">
-
-							<!--Material Profle Section -->
-					
-							<div class="BnumDetailsSubSection">	
-								
-								<p class="BnumDetailSubsectionHeader">Material Profile:</p>
-								<p class="BnumDetailMaterialDescription">{{ x.longdescription }}</p>								
-								<div>
-									<img class="BnumTypeimage" src="img/{{ x.type }}.png">
-									<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.type }}</p>
-
-									<!--Bnum Rec Apps Section -->
-
-									<p class="BnumAttrHeading"><strong>Applications</strong></p>
-									<ul ng-repeat="i in x.applications" ng-cloak>
-										<li class="BnumDetailListItem">{{ i }}
-									</ul>
-								</div>
-
-							</div>
-
-							<!-- Label Construction Section -->
-							<div ng-show="x.type == 'Label'" class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Label Construction</p>
-								
-								<div class="BnumConstruction">
-									<svg class="BnumMaterialImage" viewBox="107.675 62.275 284.65 330.336" width="284.65" height="330.336" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" fill="#ffffe6" d="M248.257 247.966l-140.582 71.152 141.163 73.493 143.487-73.961-142.326-71.152-1.161.936z"/><path stroke="#000" fill="#eee" d="M248.257 155.354l-140.581 71.152L248.839 300l143.486-73.962-142.326-71.152-1.16.936z"/><path stroke="#000" fill="#fff" d="M248.258 62.743l-140.582 71.152 141.162 73.493 143.486-73.961L250 62.275l-1.162.936z"/>
-									</svg>
-									<p class="BnumConstructionHeading"><strong>Finish: </strong>{{ x.finish }}</p>
-									<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.material }}</p>
-									<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
-								</div>
-								<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thickness }}</p>
-
-								<!-- Color Swatches Section -->
-								<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapecolorable=='yes'">*</span></strong></p>
-								<div class="swatch_container">
-									<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
-										<span class="MSappTooltiptext">{{ i }}</span>
-										
-									</div>
-								</div>
-								<p class="BnumDisclaimer" ng-show="x.tapecolorable=='yes'">*This material can be custom colored.</p>
-
-							</div>	
-
-							<!-- Tag Construction Section -->
-							<div ng-show="x.type == 'Tag'" class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Tag Construction</p>
-							</div>
-
-							<!-- Sleeve Construction Section -->
-							<div ng-show="x.type == 'Sleeve'" class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Sleeve Construction</p>
-							</div>
-
-							<!-- Wiremarker Construction Section -->
-							<div ng-show="x.type == 'Wiremarker'" class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Wiremarker Construction</p>
-							</div>
-
-							<!-- Selflam Construction Section -->
-							<div ng-show="x.type == 'Selflam'" class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Selflam Construction</p>
-							</div>
-
-							<!-- Sign Construction Section -->
-							<div ng-show="x.type == 'Sign'" class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Sign Construction</p>
-							</div>
-
-
-
-							<div class="BnumDetailsSubSection">	
-
-								<!--Bnum Rec Compliance Section -->
-
-								<div>
-									<p class="BnumDetailSubsectionHeader">Compliance</p>
-									<img ng-repeat="i in x.compliance" ng-cloak class="CompIcon" src="img/{{ i }}_icon.png">
-									<br>
-									<br>
-								</div>
-
-								<!-- Alternate Spec Props -->
-
-								<p class="BnumDetailSubsectionHeader">Special Properties</p>
-								<ul class="SpecPropList" ng-repeat="i in x.specialproperties" ng-cloak>
-									<li class="SpecPropListItem">
-									<img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
-								</ul>
-							</div>
-
-
-							<!--Chem Resistance Section -->
-							<div class="BnumDetailsSubSection">	
-								<p class="BnumDetailSubsectionHeader">Chemical Resistance</p>
-								<table>
-					                <thead>
-					                    <tr>
-					                        <th>Category</th>
-					                        <th>Rating</th>
-					                    </tr>
-					                </thead>
-					                <tbody>
-										<tr ng-repeat="i in x.chemresistance" ng-cloak>
-										 	<td>
-										 		{{ i.category }}
-										 	</td>
-										 	<td>
-												<span class=" BnumChemRating BnumChemRating{{ i.rating }}">{{ i.rating }}</span>
-											</td>
-										</tr>
-					                </tbody>
-					            </table>							
-							</div>
-
-							<!--Adhesion Specs Section -->
-							<div class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">Adhesion</p>
-								<table>
-					                <thead>
-					                    <tr>
-					                        <th>Surface</th>
-					                        <th>Rating</th>
-					                    </tr>
-					                </thead>
-					                <tbody>
-										<tr ng-repeat="i in x.adhesion" ng-cloak>
-										 	<td>
-										 		{{ i.category }}
-										 	</td>
-										 	<td>
-												<span class=" BnumChemRating BnumChemRating{{ i.rating }}">{{ i.rating }}</span>
-											</td>
-										</tr>
-										
-					                </tbody>
-					            </table>									
-							</div>
-
-							<!-- More Info Section -->
-							<div class="BnumDetailsSubSection">
-								<p class="BnumDetailSubsectionHeader">More Information</p>
-								<p>Consult our <strong>Material Technical Data Sheets</strong> for detailed information including:</p>
-								<ul>
-									<li>Detailed testing results for Adhesion and Chemical Resistance
-									<li>Regulatory and Agency Approvals
-								</ul>
-								<!-- Replace "B-" on B# as it has encoded characters that break the link to the TDS -->
-								<a href="https://tds.bradyid.com/TDSdocs/B-{{ x.num.slice(3) }}.pdf" target="_blank">
-								<svg class="TDSSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/><path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M480 224l-96-96h96z"/><path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/><g fill="#fff"><path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/></g><path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/></svg>
-								<strong>{{ x.num }} Technical Data Sheet<strong></a>
-							</div>	
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
+				</section>
+			</section>
+		</section>
 
 		<!-- Load js files -->
         <script src="https://www.bradyid.com/JS/smartsitescripts.min.js?v=1109194456"></script>  
 		<script src="js/msapp.js"></script>
 
-    </body>
+	</body>
 
 </html>
 
