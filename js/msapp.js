@@ -217,9 +217,11 @@ $scope.Accordion = function(header) {
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
       panel.style.opacity = null;
+      panel.style.overflow = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       panel.style.opacity = 1;
+      panel.style.overflow = "visible";
     }; 
   };
 
