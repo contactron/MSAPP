@@ -1,42 +1,41 @@
 // Controller
 var app = angular.module('MaterialApp', []);
 
-app.controller('MaterialCtrl', function($scope, $filter) {
+app.controller('MaterialCtrl', function($scope, $filter, $http) {
 
-  // load Bnum data from JSON file, set initial variables, handled json loading errors
   $scope.init= function () {
-    request = new XMLHttpRequest();
-    request.open('GET', '/data/MSApp.json', true);
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400){
-        console.log("Success! All is good in server land.");
-        // Success!
-        var loadedjson = JSON.parse(request.responseText);
-        // Bnum holds the filtered list of B#s
-        $scope.Bnum = loadedjson.Bnums;       
-        // AllBnums variable holds complete list of all B#s in the model
-        $scope.AllBnums = loadedjson.Bnums;
-        // AllFilters holds all possible filters and values
-        $scope.AllFilters = loadedjson.Filters;
-        // Filters is used to manage the set filters
-        $scope.Filters = [];
-        // setFilters is used for the stage
-        $scope.setFilters = [];
-        $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
-        // Sort the B# list alphabetically by B# name
-        $scope.sortBnums();
+    // load Bnum data from JSON file, set initial variables, handled json loading errors
+    var request = {
+                method: 'get',
+                url: '/data/MSApp.json',
+                dataType: 'json',
+                contentType: "application/json"
+        };
 
-      } else {
-        // Server found but there was an error
-        console.log("Error! The server was not happy with us.");
-      }
+        $http(request)
+            .success(function (jsonData) {
+                console.log("Success! All is good in server land.");
+                // Success!
+                var loadedjson = jsonData;
+                // Bnum holds the filtered list of B#s
+                $scope.Bnum = loadedjson.Bnums;       
+                // AllBnums variable holds complete list of all B#s in the model
+                $scope.AllBnums = loadedjson.Bnums;
+                // AllFilters holds all possible filters and values
+                $scope.AllFilters = loadedjson.Filters;
+                // Filters is used to manage the set filters
+                $scope.Filters = [];
+                // setFilters is used for the stage
+                $scope.setFilters = [];
+                $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
+                // Sort the B# list alphabetically by B# name
+                $scope.sortBnums();
+            })
+            .error(function (errorresponse) {
+              // Server found but there was an error
+              console.log("Error! The server was not happy with us: " + errorresponse);
+            });
     };
-    request.onerror = function() {
-      // Did not reach the server. 
-      console.log("Error! The server was not available.");
-    };
-    request.send();
-  };
 
 
   $scope.capturefilters = function(Bnumlist) {
@@ -240,7 +239,7 @@ $scope.Accordion = function(header) {
   };
 
 
-  // Deep copy of complex objects. Needed to support several function.
+  // Deep copy of complex objects. Needed to support several functions.
   $scope.deepcopy = function(o) {
     var output, v, key;
     output = Array.isArray(o) ? [] : {};
