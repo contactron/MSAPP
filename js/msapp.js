@@ -203,7 +203,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
   };
 
 
-$scope.Accordion = function(header) {
+  $scope.Accordion = function(header) {
     var clicked = header.target;
     var panel = "";
     if (clicked.tagName == 'P') {
@@ -224,6 +224,19 @@ $scope.Accordion = function(header) {
     }; 
   };
 
+  // collapse all filters
+  $scope.CollapseAll = function() {
+    // get all filter divs
+    var panel = document.getElementsByClassName("MSA__Filter__Accordion");
+    // loop through and collapse them.
+    for(var i=0; i < panel.length; i++) {
+      if (panel[i].style.maxHeight){
+        panel[i].style.maxHeight = null;
+        panel[i].style.opacity = null;
+        panel[i].style.overflow = null;
+      };
+    };
+  };
 
   // Sort the list of Bnums
   $scope.sortBnums = function() {
