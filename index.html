@@ -60,10 +60,12 @@
 
 							                <!-- Material Type Checkbox Filter -->
 											<div class="BR-Filter__Item">
-								                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
-								                    <p class="BR-Filter__Item__Header__Name">Material Type
-								                    	<!-- <img class="MSapp__InfoButton" src="img/help_icon.svg" ng-click=""> -->                   
-													</p>
+								                <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
+												<header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[0].filteropen==true, 'BR-Filter--Closed': AllFilters[0].filteropen==false}" ng-click="Accordion($event,0)">
+
+													<p class="BR-Filter__Item__Header__Name">Material Type</p>
+
+
 								                </header>
 								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
 								 					<span ng-repeat="fv in AllFilters[0].values" ng-cloak ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
@@ -77,7 +79,7 @@
 
 								            <!-- Application Checkbox Filter -->
 											<div class="BR-Filter__Item">
-								                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[1].filteropen==true, 'BR-Filter--Closed': AllFilters[1].filteropen==false}" ng-click="Accordion($event,1)">
 								                    <p class="BR-Filter__Item__Header__Name">Application
 								                    </p>
 								                </header>
@@ -95,7 +97,7 @@
 
 							                <!-- Base Material Checkbox Filter -->
 											<div class="BR-Filter__Item">
-								                <header class="BR-Filter__Item__Header BR-Filter--Open" ng-click="Accordion($event)">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[2].filteropen==true, 'BR-Filter--Closed': AllFilters[2].filteropen==false}" ng-click="Accordion($event,2)">
 								                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 								                </header>
 								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
@@ -109,8 +111,8 @@
 								            </div>
 
 								            <!-- Finish Checkbox Filter -->
-											<div class="BR-Filter__Item" ng-click="Accordion($event)">
-								                <header class="BR-Filter__Item__Header BR-Filter--Open">
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[3].filteropen==true, 'BR-Filter--Closed': AllFilters[3].filteropen==false}" ng-click="Accordion($event,3)">
 								                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 								                </header>
 								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
@@ -124,8 +126,8 @@
 								            </div>
 
 								            <!-- Color Swatch Checkbox Filter -->
-											<div class="BR-Filter__Item" ng-click="Accordion($event)">
-								                <header class="BR-Filter__Item__Header BR-Filter--Open">
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[4].filteropen==true, 'BR-Filter--Closed': AllFilters[4].filteropen==false}" ng-click="Accordion($event,4)">
 								                    <p class="BR-Filter__Item__Header__Name">Color</p>
 								                </header>
 

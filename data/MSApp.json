@@ -292,31 +292,36 @@
       "id": "type",
       "displayname": "Material Type",
       "presentation": "Checkbox",
-      "values": []
+      "values": [],
+      "filteropen": false
     },
     {
       "id": "applications",
       "displayname": "Applications",
       "presentation": "Checkbox",
-      "values": []
+      "values": [],
+      "filteropen": false
     },
     {
       "id": "material",
       "displayname": "Material",
       "presentation": "Checkbox",
-      "values": []
+      "values": [],
+      "filteropen": false
     },
     {
       "id": "finish",
       "displayname": "Finish",
       "presentation": "Checkbox",
-      "values": []
+      "values": [],
+      "filteropen": false
     },
     {
       "id": "colors",
       "displayname": "Colors",
       "presentation": "Swatch",
-      "values": []
+      "values": [],
+      "filteropen": false
     }
   ]
 }

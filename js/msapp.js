@@ -202,15 +202,20 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     }; 
   };
 
-
-  $scope.Accordion = function(header) {
+  // accordian function used to collapse/expand both filters and Bnums
+  $scope.Accordion = function(header,filternumber) {
+    // check if no filternumber has been sent (Bnum was clicked)
+    if (!(typeof filternumber === "undefined")) {
+      // a value was sent so it was a filter, toggle it open/closed
+      $scope.AllFilters[filternumber].filteropen = !$scope.AllFilters[filternumber].filteropen;
+    };
     var clicked = header.target;
     var panel = "";
     if (clicked.tagName == 'P') {
-      // set the target div if the <p> text was clicked 
+      // set the target div if the <p> text was clicked (filter)
       var panel = clicked.parentElement.nextElementSibling;
     } else {
-      // set the target div if the <div> was clicked
+      // set the target div if the <div> was clicked (Bnum)
       panel = clicked.nextElementSibling;
     };
     if (panel.style.maxHeight){
