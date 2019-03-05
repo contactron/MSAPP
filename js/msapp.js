@@ -37,13 +37,11 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
             });
     };
 
-
   $scope.capturefilters = function(Bnumlist) {
     // Build an array of all filtering values available in the sent Bnum list
     // Loop through all the Bnums looking for each filter. 
     // Collect the possible values for each filter and adds them to the Filters array. 
     // Differentiate between Bnum properties that have one or more values (arrays)
-
     // Make a deepcopy of the full array
     Filterlist = $scope.deepcopy($scope.AllFilters);
     // var TempList = Filterlist;  
@@ -235,6 +233,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     var panel = document.getElementsByClassName("MSA__Filter__Accordion");
     // loop through and collapse them.
     for(var i=0; i < panel.length; i++) {
+      $scope.AllFilters[i].filteropen = false;
       if (panel[i].style.maxHeight){
         panel[i].style.maxHeight = null;
         panel[i].style.opacity = null;
