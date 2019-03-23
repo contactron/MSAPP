@@ -62,19 +62,30 @@
 											<div class="BR-Filter__Item">
 								                <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
 												<header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[0].filteropen==true, 'BR-Filter--Closed': AllFilters[0].filteropen==false}" ng-click="Accordion($event,0)">
-
 													<p class="BR-Filter__Item__Header__Name">Material Type</p>
-
-
 								                </header>
-								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								                <!-- <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
 								 					<span ng-repeat="fv in AllFilters[0].values" ng-cloak ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
 								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 								                            {{ fv.id }} ({{ fv.count }})
 								                        </label>
 								                    </span>
-								                </div>
+								                </div> -->
+
+									            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed MSA__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[0].values" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
+												        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+												        <label ng-for="{{ fv.id }}">
+												          <span class="BR-FilterIconText__Icon">
+												              <img ng-src="" src="/img/self-lam-temp.svg">
+												          </span>
+												          <span class="BR-FilterIconText__Text">
+												               {{ fv.id }} 
+												          </span>
+												        </label>
+												    </span>
+												</div> 
 									      	</div>
 
 								            <!-- Application Checkbox Filter -->
