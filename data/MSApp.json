@@ -1,309 +1,2343 @@
 {
-  "Bnums": [{
-      "num": "B­-402",
-      "description": "Fake Sign Material Example",
-      "type": "Sign",
-      "material": "Polyester",
-      "finish": "Matte",
-      "adhesive": "Acrylic",
-      "thickness": ".0001 in",
-      "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
-      "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
-      "compliance": ["UL"],
-      "applications": ["Electrical", "Lean", "Datacomm"],
-      "colors": ["white"],
-      "tapecolorable": "yes",
-      "chemresistance": [{
-          "category": "Fuels",
-          "rating": "Good"
-        },
-        {
-          "category": "Oils",
-          "rating": "Poor"
-        },
-        {
-          "category": "Solvents",
-          "rating": "Good"
-        },
-        {
-          "category": "Cleaners",
-          "rating": "Bad"
-        }
-      ],
-      "adhesion": [{
-          "category": "Steel",
-          "rating": "Good"
-        },
-        {
-          "category": "Powder Coated Metal",
-          "rating": "Poor"
-        },
-        {
-          "category": "Polypropylene",
-          "rating": "Good"
-        }, {
-          "category": "Textured ABS",
-          "rating": "Bad"
-        }
-      ]
-    },
+  "Bnums": [
     {
-      "num": "B­-744",
-      "description": "Fake Selflam Material Example",
-      "type": "Selflam",
-      "material": "Polyester",
-      "finish": "Matte",
-      "adhesive": "Acrylic",
-      "thickness": ".0001 in",
-      "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
-      "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
-      "compliance": ["UL"],
-      "applications": ["Electrical", "Lean", "Datacomm"],
-      "colors": ["white"],
-      "tapecolorable": "yes",
-      "chemresistance": [{
-          "category": "Fuels",
-          "rating": "Good"
-        },
-        {
-          "category": "Oils",
-          "rating": "Poor"
-        },
-        {
-          "category": "Solvents",
-          "rating": "Good"
-        },
-        {
-          "category": "Cleaners",
-          "rating": "Bad"
-        }
-      ],
-      "adhesion": [{
-          "category": "Steel",
-          "rating": "Good"
-        },
-        {
-          "category": "Powder Coated Metal",
-          "rating": "Poor"
-        },
-        {
-          "category": "Polypropylene",
-          "rating": "Good"
-        }, {
-          "category": "Textured ABS",
-          "rating": "Bad"
-        }
-      ]
-    },
-    {
-      "num": "B­-902",
-      "description": "Fake Wiremarker Material Example",
-      "type": "Wiremarker",
-      "material": "Polyester",
-      "finish": "Matte",
-      "adhesive": "Acrylic",
-      "thickness": ".0001 in",
-      "longdescription": "B-402 is a thermal transfer printable metallized polyester label stock designed for applications, like rating and serial plates, that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
-      "specialproperties": ["Cold Resistant", "Heat Resistant", "Flame Retardent", "Removable"],
-      "compliance": ["UL"],
-      "applications": ["Electrical", "Lean", "Datacomm"],
-      "colors": ["white"],
-      "tapecolorable": "yes",
-      "chemresistance": [{
-          "category": "Fuels",
-          "rating": "Good"
-        },
-        {
-          "category": "Oils",
-          "rating": "Poor"
-        },
-        {
-          "category": "Solvents",
-          "rating": "Good"
-        },
-        {
-          "category": "Cleaners",
-          "rating": "Bad"
-        }
-      ],
-      "adhesion": [{
-          "category": "Steel",
-          "rating": "Good"
-        },
-        {
-          "category": "Powder Coated Metal",
-          "rating": "Poor"
-        },
-        {
-          "category": "Polypropylene",
-          "rating": "Good"
-        }, {
-          "category": "Textured ABS",
-          "rating": "Bad"
-        }
-      ]
-    },
-    {
-      "num": "B­-459",
-      "description": "Fake Tag Material Example",
-      "type": "Tag",
-      "material": "Vinyl",
-      "finish": "Gloss",
-      "adhesive": "Acrylic",
-      "thickness": ".0006 in",
-      "longdescription": "B-459 is another very great material from Brady Corporation. It has a number of unique properties, blah, blah, blah.",
-      "specialproperties": ["Flame Retardent", "Heat Resistant", "Removable", "Cold Resistant"],
-      "compliance": ["UL", "ROHS"],
-      "applications": ["Electrical", "Lab", "Safety"],
-      "colors": ["green", "red", "brown"],
-      "tapecolorable": "yes",
-      "chemresistance": [{
-          "category": "Fuels",
-          "rating": "Good"
-        },
-        {
-          "category": "Oils",
-          "rating": "Poor"
-        },
-        {
-          "category": "Solvents",
-          "rating": "Good"
-        },
-        {
-          "category": "Cleaners",
-          "rating": "Bad"
-        }
-      ],
-      "adhesion": [{
-          "category": "Steel",
-          "rating": "Good"
-        },
-        {
-          "category": "Powder Coated Metal",
-          "rating": "Poor"
-        },
-        {
-          "category": "Polypropylene",
-          "rating": "Good"
-        }, {
-          "category": "Textured ABS",
-          "rating": "Bad"
-        }
-      ]
-    },
-    {
-      "num": "B­-595",
-      "description": "Fake Sleeve Material Example",
-      "type": "Sleeve",
-      "material": "Polyester",
-      "finish": "Gloss",
-      "adhesive": "Acrylic",
-      "thickness": ".0025 in",
-      "longdescription": "B-202. Wow, this ia great material. I really can't express adequately how great this material is, blah, blah, blah.",
-      "specialproperties": ["Cold Resistant", "Removable", "Flame Retardent"],
-      "compliance": ["UL", "CSA", "ROHS"],
-      "applications": ["Wire & Cable", "Lab", "Hazardous Materials"],
-      "colors": ["blue", "yellow", "brown", "white"],
-      "tapecolorable": "yes",
-      "chemresistance": [{
-          "category": "Fuels",
-          "rating": "Good"
-        },
-        {
-          "category": "Oils",
-          "rating": "Poor"
-        },
-        {
-          "category": "Solvents",
-          "rating": "Good"
-        }, {
-          "category": "Cleaners",
-          "rating": "Bad"
-        }
-      ],
-      "adhesion": [{
-          "category": "Steel",
-          "rating": "Good"
-        },
-        {
-          "category": "Powder Coated Metal",
-          "rating": "Poor"
-        },
-        {
-          "category": "Polypropylene",
-          "rating": "Good"
-        }, {
-          "category": "Textured ABS",
-          "rating": "Bad"
-        }
-      ]
-    },
-
-    {
-      "num": "B­-259",
-      "description": "Fake Label Material Example",
-      "type": "Label",
-      "material": "Paper",
-      "finish": "Gloss",
-      "adhesive": "Glue",
-      "thickness": ".0034 in",
-      "longdescription": "B-259. Ok, tbh, this is not our best material. In fact, it pains me slightly to even mentioned it. Let's maybe move on to the next material.",
-      "specialproperties": ["Flame Retardent", "Removable"],
-      "compliance": ["UL", "CSA", "ROHS"],
-      "applications": ["Wire & Cable", "Lean", "Safety", "LOTO"],
-      "colors": ["blue", "yellow", "orange", "white", "clear", "green", "purple"],
-      "tapecolorable": "no",
-      "chemresistance": [{
-          "category": "Fuels",
-          "rating": "Good"
-        },
-        {
-          "category": "Oils",
-          "rating": "Poor"
-        },
-        {
-          "category": "Solvents",
-          "rating": "Good"
-        }, {
-          "category": "Cleaners",
-          "rating": "Bad"
-        }
-      ],
-      "adhesion": [{
-          "category": "Steel",
-          "rating": "Good"
-        },
-        {
-          "category": "Powder Coated Metal",
-          "rating": "Poor"
-        },
-        {
-          "category": "Polypropylene",
-          "rating": "Good"
-        }, {
-          "category": "Textured ABS",
-          "rating": "Bad"
-        }
-      ]
-    }
-  ],
+    "num": "B-12",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Rigid"
+    ],
+    "baseMaterial": "Cloth",
+    "maxServiceTemperatureC": "105 °C",
+    "maxServiceTemperatureF": "221 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.008 in",
+    "thicknessMm": "0.203 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "ACETATE CLOTH TAPE",
+    "description": "B-12 is a flexible label material for wrapping around wires.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Better",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Best",
+      "Best",
+      "Good",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-103",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Optically Clear",
+      "Overlaminate"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.064 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "ENGRAVED TAGS AND SIGNS",
+    "description": [
+      "B-103 is a clear polyester overlaminating tape which offers additional protection against dirt",
+      "chemicals and abrasion on already printed materials."
+    ],
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": "",
+    "materialType": "Self-Lam",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Best",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Best",
+      "Best",
+      "Best",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-109",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [],
+    "baseMaterial": "Polyethylene",
+    "maxServiceTemperatureC": "49 °C",
+    "maxServiceTemperatureF": "120 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0085 in",
+    "thicknessMm": "0.216 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "MULTIPURPOSE TAG",
+    "description": [
+      "B-109 is a general-purpose tagging material with excellent tear- and chemical- resistance. Exhibits good weatherability",
+      "humidity resistance and legibility after solvent exposure."
+    ],
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Tag",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Good",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Better",
+      "Good",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-121",
+    "adhesive": "Removable Rubber",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.005 in",
+    "thicknessMm": "0.127 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "REMOVABLE PAPER LABEL STOCK",
+    "description": "B-121 is a removable dot-matrix printable paper label for warehouses and maintenance.",
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Best",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Good",
+      "Best",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-122",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Tamper-resistant"
+    ],
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "PAPER LABEL STOCK",
+    "description": "B-122 is a permanent tamper proof paper label. It is designed for applications requiring a paper label that cannot be removed intact.",
+    "specialProperties": [
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Best",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Good",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-145",
+    "adhesive": "Acrylic-rubber Hybrid",
+    "finish": "",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Plastic",
+    "maxServiceTemperatureC": "85 °C",
+    "maxServiceTemperatureF": "185 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.016 in",
+    "thicknessMm": "0.4 mm",
+    "colors": [
+      "Gray"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "RIGID POLYETHYLENE TAG MATERIAL",
+    "description": "B-145 is a rigid polypropylene material that can be used for a variety of tag applications. B­145 is extremely tear resistant.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable",
+      "Inspection Repair"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Tag",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Better",
+      "Best",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Good",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-184",
+    "adhesive": "Acrylic-rubber Hybrid",
+    "finish": "",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Plastic",
+    "maxServiceTemperatureC": "85 °C",
+    "maxServiceTemperatureF": "185 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.016 in",
+    "thicknessMm": "0.4 mm",
+    "colors": [
+      "Metallized"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "ALUMINUM FOIL TAPE",
+    "description": "B-184 is a dot matrix printable or write-on aluminum foil label. It conforms well around wires making it a good option for wire marking applications.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Good",
+      "Good",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Better",
+      "Best",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-292",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Inkjet Print-receptive"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0165 in",
+    "thicknessMm": "0.4191 mm",
+    "colors": [
+      "Black",
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "DOT MATRIX PRINTABLE TRANSLUCENT VINYL TAPE",
+    "description": "B-292 is a self laminating format with white printable zone and a translucent overlaminate.  It is ideal for wire and cable ID applications.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Self-Lam",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Good",
+      "Better",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Best",
+      "Better",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-319",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-65 °C",
+    "minServiceTemperatureF": "-85 °F",
+    "thicknessIn": "0.0059 in",
+    "thicknessMm": "0.15 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "BRADYSLEEVE MARKER",
+    "description": "B-319 is a non-shrinkable wiremarker sleeve used to identify electrical wires. B-319 demonstrates outstanding legend permanence and smudge resistance.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Sleeve",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Good",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Better",
+      "Better",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-321",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Heat-shrinkable"
+    ],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0065 in",
+    "thicknessMm": "0.16 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "BRADYSLEEVE MARKER",
+    "description": [
+      "B-321 is a dot matrix printable",
+      "wire and cable heat-shrinkable sleeve.  It has excellent resistance to oil and solvents."
+    ],
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Sleeve",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Good",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Best",
+      "Good",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-330",
+    "adhesive": "Heat-activated Polyester",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Heat-shrinkable"
+    ],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.008 in",
+    "thicknessMm": "0.203 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [],
+    "name": "BRADYWRAP MARKER",
+    "description": [
+      "B-330 is a heat-shrinkable polyolefin film with a heat-activating adhesive. It can also be used without heat activation. To be used for identification of wire bundles",
+      "large conduits and installed cables."
+    ],
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Good",
+      "Best",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Best",
+      "Good",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-342",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Flame-retardant",
+      "Heat-shrinkable"
+    ],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "",
+    "thicknessMm": "",
+    "colors": [
+      "White",
+      "Yellow",
+      "Black",
+      "Red",
+      "Blue",
+      "Green",
+      "Orange",
+      "Gray",
+      "Pink",
+      "Violet",
+      "Brown"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "PERMASLEEVE MARKER",
+    "description": "B-342 is a heat-shrinkable sleeve with a 3:1 shrink ratio for wire and cable identification. Meets the material and physical property requirements of SAE AMS-DTL-23053/5C (class 1) for Insulation Sleeving and SAE AS-81531 for Marking of Electrical Insulating Materials and MIL-STD-202.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Sleeve",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Best",
+      "Good",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Better",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-344",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Flame-retardant",
+      "Heat-shrinkable"
+    ],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "",
+    "thicknessMm": "",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [],
+    "name": "FLUID RESISTANT PERMASLEEVE® MARKER",
+    "description": "B-344 PermaSleeve material is a polyolefin heat shrink tubing suitable for use in applications that require greater resistance to harsh chemicals such as fuel and high power cleaning solvents.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Sleeve",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Best",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Better",
+      "Good",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-345",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Flame-retardant",
+      "Heat-shrinkable"
+    ],
+    "baseMaterial": "Polyvinylidene Fluoride",
+    "maxServiceTemperatureC": "225 °C",
+    "maxServiceTemperatureF": "437 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "",
+    "thicknessMm": "",
+    "colors": [
+      "Black",
+      "White",
+      "Yellow",
+      "Pink",
+      "Blue"
+    ],
+    "compliance": [],
+    "name": "HIGH TEMPERATURE PERMASLEEVE(TM) MARKER",
+    "description": "B-345 is an Irradiated polyvinylidine flouride heat-shrink tubing. It is recommended for high temperature and low outgassing applications.",
+    "specialProperties": [
+      "Heat Shrink Sleeves"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Sleeve",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Good",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Best",
+      "Best",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-350",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Water-indicating"
+    ],
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0102 in",
+    "thicknessMm": "0.259 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "AquALERT(TM) THERMAL TRANSFER PRINTABLE WATER INDICATING\nPOLYESTER/PAPER LAMINATE LABEL STOCK",
+    "description": [
+      "B-350 material provides clear evidence of exposure to water for controlling invalid warranty claims",
+      "failure analysis or troubleshooting (service and repair)."
+    ],
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Water Indicating Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board",
+      "General Identification",
+      "Inspection Repair"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Better",
+      "Best",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Best",
+      "Better",
+      "Better",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-351",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Tamper-resistant"
+    ],
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0028 in",
+    "thicknessMm": "0.071 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE TAMPER-RESISTANT WHITE VINYL LABEL STOCK",
+    "description": "B-351 is a tamper-resistant film with a permanent acrylic adhesive. It has good resistance to solvents and humidity and is designed to fracture easily to prevent one-piece removal.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "Inspection Repair",
+      "Laboratory"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Better",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-362",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.5994 in",
+    "thicknessMm": "0.024 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE TAMPER-RESISTANT METALLIZED VINYL LABEL STOCK",
+    "description": "B-363 is a tamper-resistant metallized film. It has good resistance to solvents and humidity and is designed to fracture easily to prevent one-piece removal.",
+    "specialProperties": [
+      "Metallic Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Best",
+      "Good",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Better",
+      "Best",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-390",
+    "adhesive": "Non-Adhesive",
+    "finish": "Matte",
+    "outdoorAppropriate": "Indoor Use",
+    "materialProperties": [
+      "Rigid"
+    ],
+    "baseMaterial": "Polyolefin",
+    "maxServiceTemperatureC": "200 °C",
+    "maxServiceTemperatureF": "392 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-55 °C",
+    "minServiceTemperatureF": "-67 °F",
+    "thicknessIn": "0.02 in",
+    "thicknessMm": "0.508 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE WIRE MARKING INSERT & BRADY WIRE MARKING\nCARRIERS",
+    "description": [
+      "B-390 wire marking carrier inserts are designed to be printed and affixed to a wire using extruded",
+      "clear PVC Wire Marking Carriers."
+    ],
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Sleeve",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Good",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Good",
+      "Good",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-402",
+    "adhesive": "",
+    "finish": "",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Rigid"
+    ],
+    "baseMaterial": "Polystyrene",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0591 in",
+    "thicknessMm": "1.4 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE WHITE PAPER LABEL STOCK",
+    "description": [
+      "B-402 is a thermal transfer-printable paper with permanent adhesive. It uses an aggressive adhesive for bonding to corrugated",
+      "films",
+      "plastic and steel surfaces."
+    ],
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Better",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Best",
+      "Best",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-403",
+    "adhesive": "",
+    "finish": "",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Rigid"
+    ],
+    "baseMaterial": "Polystyrene",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0591 in",
+    "thicknessMm": "1.4 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE WATER DISSOLVABLE PAPER LABEL STOCK",
+    "description": "B-403 is a water dissolvable paper label for temporary labeling applications. The label material dissolves completely in water leaving no adhesive residue ",
+    "specialProperties": [
+      "Removable Labels",
+      "Water Dissolvable Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory",
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Best",
+      "Good",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-408",
+    "adhesive": "Removable Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "70 °C",
+    "maxServiceTemperatureF": "158 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "",
+    "minServiceTemperatureF": "",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "MATTE WHITE PAPER LABEL STOCK",
+    "description": "B-408 is a white paper label for barcode and general labeling applications. It uses a special adhesive that allows the label to be easily removed or repositioned.",
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Good",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Better",
+      "Best",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-412",
+    "adhesive": "",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [],
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.008 in",
+    "thicknessMm": "0.201 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE POLYPROPYLENE TAG STOCK",
+    "description": "B-412 is a highly durable tag material designed for thermal transfer printing in outdoor and harsh environmental applications. It is ideal for wire and cable identification or product inventory identification where legibility and tensile strength are needed.",
+    "specialProperties": [],
+    "printerLabelApplications": [
+      "Wire & Cable",
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Tag",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Best",
+      "Good",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Best",
+      "Better",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-413",
+    "adhesive": "Acrylic",
+    "finish": "Satin",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Metallic Appearance"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0034 in",
+    "thicknessMm": "0.086 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE LIGHT GRAY POLYESTER LABEL STOCK\nWITH ACRYLIC ADHESIVE",
+    "description": "B-413 is non-metallized metallic looking label ideal for PCB and component identification.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board",
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Best",
+      "Better",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-422",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE GLOSSY WHITE POLYESTER LABEL STOCK",
+    "description": "B-422 is a glossy white film with permanent acrylic-based adhesive. It is designed for rough and textured surfaces and applications where increased adhesion is required.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Good",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Best",
+      "Better",
+      "Good"
+    ]
+  },
+  {
+    "num": "B-423",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE GLOSSY WHITE POLYESTER LABEL STOCK",
+    "description": [
+      "B-423 is a thermal transfer-printable label material with a permanent acrylic adhesive. It is ideal for electronic PCB and component",
+      "barcode label and rating plates applications."
+    ],
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Laboratory",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Best",
+      "Best",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Better",
+      "Best",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-424",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Paper",
+    "maxServiceTemperatureC": "50 °C",
+    "maxServiceTemperatureF": "122 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0035 in",
+    "thicknessMm": "0.089 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE WHITE PAPER LABEL STOCK",
+    "description": [
+      "B-424 is a top-coated",
+      "thermal transfer-printable label material with a permanent latex adhesive. It is designed for use in labeling applications requiring a low-cost",
+      "general-purpose labeling material."
+    ],
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Good",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Good",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-425",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0046 in",
+    "thicknessMm": "0.1143 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE POLYPROPYLENE LABEL STOCK",
+    "description": "B-425 is a thermal transfer printable Polypropylene label is ideal for applications requiring excellent solvent resistance and print performance.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Better",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Best",
+      "Good",
+      "Better",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-427",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Flame-retardant",
+      "Self-laminating"
+    ],
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE TRANSLUCENT VINYL TAPE",
+    "description": [
+      "B-427 is self-laminating label material with a permanent acrylic adhesive and a topcoat specifically formulated for thermal transfer printing. It has excellent water",
+      "oil and solvent resistance with clarity and conformability."
+    ],
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Laboratory",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Self-Lam",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Better",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Best",
+      "Better",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-428",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Metallic Appearance"
+    ],
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE METALLIZED POLYESTER LABEL STOCK",
+    "description": [
+      "B-428 is metallized polyester label material with a permanent acrylic adhesive. It is thermal transfer printable. B-428 is designed for rating or serial plates",
+      "product information",
+      "warranty labels and inventory control label applications."
+    ],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Good",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Better",
+      "Good",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-430",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Autoclavable",
+      "Optically Clear"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "B-430 THERMAL TRANSFER PRINTABLE GLOSSY CLEAR POLYESTER LABEL STOCK",
+    "description": [
+      "B-430 is a thermal transfer-printable polyester label material with permanent acrylic-based adhesive. It withstands numerous solvents and can be applied to variable surfaces. It is designed for rating and serial plates using alphanumerics",
+      "barcodes",
+      "graphic symbols and logos that require name plate quality."
+    ],
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Laboratory",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Best",
+      "Good",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Best",
+      "Better",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-432",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "Clear"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE GLOSSY CLEAR POLYESTER LABEL STOCK",
+    "description": "B-432 is glossy clear thermal transfer-printable label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.  ",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Best",
+      "Better",
+      "Best",
+      "Better"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Best",
+      "Better",
+      "Best",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-434",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Metallic Appearance"
+    ],
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE GLOSS METALLIZED POLYESTER LABEL STOCK",
+    "description": "B-434 is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.",
+    "specialProperties": [
+      "Metallic Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Best",
+      "Good",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Good",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-435",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Metallized"
+    ],
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0027 in",
+    "thicknessMm": "0.0673 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE GLOSS METALLIZED POLYESTER LABEL STOCK",
+    "description": "B-435 is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling.",
+    "specialProperties": [
+      "Permanent Adhesive Labels",
+      "Chemical Resistant",
+      "Metallic Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Best",
+      "Better",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Better",
+      "Good",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-437",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Flame-retardant"
+    ],
+    "baseMaterial": "Polyvinylfluoride",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE LABEL STOCK",
+    "description": [
+      "B-437 is a self-extinguishing label material used for wire and cable marking applications",
+      "particularly in aerospace",
+      "defense and mass transit industries."
+    ],
+    "specialProperties": [
+      "Self Laminating Labels & Wraps",
+      "Harsh Environment Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Good",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Good",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-438",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [
+      "Metallic Appearance",
+      "Tamper-evident"
+    ],
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "40 °C",
+    "maxServiceTemperatureF": "104 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0033 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE TAMPER EVIDENT MATTE METALLIZED POLYESTER LABEL STOCK",
+    "description": "B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal. ",
+    "specialProperties": [
+      "Metallic Labels",
+      "Permanent Adhesive Labels",
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Better",
+      "Better",
+      "Best",
+      "Best"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Better",
+      "Better",
+      "Best",
+      "Better"
+    ]
+  },
+  {
+    "num": "B-439",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [],
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "40 °C",
+    "maxServiceTemperatureF": "104 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0042 in",
+    "thicknessMm": "0.107 mm",
+    "colors": [
+      "Silver",
+      "Gold",
+      "Red",
+      "Purple",
+      "Yellow",
+      "Orange",
+      "Green",
+      "Black",
+      "Light Blue",
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE COLORED VINYL LABEL STOCK",
+    "description": "B-439 is a vinyl label stock designed for use with thermal transfer printers in ambient conditions and limited solvent exposure. It is ideal for applications requiring various colors.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Best",
+      "Better",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Good",
+      "Good",
+      "Best",
+      "Best"
+    ]
+  },
+  {
+    "num": "B-449",
+    "adhesive": "Removable Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "",
+    "materialProperties": [],
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "",
+    "minApplicationTemperatureF": "",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "THERMAL TRANSFER PRINTABLE REMOVABLE POLYPROPYLENE LABEL STOCK",
+    "description": [
+      "B-449 is a matte",
+      "white label stock designed for use in temporary labeling applications that require solvent resistance and print performance coupled with clean removability."
+    ],
+    "specialProperties": [
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory"
+    ],
+    "tapeColorable": "",
+    "outdoorDurabilityYears": "",
+    "materialType": "Label",
+    "chemResCats": [
+      "Fuels",
+      "Oils",
+      "Solvents",
+      "Cleaners"
+    ],
+    "chemResRatings": [
+      "Good",
+      "Best",
+      "Best",
+      "Good"
+    ],
+    "adhCats": [
+      "Steel",
+      "PCM",
+      "Polypropylene",
+      "Textured ABS"
+    ],
+    "adhRatings": [
+      "Best",
+      "Best",
+      "Better",
+      "Good"
+    ]
+  }
+],
 
   "Filters": [{
-      "id": "type",
+      "id": "materialType",
       "displayname": "Material Type",
       "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
-      "id": "applications",
+      "id": "printerLabelApplications",
       "displayname": "Applications",
       "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
-      "id": "material",
+      "id": "baseMaterial",
       "displayname": "Material",
       "presentation": "Checkbox",
       "values": [],

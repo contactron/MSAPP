@@ -75,7 +75,7 @@
 								                        </label>
 								                    </span>
 								                </div>
-								            </div>
+									      	</div>
 
 								            <!-- Application Checkbox Filter -->
 											<div class="BR-Filter__Item">
@@ -134,7 +134,7 @@
 												<div class="swatch_container MSA__Filter__Accordion">
 												    <span ng-repeat="fv in AllFilters[4].values" class="swatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
 														<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-															<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='yellow', Bnum_black: fv.id=='black', Bnum_blue: fv.id=='blue', Bnum_red: fv.id=='red', Bnum_brown: fv.id=='brown', Bnum_gray: fv.id=='gray', Bnum_gold: fv.id=='gold', Bnum_green: fv.id=='green', Bnum_purple: fv.id=='purple', Bnum_orange: fv.id=='orange', Bnum_clear: fv.id=='clear', Bnum_white: fv.id=='white'}">
+															<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='Yellow', Bnum_black: fv.id=='Black', Bnum_blue: fv.id=='Blue', Bnum_red: fv.id=='Red', Bnum_brown: fv.id=='Brown', Bnum_gray: fv.id=='Gray', Bnum_gold: fv.id=='Gold', Bnum_green: fv.id=='Green', Bnum_purple: fv.id=='Purple', Bnum_orange: fv.id=='Orange', Bnum_clear: fv.id=='Clear', Bnum_white: fv.id=='White', Bnum_lightBlue: fv.id=='Light Blue', Bnum_metallized: fv.id=='Metallized', Bnum_clear: fv.id=='Clear', Bnum_violet: fv.id=='Violet', Bnum_silver: fv.id=='Silver', Bnum_pink: fv.id=='Pink'}">
 																<span class="MSappTooltiptext">{{ fv.id }}</span>					
 															</label>
 														</input>
@@ -164,7 +164,7 @@
 												<!--Bnum Header Section -->
 								          		<div ng-click="Accordion($event)" class="BnumHeaderContainer">
 													<p class="Bnum_Number">{{ x.num }}: </p>
-													<p class="Bnum_Description">{{ x.description }}</p>
+													<p class="Bnum_Description">{{ x.name }}</p>
 												</div>
 												
 												<!--Bnum Details Section -->
@@ -183,15 +183,15 @@
 														<div class="BnumDetailsSubSection">	
 															
 															<p class="BnumDetailSubsectionHeader">Material Profile:</p>
-															<p class="BnumDetailMaterialDescription">{{ x.longdescription }}</p>								
+															<p class="BnumDetailMaterialDescription">{{ x.description }}</p>								
 															<div>
-																<img class="BnumTypeimage" src="img/{{ x.type }}.png">
-																<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.type }}</p>
+																<img class="BnumTypeimage" src="img/{{ x.materialType }}.png">
+																<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
 
 																<!--Bnum Rec Apps Section -->
 
 																<p class="BnumAttrHeading"><strong>Applications</strong></p>
-																<ul ng-repeat="i in x.applications" ng-cloak>
+																<ul ng-repeat="i in x.printerLabelApplications" ng-cloak>
 																	<li class="BnumDetailListItem">{{ i }}
 																</ul>
 															</div>
@@ -199,52 +199,52 @@
 														</div>
 
 														<!-- Label Construction Section -->
-														<div ng-show="x.type == 'Label'" class="BnumDetailsSubSection">
+														<div ng-show="x.materialType == 'Label'" class="BnumDetailsSubSection">
 															<p class="BnumDetailSubsectionHeader">Label Construction</p>
 															
 															<div class="BnumConstruction">
 																<svg class="BnumMaterialImage" viewBox="107.675 62.275 284.65 330.336" width="284.65" height="330.336" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" fill="#ffffe6" d="M248.257 247.966l-140.582 71.152 141.163 73.493 143.487-73.961-142.326-71.152-1.161.936z"/><path stroke="#000" fill="#eee" d="M248.257 155.354l-140.581 71.152L248.839 300l143.486-73.962-142.326-71.152-1.16.936z"/><path stroke="#000" fill="#fff" d="M248.258 62.743l-140.582 71.152 141.162 73.493 143.486-73.961L250 62.275l-1.162.936z"/>
 																</svg>
 																<p class="BnumConstructionHeading"><strong>Finish: </strong>{{ x.finish }}</p>
-																<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.material }}</p>
+																<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.baseMaterial }}</p>
 																<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
 															</div>
-															<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thickness }}</p>
+															<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
 
 															<!-- Color Swatches Section -->
 															<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapecolorable=='yes'">*</span></strong></p>
 															<div class="swatch_container">
-																<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='yellow', Bnum_black: i=='black', Bnum_blue: i=='blue', Bnum_red: i=='red', Bnum_brown: i=='brown', Bnum_gray: i=='gray', Bnum_gold: i=='gold', Bnum_green: i=='green', Bnum_purple: i=='purple', Bnum_orange: i=='orange', Bnum_clear: i=='clear', Bnum_white: i=='white'}">
+																<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='Yellow', Bnum_black: i=='Black', Bnum_blue: i=='Blue', Bnum_red: i=='Red', Bnum_brown: i=='Brown', Bnum_gray: i=='Gray', Bnum_gold: i=='Gold', Bnum_green: i=='Green', Bnum_purple: i=='Purple', Bnum_orange: i=='Orange', Bnum_clear: i=='Clear', Bnum_white: i=='White', Bnum_lightBlue: i=='Light Blue', Bnum_metallized: i=='Metallized', Bnum_clear: i=='Clear', Bnum_violet: i=='Violet', Bnum_silver: i=='Silver', Bnum_pink: i=='Pink'}">
 																	<span class="MSappTooltiptext">{{ i }}</span>
 																	
 																</div>
 															</div>
-															<p class="BnumDisclaimer" ng-show="x.tapecolorable=='yes'">*This material can be custom colored.</p>
+															<p class="BnumDisclaimer" ng-show="x.tapeColorable=='yes'">*This material can be custom colored.</p>
 
 														</div>	
 
 														<!-- Tag Construction Section -->
-														<div ng-show="x.type == 'Tag'" class="BnumDetailsSubSection">
+														<div ng-show="x.materialType == 'Tag'" class="BnumDetailsSubSection">
 															<p class="BnumDetailSubsectionHeader">Tag Construction</p>
 														</div>
 
 														<!-- Sleeve Construction Section -->
-														<div ng-show="x.type == 'Sleeve'" class="BnumDetailsSubSection">
+														<div ng-show="x.materialType == 'Sleeve'" class="BnumDetailsSubSection">
 															<p class="BnumDetailSubsectionHeader">Sleeve Construction</p>
 														</div>
 
 														<!-- Wiremarker Construction Section -->
-														<div ng-show="x.type == 'Wiremarker'" class="BnumDetailsSubSection">
+														<div ng-show="x.materialType == 'Wiremarker'" class="BnumDetailsSubSection">
 															<p class="BnumDetailSubsectionHeader">Wiremarker Construction</p>
 														</div>
 
 														<!-- Selflam Construction Section -->
-														<div ng-show="x.type == 'Selflam'" class="BnumDetailsSubSection">
+														<div ng-show="x.materialType == 'Self-Lam'" class="BnumDetailsSubSection">
 															<p class="BnumDetailSubsectionHeader">Selflam Construction</p>
 														</div>
 
 														<!-- Sign Construction Section -->
-														<div ng-show="x.type == 'Sign'" class="BnumDetailsSubSection">
+														<div ng-show="x.materialType == 'Sign'" class="BnumDetailsSubSection">
 															<p class="BnumDetailSubsectionHeader">Sign Construction</p>
 														</div>
 
@@ -264,7 +264,7 @@
 															<!-- Alternate Spec Props -->
 
 															<p class="BnumDetailSubsectionHeader">Special Properties</p>
-															<ul class="SpecPropList" ng-repeat="i in x.specialproperties" ng-cloak>
+															<ul class="SpecPropList" ng-repeat="i in x.specialProperties" ng-cloak>
 																<li class="SpecPropListItem">
 																<img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
 															</ul>
@@ -282,12 +282,12 @@
 												                    </tr>
 												                </thead>
 												                <tbody>
-																	<tr ng-repeat="i in x.chemresistance" ng-cloak>
+																	<tr ng-repeat="i in x.chemResCats" ng-cloak>
 																	 	<td>
-																	 		{{ i.category }}
+																	 		{{ i }}
 																	 	</td>
 																	 	<td>
-																			<span class=" BnumChemRating BnumChemRating{{ i.rating }}">{{ i.rating }}</span>
+																			<span class=" BnumChemAdhRating BnumChemAdhRating{{ x.chemResRatings[$index] }}">{{ x.chemResRatings[$index] }}</span>
 																		</td>
 																	</tr>
 												                </tbody>
@@ -305,12 +305,12 @@
 												                    </tr>
 												                </thead>
 												                <tbody>
-																	<tr ng-repeat="i in x.adhesion" ng-cloak>
+																	<tr ng-repeat="i in x.adhCats" ng-cloak>
 																	 	<td>
-																	 		{{ i.category }}
+																	 		{{ i }}
 																	 	</td>
 																	 	<td>
-																			<span class=" BnumChemRating BnumChemRating{{ i.rating }}">{{ i.rating }}</span>
+																			<span class=" BnumChemAdhRating BnumChemAdhRating{{ x.adhRatings[$index] }}">{{ x.adhRatings[$index] }}</span>
 																		</td>
 																	</tr>
 																	

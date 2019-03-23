@@ -145,44 +145,66 @@
 }
 
 .Bnum_red {
-  background: #d32a33;
+  background: #ff120d;
 }
 
 .Bnum_blue {
-  background: #22478d;
+  background: #0049d8;
 }
 
 .Bnum_brown {
-  background: #603e36;
+  background: #6c3510;
 }
 
 .Bnum_gold {
-  background: #8e7050;
+  background: #c8a900;
 }
 
 .Bnum_gray {
-  background: #919191;
+  background: #747d83;
 }
 
 .Bnum_green {
-  background: #18792e;
+  background: #3bd600;
 }
 
 .Bnum_purple {
-  background: #ab4e88;
+  background: #2513e8;
 }
 
 .Bnum_orange {
-  background: #d6641d;
+  background: #ff6b21;
 }
 
 .Bnum_clear {
-  background: #eee;
+  background: linear-gradient(45deg, #eee, #fff, #eee)
 }
 
 .Bnum_white {
   background: #fff;
 }
+
+.Bnum_lightBlue {
+  background: #12cce8;
+}
+
+.Bnum_pink {
+  background: #ffa6ff;
+}
+
+.Bnum_violet {
+  background: #EE82EE;
+}
+
+.Bnum_metallized  {
+  background: linear-gradient(45deg, #ccc, #eee, #ccc);
+}
+
+.Bnum_silver  {
+  background: linear-gradient(45deg, #ddd, #fff, #ddd);
+}
+
+
 
 /* B Number Results Styling*/
 
@@ -420,32 +442,27 @@
   margin: 0 0 .5rem .5rem;
 }
 
-.BnumChemRating {
+.BnumChemAdhRating {
   border: 1px solid #ccc;
   border-radius: 10px;
   text-align: center;
   padding: 4px 10px;
   display: block;
+  font-size: .875rem;
+  font-weight: 600;
 }
 
-.BnumChemRatingBad {
-  background: #E46765;
+.BnumChemAdhRatingGood {
+  background: #ddd;
 }
 
-.BnumChemRatingPoor {
-  background: #ED9998;
-}
-
-.BnumChemRatingAverage {
-  background: #ccc;
-}
-
-.BnumChemRatingGood {
+.BnumChemAdhRatingBetter {
   background: #B2D8A5;
 }
 
-.BnumChemRatingExcellent {
-  background: #6CA359;
+.BnumChemAdhRatingBest {
+  background: #228b22;
+  color: #fff;
 }
 
 .TDSSVG {
