@@ -67,6 +67,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
               "count": 1
             });
           } else {
+            // its already there so just increment the count
             Filterlist[i].values[pos].count++;
           };  
         // if it is an array, we need to parse through the array for each value
@@ -84,20 +85,12 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
                 "count": 1
               });
               } else {
+            // its already there so just increment the count
             Filterlist[i].values[pos].count++;
             };
           };
         };
       };
-      // Sort filters so they are presented alphabetically
-      Filterlist[i].values.sort(function(a, b){
-        var numA=a.id.toLowerCase(), numB=b.id.toLowerCase()
-        if (numA < numB) //sort string ascending
-            return -1 
-        if (numA > numB)
-            return 1
-        return 0 //default return value (no sorting)
-      });
     };
     return Filterlist;
   };
