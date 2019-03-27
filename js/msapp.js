@@ -28,8 +28,6 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
                 // setFilters is used for the stage
                 $scope.setFilters = [];
                 $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
-                // Sort the B# list alphabetically by B# name
-                $scope.sortBnums();
             })
             .error(function (errorresponse) {
               // Server found but there was an error
@@ -106,9 +104,15 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
         var temp2 = $scope.setFilters[i].FilterValue;
         var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
     };
+
+    // NEED TO SEPARATELY FILTER TEMPBNUMS BY CHECKING FOR THE KEYWORD IN VARIOUS ATTRIBUTES:
+    // - name
+    // - description
+
+
+
     // reset the Bnum list to the new filtered list of Bnums
     $scope.Bnum = TempBnums;
-    // reassess possible filter values and gray them out in the input controls
   };
 
   // Toggle checked filters on/off and remove from the set filters stage if needed
@@ -158,6 +162,17 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     $scope.disablefiltervalues();
   };
 
+  $scope.setSearchFilter = function(searchTerm) {
+    attrvaluepair = {
+      "Position": 5,
+      "FilterId": "searchFilter",
+      "FilterValue": searchTerm
+    };
+
+    $scope.setFilters.push(attrvaluepair);
+    $scope.updateTable();
+    $scope.disablefiltervalues();
+  };
 
   // Disable filter values that are no longer available for the filtered list of B#s
   $scope.disablefiltervalues = function() {
@@ -221,7 +236,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
   };
 
   // collapse all filters
-  $scope.CollapseAll = function() {
+  $scope.collapseAll = function() {
     // get all filter divs
     var panel = document.getElementsByClassName("MSA__Filter__Accordion");
     // loop through and collapse them.
@@ -235,19 +250,10 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     };
   };
 
-  // Sort the list of Bnums
-  $scope.sortBnums = function() {
-    // Sort the Bnum list by the num property so it is presented in alpha/numeric order
-    $scope.Bnum.sort(function(a, b){
-      var numA=a.num.toLowerCase(), numB=b.num.toLowerCase()
-      if (numA < numB) //sort string ascending
-          return -1 
-      if (numA > numB)
-          return 1
-      return 0 //default return value (no sorting)
-    });
-  };
-
+  $scope.reset = function() {
+    $scope.collapseAll();
+    $scope.init()
+  }
 
   // Deep copy of complex objects. Needed to support several functions.
   $scope.deepcopy = function(o) {

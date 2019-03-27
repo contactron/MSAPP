@@ -2356,6 +2356,13 @@
       "presentation": "Swatch",
       "values": [],
       "filteropen": false
+    },
+    {
+      "id": "searchFilter",
+      "displayname": "",
+      "presentation": "Search",
+      "values": [],
+      "filteropen": false
     }
   ]
 }
