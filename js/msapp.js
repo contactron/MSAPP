@@ -100,17 +100,10 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     // call the function to filter the temp full B# list by the setFilters list
     for(var i=0; i < $scope.setFilters.length; i++) {
       // loop through the list of attribute/value pairs filter TempBnums repeatedly for each pair
-        var temp1 = $scope.setFilters[i].FilterId;
-        var temp2 = $scope.setFilters[i].FilterValue;
-        var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
+      var temp1 = $scope.setFilters[i].FilterId;
+      var temp2 = $scope.setFilters[i].FilterValue;
+      var TempBnums = $filter('filter')(TempBnums, { [temp1]: temp2 });
     };
-
-    // NEED TO SEPARATELY FILTER TEMPBNUMS BY CHECKING FOR THE KEYWORD IN VARIOUS ATTRIBUTES:
-    // - name
-    // - description
-
-
-
     // reset the Bnum list to the new filtered list of Bnums
     $scope.Bnum = TempBnums;
   };
@@ -153,7 +146,9 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
          // Update the Filters value applied property to "false"
          // - Find the setfilter in the Filters array
          var valueposition = $scope.AllFilters[position].values.map(function(e) { return e.id; }).indexOf(filterValue);
-         $scope.AllFilters[position].values[valueposition].applied = false;
+         if (valueposition !== -1) {
+            $scope.AllFilters[position].values[valueposition].applied = false;
+         };
          // Remove the filter from the setFilters array
          $scope.setFilters.splice(i, 1); 
        };
@@ -162,17 +157,19 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     $scope.disablefiltervalues();
   };
 
-  $scope.setSearchFilter = function(searchTerm) {
+  $scope.setSearchFilter = function(event) {
+    // search filtering is different as this is not an attribute of the Bnum object
     attrvaluepair = {
-      "Position": 5,
-      "FilterId": "searchFilter",
-      "FilterValue": searchTerm
+      "Position": "5",
+      "FilterId": "$", // lets angular filter know to search across the whole object
+      "FilterValue": event.target.previousElementSibling.value  // the value to search for 
     };
-
     $scope.setFilters.push(attrvaluepair);
     $scope.updateTable();
     $scope.disablefiltervalues();
+    event.target.previousElementSibling.value=""; //clear the input form
   };
+
 
   // Disable filter values that are no longer available for the filtered list of B#s
   $scope.disablefiltervalues = function() {

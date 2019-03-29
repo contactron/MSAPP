@@ -163,8 +163,8 @@
 											<div class="BR-FilterText">
 								                <form class="BR-FilterText__Form ng-pristine ng-valid">
 								                    <label class="BR-FilterText__Title">Filter by text:</label>
-								                    <input class="BR-FilterText__Input ng-pristine ng-untouched ng-valid ng-empty" type="text" name="Search Within" ng-model="searchTerm" data-id="textSearchBox" placeholder="Enter keywords to narrow results">
-								                    <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter(searchTerm)" Accordion($event,4)"></button>
+								                    <input class="BR-FilterText__Input" type="text" name="Search Within" [(ngModel)]="searchTerm"placeholder="Enter keywords to narrow results">
+								                    <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)"></button>
 								                </form>
 								            </div>
 
@@ -196,7 +196,7 @@
 															<p class="BnumDetailSubsectionHeader">Material Profile:</p>
 															<p class="BnumDetailMaterialDescription">{{ x.description }}</p>								
 															<div>
-																<img class="BnumTypeimage" src="img/{{ x.materialType }}.png">
+																<img class="BnumTypeimage" ng-src="img/{{ x.materialType }}.png">
 																<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
 
 																<!--Bnum Rec Apps Section -->
@@ -267,7 +267,7 @@
 
 															<div>
 																<p class="BnumDetailSubsectionHeader">Compliance</p>
-																<img ng-repeat="i in x.compliance" ng-cloak class="CompIcon" src="img/{{ i }}_icon.png">
+																<img ng-repeat="i in x.compliance" ng-cloak class="CompIcon" ng-src="img/{{ i }}_icon.png">
 																<br>
 																<br>
 															</div>
