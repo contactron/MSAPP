@@ -163,7 +163,7 @@
 											<div class="BR-FilterText">
 								                <form class="BR-FilterText__Form ng-pristine ng-valid">
 								                    <label class="BR-FilterText__Title">Filter by text:</label>
-								                    <input class="BR-FilterText__Input" type="text" name="Search Within" [(ngModel)]="searchTerm"placeholder="Enter keywords to narrow results">
+								                    <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm"placeholder="Enter keywords to narrow results">
 								                    <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)"></button>
 								                </form>
 								            </div>
@@ -272,12 +272,11 @@
 																<br>
 															</div>
 
-															<!-- Alternate Spec Props -->
+															<!-- Spec Props Section -->
 
 															<p class="BnumDetailSubsectionHeader">Special Properties</p>
-															<ul class="SpecPropList" ng-repeat="i in x.specialProperties" ng-cloak>
-																<li class="SpecPropListItem">
-																<img class="SpecPropIcon" ng-class="{SpecPropIcon_HR: i=='Heat Resistant', SpecPropIcon_CR: i=='Cold Resistant', SpecPropIcon_FR: i=='Flame Retardent', SpecPropIcon_RM: i=='Removable'}">{{ i }}
+															<ul>
+																<li ng-repeat="i in x.specialProperties" ng-cloak class="newSpecProp" ng-class="{SpecPropIcon_HR: i=='Heat Resistant Labels', SpecPropIcon_CR: i=='Low Temperature Labels', SpecPropIcon_FR: i=='Flame-retardant', SpecPropIcon_RM: i=='Removable Labels', SpecPropIcon_PM: i=='Permanent Adhesive Labels', SpecPropIcon_HE: i=='Harsh Environment Labels'}">{{ i }}
 															</ul>
 														</div>
 

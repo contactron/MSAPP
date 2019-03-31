@@ -2,6 +2,9 @@
 
 
 
+p, ul, li {
+  line-height: 1.5;
+}
 
 /*for no results screen*/
 .main {
@@ -292,10 +295,10 @@
   margin: 0 0 .5rem 0;
 }
 
-.BnumDetailMaterialDescription {
+/*.BnumDetailMaterialDescription {
   line-height: 1.25rem;
 }
-
+*/
 
 .BnumDetailList {
   margin-bottom: 0;
@@ -315,36 +318,19 @@
   height: 125px;
 }
 
-.SpecPropList {
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-.SpecPropListItem {
+.newSpecProp {
   list-style-type: none;
-  padding-right: .75rem;
+  min-height: 36px;
+  background: url('default_icon.png') no-repeat;;
+  margin: 1.125rem 1.75rem 1.125rem 0rem;
+  padding-left: 3rem;
+  line-height: 1.125rem;
   font-size: .75rem;
-  margin: 0;
   font-weight: 600;
   text-transform: uppercase;
   color: #666;
   letter-spacing: 1px;
 }
-
-.SpecPropIcon {
-  display: inline-block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 36px;
-  width: 36px;
-  padding-top: 36px;
-  margin-right: .625rem;
-  overflow: hidden;
-  background: #fff url(default_icon.png) no-repeat;
-  vertical-align: middle;
-}
-
 
 .SpecPropIcon_HR {
   background: url(heat_resistant_icon.png) no-repeat;
@@ -360,6 +346,14 @@
 
 .SpecPropIcon_RM {
   background: url(removable_icon.png) no-repeat;
+}
+
+.SpecPropIcon_PM {
+  background: url(permanent_icon.png) no-repeat;
+}
+
+.SpecPropIcon_HE {
+  background: url(chem_resist_icon.png) no-repeat;
 }
 
 .CompIcon {
