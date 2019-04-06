@@ -235,7 +235,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
   // collapse all filters
   $scope.collapseAll = function() {
     // get all filter divs
-    var panel = document.getElementsByClassName("MSA__Filter__Accordion");
+    var panel = document.getElementsByClassName("BR-MatSelApp__Filter__Accordion");
     // loop through and collapse them.
     for(var i=0; i < panel.length; i++) {
       $scope.AllFilters[i].filteropen = false;

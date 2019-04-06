@@ -65,7 +65,7 @@
 													<p class="BR-Filter__Item__Header__Name">Material Type</p>
 								                </header>
 
-									            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed MSA__Filter__Accordion">
+									            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
 												    <span ng-repeat="fv in AllFilters[0].values | orderBy:'id'" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
 												        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 												        <label ng-for="{{ fv.id }}">
@@ -86,7 +86,7 @@
 								                    <p class="BR-Filter__Item__Header__Name">Application
 								                    </p>
 								                </header>
-								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
 								                    <span ng-repeat="fv in AllFilters[1].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
 								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
@@ -103,7 +103,7 @@
 								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[2].filteropen==true, 'BR-Filter--Closed': AllFilters[2].filteropen==false}" ng-click="Accordion($event,2)">
 								                    <p class="BR-Filter__Item__Header__Name">Base Material</p>
 								                </header>
-								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
 								 					<span ng-repeat="fv in AllFilters[2].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
 								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
@@ -118,7 +118,7 @@
 								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[3].filteropen==true, 'BR-Filter--Closed': AllFilters[3].filteropen==false}" ng-click="Accordion($event,3)">
 								                    <p class="BR-Filter__Item__Header__Name">Finish</p>
 								                </header>
-								                <div class="BR-Filter__Item__Options MSA__Filter__Accordion">
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
 								                    <span ng-repeat="fv in AllFilters[3].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
 								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
@@ -134,11 +134,11 @@
 								                    <p class="BR-Filter__Item__Header__Name">Color</p>
 								                </header>
 
-												<div class="swatch_container MSA__Filter__Accordion">
-												    <span ng-repeat="fv in AllFilters[4].values | orderBy:'id'" class="swatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
+												<div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[4].values | orderBy:'id'" class="BR-FilterColorSwatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
 														<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-															<label ng-for="{{ fv.id }}" class="swatch_colorbox MSappTooltip" ng-class="{Bnum_yellow: fv.id=='Yellow', Bnum_black: fv.id=='Black', Bnum_blue: fv.id=='Blue', Bnum_red: fv.id=='Red', Bnum_brown: fv.id=='Brown', Bnum_gray: fv.id=='Gray', Bnum_gold: fv.id=='Gold', Bnum_green: fv.id=='Green', Bnum_purple: fv.id=='Purple', Bnum_orange: fv.id=='Orange', Bnum_clear: fv.id=='Clear', Bnum_white: fv.id=='White', Bnum_lightBlue: fv.id=='Light Blue', Bnum_metallized: fv.id=='Metallized', Bnum_clear: fv.id=='Clear', Bnum_violet: fv.id=='Violet', Bnum_silver: fv.id=='Silver', Bnum_pink: fv.id=='Pink'}">
-																<span class="MSappTooltiptext">{{ fv.id }}</span>					
+															<label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{Bnum_yellow: fv.id=='Yellow', Bnum_black: fv.id=='Black', Bnum_blue: fv.id=='Blue', Bnum_red: fv.id=='Red', Bnum_brown: fv.id=='Brown', Bnum_gray: fv.id=='Gray', Bnum_gold: fv.id=='Gold', Bnum_green: fv.id=='Green', Bnum_purple: fv.id=='Purple', Bnum_orange: fv.id=='Orange', Bnum_clear: fv.id=='Clear', Bnum_white: fv.id=='White', Bnum_lightBlue: fv.id=='Light Blue', Bnum_metallized: fv.id=='Metallized', Bnum_clear: fv.id=='Clear', Bnum_violet: fv.id=='Violet', Bnum_silver: fv.id=='Silver', Bnum_pink: fv.id=='Pink'}">
+																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ fv.id }}</span>					
 															</label>
 														</input>
 													</span>
@@ -150,7 +150,7 @@
 
 										<!-- No Results Screen -->
 
-										<div class="main" ng-cloak ng-show="Bnum.length < 1">
+										<div class="BR-MatSelApp__NoResults" ng-cloak ng-show="Bnum.length < 1">
 											There are no results.
 										</div>
 
@@ -160,10 +160,10 @@
 
 											<h3 ng-cloak class="msappheaders2">{{ Bnum.length }} Brady material(s) match your criteria</h3>
 
-											<div class="BR-FilterText">
+											<div class="BR-FilterText"">
 								                <form class="BR-FilterText__Form ng-pristine ng-valid">
 								                    <label class="BR-FilterText__Title">Filter by text:</label>
-								                    <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm"placeholder="Enter keywords to narrow results">
+								                    <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm" placeholder="Enter keywords to narrow results">
 								                    <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)"></button>
 								                </form>
 								            </div>
@@ -225,8 +225,8 @@
 															<!-- Color Swatches Section -->
 															<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapecolorable=='yes'">*</span></strong></p>
 															<div class="swatch_container">
-																<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small MSappTooltip" ng-class="{Bnum_yellow: i=='Yellow', Bnum_black: i=='Black', Bnum_blue: i=='Blue', Bnum_red: i=='Red', Bnum_brown: i=='Brown', Bnum_gray: i=='Gray', Bnum_gold: i=='Gold', Bnum_green: i=='Green', Bnum_purple: i=='Purple', Bnum_orange: i=='Orange', Bnum_clear: i=='Clear', Bnum_white: i=='White', Bnum_lightBlue: i=='Light Blue', Bnum_metallized: i=='Metallized', Bnum_clear: i=='Clear', Bnum_violet: i=='Violet', Bnum_silver: i=='Silver', Bnum_pink: i=='Pink'}">
-																	<span class="MSappTooltiptext">{{ i }}</span>
+																<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small BR-FilterColorSwatch__ToolTip" ng-class="{Bnum_yellow: i=='Yellow', Bnum_black: i=='Black', Bnum_blue: i=='Blue', Bnum_red: i=='Red', Bnum_brown: i=='Brown', Bnum_gray: i=='Gray', Bnum_gold: i=='Gold', Bnum_green: i=='Green', Bnum_purple: i=='Purple', Bnum_orange: i=='Orange', Bnum_clear: i=='Clear', Bnum_white: i=='White', Bnum_lightBlue: i=='Light Blue', Bnum_metallized: i=='Metallized', Bnum_clear: i=='Clear', Bnum_violet: i=='Violet', Bnum_silver: i=='Silver', Bnum_pink: i=='Pink'}">
+																	<span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
 																	
 																</div>
 															</div>

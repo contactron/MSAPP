@@ -1,61 +1,37 @@
-
-
-
-
 p, ul, li {
   line-height: 1.5;
 }
 
-/*for no results screen*/
-.main {
-    font-size: 28px; 
-    padding: 2rem 4rem;
-    width: 100%;
-}
+/* Filter Box Styling */
+/* Leverage BradyID styles where possible */
 
-/*Filter Box Styling*/
-
-/*Leverage BradyID styles where possible*/
-
-.MSA__Filter__Accordion {
+/* According Styling for Transistions */
+.BR-MatSelApp__Filter__Accordion {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   transition: max-height .3s, opacity .2s;
 }
 
-.MSapp__InfoButton {
-    margin-left: .5rem;
-    margin-top: -.25rem;
-    cursor: pointer;
-    vertical-align: middle;
-    min-width: 1.25rem;
-    min-height: 1.25rem;
-    display: inline-block;
-}
+/* Color Swatch Filter stylings */
+/* MatSelApp not included in name since this could be used elsewhere */
 
-.swatch_container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: .25rem;
-}
-
-.swatch {
+.BR-FilterColorSwatch {
   display: flex;
   justify-content: center;
   margin: 4px;
   text-align: center;
 }
 
-.swatch input[type=checkbox] +label:before {
+.BR-FilterColorSwatch input[type=checkbox] +label:before {
   display: none;
 }
 
-.swatch input[type=checkbox] {
+.BR-FilterColorSwatch input[type=checkbox] {
   display: none;
 }
 
-.swatch input[type=checkbox] +label {
+.BR-FilterColorSwatch input[type=checkbox] +label {
   align-items: center;
   display: flex;
   justify-content: flex-start;
@@ -68,38 +44,32 @@ p, ul, li {
   margin: 0 .375rem .375rem 0;
 }
 
-.swatch:hover input[type=checkbox] +label {
+.BR-FilterColorSwatch:hover input[type=checkbox] +label {
   border: 2px solid #000;
 }
 
-.swatch input[type=checkbox]:checked +label {
+.BR-FilterColorSwatch input[type=checkbox]:checked +label {
   border: 3px solid #000;
 }
 
-.swatch input[type=checkbox]:disabled +label {
+.BR-FilterColorSwatch input[type=checkbox]:disabled +label {
   border: 0px solid #000;
   opacity: .3;
   cursor: not-allowed;
 }
 
 /* Hide color swatch tool tip when the swatch is disabled */
-.swatch input[type=checkbox]:disabled +label span {
+.BR-FilterColorSwatch input[type=checkbox]:disabled +label span {
   opacity: 0;
 }
 
-/*create more space between swatches and dividing line*/
-.swatch:last-of-type {
-  margin-bottom: 1.25rem;
-}
-
-/* Swatch Tool Tip Stylings */
-
-.MSappTooltip {
+/* Color Swatch Tool Tip Stylings */
+.BR-FilterColorSwatch__ToolTip {
     position: relative;
     display: inline-block;
 }
 
-.MSappTooltip .MSappTooltiptext {
+.BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text {
     visibility: hidden;
     width: 6rem;
     background-color: #555;
@@ -108,7 +78,7 @@ p, ul, li {
     font-weight: 500;
     text-align: center;
     border-radius: 6px;
-    padding: .375rem 0;
+    padding: .375rem .375rem;
     position: absolute;
     z-index: 1;
     bottom: 100%;
@@ -119,7 +89,7 @@ p, ul, li {
     transition-timing-function: ease-out;
 }
 
-.MSappTooltip .MSappTooltiptext::after {
+.BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -130,13 +100,12 @@ p, ul, li {
     border-color: #555 transparent transparent transparent;
 }
 
-.MSappTooltip:hover .MSappTooltiptext {
+.BR-FilterColorSwatch__ToolTip:hover .BR-FilterColorSwatch__ToolTip__Text {
     visibility: visible;
     opacity: 1;
     transition-delay: 250ms;
     bottom: 140%;
 }
-
 
 /*Color definitions for swatches*/
 .Bnum_yellow {
@@ -207,9 +176,20 @@ p, ul, li {
   background: linear-gradient(45deg, #ddd, #fff, #ddd);
 }
 
+/*Fix the height of the input box. Add more specificity*/
+input[type=text]  {
+  height: 2.75rem;
+}
 
 
-/* B Number Results Styling*/
+/* No results screen */
+.BR-MatSelApp__NoResults {
+    font-size: 28px; 
+    padding: 2rem 4rem;
+    width: 100%;
+}
+
+/* BNum Results Styling */
 
 .BR-MatSelApp__Results {
   padding-left: 2rem;
@@ -221,12 +201,13 @@ p, ul, li {
 
 /* Style the button that is used to open and close the collapsible content */
 .BnumRow {
-    background-color: #E3E9F2;
+    background-color: #fff;
     color: #444;
     width: 100%;
     border: 1px solid #ccc;
     text-align: left;
     font-size: 1rem;
+    margin-bottom: .75rem;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -295,10 +276,12 @@ p, ul, li {
   margin: 0 0 .5rem 0;
 }
 
-/*.BnumDetailMaterialDescription {
-  line-height: 1.25rem;
+
+.swatch_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: .25rem;
 }
-*/
 
 .BnumDetailList {
   margin-bottom: 0;
@@ -322,7 +305,7 @@ p, ul, li {
   list-style-type: none;
   min-height: 36px;
   background: url('default_icon.png') no-repeat;;
-  margin: 1.125rem 1.75rem 1.125rem 0rem;
+  margin: .5rem 1.75rem 1rem 0rem;
   padding-left: 3rem;
   line-height: 1.125rem;
   font-size: .75rem;
