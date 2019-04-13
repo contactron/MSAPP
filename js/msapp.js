@@ -158,16 +158,21 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
   };
 
   $scope.setSearchFilter = function(event) {
-    // search filtering is different as this is not an attribute of the Bnum object
-    attrvaluepair = {
-      "Position": "5",
-      "FilterId": "$", // lets angular filter know to search across the whole object
-      "FilterValue": event.target.previousElementSibling.value  // the value to search for 
+    // remove leading and trailing spaces
+    var searchterm = event.target.previousElementSibling.value.trim();
+    // check to see if the term is empty
+    if (searchterm) {
+      // search filtering is different as this is not an attribute of the Bnum object
+      attrvaluepair = {
+        "Position": "5",
+        "FilterId": "$", // lets angular filter know to search across the whole object
+        "FilterValue": searchterm  // the value to search for 
+      };
+      $scope.setFilters.push(attrvaluepair);
+      $scope.updateTable();
+      $scope.disablefiltervalues();
+      event.target.previousElementSibling.value=""; //clear the input form
     };
-    $scope.setFilters.push(attrvaluepair);
-    $scope.updateTable();
-    $scope.disablefiltervalues();
-    event.target.previousElementSibling.value=""; //clear the input form
   };
 
 

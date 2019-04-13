@@ -89,7 +89,7 @@ p, ul, li {
     transition-timing-function: ease-out;
 }
 
-.BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text::after {
+.BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -108,71 +108,71 @@ p, ul, li {
 }
 
 /*Color definitions for swatches*/
-.Bnum_yellow {
+.BR-FilterColorSwatch--Yellow {
   background: yellow;
 }
 
-.Bnum_black {
+.BR-FilterColorSwatch--Black {
   background: #000;
 }
 
-.Bnum_red {
+.BR-FilterColorSwatch--Red {
   background: #ff120d;
 }
 
-.Bnum_blue {
+.BR-FilterColorSwatch--Blue {
   background: #0049d8;
 }
 
-.Bnum_brown {
+.BR-FilterColorSwatch--Brown {
   background: #6c3510;
 }
 
-.Bnum_gold {
+.BR-FilterColorSwatch--Gold {
   background: #c8a900;
 }
 
-.Bnum_gray {
+.BR-FilterColorSwatch--Gray {
   background: #747d83;
 }
 
-.Bnum_green {
+.BR-FilterColorSwatch--Green {
   background: #3bd600;
 }
 
-.Bnum_purple {
+.BR-FilterColorSwatch--Purple {
   background: #2513e8;
 }
 
-.Bnum_orange {
+.BR-FilterColorSwatch--Orange {
   background: #ff6b21;
 }
 
-.Bnum_clear {
+.BR-FilterColorSwatch--Clear {
   background: linear-gradient(45deg, #eee, #fff, #eee)
 }
 
-.Bnum_white {
+.BR-FilterColorSwatch--White {
   background: #fff;
 }
 
-.Bnum_lightBlue {
+.BR-FilterColorSwatch--LightBlue {
   background: #12cce8;
 }
 
-.Bnum_pink {
+.BR-FilterColorSwatch--Pink {
   background: #ffa6ff;
 }
 
-.Bnum_violet {
+.BR-FilterColorSwatch--Violet {
   background: #EE82EE;
 }
 
-.Bnum_metallized  {
+.BR-FilterColorSwatch--Metallized  {
   background: linear-gradient(45deg, #ccc, #eee, #ccc);
 }
 
-.Bnum_silver  {
+.BR-FilterColorSwatch--Silver  {
   background: linear-gradient(45deg, #ddd, #fff, #ddd);
 }
 
