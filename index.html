@@ -105,7 +105,7 @@
 								                </header>
 								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
 								 					<span ng-repeat="fv in AllFilters[2].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
-								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="qafv.applied" ng-disabled="fv.disabled">
 								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 								                            {{ fv.id }} ({{ fv.count }})
 								                        </label>
@@ -223,14 +223,14 @@
 																<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
 
 																<!-- Color Swatches Section -->
-																<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapecolorable=='yes'">*</span></strong></p>
+																<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
 																<div class="swatch_container">
 																	<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink'}">
 																		<span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
 																		
 																	</div>
 																</div>
-																<p class="BnumDisclaimer" ng-show="x.tapeColorable=='yes'">*This material can be custom colored.</p>
+																<p class="BnumDisclaimer" ng-show="x.tapeColorable=='Yes'">*This material can be custom colored.</p>
 
 															</div>	
 
