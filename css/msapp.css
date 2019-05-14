@@ -190,10 +190,6 @@ input[type=text]  {
 
 /* BNum Results Styling */
 
-.BR-MatSelApp__Results {
-  padding-left: 2rem;
-}
-
 .msappheaders2 {
     margin-top: .5rem;
 }
@@ -455,17 +451,28 @@ input[type=text]  {
   padding-right: .5rem;
 }
 
-@media screen and (min-width: 1200px) {
-  .BnumDetailsSubSection--MaxThreeAcross {
-    width: 33%;
-  }
-}
 
-@media screen and (min-width: 640px) {
+
+@media screen and (min-width: 1200px) {
   .BnumDetailsSubSection--MaxThreeAcross {
     width: 50%;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .BR-MatSelApp__Results {
+    padding-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .BnumDetailsSubSection--MaxThreeAcross {
+    width: 33.33%;
+  }
+}
+
+
+
 
 
 
