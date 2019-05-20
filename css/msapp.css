@@ -190,12 +190,12 @@ input[type=text]  {
 
 /* BNum Results Styling */
 
-.msappheaders2 {
+.BR-MatSelApp__ResultsText {
     margin-top: .5rem;
 }
 
 /* Style the button that is used to open and close the collapsible content */
-.BnumRow {
+.BR-MatSelApp__BnumRow {
     background-color: #fff;
     color: #444;
     width: 100%;
@@ -206,11 +206,11 @@ input[type=text]  {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.BnumRow:hover {
+.BR-MatSelApp__BnumRow:hover {
   background-color: #ccc;
 }
 
-.BnumHeaderContainer {
+.BR-MatSelApp__BnumHeader {
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +218,7 @@ input[type=text]  {
   max-width: 100%;
 }
 
-.Bnum_Number {
+.BR-MatSelApp__BnumNumber {
   font-weight: 700;
   margin-bottom: 0;
   margin-right: .75rem;
@@ -226,7 +226,7 @@ input[type=text]  {
   -webkit-flex: 0 0 auto;
 }
 
-.Bnum_Description {
+.BR-MatSelApp__BnumDescription {
   margin-bottom: 0;
   margin-right: .3125rem;
   max-width: 100%;
@@ -235,7 +235,7 @@ input[type=text]  {
 
 /*Bnum Details Styles*/
 
-.BnumDetailsContainer {
+.BR-MatSelApp__BnumDetails {
   display: flex;
   flex-wrap: wrap;
   flex: 3;
@@ -247,16 +247,7 @@ input[type=text]  {
   transition: max-height .2s, opacity .2s;
 }
 
-/*.BnumDetailsSubSection {
-  display: flex;
-  flex-direction: column;
-  background: #Fefefe;
-  padding: 1.5rem;
-  border: 1px solid #ccc;
-  font-size: .875rem;
-}*/
-
-.BnumDetailsSubSection--MaxThreeAcross {
+.BR-MatSelApp__SubSection--MaxThreeAcross {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -267,17 +258,18 @@ input[type=text]  {
 }
 
 
-.BnumDetailsSubheader {
+.BR-MatSelApp__Subheading {
   color: #000;
   font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
 }
 
-.BnumDetailSubsectionHeader {
-  font-weight: 700;
-  font-size: 1rem;
-  margin: 0 0 .5rem 0;
+.BnumAttrHeading {
+  margin-bottom: .5rem;
 }
 
+/*Stylings for Label Construction Section*/
 
 .swatch_container {
   display: flex;
@@ -290,15 +282,13 @@ input[type=text]  {
 
 }
 
-.BnumDetailListItem {
-  margin: 0;
-  font-size: 14px;
-  list-style-position: inside;
+.BR-MatSelApp__BnumListItem {
+  margin-bottom: .5rem;
 }
 
 .BnumTypeimage {
-  float: left;
-  margin-right: 1.5rem;
+  float: right;
+  margin-left: .5rem;
   width: 125px;
   height: 125px;
 }
@@ -385,10 +375,6 @@ input[type=text]  {
   margin: 0.75rem 0 0;
 }
 
-.BnumAttrHeading {
-  margin: 0;
-}
-
 .BnumConstructionThickness {
   float: left;
   padding-right: 0.375rem;
@@ -444,7 +430,12 @@ input[type=text]  {
   color: #fff;
 }
 
-.TDSSVG {
+.BR-MatSelApp__TDSLink {
+  margin-top: .5rem;
+  font-weight: 600;
+}
+
+.BR-MatSelApp__TDSImage {
   width: 3rem;
   display: inline-block;
   vertical-align: middle;
@@ -454,7 +445,7 @@ input[type=text]  {
 
 
 @media screen and (min-width: 1200px) {
-  .BnumDetailsSubSection--MaxThreeAcross {
+  .BR-MatSelApp__SubSection--MaxThreeAcross {
     width: 50%;
   }
 }
@@ -466,7 +457,7 @@ input[type=text]  {
 }
 
 @media screen and (min-width: 1600px) {
-  .BnumDetailsSubSection--MaxThreeAcross {
+  .BR-MatSelApp__SubSection--MaxThreeAcross {
     width: 33.33%;
   }
 }
