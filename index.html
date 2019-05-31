@@ -298,12 +298,44 @@
 											                    </tr>
 											                </thead>
 											                <tbody>
-																<tr ng-repeat="i in x.chemResCats" ng-cloak>
-																 	<td>
-																 		{{ i }}
+																<tr>
+																 	<td class="chemCategory">
+																 		Alcohols
 																 	</td>
-																 	<td>
-																		<span class=" BnumChemAdhRating BnumChemAdhRating{{ x.chemResRatings[$index] }}">{{ x.chemResRatings[$index] }}</span>
+																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceAlchohols }}">
+																		{{ x.chemResistanceAlchohols }}
+																	</td>
+																</tr>
+																<tr>
+																 	<td class="chemCategory">
+																 		Cleaners
+																 	</td>
+																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceCleaners }}">
+																		{{ x.chemResistanceCleaners }}
+																	</td>
+																</tr>
+																<tr>
+																 	<td class="chemCategory">
+																 		Fuels
+																 	</td>
+																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceFuels }}">
+																		{{ x.chemResistanceFuels}}
+																	</td>
+																</tr>
+																<tr>
+																 	<td class="chemCategory">
+																 		Oils
+																 	</td>
+																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceOils }}">
+																		{{ x.chemResistanceOils}}
+																	</td>
+																</tr>
+																<tr>
+																 	<td class="chemCategory">
+																 		Solvents
+																 	</td>
+																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceSolvents }}">
+																		{{ x.chemResistanceSolvents}}
 																	</td>
 																</tr>
 											                </tbody>
