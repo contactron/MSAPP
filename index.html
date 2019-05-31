@@ -83,8 +83,7 @@
 								            <!-- Application Checkbox Filter -->
 											<div class="BR-Filter__Item">
 								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[1].filteropen==true, 'BR-Filter--Closed': AllFilters[1].filteropen==false}" ng-click="Accordion($event,1)">
-								                    <p class="BR-Filter__Item__Header__Name">Application
-								                    </p>
+								                    <p class="BR-Filter__Item__Header__Name">Application</p>
 								                </header>
 								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
 								                    <span ng-repeat="fv in AllFilters[1].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
@@ -290,6 +289,12 @@
 													<!--Chem Resistance Section -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">	
 														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
+														<dl>
+														  <dt class="chemResistLegendNum legend1">1</dt>
+														  <dd class="chemResistLegend">= High</dd>
+														  <dt class="chemResistLegendNum legend5">5</dt>
+														  <dd class="chemResistLegend">= Low</dd>
+														</dl>
 														<table>
 											                <thead>
 											                    <tr>
