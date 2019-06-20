@@ -204,11 +204,11 @@
 															<img class="BnumTypeimage" ng-src="img/{{ x.materialType }}.png">
 															{{ x.description }}
 														</p>								
-														<p class="BnumAttrHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
 
 														<!--Bnum Rec Apps Section -->
 
-														<p class="BnumAttrHeading"><strong>Applications</strong></p>
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Applications</strong></p>
 														<ul>
 															<li ng-repeat="i in x.printerLabelApplications" ng-cloak class="BR-MatSelApp__BnumListItem">{{ i }}
 														</ul>
@@ -225,10 +225,10 @@
 															<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.baseMaterial }}</p>
 															<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
 														</div>
-														<p class="BnumAttrHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
 
 														<!-- Color Swatches Section -->
-														<p class="BnumAttrHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
 														<div class="swatch_container">
 															<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink'}">
 																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
@@ -289,86 +289,80 @@
 													<!--Chem Resistance Section -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">	
 														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
-														<dl>
-														  <dt class="chemResistLegendNum legend1">1</dt>
-														  <dd class="chemResistLegend">= High</dd>
-														  <dt class="chemResistLegendNum legend5">5</dt>
-														  <dd class="chemResistLegend">= Low</dd>
-														</dl>
-														<table>
-											                <thead>
-											                    <tr>
-											                        <th>Category</th>
-											                        <th>Rating</th>
-											                    </tr>
-											                </thead>
-											                <tbody>
-																<tr>
-																 	<td class="chemCategory">
-																 		Alcohols
-																 	</td>
-																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceAlchohols }}">
-																		{{ x.chemResistanceAlchohols }}
-																	</td>
-																</tr>
-																<tr>
-																 	<td class="chemCategory">
-																 		Cleaners
-																 	</td>
-																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceCleaners }}">
-																		{{ x.chemResistanceCleaners }}
-																	</td>
-																</tr>
-																<tr>
-																 	<td class="chemCategory">
-																 		Fuels
-																 	</td>
-																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceFuels }}">
-																		{{ x.chemResistanceFuels}}
-																	</td>
-																</tr>
-																<tr>
-																 	<td class="chemCategory">
-																 		Oils
-																 	</td>
-																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceOils }}">
-																		{{ x.chemResistanceOils}}
-																	</td>
-																</tr>
-																<tr>
-																 	<td class="chemCategory">
-																 		Solvents
-																 	</td>
-																 	<td class="BnumChemAdhRating BnumChemAdhRating{{ x.chemResistanceSolvents }}">
-																		{{ x.chemResistanceSolvents}}
-																	</td>
-																</tr>
-											                </tbody>
-											            </table>							
+														<div class="BR-MatSelApp__RatingsLegend">
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Alcohols</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 2}"></div>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Cleaners</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
+														</div>
+
+														<p class="BR-MatSelApp__RatingCategoryHead">Solvents</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 2}"></div>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Oils</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 2}"></div>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Fuels</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 2}"></div>
+														</div>							
 													</div>
 
 													<!--Adhesion Specs Section -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">
 														<h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
-														<table>
-											                <thead>
-											                    <tr>
-											                        <th>Surface</th>
-											                        <th>Rating</th>
-											                    </tr>
-											                </thead>
-											                <tbody>
-																<tr ng-repeat="i in x.adhCats" ng-cloak>
-																 	<td>
-																 		{{ i }}
-																 	</td>
-																 	<td>
-																		<span class=" BnumChemAdhRating BnumChemAdhRating{{ x.adhRatings[$index] }}">{{ x.adhRatings[$index] }}</span>
-																	</td>
-																</tr>
-																
-											                </tbody>
-											            </table>									
+														
+														<div class="BR-MatSelApp__RatingsLegend">
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">To Typical Surfaces</p>
+														<p>Examples: Stainless Steel, Copper, Glass, Smooth Plastics</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 2}"></div>
+														</div>
+														<hr class="BR-MatSelApp__HorizDivider">
+														<p class="BR-MatSelApp__RatingCategoryHead">To Difficult Surfaces</p>
+														<p>Examples: Stainless Steel, Copper, Glass, Smooth Plastics</p>
+														<div>
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
+														</div>											
 													</div>
 
 													<!-- More Info Section -->

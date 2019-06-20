@@ -220,8 +220,8 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     var clicked = header.target;
     var panel = "";
     if (clicked.tagName == 'P') {
-      // set the target div if the <p> text was clicked (filter)
-      var panel = clicked.parentElement.nextElementSibling;
+      // set the target div if the <p> text was clicked (filter or Bnum text)
+      panel = clicked.parentElement.nextElementSibling;
     } else {
       // set the target div if the <div> was clicked (Bnum)
       panel = clicked.nextElementSibling;
@@ -230,10 +230,12 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
       panel.style.maxHeight = null;
       panel.style.opacity = null;
       panel.style.overflow = null;
+      panel.previousElementSibling.style.background = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       panel.style.opacity = 1;
       panel.style.overflow = "visible";
+      panel.previousElementSibling.style.background = "#ccc"
     }; 
   };
 
@@ -252,6 +254,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     };
   };
 
+  // this needs refactoring
   $scope.reset = function() {
     $scope.collapseAll();
     $scope.init()

@@ -181,14 +181,14 @@ input[type=text]  {
 }
 
 
-/* No results screen */
+/* No Results Screen Stylings */
 .BR-MatSelApp__NoResults {
     font-size: 28px; 
     padding: 2rem 4rem;
     width: 100%;
 }
 
-/* BNum Results Styling */
+/* Bnum Results Stylings */
 
 .BR-MatSelApp__ResultsText {
     margin-top: .5rem;
@@ -233,7 +233,7 @@ input[type=text]  {
   -webkit-flex: 0 0 auto;
 }
 
-/*Bnum Details Styles*/
+/*Bnum Details General Stylings*/
 
 .BR-MatSelApp__BnumDetails {
   display: flex;
@@ -265,22 +265,11 @@ input[type=text]  {
   margin-bottom: .5rem;
 }
 
-.BnumAttrHeading {
-  margin-bottom: .5rem;
+.BR-MatSelApp__AttributeHeading {
+  margin-bottom: .375rem;
 }
 
-/*Stylings for Label Construction Section*/
-
-.swatch_container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: .25rem;
-}
-
-.BnumDetailList {
-  margin-bottom: 0;
-
-}
+/*Material Properties Stylings*/
 
 .BR-MatSelApp__BnumListItem {
   margin-bottom: .5rem;
@@ -292,6 +281,67 @@ input[type=text]  {
   width: 125px;
   height: 125px;
 }
+
+/*Label Construction Stylings*/
+
+.BnumMaterialImage {
+  margin-right: 1.25rem; 
+  max-width: 100px;
+  height: 120px;
+  float: left;
+}
+
+.BnumConstruction {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem;
+  font-size: .875rem;
+}
+
+.BnumConstructionHeading {
+  margin: 0.75rem 0 0;
+}
+
+.BnumConstructionThickness {
+  float: left;
+  padding-right: 0.375rem;
+  text-align: center;
+  font-size: .875rem;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.BnumConstructionSvg {
+  width: 150px;
+  padding-right: 0.375rem;
+}
+
+.BnumConstructionMaterials {
+  font-size: 14px;
+  margin: 0;
+}
+
+.BnumDisclaimer {
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.colorbox_small {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  margin: 0 0 .5rem .5rem;
+}
+
+.swatch_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: .25rem;
+}
+
+
+/*Special Properties Stylings*/
 
 .newSpecProp {
   list-style-type: none;
@@ -357,115 +407,64 @@ input[type=text]  {
   background: url(ROHS_icon.png) no-repeat;
 }
 
-.BnumMaterialImage {
-  margin-right: 1.25rem; 
-  max-width: 100px;
-  height: 120px;
-  float: left;
+
+/*Chemical Resistance Stylings*/
+
+.BR-MatSelApp__RatingsLegend {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
 
-.BnumConstruction {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 1rem;
-  font-size: .875rem;
-}
-
-.BnumConstructionHeading {
-  margin: 0.75rem 0 0;
-}
-
-.BnumConstructionThickness {
-  float: left;
-  padding-right: 0.375rem;
-  text-align: center;
-  font-size: .875rem;
-  line-height: 1rem;
-  margin: 0;
-}
-
-.BnumConstructionSvg {
-  width: 150px;
-  padding-right: 0.375rem;
-}
-
-.BnumConstructionMaterials {
-  font-size: 14px;
-  margin: 0;
-}
-
-.BnumDisclaimer {
-  font-size: .75rem;
-  font-style: italic;
-}
-
-.colorbox_small {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 3px;
-  border: 1px solid #aaa;
-  margin: 0 0 .5rem .5rem;
-}
-
-.chemResistLegend {
+.BR-MatSelApp__RatingsLegend__Text {
   display: inline;
   float: none;
-  margin: 0 .875rem 0 0;
-
-}
-
-.chemResistLegendNum {
-  display: inline;
-  float: none;
-  background-color: rgba(34, 139, 34);
-  font-size: .75rem;
-  padding: 2px 14px;
-  border: 1px solid #ccc;
-  margin-bottom: .5rem;
-}
-
-.legend1 {
-  color: #fff;
-}
-
-.legend5 {
-  background-color: rgba(34, 139, 34, 0.2);
-}
-
-.chemCategory {
-  font-weight: 500;
-  padding: 8px 16px;
-}
-
-.BnumChemAdhRating {
-  background-color: #228b22;
-  text-align: center;
-  padding: 4px 10px;
   font-weight: 700;
-  width: 25%;
 }
 
-.BnumChemAdhRating1 {
-  opacity: 1;
-  color: #fff;
+.BR-MatSelApp__RatingsLegend__Text--Low:before {
+    content: "\25C0";
+    margin-right: .25em;
+    font-size: 1.25rem;
 }
 
-.BnumChemAdhRating2 {
-  background-color: rgba(34, 139, 34, 0.8);
-  color: #fff;
+.BR-MatSelApp__RatingsLegend__Text--High:after {
+    content: "\25B6";
+    margin-left: .25em;
+    font-size: 1.25rem;
 }
 
-.BnumChemAdhRating3 {
-  background-color: rgba(34, 139, 34, 0.6);
+.BR-MatSelApp__RatingCategoryHead {
+  font-weight: 600;
+  margin-bottom: .25rem;
 }
 
-.BnumChemAdhRating4 {
-  background-color: rgba(34, 139, 34, 0.4);
+.BR-MatSelApp__HorizDivider {
+  width: 100%;
+  border-style: none none solid;
+  border-bottom: 1px solid #ccc;
+  margin-top: .875rem;
+  margin-bottom: 1.25rem;
 }
 
-.BnumChemAdhRating5 {
-  background-color: rgba(34, 139, 34, 0.2);
+.BR-MatSelApp__RatingBlock {
+  display: inline-block;
+  background: #CCC;
+  width: 17%;
+  height: .625rem;
+  margin-bottom: .625rem;
 }
+
+.BR-MatSelApp__RatingBlock--Filled {
+  background: #1779BA;
+}
+
+/* Adhesion Stylings */
+
+
+
+
+/* More Info Stylings */
 
 .BR-MatSelApp__TDSLink {
   margin-top: .5rem;
