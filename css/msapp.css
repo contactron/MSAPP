@@ -408,7 +408,7 @@ input[type=text]  {
 }
 
 
-/*Chemical Resistance Stylings*/
+/*Chemical Resistance & Adhesion Stylings*/
 
 .BR-MatSelApp__RatingsLegend {
   display: flex;
@@ -458,10 +458,6 @@ input[type=text]  {
 .BR-MatSelApp__RatingBlock--Filled {
   background: #1779BA;
 }
-
-/* Adhesion Stylings */
-
-
 
 
 /* More Info Stylings */

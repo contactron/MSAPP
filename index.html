@@ -95,7 +95,57 @@
 								                </div>    
 								            </div>
 
+											<!-- Chemical Resistance Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[6].filteropen==true, 'BR-Filter--Closed': AllFilters[6].filteropen==false}" ng-click="Accordion($event,6)">
+								                    <p class="BR-Filter__Item__Header__Name">Chemical Resistance</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[6].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('6',AllFilters[6],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
 
+								            <!-- Regulatory Approvals Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[9].filteropen==true, 'BR-Filter--Closed': AllFilters[9].filteropen==false}" ng-click="Accordion($event,9)">
+								                    <p class="BR-Filter__Item__Header__Name">Regulatory Approvals</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[9].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('9',AllFilters[9],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+
+								            <!-- Special Properties Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
+												<header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[8].filteropen==true, 'BR-Filter--Closed': AllFilters[8].filteropen==false}" ng-click="Accordion($event,8)">
+													<p class="BR-Filter__Item__Header__Name">Special Properties</p>
+								                </header>
+
+									            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[8].values | orderBy:'id'" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('8',AllFilters[8],fv)">
+												        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+												        <label ng-for="{{ fv.id }}">
+												          <span class="BR-FilterIconText__Icon">
+												              <img ng-src="/img/{{ fv.id }}_FilterIcon.svg">
+												          </span>
+												          <span class="BR-FilterIconText__Text">
+												               {{ fv.id }} 
+												          </span>
+												        </label>
+												    </span>
+												</div> 
+									      	</div>
 
 							                <!-- Base Material Checkbox Filter -->
 											<div class="BR-Filter__Item">
@@ -144,13 +194,13 @@
 												</div>
 											</div>
 
-												<!-- Chemical Resistance Checkbox Filter -->
+								            <!-- Adhesion Checkbox Filter -->
 											<div class="BR-Filter__Item">
-								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[6].filteropen==true, 'BR-Filter--Closed': AllFilters[6].filteropen==false}" ng-click="Accordion($event,6)">
-								                    <p class="BR-Filter__Item__Header__Name">Chemical Resistance</p>
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[7].filteropen==true, 'BR-Filter--Closed': AllFilters[7].filteropen==false}" ng-click="Accordion($event,7)">
+								                    <p class="BR-Filter__Item__Header__Name">Adhesion</p>
 								                </header>
 								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-								                    <span ng-repeat="fv in AllFilters[6].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('6',AllFilters[6],fv)">
+								                    <span ng-repeat="fv in AllFilters[7].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('7',AllFilters[7],fv)">
 								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
 								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
 								                            {{ fv.id }} ({{ fv.count }})
