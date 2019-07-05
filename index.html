@@ -243,98 +243,65 @@
 												</div>
 												
 												<!--Bnum Details Section -->
-												<!-- <div class="BnumDetailsContainer" ng-show="showDetails"> -->
 												<div class="BR-MatSelApp__BnumDetails">
 
-														<!--Material Profle Section -->
-												
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">	
-														<h4 class="BR-MatSelApp__Subheading">Material Profile:</h4>
-														<p class="BnumDetailMaterialDescription">
-															<img class="BnumTypeimage" ng-src="img/{{ x.materialType }}.png">
-															{{ x.description }}
-														</p>								
-														<p class="BR-MatSelApp__AttributeHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
-
-														<!--Bnum Rec Apps Section -->
-
-														<p class="BR-MatSelApp__AttributeHeading"><strong>Applications</strong></p>
-														<ul>
-															<li ng-repeat="i in x.printerLabelApplications" ng-cloak class="BR-MatSelApp__BnumListItem">{{ i }}
-														</ul>
+													<!--Material Profle Section -->
+													<div class="BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--BorderMgmt">
+														<div>
+															<img class="BnumTypeimage" ng-src="img/{{ x.materialType }}.png">	
+															<p class="BR-MatSelApp__AttributeHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
+															<p class="BnumDetailMaterialDescription">{{ x.description }}</p>
+														</div>							
 													</div>
-
+													
 													<!-- Label Construction Section -->
-													<div ng-show="x.materialType == 'Label'" class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">Label Construction</h4>
-														
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Label Construction</strong></p>
 														<div class="BnumConstruction">
-															<svg class="BnumMaterialImage" viewBox="107.675 62.275 284.65 330.336" width="284.65" height="330.336" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" fill="#ffffe6" d="M248.257 247.966l-140.582 71.152 141.163 73.493 143.487-73.961-142.326-71.152-1.161.936z"/><path stroke="#000" fill="#eee" d="M248.257 155.354l-140.581 71.152L248.839 300l143.486-73.962-142.326-71.152-1.16.936z"/><path stroke="#000" fill="#fff" d="M248.258 62.743l-140.582 71.152 141.162 73.493 143.486-73.961L250 62.275l-1.162.936z"/>
-															</svg>
 															<p class="BnumConstructionHeading"><strong>Finish: </strong>{{ x.finish }}</p>
 															<p class="BnumConstructionHeading"><strong>Base: </strong>{{ x.baseMaterial }}</p>
 															<p class="BnumConstructionHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
 														</div>
 														<p class="BR-MatSelApp__AttributeHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
+													</div>	
+
+
+													<!--Applications Section -->
+												
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">	
+														<!-- <h4 class="BR-MatSelApp__Subheading">Applications</h4> -->
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Applications</strong></p>
+														<ul>
+															<li ng-repeat="i in x.printerLabelApplications" ng-cloak class="BR-MatSelApp__BnumListItem">{{ i }}
+														</ul>
 
 														<!-- Color Swatches Section -->
 														<p class="BR-MatSelApp__AttributeHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
 														<div class="swatch_container">
 															<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink'}">
 																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
-																
 															</div>
 														</div>
 														<p class="BnumDisclaimer" ng-show="x.tapeColorable=='Yes'">*This material can be custom colored.</p>
-
-													</div>	
-
-													<!-- Tag Construction Section -->
-													<div ng-show="x.materialType == 'Tag'" class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">Tag Construction</h4>
 													</div>
 
-													<!-- Sleeve Construction Section -->
-													<div ng-show="x.materialType == 'Sleeve'" class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">Sleeve Construction</h4>
-													</div>
+													<!--Bnum Rec Compliance Section -->
 
-													<!-- Wiremarker Construction Section -->
-													<div ng-show="x.materialType == 'Wiremarker'" class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">Wiremarker Construction</h4>
-													</div>
-
-													<!-- Selflam Construction Section -->
-													<div ng-show="x.materialType == 'Self-Lam'" class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">Selflam Construction</h4>
-													</div>
-
-													<!-- Sign Construction Section -->
-													<div ng-show="x.materialType == 'Sign'" class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">Sign Construction</h4>
-													</div>
-
-
-
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">	
-
-														<!--Bnum Rec Compliance Section -->
-
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">	
 														<div>
 															<h4 class="BR-MatSelApp__Subheading">Compliance</h4>
 															<img ng-repeat="i in x.compliance" ng-cloak class="CompIcon" ng-src="img/{{ i }}_icon.png">
-															<br>
-															<br>
 														</div>
+													</div>
 
-														<!-- Spec Props Section -->
+													<!-- Spec Props Section -->
 
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">	
 														<h4 class="BR-MatSelApp__Subheading">Special Properties</h4>
 														<ul>
 															<li ng-repeat="i in x.specialProperties" ng-cloak class="newSpecProp" ng-class="{SpecPropIcon_HR: i=='Heat Resistant Labels', SpecPropIcon_CR: i=='Low Temperature Labels', SpecPropIcon_FR: i=='Flame-retardant', SpecPropIcon_RM: i=='Removable Labels', SpecPropIcon_PM: i=='Permanent Adhesive Labels', SpecPropIcon_HE: i=='Harsh Environment Labels'}">{{ i }}
 														</ul>
 													</div>
-
 
 													<!--Chem Resistance Section -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">	

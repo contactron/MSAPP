@@ -257,6 +257,16 @@ input[type=text]  {
   font-size: .875rem;
 }
 
+.BR-MatSelApp__SubSection--DoubleWide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #Fefefe;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  font-size: .875rem;
+}
+
 
 .BR-MatSelApp__Subheading {
   color: #000;
@@ -276,8 +286,8 @@ input[type=text]  {
 }
 
 .BnumTypeimage {
-  float: right;
-  margin-left: .5rem;
+  float: left;
+  margin-right: .5rem;
   width: 125px;
   height: 125px;
 }
@@ -476,7 +486,7 @@ input[type=text]  {
 
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .BR-MatSelApp__SubSection--MaxThreeAcross {
     width: 50%;
   }
@@ -492,6 +502,15 @@ input[type=text]  {
   .BR-MatSelApp__SubSection--MaxThreeAcross {
     width: 33.33%;
   }
+  .BR-MatSelApp__SubSection--DoubleWide {
+  width: 66.66%;
+  }
+  .BR-MatSelApp_SubSection--BorderMgmt {
+    border-style: none;
+  }
+/*  #ProfileSection {
+    border: 1px solid #ccc;
+  }*/
 }
 
 
