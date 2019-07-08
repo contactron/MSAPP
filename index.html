@@ -186,7 +186,7 @@
 												<div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
 												    <span ng-repeat="fv in AllFilters[4].values | orderBy:'id'" class="BR-FilterColorSwatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
 														<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-															<label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': fv.id=='Yellow', 'BR-FilterColorSwatch--Black': fv.id=='Black', 'BR-FilterColorSwatch--Blue': fv.id=='Blue', 'BR-FilterColorSwatch--Red': fv.id=='Red', 'BR-FilterColorSwatch--Brown': fv.id=='Brown', 'BR-FilterColorSwatch--Gray': fv.id=='Gray', 'BR-FilterColorSwatch--Gold': fv.id=='Gold', 'BR-FilterColorSwatch--Green': fv.id=='Green', 'BR-FilterColorSwatch--Purple': fv.id=='Purple', 'BR-FilterColorSwatch--Orange': fv.id=='Orange', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--White': fv.id=='White', 'BR-FilterColorSwatch--LightBlue': fv.id=='Light Blue', 'BR-FilterColorSwatch--Metallized': fv.id=='Metallized', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--Violet': fv.id=='Violet', 'BR-FilterColorSwatch--Silver': fv.id=='Silver', 'BR-FilterColorSwatch--Pink': fv.id=='Pink'}">
+															<label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': fv.id=='Yellow', 'BR-FilterColorSwatch--Black': fv.id=='Black', 'BR-FilterColorSwatch--Blue': fv.id=='Blue', 'BR-FilterColorSwatch--Red': fv.id=='Red', 'BR-FilterColorSwatch--Brown': fv.id=='Brown', 'BR-FilterColorSwatch--Gray': fv.id=='Gray', 'BR-FilterColorSwatch--Gold': fv.id=='Gold', 'BR-FilterColorSwatch--Green': fv.id=='Green', 'BR-FilterColorSwatch--Purple': fv.id=='Purple', 'BR-FilterColorSwatch--Orange': fv.id=='Orange', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--White': fv.id=='White', 'BR-FilterColorSwatch--LightBlue': fv.id=='Light Blue', 'BR-FilterColorSwatch--Metallized': fv.id=='Metallized', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--Violet': fv.id=='Violet', 'BR-FilterColorSwatch--Silver': fv.id=='Silver', 'BR-FilterColorSwatch--Pink': fv.id=='Pink', 'BR-FilterColorSwatch--Amber': fv.id=='Amber'}">
 																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ fv.id }}</span>					
 															</label>
 														</input>
@@ -246,7 +246,7 @@
 												<div class="BR-MatSelApp__BnumDetails">
 
 													<!--Material Profle Section -->
-													<div class="BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--BorderMgmt">
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--BorderMgmt">
 														<div>
 															<img class="BnumTypeimage" ng-src="img/{{ x.materialType }}.png">	
 															<p class="BR-MatSelApp__AttributeHeading"><strong>Material Type: </strong>{{ x.materialType }}</p>
@@ -278,7 +278,7 @@
 														<!-- Color Swatches Section -->
 														<p class="BR-MatSelApp__AttributeHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
 														<div class="swatch_container">
-															<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink'}">
+															<div ng-repeat="i in x.colors" ng-cloak class="colorbox_small BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink', 'BR-FilterColorSwatch--Amber': i=='Amber'}">
 																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
 															</div>
 														</div>
@@ -383,17 +383,20 @@
 													</div>
 
 													<!-- More Info Section -->
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">
-														<h4 class="BR-MatSelApp__Subheading">More Information</h4>
-														<p>Consult our <strong>Technical Data Sheets</strong> for detailed material information including:</p>
-														<ul>
-															<li class="BR-MatSelApp__BnumListItem">Detailed testing results for Adhesion and Chemical Resistance
-															<li class="BR-MatSelApp__BnumListItem">Regulatory and Agency Approvals
-														</ul>
-														<!-- Replace "B-" on B# as it has encoded characters that break the link to the TDS -->
-														<a class="BR-MatSelApp__TDSLink" href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">
-														<svg class="BR-MatSelApp__TDSImage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/><path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M480 224l-96-96h96z"/><path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/><g fill="#fff"><path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/></g><path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/></svg>
-														{{ x.num }} Technical Data Sheet</a>
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--Expanding">
+														<div>
+															<h4 class="BR-MatSelApp__Subheading">More Information</h4>
+															<p>Consult our <strong>Technical Data Sheets</strong> for detailed material information including:</p>
+															<ul>
+																<li class="BR-MatSelApp__BnumListItem">Detailed testing results for Adhesion and Chemical Resistance
+																<li class="BR-MatSelApp__BnumListItem">Regulatory and Agency Approvals
+															</ul>
+														</div>
+														<div>
+															<a class="BR-MatSelApp__TDSLink" href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">
+															<svg class="BR-MatSelApp__TDSImage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/><path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M480 224l-96-96h96z"/><path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/><g fill="#fff"><path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/></g><path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/></svg>
+															{{ x.num }} Technical Data Sheet</a>
+														</div>
 													</div>	
 
 												
@@ -402,7 +405,6 @@
 											
 										</div>
 									</main>
-
 					</div>
 				</section>
 			</section>

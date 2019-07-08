@@ -14,7 +14,8 @@ p, ul, li {
 }
 
 /* Color Swatch Filter stylings */
-/* MatSelApp not included in name since this could be used elsewhere */
+/* MatSelApp not included in name since this could be used
+generically as a class for all color filters*/
 
 .BR-FilterColorSwatch {
   display: flex;
@@ -175,6 +176,11 @@ p, ul, li {
   background: linear-gradient(45deg, #ddd, #fff, #ddd);
 }
 
+.BR-FilterColorSwatch--Amber {
+  background: #ffe8ab;
+}
+
+
 /*Fix the height of the input box. Add more specificity*/
 input[type=text]  {
   height: 2.75rem;
@@ -205,7 +211,9 @@ input[type=text]  {
     margin-bottom: .75rem;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Add a background color to the button if it is clicked on 
+(add the .active class with JS), and when you move the 
+mouse over it (hover) */
 .BR-MatSelApp__BnumRow:hover {
   background-color: #ccc;
 }
@@ -257,14 +265,18 @@ input[type=text]  {
   font-size: .875rem;
 }
 
+/* This class helps manage the size of the material profile 
+section which at larger screen sizes is shown at 66% */
 .BR-MatSelApp__SubSection--DoubleWide {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #Fefefe;
-  padding: 1.5rem;
-  border: 1px solid #ccc;
-  font-size: .875rem;
+}
+
+/* This class helps manage the size of the more info
+section which grows to fill the space left when
+other sections have no data and so are hidden */
+.BR-MatSelApp__SubSection--Expanding {
+  flex-grow: 1;
+  -webkit-flex-grow: 1
 }
 
 
@@ -493,6 +505,9 @@ input[type=text]  {
 }
 
 @media screen and (min-width: 1024px) {
+    .BR-MatSelApp__SubSection--DoubleWide {
+    width: 100%;
+  }
   .BR-MatSelApp__Results {
     padding-left: 1.5rem;
   }
