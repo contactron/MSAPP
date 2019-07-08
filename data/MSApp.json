@@ -1,7 +1,6 @@
 {
 
   "Bnums": 
-
 [
   {
     "num": "B-103",
@@ -37,19 +36,18 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
       "Cleaners",
-      "Oils",
-      "Fuels"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 2,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
@@ -89,20 +87,18 @@
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents"
+      "Alcohols"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 4,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 3,
     "chemResistanceFuels": 3,
     "adhesion": [
-      "Typical",
-      "DIfficult"
+      "Typical"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No"
   },
   {
@@ -139,20 +135,19 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Cleaners",
-      "Oils",
-      "Fuels"
+      "Solvents",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 2,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 3,
     "adhesion": [
-      "Typical",
-      "DIfficult"
+      "Typical"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No"
   },
   {
@@ -190,19 +185,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Cleaners",
+      "Solvents",
       "Fuels"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 3,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 1,
     "chemResistanceOils": 3,
     "chemResistanceFuels": 1,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
   {
@@ -235,23 +232,22 @@
       "Wire & Cable",
       "Inspection Repair"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Cleaners",
-      "Solvents",
-      "Fuels"
+      "Alcohols",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 2,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Typical"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 2,
     "adhesionDifficult": 4,
     "adhesionTextured": "No"
   },
@@ -284,26 +280,25 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
-      "Solvents",
       "Oils"
     ],
-    "chemResistanceAlcohols": 2,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 1,
+    "chemResistanceSolvents": 3,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 1,
     "adhesionDifficult": 5,
-    "adhesionTextured": "No"
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-321",
@@ -340,20 +335,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Cleaners"
+      "Alcohols",
+      "Solvents",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Typical",
-      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
   {
@@ -383,24 +379,25 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Solvents"
+      "Alcohols",
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Typical",
-      "Textured Surfaces"
+      "DIfficult"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes"
+    "adhesionTypical": 3,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No"
   },
   {
     "num": "B-342",
@@ -444,28 +441,24 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Solvents",
       "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Typical",
-      "Textured Surfaces"
+      "Typical"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes"
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
   },
   {
     "num": "B-344",
@@ -507,23 +500,23 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Oils",
+      "Cleaners",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 2,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 4,
     "chemResistanceFuels": 2,
     "adhesion": [
       "Typical"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No"
   },
   {
@@ -564,20 +557,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Cleaners",
       "Oils"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 1,
+    "chemResistanceCleaners": 4,
     "chemResistanceSolvents": 4,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 5,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
   {
@@ -615,21 +607,25 @@
       "General Identification",
       "Inspection Repair"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 3,
-    "adhesion": [
-      "Typical"
+    "chemicalResistance": [
+      "Solvents",
+      "Fuels"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "No"
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-351",
@@ -666,26 +662,26 @@
       "Inspection Repair",
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
       "Cleaners",
-      "Fuels"
+      "Solvents",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Typical",
-      "DIfficult",
-      "Textured Surfaces"
+      "Typical"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "Yes"
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
   },
   {
     "num": "B-362",
@@ -728,18 +724,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Cleaners",
       "Fuels"
     ],
     "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 3,
     "chemResistanceFuels": 1,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes"
   },
@@ -774,19 +771,22 @@
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Oils"
+      "Alcohols",
+      "Cleaners",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 5,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 5,
-    "adhesionTextured": "No"
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-390",
@@ -821,20 +821,21 @@
     "chemicalResistance": [
       "Alcohols",
       "Cleaners",
-      "Solvents"
+      "Solvents",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 2,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 1,
     "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Typical",
-      "DIfficult"
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "No"
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-402",
@@ -870,21 +871,20 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Cleaners",
-      "Oils",
+      "Solvents",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 5,
+    "chemResistanceAlcohols": 3,
     "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 2,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 1,
     "adhesion": [
-      "Typical",
-      "Textured Surfaces"
+      "Typical"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": 4,
-    "adhesionTextured": "Yes"
+    "adhesionTextured": "No"
   },
   {
     "num": "B-403",
@@ -919,23 +919,24 @@
       "Laboratory",
       "General Identification"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
       "Cleaners",
-      "Oils"
+      "Solvents",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Typical"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 5,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No"
   },
   {
@@ -971,19 +972,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents"
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 4,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 2,
     "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
@@ -1015,23 +1018,26 @@
       "Wire & Cable",
       "General Identification"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Alcohols"
+      "Cleaners",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 5,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 4,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 5,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "DIfficult",
+      "Textured Surfaces"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "No"
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-413",
@@ -1076,18 +1082,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 4,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "DIfficult"
     ],
     "adhesionTypical": 2,
-    "adhesionDifficult": 4,
+    "adhesionDifficult": 3,
     "adhesionTextured": "No"
   },
   {
@@ -1119,19 +1126,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Cleaners",
-      "Solvents"
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 1,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 5,
-    "chemResistanceFuels": 5,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "DIfficult"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 4,
+    "adhesionDifficult": 3,
     "adhesionTextured": "No"
   },
   {
@@ -1166,19 +1173,21 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
-      "Oils"
+      "Oils",
+      "Fuels"
     ],
     "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 5,
+    "chemResistanceCleaners": 4,
     "chemResistanceSolvents": 4,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 3,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Typical",
+      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes"
   },
   {
@@ -1209,22 +1218,19 @@
     "tapeColorable": null,
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Oils"
-    ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 3,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Typical",
+      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes"
   },
   {
@@ -1266,19 +1272,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
+      "Alcohols",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 5,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
     "chemResistanceOils": 3,
-    "chemResistanceFuels": 1,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 3,
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes"
   },
@@ -1323,22 +1329,22 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Solvents"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Typical",
-      "DIfficult"
+      "DIfficult",
+      "Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 3,
-    "adhesionTextured": "No"
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-424",
@@ -1370,26 +1376,23 @@
       "General Identification",
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Fuels"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 5,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 5,
-    "chemResistanceFuels": 1,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Typical",
-      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
   {
@@ -1422,19 +1425,18 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Solvents",
-      "Fuels"
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Typical"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No"
   },
   {
@@ -1479,24 +1481,28 @@
       "Laboratory",
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
       "Alcohols",
-      "Oils"
+      "Cleaners",
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 3,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 4,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 1,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "DIfficult",
+      "Textured Surfaces"
     ],
     "adhesionTypical": 2,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "No"
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-428",
@@ -1535,24 +1541,25 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Fuels"
+      "Alcohols",
+      "Cleaners",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 2,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Typical",
-      "Textured Surfaces"
+      "Typical"
     ],
     "adhesionTypical": 2,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes"
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
   },
   {
     "num": "B-430",
@@ -1599,21 +1606,19 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Solvents",
-      "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
+    "chemResistanceAlcohols": 4,
     "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 2,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 4,
     "chemResistanceFuels": 2,
     "adhesion": [
-      "Typical",
-      "Textured Surfaces"
+      "Typical"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 2,
     "adhesionDifficult": 5,
-    "adhesionTextured": "Yes"
+    "adhesionTextured": "No"
   },
   {
     "num": "B-432",
@@ -1649,26 +1654,24 @@
       "General Identification",
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Solvents",
+      "Cleaners",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 2,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 3,
     "chemResistanceFuels": 2,
     "adhesion": [
-      "Typical",
-      "DIfficult",
-      "Textured Surfaces"
+      "Typical"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "Yes"
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
   },
   {
     "num": "B-434",
@@ -1706,25 +1709,25 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
       "Cleaners",
+      "Solvents",
       "Oils"
     ],
     "chemResistanceAlcohols": 2,
     "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 5,
+    "chemResistanceSolvents": 1,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
-      "Typical",
-      "DIfficult"
+      "Typical"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No"
   },
   {
@@ -1763,23 +1766,25 @@
       "General Identification",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Fuels"
+      "Alcohols",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Typical",
+      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes"
   },
   {
@@ -1815,24 +1820,23 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 3,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 4,
     "chemResistanceFuels": 4,
     "adhesion": [
       "Typical",
-      "DIfficult",
       "Textured Surfaces"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
   {
@@ -1873,26 +1877,25 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Fuels"
+      "Alcohols"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 2,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 4,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Typical",
-      "DIfficult"
+      "DIfficult",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 1,
     "adhesionDifficult": 3,
-    "adhesionTextured": "No"
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-439",
@@ -1933,24 +1936,23 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
-      "Solvents"
+      "Solvents",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 2,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 1,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 1,
     "adhesion": [
-      "Typical",
-      "DIfficult"
+      "Typical"
     ],
     "adhesionTypical": 2,
-    "adhesionDifficult": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No"
   },
   {
@@ -1987,20 +1989,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Solvents",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 5,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 2,
     "chemResistanceFuels": 4,
     "adhesion": [
       "Typical",
-      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   },
   {
@@ -2037,22 +2039,23 @@
     "printerLabelApplications": [
       "Laboratory"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Oils"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 4,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 5,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Typical",
       "DIfficult"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 2,
     "adhesionDifficult": 3,
     "adhesionTextured": "No"
   },
@@ -2097,24 +2100,25 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Solvents",
-      "Fuels"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 5,
+    "chemResistanceAlcohols": 4,
     "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 2,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "DIfficult",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "No"
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-473",
@@ -2152,27 +2156,28 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Fuels"
+      "Alcohols",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Typical",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 3,
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes"
   },
   {
-    "num": "B-480",
+    "num": "B-480A",
     "adhesive": "Rubber",
     "finish": "Satin",
     "outdoorAppropriate": null,
@@ -2196,8 +2201,8 @@
       "cUL",
       "RoHS"
     ],
-    "name": null,
-    "description": "Barcode labels, serial and rating plates requiring nameplate like quality. Adhesive designed for low surface energy or powder coated surfaces. ",
+    "name": "Thermal Transfer Printable Light Gray Polyester Label Stock With Rubber Based Adhesive",
+    "description": "B-480A is a thermal transfer printable polyester label stock with a rubber based adhesive designed for low surface energy and powder coated surfaces.  It is recommended for applications includeing barcode labeling and serial and rating plates requiring nameplate-like quality.",
     "specialProperties": [
       "Aggressive Adhesive Labels",
       "Heat Resistant Labels",
@@ -2209,25 +2214,24 @@
       "Rating & Name Plates",
       "Inspection Repair"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
       "Cleaners",
-      "Oils",
-      "Fuels"
+      "Oils"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 1,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 4,
     "chemResistanceOils": 1,
-    "chemResistanceFuels": 1,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Typical"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No"
   },
   {
@@ -2262,15 +2266,18 @@
     "printerLabelApplications": [
       "Laboratory"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 4,
+    "chemicalResistance": [
+      "Alcohols",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 1,
     "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Typical",
       "DIfficult"
@@ -2318,24 +2325,24 @@
       "Rating & Name Plates",
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners"
+      "Alcohols"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 5,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 3,
     "adhesion": [
-      "Typical"
+      "Typical",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 1,
     "adhesionDifficult": 5,
-    "adhesionTextured": "No"
+    "adhesionTextured": "Yes"
   },
   {
     "num": "B-483",
@@ -2369,6 +2376,1141 @@
       "Electrical",
       "Safety"
     ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-484A",
+    "adhesive": "Rubber",
+    "finish": "Gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Low Profile"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.076 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Flexible Thermal Transfer Printable Label Stock",
+    "description": "B-484A is white polyester label stock designed for high adhesion to textured metals, low surface energy plastics, as well as angled and curved surfaces.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners"
+    ],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical",
+      "DIfficult"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-486B",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Metallized Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0053 in",
+    "thicknessMm": "0.135 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "UL",
+      "CSA"
+    ],
+    "name": "Thermal Transfer Printable Metallized Polyester Label Stock",
+    "description": "B-486B is a metallized polyester label stock designed for designed for high adhesion to textured metals, powder coated surfaces and low surface energy plastics. It can\nwithstand numerous solvents and variable temperatures when applied to various surfaces. It is recommended for rating and serial plates that utilize barcodes, alphanumerics, graphic symbols and logos and require nameplate-like quality.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-488",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Autoclavable",
+      "Cryogenic storage"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "145 °C",
+    "maxServiceTemperatureF": "293 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0037 in",
+    "thicknessMm": "0.094 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Matte White Polyester Label Stock",
+    "description": "B-488 is a high performance material ideal for barcode labels and rating plates. It is designed to withstand numerous solvents and variable temperatures when applied to surfaces including stainless steel and polypropylene.",
+    "specialProperties": [
+      "Harsh Environment Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Laboratory",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-489A",
+    "adhesive": "Rubber",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0051 in",
+    "thicknessMm": "0.1295 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Label Stock",
+    "description": "B-489 is a matte polyester with ultra aggressive, permanent adhesive. It is designed for high adhesion to textured metals, low surface energy plastics, and powder coated surfaces.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Inspection Repair",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical",
+      "DIfficult"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-490",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Cold-temperature application",
+      "Cryogenic storage",
+      "Autoclavable"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": "-196 °C",
+    "minApplicationTemperatureF": "-320 °F",
+    "minServiceTemperatureC": "-196 °C",
+    "minServiceTemperatureF": "-320 °F",
+    "thicknessIn": "0.0026 in",
+    "thicknessMm": "0.065 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Freezerbondz Matte White Polyester Thermal Printable Label Stock",
+    "description": "B-490 Freezerbondz™ material designed for use in laboratory identification including liquid nitrogen and freezer applications. It adheres to frozen tubes and vials when wrapped around itself by at least 1/8 inch.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Low Temperature Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical",
+      "DIfficult",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-492",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Cold-temperature application",
+      "Cryogenic storage"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "110 °C",
+    "maxServiceTemperatureF": "230 °F",
+    "minApplicationTemperatureC": "-196 °C",
+    "minApplicationTemperatureF": "-320 °F",
+    "minServiceTemperatureC": "-196 °C",
+    "minServiceTemperatureF": "-320 °F",
+    "thicknessIn": "0.0032 in",
+    "thicknessMm": "0.081 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "Freezerbondz White Polyester Thermal Printable Label Stock",
+    "description": "B-492 is an ultra-thin version of Freezerbondz™ material designed for use in laboratory identification including liquid nitrogen and freezer applications. It adheres to frozen tubes and vials when wrapped around itself by at least 1/8 inch.",
+    "specialProperties": [
+      "Aggressive Adhesive Labels",
+      "Low Temperature Labels"
+    ],
+    "printerLabelApplications": [
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 2,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-498",
+    "adhesive": "Repositionable Rubber",
+    "finish": "Semi-gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Cloth",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0073 in",
+    "thicknessMm": "0.185 mm",
+    "colors": [
+      "White",
+      "Yellow Orange"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable, Repositionable Coated Vinyl Cloth Label",
+    "description": "B-498 is a repositionable, coated vinyl cloth label stock. It is suitable for wire, cable and component marking as well as  general identification. Its reposistionable, rubber-based adhesive removes cleanly from surfaces. ",
+    "specialProperties": [
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Cleaners"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-499",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Autoclavable",
+      "Cryogenic storage"
+    ],
+    "baseMaterial": "Nylon",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0065 in",
+    "thicknessMm": "0.165 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer / Dot Matrix Printable Nylon Cloth Label",
+    "description": "B-499 is polyamide coated nylon cloth label stock designed for wiremarking and general labeling applications. Its high adhesion makes it ideal for environments where heat, cold, oil and dirt are present as well as for laboratory vial identification. It is not intended for outdoor use.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-500",
+    "adhesive": "Repositionable Rubber",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Cloth",
+    "maxServiceTemperatureC": "80 °C",
+    "maxServiceTemperatureF": "176 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0088 in",
+    "thicknessMm": "0.224 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "Polymer Coated Cloth Tape",
+    "description": "B-­500 is a polymer coated cloth label material with a printable topcoat and a rubber based pressure sensitive adhesive. It is a general purpose material for a variety of pre­printed labeling and wire marking applications requiring durability and economy. It has excellent flexibility for wrapping around curved surfaces and good oil and water resistance.",
+    "specialProperties": [
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board",
+      "Inspection Repair"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols"
+    ],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical",
+      "DIfficult"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-508",
+    "adhesive": null,
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Rigid"
+    ],
+    "baseMaterial": "Nomex�",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.012 in",
+    "thicknessMm": "0.305 mm",
+    "colors": [
+      "White",
+      "Yellow Green"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Bradytag® Computer Printable Tag",
+    "description": "B-508 is a high performance wire bundle and cable identification tag for use in harsh environments. It has excellent tear, solvent and heat resistance properties.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Cleaners",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 3,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-530",
+    "adhesive": "Acrylic",
+    "finish": null,
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Tamper-resistant"
+    ],
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "90 °C",
+    "maxServiceTemperatureF": "194 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.06 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Glossy White Polyester Label Stock",
+    "description": "B-­530 is a tamper-proof vinyl label for asset and equipment identification. It destructs upon removal, breaking into small pieces.",
+    "specialProperties": [
+      "Tamper Evident Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-533",
+    "adhesive": "Removable Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.003 in",
+    "thicknessMm": "0.0708 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Glossy White Polyester Label Stock",
+    "description": "B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed. ",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "General Identification",
+      "Laboratory"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-593 ",
+    "adhesive": "Acrylic-Foam Backed",
+    "finish": "Gloss",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Raised"
+    ],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-20 °C",
+    "minServiceTemperatureF": "-4 °F",
+    "thicknessIn": "0.0256 in",
+    "thicknessMm": "0.65 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Red",
+      "Green",
+      "Metallized"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "Raised Panel Label",
+    "description": "B-593 is an adhesive taped polyester label designed for patch panel identification including external push-buttons, switches,\nand internal connection points. B-593 is also used as rating and serial plates using alphanumerics that require name plate quality.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Electrical"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Cleaners",
+      "Solvents",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-619",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "145 °C",
+    "maxServiceTemperatureF": "293 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "cUL",
+      "RoHS"
+    ],
+    "name": "Matte White Polyester Label Stock",
+    "description": "B-619 is a dot-matrix and THT printable polyester label stock. It is designed for general purpose high performance labeling, barcode labels, and topside of printed circuit board and IC identification.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board",
+      "General Identification",
+      "Rating & Name Plates"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 2,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-637",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Flame-retardant"
+    ],
+    "baseMaterial": "Polyvinylfluoride",
+    "maxServiceTemperatureC": "135 °C",
+    "maxServiceTemperatureF": "275 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0036 in",
+    "thicknessMm": "0.091 mm",
+    "colors": [
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Dot Matrix Printable Label Stock",
+    "description": "B-637 is a label stock designed for cable and wire bundle identification and label applications where self­-extinguishing properties are required. It also exhibits good solvent and heat resistance.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-642",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Flame-retardant",
+      "Self-laminating"
+    ],
+    "baseMaterial": "Polyvinylfluoride",
+    "maxServiceTemperatureC": "120 °C",
+    "maxServiceTemperatureF": "248 °F",
+    "minApplicationTemperatureC": "10 °C",
+    "minApplicationTemperatureF": "50 °F",
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0022 in",
+    "thicknessMm": "0.055 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Translucent PVF Film Tape",
+    "description": "B-642 is a self-extinguishing material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries. It has excellent flexibility for wrapping on small diameter wires and the polyvinylfluoride film provides good self­-extinguishing properties and solvent resistance.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Self-Lam",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-652",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "280 °C",
+    "maxServiceTemperatureF": "536 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Green"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Dot Matrix / Laser Printable High Temperature Polyimide Label",
+    "description": "B-652 is a polyimide label with high heat resistance. It is recommended for circuit board and electronic component pre-process labeling.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-654",
+    "adhesive": "Removable Silicone",
+    "finish": "Gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "240 °C",
+    "maxServiceTemperatureF": "464 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": null,
+    "minServiceTemperatureF": null,
+    "thicknessIn": "0.0025 in",
+    "thicknessMm": "0.064 mm",
+    "colors": [
+      "Amber"
+    ],
+    "compliance": [],
+    "name": "Polyimide Masking Tape",
+    "description": "B-654 is a polyimide masking tape with high temperature removable adhesive. It is recommended for use use in printed circuit board applications. It can withstand solder fluxes, molten solder, and cleaning/degreasing solvents and removes cleanly with no adhesive residue from most surfaces.\n",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 3,
+    "adhesion": [
+      "Typical",
+      "DIfficult"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-717",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Static-dissipative"
+    ],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0042 in",
+    "thicknessMm": "0.107 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "Static Dissipative",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Glossy White Static Dissipative Polyimide",
+    "description": "B-717 is a low profile polyimide label with a permanent static dissipative adhesive and static dissipative release liner. It is designed for use in circuit board and electronic component pre-process labeling.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Typical",
+      "DIfficult",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-718",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Low Profile",
+      "Static-dissipative"
+    ],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0033 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "Static Dissipative",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Glossy White Low Profile Static Dissipative Polyimide Label Stock",
+    "description": "B-718 is a low profile glossy polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. ",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-719",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Low Profile",
+      "Static-dissipative"
+    ],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0033 in",
+    "thicknessMm": "0.084 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "Static Dissipative",
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Matte White Low Profile Static Dissipative Polyimide Label Stock",
+    "description": "B-719 is a low profile matte polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. ",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 2,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-724",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "Amber"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-724 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It is designed to withstand extremely high temperatures and can be used for top- or bottom-side component or board identification.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
@@ -2378,8 +3520,112 @@
       "Oils"
     ],
     "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 3,
+    "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 2,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical",
+      "DIfficult"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-727",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Glossy White Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-727 is a glossy polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its glossy topcoat provides excellent contrast and smear resistance.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents",
+      "Oils",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 1,
+    "adhesion": [
+      "Typical",
+      "DIfficult",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-728",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0044 in",
+    "thicknessMm": "0.112 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Matte White Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-728 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its matte topcoat provides excellent resistance to solder balling.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
     "chemResistanceOils": 2,
     "chemResistanceFuels": 5,
     "adhesion": [
@@ -2387,6 +3633,191 @@
       "Textured Surfaces"
     ],
     "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-729",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Low Profile"
+    ],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0034 in",
+    "thicknessMm": "0.086 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Matte White Low Profile Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-729 is a high-temperature polyimide label for pre-process circuit board identification. It is designed to survive multiple cycles of harsh condition washes used for circuit board cleaning processes. Its matte topcoat resists solder balls from sticking to the label after exposure to molten wave solder.",
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No"
+  },
+  {
+    "num": "B-730",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0045 in",
+    "thicknessMm": "0.114 mm",
+    "colors": [
+      "Black"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte Black Laser Markable Polyimide Label Stock",
+    "description": "B-730 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-731",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [],
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.0047 in",
+    "thicknessMm": "0.119 mm",
+    "colors": [
+      "Black"
+    ],
+    "compliance": [
+      "UL"
+    ],
+    "name": "Matte Black Laser Markable Static Dissipative Polyimide Label Stock",
+    "description": "B-731 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "outdoorDurabilityYears": null,
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 3,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes"
+  },
+  {
+    "num": "B-7316",
+    "adhesive": null,
+    "finish": null,
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Laser-engravable"
+    ],
+    "baseMaterial": "Steel",
+    "maxServiceTemperatureC": "815 °C",
+    "maxServiceTemperatureF": "1499 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-80 °C",
+    "minServiceTemperatureF": "-112 °F",
+    "thicknessIn": "0.0197 in",
+    "thicknessMm": "0.50 mm",
+    "colors": [
+      "Silver"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Stainless Steel Cable Tags",
+    "description": "Brady B­-7316 stainless steel cable tags are designed for labeling pipes, cables and wire bundles in harsh environments where extreme corrosion resistance and durability is required. The material can be laser etched or embossed for printed legends that are extremely durable. Tags are attached using stainless steel cable ties.",
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "outdoorDurabilityYears": null,
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
+    "adhesion": [
+      "Typical",
+      "Textured Surfaces"
+    ],
+    "adhesionTypical": 1,
     "adhesionDifficult": 5,
     "adhesionTextured": "Yes"
   }
