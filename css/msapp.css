@@ -229,17 +229,11 @@ mouse over it (hover) */
 
 .BR-MatSelApp__BnumNumber {
   font-weight: 700;
-  margin-bottom: 0;
-  margin-right: .75rem;
-  max-width: 100%;
-  -webkit-flex: 0 0 auto;
 }
 
 .BR-MatSelApp__BnumDescription {
   margin-bottom: 0;
   margin-right: .3125rem;
-  max-width: 100%;
-  -webkit-flex: 0 0 auto;
 }
 
 /*Bnum Details General Stylings*/
