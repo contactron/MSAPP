@@ -400,7 +400,7 @@ other sections have no data and so are hidden */
 }
 */
 
-/*Chemical Resistance & Adhesion Stylings*/
+/* Chemical Resistance & Adhesion Stylings */
 
 .BR-MatSelApp__RatingsLegend {
   display: flex;
@@ -494,6 +494,19 @@ other sections have no data and so are hidden */
   }
   .BR-MatSelApp_SubSection--BorderMgmt {
     border-style: none;
+  }
+/* When there are exactly 6 boxes being displayed
+   (when chem resistance and adhesion are not there)
+   change the presentation of the More Info box. */
+  .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding ul {
+    display: none;
+  }
+  .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding p {
+    margin-bottom: 0;
   }
 }
 
