@@ -39,10 +39,7 @@
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
-    "chemicalResistance": [
-      "Cleaners",
-      "Solvents"
-    ],
+    "chemicalResistance": [],
     "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 1,
     "chemResistanceSolvents": 2,
@@ -86,17 +83,13 @@
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
-    "chemicalResistance": [
-      "Alcohols"
-    ],
+    "chemicalResistance": [],
     "chemResistanceAlcohols": 2,
     "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 5,
     "chemResistanceOils": 3,
     "chemResistanceFuels": 3,
-    "adhesion": [
-      "Typical"
-    ],
+    "adhesion": [],
     "adhesionTypical": 1,
     "adhesionDifficult": 5,
     "adhesionTextured": "No"
