@@ -245,7 +245,7 @@
 												<div class="BR-MatSelApp__BnumDetails">
 
 													<!--Material Profle Section -->
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--BorderMgmt">
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--InteriorBox">
 														<div>
 															<img class="BR-MatSelApp__ProfileImage" ng-src="img/{{ x.materialType }}.png">	
 															<h4 class="BR-MatSelApp__Subheading">Description</h4>
@@ -254,7 +254,7 @@
 													</div>
 													
 													<!-- Label Construction Section -->
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
 														<h4 class="BR-MatSelApp__Subheading">Construction</h4>
 														<div>
 															<p class="BR-MatSelApp__AttributeHeading"><strong>Finish: </strong>{{ x.finish }}</p>
@@ -266,7 +266,7 @@
 
 													<!--Applications Section -->
 												
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">	
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
 														<!-- <h4 class="BR-MatSelApp__Subheading">Applications</h4> -->
 														<h4 class="BR-MatSelApp__Subheading">Applications</h4>
 														<ul>
@@ -285,7 +285,7 @@
 
 													<!--Bnum Rec Compliance Section -->
 
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">	
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
 														<div>
 															<h4 class="BR-MatSelApp__Subheading">Compliance</h4>
 															<img ng-repeat="i in x.compliance" ng-cloak class="BR-MatSelApp__ComplIcon" ng-src="img/{{ i }}_icon.png">
@@ -294,15 +294,15 @@
 
 													<!-- Spec Props Section -->
 
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--BorderMgmt">	
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
 														<h4 class="BR-MatSelApp__Subheading">Special Properties</h4>
 														<ul>
 															<li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProps" ng-class="{'BR-MatSelApp__SpecPropsIcon--HR': i=='Heat Resistant Labels', 'BR-MatSelApp__SpecPropsIcon--CR': i=='Low Temperature Labels', 'BR-MatSelApp__SpecPropsIcon--FR': i=='Flame-retardant', 'BR-MatSelApp__SpecPropsIcon--RM': i=='Removable Labels', 'BR-MatSelApp__SpecPropsIcon--PM': i=='Permanent Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--HE': i=='Harsh Environment Labels'}">{{ i }}
 														</ul>
 													</div>
 
-													<!--Chem Resistance Section -->
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">	
+													<!--Chem Resistance Section Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length > 0)">	
 														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
 														<div class="BR-MatSelApp__RatingsLegend">
 															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
@@ -351,8 +351,15 @@
 														</div>							
 													</div>
 
-													<!--Adhesion Specs Section -->
-													<div class="BR-MatSelApp__SubSection--MaxThreeAcross">
+													<!--Chemical Resistance Section No Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
+														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
+														<img class="BR-MatSelApp__TestingImg" src="img/chemicaltesting.svg">
+														<p>This material has not yet been tested.</p>
+													</div>
+
+													<!--Adhesion Specs Section Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length > 0)">
 														<h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
 														
 														<div class="BR-MatSelApp__RatingsLegend">
@@ -378,6 +385,13 @@
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
 														</div>											
+													</div>
+
+													<!--Adhesion Specs Section No Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
+														<h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
+														<img class="BR-MatSelApp__TestingImg" src="img/adhesiontesting.svg">
+														<p>This material has not yet been tested.</p>
 													</div>
 
 													<!-- More Info Section -->

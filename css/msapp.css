@@ -452,6 +452,11 @@ other sections have no data and so are hidden */
   background: #1779BA;
 }
 
+.BR-MatSelApp__TestingImg {
+  width: 125px;
+  height: auto;
+  margin: 3rem auto;
+}
 
 /* More Info Stylings */
 
@@ -492,8 +497,9 @@ other sections have no data and so are hidden */
   .BR-MatSelApp__SubSection--DoubleWide {
   width: 66.66%;
   }
-  .BR-MatSelApp_SubSection--BorderMgmt {
+  .BR-MatSelApp_SubSection--InteriorBox {
     border-style: none;
+    padding: 1rem 2rem;
   }
 /* When there are exactly 6 boxes being displayed
    (when chem resistance and adhesion are not there)
