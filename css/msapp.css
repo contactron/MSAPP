@@ -2,6 +2,11 @@ p, ul, li {
   line-height: 1.5;
 }
 
+/*Remove this after font has been updated in BradyID CSS
+*/body {
+  font: 1.1rem/1.4em Roboto,sans-serif
+}
+
 /* Filter Box Styling */
 /* Leverage BradyID styles where possible */
 
@@ -197,10 +202,6 @@ input[type=text]  {
 
 /* Bnum Results Stylings */
 
-.BR-MatSelApp__ResultsText {
-    margin-top: .5rem;
-}
-
 /* Style the button that is used to open and close the collapsible content */
 .BR-MatSelApp__BnumRow {
     background-color: #fff;
@@ -333,10 +334,6 @@ other sections have no data and so are hidden */
   margin: .5rem 1.75rem 1rem 0rem;
   padding-left: 3rem;
   line-height: 1.125rem;
-  font-size: .75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #666;
   letter-spacing: 1px;
 }
 
