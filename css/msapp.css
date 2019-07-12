@@ -363,31 +363,31 @@ other sections have no data and so are hidden */
 
 .BR-MatSelApp__ComplIcon {
   display: inline-block;
-  height: 50px;
-  margin-right: 1rem;
+  height: 40px;
+  margin: .5rem 1rem 0 0;
 }
 
 
-/*These styles are not needed unless we go with ngclass approach for icons*/
+/*These styles are not needed unless we go with ng-class approach for icons*/
 
 /*.BR-MatSelApp__ComplIcon--UL {
-  background: url(UL_icon.png) no-repeat;
+  background: url(UL_icon.svg) no-repeat;
 }
 
 .BR-MatSelApp__ComplIcon--CUL{
-  background: url(CUL_icon.png) no-repeat;
+  background: url(CUL_icon.svg) no-repeat;
 }
 
 .BR-MatSelApp__ComplIcon--CSA{
-  background: url(CSA_icon.png) no-repeat;
+  background: url(CSA_icon.svg) no-repeat;
 }
 
 .BR-MatSelApp__ComplIcon--ROHS{
-  background: url(ROHS_icon.png) no-repeat;
+  background: url(ROHS_icon.svg) no-repeat;
 }
 
 .BR-MatSelApp__ComplIcon--Static{
-  background: url(ROHS_icon.png) no-repeat;
+  background: url(SD.svg) no-repeat;
 }
 */
 
@@ -409,13 +409,13 @@ other sections have no data and so are hidden */
 .BR-MatSelApp__RatingsLegend__Text--Low:before {
     content: "\25C0";
     margin-right: .25em;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .BR-MatSelApp__RatingsLegend__Text--High:after {
     content: "\25B6";
     margin-left: .25em;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .BR-MatSelApp__RatingCategoryHead {

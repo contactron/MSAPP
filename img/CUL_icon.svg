@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="9.008 14.363 12.66 10.139" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+      <path id="path16" d="M 0,26.5 H 26.5 V 0 H 0 Z"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1.333333, 0, 0, -1.333333, 0, 35.333332)" id="g10">
+    <g id="g12">
+      <g clip-path="url(#clipPath18)" id="g14">
+        <g transform="translate(12.4502,15.1436)" id="g20">
+          <path id="path22" style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -1.774,0 -3.218,-1.444 -3.218,-3.218 0,-1.774 1.444,-3.218 3.218,-3.218 1.774,0 3.218,1.444 3.218,3.218 C 3.218,-1.444 1.774,0 0,0 m 0,-7.02 c -2.097,0 -3.802,1.706 -3.802,3.802 0,2.096 1.705,3.802 3.802,3.802 2.096,0 3.801,-1.706 3.801,-3.802 C 3.801,-5.314 2.096,-7.02 0,-7.02"/>
+        </g>
+        <g transform="translate(12.7124,12.9399)" id="g24">
+          <path id="path26" style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 v -3.24 h 1.766 v 0.686 H 0.818 L 0.81,0 Z"/>
+        </g>
+        <g transform="translate(10.3262,14.188)" id="g28">
+          <path id="path30" style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 v -2.591 c 0,0 -0.021,-0.963 1.102,-0.963 1.087,0 1.044,0.949 1.044,0.949 v 2.59 H 1.343 v -2.576 c 0,0 0.008,-0.219 -0.27,-0.219 -0.278,0 -0.27,0.227 -0.27,0.227 l 0.026,2.586 z"/>
+        </g>
+      </g>
+    </g>
+    <text id="text34" style="font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 0.7005px; font-family: Helvetica; writing-mode: lr-tb; fill: rgb(35, 31, 32); fill-opacity: 1; fill-rule: nonzero; stroke: none; white-space: pre;" transform="matrix(1,0,0,-1,11.21,9.7007)"><tspan id="tspan32" y="0" x="0">®</tspan></text>
+    <text id="text38" style="font-variant: normal; font-weight: bold; font-stretch: condensed; font-size: 3.3222px; font-family: &quot;Helvetica Condensed&quot;; writing-mode: lr-tb; fill: rgb(35, 31, 32); fill-opacity: 1; fill-rule: nonzero; stroke: none; white-space: pre;" transform="matrix(1,0,0,-1,6.7563,9.8994)"><tspan id="tspan36" y="0" x="0">c</tspan></text>
+  </g>
+</svg>

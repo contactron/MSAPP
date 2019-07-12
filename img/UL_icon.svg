@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="4.501 15.696 10.347 10.348" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+      <path id="path16" d="M 0,26.5 H 26.5 V 0 H 0 Z"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(1.333333, 0, 0, -1.333333, 0, 35.333332)" id="g10">
+    <g id="g12">
+      <g clip-path="url(#clipPath18)" id="g14">
+        <g transform="translate(7.2559,14.1318)" id="g20">
+          <path id="path22" style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -1.811,0 -3.285,-1.474 -3.285,-3.284 0,-1.811 1.474,-3.285 3.285,-3.285 1.811,0 3.284,1.474 3.284,3.285 C 3.284,-1.474 1.811,0 0,0 m 0,-7.165 c -2.14,0 -3.88,1.741 -3.88,3.881 0,2.139 1.74,3.88 3.88,3.88 2.139,0 3.88,-1.741 3.88,-3.88 0,-2.14 -1.741,-3.881 -3.88,-3.881"/>
+        </g>
+        <g transform="translate(7.5234,11.8823)" id="g24">
+          <path id="path26" style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 v -3.307 h 1.803 v 0.701 H 0.835 L 0.827,0 Z"/>
+        </g>
+        <g transform="translate(5.0884,13.1563)" id="g28">
+          <path id="path30" style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 v -2.644 c 0,0 -0.022,-0.983 1.125,-0.983 1.109,0 1.064,0.968 1.064,0.968 v 2.644 H 1.371 v -2.629 c 0,0 0.007,-0.224 -0.276,-0.224 -0.283,0 -0.276,0.231 -0.276,0.231 l 0.026,2.64 z"/>
+        </g>
+      </g>
+    </g>
+    <text id="text34" style="font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 0.715px; font-family: Helvetica; writing-mode: lr-tb; fill: rgb(35, 31, 32); fill-opacity: 1; fill-rule: nonzero; stroke: none; white-space: pre;" transform="matrix(1,0,0,-1,5.9893,8.5757)"><tspan id="tspan32" y="0" x="0">®</tspan></text>
+  </g>
+</svg>

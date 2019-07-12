@@ -3818,71 +3818,51 @@
 
   "Filters": [{
       "id": "materialType",
-      "displayname": "Material Type",
-      "presentation": "IconText",
       "values": [],
       "filteropen": false
     },
     {
       "id": "printerLabelApplications",
-      "displayname": "Applications",
-      "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
       "id": "baseMaterial",
-      "displayname": "Material",
-      "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
       "id": "finish",
-      "displayname": "Finish",
-      "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
       "id": "colors",
-      "displayname": "Colors",
-      "presentation": "Swatch",
       "values": [],
       "filteropen": false
     },
     {
       "id": "searchFilter",
-      "displayname": "",
-      "presentation": "Search",
       "values": [],
       "filteropen": false
     },
     {
       "id": "chemicalResistance",
-      "displayname": "Chemical Resistance",
-      "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
       "id": "adhesion",
-      "displayname": "Adhesion",
-      "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     },
     {
       "id": "specialProperties",
-      "displayname": "Special Properties",
-      "presentation": "IconText",
       "values": [],
       "filteropen": false
     },
     {
       "id": "compliance",
-      "displayname": "Regulatory Approvals",
-      "presentation": "Checkbox",
       "values": [],
       "filteropen": false
     }

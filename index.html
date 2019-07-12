@@ -286,8 +286,10 @@
 
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
 														<div>
-															<h4 class="BR-MatSelApp__Subheading">Compliance</h4>
-															<img ng-repeat="i in x.compliance" ng-cloak class="BR-MatSelApp__ComplIcon" ng-src="img/{{ i }}_icon.png">
+															<h4 class="BR-MatSelApp__Subheading">Regulatory Approvals
+	                                                        <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24"><path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path><path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path></svg>
+	                                                     </h4>
+															<img ng-repeat="i in x.compliance" ng-cloak class="BR-MatSelApp__ComplIcon" ng-src="img/{{ i }}_icon.svg">
 															<p ng-cloak ng-if="x.compliance.length < 1" >There is no compliance information currently available for this material.<p>
 														</div>
 													</div>
@@ -304,7 +306,11 @@
 
 													<!--Chem Resistance Section Data -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length > 0)">	
-														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
+													
+														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance
+	                                                        <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24"><path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path><path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path></svg>
+	                                                     </h4>
+
 														<div class="BR-MatSelApp__RatingsLegend">
 															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
 															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
@@ -361,8 +367,10 @@
 
 													<!--Adhesion Specs Section Data -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length > 0)">
-														<h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
 														
+														<h4 class="BR-MatSelApp__Subheading">Adhesion
+	                                                        <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24"><path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path><path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path></svg>
+	                                                     </h4>
 														<div class="BR-MatSelApp__RatingsLegend">
 															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
 															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
