@@ -1,5 +1,5 @@
 p, ul, li {
-  line-height: 1.5;
+  line-height: 1.375;
 }
 
 /*Remove this after font has been updated in BradyID CSS
@@ -427,8 +427,7 @@ other sections have no data and so are hidden */
   width: 100%;
   border-style: none none solid;
   border-bottom: 1px solid #ccc;
-  margin-top: .875rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: .875rem;
 }
 
 .BR-MatSelApp__RatingBlock {
@@ -441,6 +440,16 @@ other sections have no data and so are hidden */
 
 .BR-MatSelApp__RatingBlock--Filled {
   background: #1779BA;
+}
+
+.BR-MatSelApp__Textured {
+  display: inline-flex;
+  align-items: center;
+}
+
+.BR-MatSelApp__TexturedIcon {
+  height: 1.25rem;
+  margin: 0 .5rem;
 }
 
 .BR-MatSelApp__TestingImg {

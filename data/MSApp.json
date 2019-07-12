@@ -3764,7 +3764,7 @@
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 4,
-    "adhesionTextured": "Yes"
+    "adhesionTextured": false
   },
   {
     "num": "B-7316",
@@ -3812,7 +3812,7 @@
     ],
     "adhesionTypical": 1,
     "adhesionDifficult": 5,
-    "adhesionTextured": "Yes"
+    "adhesionTextured": true
   }
 ],
 

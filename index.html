@@ -393,7 +393,17 @@
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
-														</div>											
+														</div>
+														<hr class="BR-MatSelApp__HorizDivider">
+														<p class="BR-MatSelApp__RatingCategoryHead">To Textured Surfaces</p>
+														<span class="BR-MatSelApp__Textured" ng-if="x.adhesionTextured == 'Yes'">
+															<svg class="BR-MatSelApp__TexturedIcon" xmlns="http://www.w3.org/2000/svg" viewBox="-949 951 100 100"><switch><g><path fill="#228b22" d="M-868.3 987.5l-11-11.1-26.3 26.3-12.7-12.8-11.1 11.1 23.8 23.8"/><path fill="#228b22" d="M-946.5 953.5v95h95v-95h-95zm85.6 85.6h-76.2v-76.2h76.2v76.2z"/></g></switch></svg>
+															Recommended
+														</span>	
+														<span class="BR-MatSelApp__Textured" ng-if="x.adhesionTextured == 'No'">
+															<svg class="BR-MatSelApp__TexturedIcon" viewBox="0 0 46.201 40.011" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M46.2 40H0L23.1 0l11.55 20z" fill="#f90"></path><path fill="#fff" stroke="#fff" stroke-width="5.51" d="M22.7 15.2h.58v9.48h-.6z"></path><path fill="#fff" stroke="#fff" stroke-width="4.27" d="M22.12 32.5h1.83v1.83h-1.83z"></path></svg>
+															Not Recommended
+														</span>								
 													</div>
 
 													<!--Adhesion Specs Section No Data -->
