@@ -420,13 +420,16 @@ other sections have no data and so are hidden */
 
 .BR-MatSelApp__RatingCategoryHead {
   font-weight: 600;
-  margin-bottom: .25rem;
+  margin: .25rem 0;
+}
+
+.BR-MatSelApp__RatingCategoryExamples {
+  margin-bottom: .375rem;
 }
 
 .BR-MatSelApp__HorizDivider {
   width: 100%;
-  border-style: none none solid;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   margin-bottom: .875rem;
 }
 
@@ -449,7 +452,7 @@ other sections have no data and so are hidden */
 
 .BR-MatSelApp__TexturedIcon {
   height: 1.25rem;
-  margin: 0 .5rem;
+  margin-right: .5rem;
 }
 
 .BR-MatSelApp__TestingImg {
