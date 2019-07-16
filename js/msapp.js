@@ -28,6 +28,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
                 // setFilters is used for the stage
                 $scope.setFilters = [];
                 $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
+                $scope.AccordionSetup();
             })
             .error(function (errorresponse) {
               // Server found but there was an error
@@ -210,21 +211,14 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     }; 
   };
 
-  // accordian function used to collapse/expand both filters and Bnums
+  // Accordian function used to collapse/expand both filters
   $scope.Accordion = function(header,filternumber) {
-    // check if no filternumber has been sent (Bnum was clicked)
-    if (!(typeof filternumber === "undefined")) {
-      // a value was sent so it was a filter, toggle it open/closed
-      $scope.AllFilters[filternumber].filteropen = !$scope.AllFilters[filternumber].filteropen;
-    };
+    $scope.AllFilters[filternumber].filteropen = !$scope.AllFilters[filternumber].filteropen;
     var clicked = header.target;
     var panel = "";
     if (clicked.tagName == 'P') {
       // set the target div if the <p> text was clicked (filter or Bnum text)
       panel = clicked.parentElement.nextElementSibling;
-    } else {
-      // set the target div if the <div> was clicked (Bnum)
-      panel = clicked.nextElementSibling;
     };
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
@@ -236,6 +230,28 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
       panel.style.opacity = 1;
       panel.style.overflow = "visible";
       panel.previousElementSibling.style.background = "#ccc"
+    }; 
+  };
+
+    // Accordian function used to collapse/expand Bnums
+  $scope.AccordionBnums = function(header) {
+    var clicked = header.target;
+    var panel = "";
+    if (clicked.tagName == 'P') {
+      // set the target div if the <p> text was clicked (filter or Bnum text)
+      panel = clicked.parentElement.nextElementSibling;
+    } else {
+      // set the target div if the <div> was clicked (Bnum)
+      panel = clicked.nextElementSibling;
+    };
+    if (panel.style.display === "flex") {
+      panel.style.display = "none"
+      panel.previousElementSibling.classList.remove("BR-MatSelApp__BnumHeader--Open");
+            panel.previousElementSibling.classList.add("BR-MatSelApp__BnumHeader--Closed");
+    } else {
+      panel.style.display = "flex";
+      panel.previousElementSibling.classList.remove("BR-MatSelApp__BnumHeader--Closed");
+      panel.previousElementSibling.classList.add("BR-MatSelApp__BnumHeader--Open");
     }; 
   };
 

@@ -234,11 +234,11 @@
 
 											<!--Bnum Result -->
 								            <div ng-repeat="x in Bnum | orderBy:'num'" ng-cloak class="BR-MatSelApp__BnumRow">
-												
-												<!--Bnum Header Section -->
-								          		<div ng-click="Accordion($event)" class="BR-MatSelApp__BnumHeader">
-													<p class="BR-MatSelApp__BnumDescription"><span class="BR-MatSelApp__BnumNumber">{{ x.num }}: </span>{{ x.name }}</p>
-												</div>
+
+												<!-- Bnum Header Section -->
+									                <header ng-click="AccordionBnums($event)" class="BR-MatSelApp__BnumHeader BR-MatSelApp__BnumHeader--Closed">
+									                    <p class="BR-MatSelApp__BnumDescription"><span class="BR-MatSelApp__BnumNumber">{{ x.num }}: </span>{{ x.name }}</p>
+									                </header>
 												
 												<!--Bnum Details Section -->
 												<div class="BR-MatSelApp__BnumDetails">
