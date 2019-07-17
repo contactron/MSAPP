@@ -272,7 +272,7 @@ input[type=text]  {
   flex-direction: column;
   background: #Fefefe;
   padding: 2rem;
-  border: 1px solid #1779BA;
+  border: 1px solid #ccc;
   font-size: .875rem;
 }
 
@@ -305,7 +305,7 @@ other sections have no data and so are hidden */
 /*Material Properties Stylings*/
 
 .BR-MatSelApp__BnumListItem {
-  margin-bottom: .5rem;
+  margin-bottom: .125rem;
 }
 
 .BR-MatSelApp__ProfileImage {
@@ -348,7 +348,6 @@ other sections have no data and so are hidden */
   margin: .5rem 1.75rem 1rem 0rem;
   padding-left: 3rem;
   line-height: 1.125rem;
-  letter-spacing: 1px;
 }
 
 .BR-MatSelApp__SpecPropsIcon--HR {
@@ -490,7 +489,7 @@ other sections have no data and so are hidden */
   width: 66.66%;
   }
   .BR-MatSelApp_SubSection--InteriorBox {
-    border-style: none;
+/*    border-style: none;*/
     padding: 1rem 2rem;
   }
 /* When there are exactly 6 boxes being displayed

@@ -219,7 +219,11 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     if (clicked.tagName == 'P') {
       // set the target div if the <p> text was clicked (filter or Bnum text)
       panel = clicked.parentElement.nextElementSibling;
+    } else {
+      // set the target div if the <div> was clicked (Bnum)
+      panel = clicked.nextElementSibling;
     };
+
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
       panel.style.opacity = null;
@@ -229,9 +233,9 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
       panel.style.maxHeight = panel.scrollHeight + "px";
       panel.style.opacity = 1;
       panel.style.overflow = "visible";
-      panel.previousElementSibling.style.background = "#ccc"
     }; 
   };
+
 
     // Accordian function used to collapse/expand Bnums
   $scope.AccordionBnums = function(header) {
