@@ -7,7 +7,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
     // load Bnum data from JSON file, set initial variables, handled json loading errors
     var request = {
                 method: 'get',
-                url: '/data/MSApp.json',
+                url: 'data/MSApp.json',
                 dataType: 'json',
                 contentType: "application/json"
         };
