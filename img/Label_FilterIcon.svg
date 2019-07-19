@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:0.4136;stroke-miterlimit:3.864;}
-	.st1{fill:none;stroke:#000000;stroke-width:0.3759;stroke-miterlimit:3.864;stroke-dasharray:4.9624,2.4812;}
-	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:0.7457;}
-	.st3{fill:#FFFFFF;}
-	.st4{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:3.8636;}
-</style>
-<path class="st0" d="M-24.8,41"/>
-<line class="st1" x1="24.2" y1="8.6" x2="24.2" y2="8.6"/>
-<rect x="1.6" y="8.5" class="st2" width="46.4" height="35.9"/>
-<rect x="26" y="40.9" class="st3" width="1.6" height="0.6"/>
-<rect x="26.7" y="37.6" class="st3" width="0.2" height="0.6"/>
-<path class="st4" d="M22.3,25.6h-17c-0.8,0-1.4-0.6-1.4-1.4V13.7c0-0.8,0.6-1.4,1.4-1.4h17c0.8,0,1.4,0.6,1.4,1.4v10.5
-	C23.7,25,23.1,25.6,22.3,25.6z"/>
-<path class="st4" d="M44.9,25.6h-17c-0.8,0-1.4-0.6-1.4-1.4V13.7c0-0.8,0.6-1.4,1.4-1.4h17c0.8,0,1.4,0.6,1.4,1.4v10.5
-	C46.3,25,45.6,25.6,44.9,25.6z"/>
-<path class="st4" d="M22.3,41.8h-17c-0.8,0-1.4-0.6-1.4-1.4V29.9c0-0.8,0.6-1.4,1.4-1.4h17c0.8,0,1.4,0.6,1.4,1.4v10.5
-	C23.7,41.2,23.1,41.8,22.3,41.8z"/>
-<path class="st4" d="M44.9,41.8h-17c-0.8,0-1.4-0.6-1.4-1.4V29.9c0-0.8,0.6-1.4,1.4-1.4h17c0.8,0,1.4,0.6,1.4,1.4v10.5
-	C46.3,41.2,45.6,41.8,44.9,41.8z"/>
+<svg viewBox="9 23 63 33" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.cls-1{fill:#fff;}.cls-2{fill:#ccc;}</style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="9.5" y="23.5" width="62" height="32"/>
+    <path d="M71,24V55H10V24H71m1-1H9V56H72V23Z"/>
+    <rect class="cls-2" x="13" y="30" width="26" height="19"/>
+    <path d="M31,30H27v1h4V30Zm-8,0H19v1h4V30Zm-8,0H13v1h0v1h1V31h1V30Zm-1,6H13v4h1V36Zm0,8H13v4h1V44Zm6,4H16v1h4V48Zm8,0H24v1h4V48Zm8,0H32v1h4V48Zm3-4H38v4h1V44Zm0-8H38v4h1V36Zm0-6H35v1h3v1h1V30Z"/>
+    <rect class="cls-2" x="42" y="30" width="26" height="19"/>
+    <path d="M60,30H56v1h4V30Zm-8,0H48v1h4V30Zm-8,0H42v1h0v1h1V31h1V30Zm-1,6H42v4h1V36Zm0,8H42v4h1V44Zm6,4H45v1h4V48Zm8,0H53v1h4V48Zm8,0H61v1h4V48Zm3-4H67v4h1V44Zm0-8H67v4h1V36Zm0-6H64v1h3v1h1V30Z"/>
+  </g>
 </svg>

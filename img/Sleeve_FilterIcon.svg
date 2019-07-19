@@ -1,41 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:0.7156;stroke-miterlimit:3.864;}
-	.st1{fill:none;}
-	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:0.75;stroke-miterlimit:3.864;}
-	.st3{fill:#FFFFFF;stroke:#000000;stroke-width:0.4136;stroke-miterlimit:3.864;}
-	.st4{fill:#FFFFFF;stroke:#000000;stroke-width:0.4612;stroke-miterlimit:3.864;}
-	.st5{fill:none;stroke:#000000;stroke-width:0.4612;stroke-miterlimit:3.864;}
-	.st6{fill:#7C411E;stroke:#000000;stroke-width:0.4612;}
-	.st7{fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:3.864;}
-</style>
-<rect x="1.7" y="8.9" class="st0" width="46.1" height="33.7"/>
-<path class="st1" d="M3.4,9.9"/>
-<path class="st2" d="M4.9,21.2c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5S4.1,21.2,4.9,21.2z"/>
-<path class="st2" d="M4.9,33.7c0.8,0,1.5-0.7,1.5-1.5c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5C3.4,33,4.1,33.7,4.9,33.7z"/>
-<path class="st3" d="M6.5,12.2"/>
-<path class="st4" d="M4.8,9.2"/>
-<path class="st4" d="M4.8,19"/>
-<path class="st4" d="M4.8,28.8"/>
-<g>
-	<path class="st3" d="M49,12.5"/>
-</g>
-<path class="st2" d="M44.7,21.2c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5S43.9,21.2,44.7,21.2z"/>
-<path class="st2" d="M44.7,33.7c0.8,0,1.5-0.7,1.5-1.5c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5C43.2,33,43.9,33.7,44.7,33.7z"
-	/>
-<path class="st4" d="M44.4,9.2"/>
-<path class="st4" d="M44.4,19"/>
-<path class="st4" d="M44.4,28.8"/>
-<path class="st3" d="M49,46.9"/>
-<path class="st5" d="M25.4,17.6"/>
-<path class="st5" d="M25.4,33.6"/>
-<path class="st6" d="M25.8,17.6"/>
-<path class="st6" d="M25.8,33.6"/>
-<rect x="7.4" y="41.1" class="st7" width="5.1" height="1.4"/>
-<rect x="7.4" y="25" class="st7" width="5.1" height="1.4"/>
-<rect x="9.2" y="11.8" class="st7" width="32.4" height="11.6"/>
-<rect x="9.2" y="28.1" class="st7" width="32.4" height="11.6"/>
+<svg viewBox="12 31 55 19" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.cls-1{fill:#fff;}.cls-2{fill:#ccc;}</style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <path class="cls-1" d="M15.59,49.5c-.59-.62-3.09-3.54-3.09-9s2.49-8.38,3.09-9H61.5v18Z"/>
+    <path d="M61,32V49H15.81c-.74-.81-2.81-3.52-2.81-8.5s2.08-7.7,2.81-8.5H61m1-1H15.39S12,34,12,40.5,15.39,50,15.39,50H62V31Z"/>
+    <ellipse class="cls-2" cx="61.5" cy="40.5" rx="5" ry="9"/>
+    <path d="M61.5,32c2.44,0,4.5,3.89,4.5,8.5S63.94,49,61.5,49,57,45.11,57,40.5,59.06,32,61.5,32m0-1c-3,0-5.5,4.25-5.5,9.5S58.46,50,61.5,50,67,45.75,67,40.5,64.54,31,61.5,31Z"/>
+  </g>
 </svg>
