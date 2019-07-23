@@ -362,7 +362,7 @@
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
 														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
 														<img class="BR-MatSelApp__TestingImg" src="img/chemicaltesting.svg">
-														<p>This material has not yet been tested.</p>
+														<p>There is no chemical resistance information available for this material. Please contact Brady customer service for more information.</p>
 													</div>
 
 													<!--Adhesion Specs Section Data -->
@@ -376,7 +376,7 @@
 															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
 														</div>
 														<p class="BR-MatSelApp__RatingCategoryHead">To Common Surfaces</p>
-														<p class="BR-MatSelApp__RatingCategoryExamples">Examples: Stainless Steel, Copper, Glass, Smooth Plastics</p>
+														<p class="BR-MatSelApp__RatingCategoryExamples">Ex: Stainless Steel, Glass, Copper</p>
 														<div class="BR-MatSelApp__RatingBlockContainer">
 															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
@@ -386,7 +386,7 @@
 														</div>
 														<hr class="BR-MatSelApp__HorizDivider">
 														<p class="BR-MatSelApp__RatingCategoryHead">To Difficult Surfaces</p>
-														<p class="BR-MatSelApp__RatingCategoryExamples">Examples: Polystyrene, Acetal, Powder Coatings</p>
+														<p class="BR-MatSelApp__RatingCategoryExamples">Ex: Polystyrene, Acetal, Powder Coatings</p>
 														<div class="BR-MatSelApp__RatingBlockContainer">
 															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
 															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
@@ -410,13 +410,13 @@
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
 														<h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
 														<img class="BR-MatSelApp__TestingImg" src="img/adhesiontesting.svg">
-														<p>This material has not yet been tested.</p>
+														<p>There is no adhesion information available for this material. Please contact Brady customer service for more information.</p>
 													</div>
 
 													<!-- More Info Section -->
 													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--Expanding">
 														<div>
-															<h4 class="BR-MatSelApp__Subheading">More Information</h4>
+															<h4 class="BR-MatSelApp__Subheading">Technical Data Sheet</h4>
 															<p>Consult our Technical Data Sheets for detailed material information including:</p>
 															<ul>
 																<li class="BR-MatSelApp__BnumListItem">Detailed testing results for Adhesion and Chemical Resistance

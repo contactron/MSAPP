@@ -343,8 +343,7 @@ body {
      display: flex;
      flex-grow: 1;
      height: .625rem;
-     margin-bottom: .625rem;
-     margin-right: 3px;
+     margin: .25rem .125rem .75rem 0;
 }
  .BR-MatSelApp__RatingBlock--Filled {
      background: #1779BA;
@@ -359,19 +358,20 @@ body {
 }
  .BR-MatSelApp__TestingImg {
      height: auto;
-     margin: 3rem auto;
+     margin: 2rem auto;
      width: 125px;
 }
 /* More Info Stylings */
  .BR-MatSelApp__TDSLink {
-     font-weight: 600;
-     margin-top: .5rem;
+     font-weight: 500;
+     line-height: 2.5;
+     margin-top: 1.5rem;
 }
  .BR-MatSelApp__TDSImage {
-     display: inline-block;
-     padding-right: .5rem;
-     vertical-align: middle;
-     width: 3rem;
+     float: left;
+     padding: 0 .75rem;
+     width: 4rem;
+
 }
  @media screen and (min-width: 720px) {
      .BR-MatSelApp__SubSection--MaxThreeAcross {
