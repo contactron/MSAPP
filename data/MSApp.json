@@ -4,7 +4,7 @@
 
 [
   {
-    "num": "A Test Case 1",
+    "num": "Test Case 1",
     "adhesive": "Rubber",
     "finish": "Gloss",
     "outdoorAppropriate": null,
@@ -23,8 +23,8 @@
       "UL",
       "RoHS"
     ],
-    "name": "Name goes here",
-    "description": "Use case 1 description",
+    "name": "Responsiveness with all main sections present",
+    "description": "This is an example of how the app responds when all the major sections are present. ",
     "specialProperties": [
       "Heat Shrink Sleeves"
     ],
@@ -54,7 +54,7 @@
     "shrinkRatio": null
   },
   {
-    "num": "A Test Case 2",
+    "num": "Test Case 2",
     "adhesive": "Acrylic",
     "finish": "Matte",
     "outdoorAppropriate": null,
@@ -84,8 +84,8 @@
     "compliance": [
       "RoHS"
     ],
-    "name": "Name goes here",
-    "description": "Use case 2 description",
+    "name": "Responsiveness when missing either the Chem OR Adh section",
+    "description": "This is an example of how the app responds when either the Chemical Resistance or Adhesion sections are no available. ",
     "specialProperties": [
       "Permanent Adhesive Labels",
       "Water Indicating Labels"
@@ -96,14 +96,12 @@
     "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
-    "chemicalResistance": [
-      "Fuels"
-    ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 2,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
     "adhesion": [
       "Common",
       "DIfficult",
@@ -116,7 +114,7 @@
     "shrinkRatio": null
   },
   {
-    "num": "A Test Case 3",
+    "num": "Test Case 3",
     "adhesive": "Acrylic",
     "finish": "Matte",
     "outdoorAppropriate": null,
@@ -136,8 +134,8 @@
     "compliance": [
       "UL"
     ],
-    "name": "Name goes here",
-    "description": "Use case 3 description",
+    "name": "Responsiveness when missing BOTH the Chem & Adh sections",
+    "description": "This is an example of hwo the app responds when BOTH the Chemical Resistance AND Adhesion section are not available. ",
     "specialProperties": [
       "Heat Resistant Labels",
       "Permanent Adhesive Labels",
@@ -150,26 +148,21 @@
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
-    "chemicalResistance": [
-      "Solvents",
-      "Oils"
-    ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 4,
-    "adhesion": [
-      "Common"
-    ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
     "attachmentMethod": "Heat-Shrink",
     "shrinkRatio": "3:1"
   },
   {
-    "num": "A Test Case 4",
+    "num": "Test Case 4",
     "adhesive": "Repositionable Rubber",
     "finish": "Gloss",
     "outdoorAppropriate": null,
@@ -191,8 +184,8 @@
       "CSA",
       "RoHS"
     ],
-    "name": "Name goes here",
-    "description": "Use case 4 description",
+    "name": "Product Type Label",
+    "description": "This an example of the product type \"Label\" and how it is represented in the app.",
     "specialProperties": [
       "Metallic Labels",
       "Permanent Adhesive Labels",
@@ -224,53 +217,169 @@
     "shrinkRatio": null
   },
   {
-    "num": "A Test Case 5",
-    "adhesive": "Acrylic",
+    "num": "Test Case 5",
+    "adhesive": "None",
+    "finish": "Matte",
+    "outdoorAppropriate": null,
+    "materialProperties": [
+      "Rigid"
+    ],
+    "baseMaterial": "Nomex",
+    "maxServiceTemperatureC": "130 °C",
+    "maxServiceTemperatureF": "266 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.012 in",
+    "thicknessMm": "0.305 mm",
+    "colors": [
+      "White",
+      "Yellow",
+      "Green"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Product Type Tag",
+    "description": "This an example of the product type \"Tag\" and how it is represented in the app.",
+    "specialProperties": [
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Tag",
+    "chemicalResistance": [
+      "Cleaners",
+      "Solvents"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "attachmentMethod": "Tie",
+    "shrinkRatio": null
+  },
+  {
+    "num": "Test Case 6",
+    "adhesive": "None",
     "finish": "Matte",
     "outdoorAppropriate": null,
     "materialProperties": [],
-    "baseMaterial": "Polyvinylidene Fluoride",
-    "maxServiceTemperatureC": "135 °C",
-    "maxServiceTemperatureF": "275 °F",
-    "minApplicationTemperatureC": "200 °C",
-    "minApplicationTemperatureF": "392 °F",
-    "minServiceTemperatureC": "-55 °C",
-    "minServiceTemperatureF": "-67 °F",
-    "thicknessIn": "0.023 in",
-    "thicknessMm": "0.584 mm",
+    "baseMaterial": "Polypropylene",
+    "maxServiceTemperatureC": "100 °C",
+    "maxServiceTemperatureF": "212 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": "0.018 in",
+    "thicknessMm": "0.457 mm",
     "colors": [
       "White"
     ],
     "compliance": [
       "RoHS"
     ],
-    "name": "Name goes here",
-    "description": "Use case 5 description",
+    "name": "Product Type Sleeve",
+    "description": "This an example of the product type \"Sleeve\" and how it is represented in the app.",
     "specialProperties": [
-      "Removable Labels"
+      "Heat Shrink Sleeves"
     ],
     "printerLabelApplications": [
-      "Wire & Cable",
-      "General Identification"
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "outdoorDurabilityYears": null,
+    "materialType": "Sleeve",
+    "chemicalResistance": [
+      "Cleaners",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 2,
+    "adhesion": [
+      "Common"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
+    "attachmentMethod": "Heat-Shrink",
+    "shrinkRatio": "2:1"
+  },
+  {
+    "num": "Test Case 7",
+    "adhesive": "Acrylic",
+    "finish": "Matte",
+    "outdoorAppropriate": "Outdoor Use",
+    "materialProperties": [
+      "Flame-retardant",
+      "Self-laminating"
+    ],
+    "baseMaterial": "Vinyl",
+    "maxServiceTemperatureC": "60 °C",
+    "maxServiceTemperatureF": "140 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.004 in",
+    "thicknessMm": "0.102 mm",
+    "colors": [
+      "Blue",
+      "Brown",
+      "Gray",
+      "Green",
+      "Orange",
+      "Purple",
+      "Red",
+      "White",
+      "Yellow"
+    ],
+    "compliance": [
+      "UL",
+      "RoHS"
+    ],
+    "name": "Product Type Self-Lam",
+    "description": "This an example of the product type \"Self-Lam\" and how it is represented in the app.",
+    "specialProperties": [
+      "Self Laminating Labels & Wraps"
+    ],
+    "printerLabelApplications": [
+      "Laboratory",
+      "Wire & Cable"
     ],
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
-    "materialType": "Label",
+    "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Cleaners"
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 5,
+    "chemResistanceAlcohols": 1,
     "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 2,
     "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "Yes",
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -308,18 +417,17 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners"
+      "Oils"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 4,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common"
     ],
@@ -356,25 +464,21 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
-    "chemicalResistance": [
-      "Cleaners"
-    ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 1,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 3,
     "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
+    "chemResistanceOils": 5,
     "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Common"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No",
     "attachmentMethod": "Tie",
     "shrinkRatio": null
   },
@@ -411,20 +515,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Oils",
       "Fuels"
     ],
     "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 1,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 3,
     "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -463,19 +567,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -514,20 +618,23 @@
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Solvents",
+      "Alcohols",
+      "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
+    "chemResistanceAlcohols": 1,
     "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 5,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 1,
     "chemResistanceFuels": 1,
     "adhesion": [
-      "Common"
+      "Common",
+      "DIfficult",
+      "Textured Surfaces"
     ],
     "adhesionTypical": 2,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Tie",
     "shrinkRatio": null
   },
@@ -560,23 +667,20 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
-    "chemicalResistance": [
-      "Cleaners",
-      "Solvents"
-    ],
+    "chemicalResistance": [],
     "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 2,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 4,
     "chemResistanceFuels": 3,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No",
     "attachmentMethod": "Heat-Shrink",
     "shrinkRatio": "3:1"
@@ -612,26 +716,25 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Solvents",
-      "Oils"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
+      "DIfficult",
       "Textured Surfaces"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 5,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Heat-Shrink",
     "shrinkRatio": "2:1"
@@ -663,24 +766,23 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Oils"
+      "Cleaners"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 3,
+    "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 2,
+    "chemResistanceOils": 3,
     "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
-      "DIfficult",
       "Textured Surfaces"
     ],
     "adhesionTypical": 2,
-    "adhesionDifficult": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Tie",
     "shrinkRatio": null
@@ -727,23 +829,23 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
-    "chemicalResistance": [
-      "Cleaners"
-    ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
     "chemResistanceFuels": 3,
     "adhesion": [
-      "Common"
+      "Common",
+      "DIfficult",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Heat-Shrink",
     "shrinkRatio": "3:1"
   },
@@ -791,21 +893,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
+      "Cleaners",
+      "Solvents",
       "Oils"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 2,
     "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Common"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No",
     "attachmentMethod": "Heat-Shrink",
     "shrinkRatio": "3:1"
   },
@@ -843,19 +945,18 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Cleaners",
-      "Solvents",
+      "Oils",
       "Fuels"
     ],
     "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common"
     ],
@@ -900,26 +1001,25 @@
       "General Identification",
       "Inspection Repair"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
       "Oils",
       "Fuels"
     ],
     "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 3,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 1,
-    "chemResistanceFuels": 2,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -958,26 +1058,21 @@
       "Inspection Repair",
       "Laboratory"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [
-      "Alcohols",
-      "Solvents",
-      "Fuels"
-    ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 2,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -1023,18 +1118,20 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
-      "Cleaners"
+      "Cleaners",
+      "Solvents",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 3,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 5,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1070,21 +1167,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Alcohols"
+      "Alcohols",
+      "Cleaners"
     ],
     "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 3,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Common"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "Yes",
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
     "attachmentMethod": "Tie",
     "shrinkRatio": null
   },
@@ -1119,13 +1215,16 @@
     "outdoorDurabilityYears": null,
     "materialType": "Sleeve",
     "chemicalResistance": [
-      "Solvents"
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common",
       "DIfficult"
@@ -1168,20 +1267,21 @@
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
+    "chemicalResistance": [
+      "Oils",
+      "Fuels"
+    ],
     "chemResistanceAlcohols": 3,
     "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 3,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Common"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -1222,19 +1322,18 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents"
+      "Alcohols"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 1,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 3,
     "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Common"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 4,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1268,25 +1367,25 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
       "Solvents",
       "Oils"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 2,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 4,
     "chemResistanceSolvents": 2,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 5,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Common",
+      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1323,21 +1422,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents",
-      "Fuels"
+      "Oils"
     ],
-    "chemResistanceAlcohols": 2,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 2,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 5,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 4,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Tie",
     "shrinkRatio": null
   },
@@ -1384,20 +1482,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 5,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 2,
     "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -1430,18 +1527,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Oils"
+      "Alcohols",
+      "Cleaners",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 5,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1477,18 +1576,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Alcohols",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 4,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 3,
     "chemResistanceSolvents": 4,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 3,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1521,14 +1621,12 @@
     "tapeColorable": null,
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [
-      "Solvents"
-    ],
+    "chemicalResistance": [],
     "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 1,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Common",
       "DIfficult",
@@ -1575,23 +1673,21 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents",
-      "Fuels"
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 1,
     "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
@@ -1638,21 +1734,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
       "Solvents",
       "Oils"
     ],
     "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 1,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 2,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 1,
     "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -1690,21 +1786,19 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
-      "Oils",
-      "Fuels"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 2,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 2,
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
@@ -1740,20 +1834,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Solvents"
+      "Solvents",
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
+    "chemResistanceAlcohols": 4,
     "chemResistanceCleaners": 3,
     "chemResistanceSolvents": 2,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 5,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
-      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1800,24 +1895,24 @@
       "Laboratory",
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Solvents"
+      "Solvents",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 3,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
     "chemResistanceSolvents": 1,
-    "chemResistanceOils": 5,
+    "chemResistanceOils": 2,
     "chemResistanceFuels": 4,
     "adhesion": [
       "Common",
-      "DIfficult",
       "Textured Surfaces"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1859,23 +1954,24 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Alcohols",
+      "Cleaners",
+      "Oils"
     ],
     "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 3,
+    "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
+    "chemResistanceOils": 2,
     "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "DIfficult"
+      "Common"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -1924,21 +2020,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 3,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 4,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "DIfficult"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 3,
     "adhesionDifficult": 3,
-    "adhesionTextured": "Yes",
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -1976,24 +2072,25 @@
       "General Identification",
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners"
+      "Alcohols",
+      "Cleaners",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
+    "chemResistanceAlcohols": 1,
     "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 3,
+    "chemResistanceSolvents": 4,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
-      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 3,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 4,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -2038,21 +2135,21 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
+      "Alcohols",
       "Solvents"
     ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 1,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
     "chemResistanceSolvents": 1,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 4,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "Textured Surfaces"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2096,20 +2193,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners"
+      "Alcohols",
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 5,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 3,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2146,26 +2243,24 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents",
-      "Oils"
+      "Cleaners",
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 4,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 1,
     "chemResistanceSolvents": 2,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 5,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
     "adhesionTypical": 1,
     "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2210,21 +2305,19 @@
     "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [
-      "Solvents",
-      "Oils"
-    ],
+    "chemicalResistance": [],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
     "adhesionTypical": 1,
     "adhesionDifficult": 4,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2267,25 +2360,26 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
+      "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 2,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 3,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 2,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
+      "DIfficult",
       "Textured Surfaces"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 5,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -2324,19 +2418,22 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
       "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 2,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 1,
     "chemResistanceFuels": 2,
     "adhesion": [
-      "Common"
+      "Common",
+      "DIfficult"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 3,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -2380,17 +2477,18 @@
     "materialType": "Self-Lam",
     "chemicalResistance": [
       "Alcohols",
-      "Fuels"
+      "Solvents",
+      "Oils"
     ],
     "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 2,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
@@ -2437,19 +2535,17 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
-      "Solvents",
       "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 1,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 4,
     "chemResistanceOils": 2,
     "chemResistanceFuels": 1,
     "adhesion": [
@@ -2502,16 +2598,13 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Solvents",
-      "Oils"
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common"
     ],
@@ -2559,21 +2652,26 @@
       "Rating & Name Plates",
       "Inspection Repair"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemicalResistance": [
+      "Alcohols",
+      "Cleaners",
+      "Solvents",
+      "Fuels"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common",
       "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
@@ -2611,25 +2709,20 @@
     "printerLabelApplications": [
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [
-      "Cleaners",
-      "Solvents",
-      "Oils",
-      "Fuels"
-    ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 1,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
       "DIfficult"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 3,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
@@ -2679,20 +2772,21 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
-      "Oils"
+      "Solvents",
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 5,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 1,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 1,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2728,24 +2822,25 @@
       "Electrical",
       "Safety"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
       "Cleaners",
-      "Oils",
+      "Solvents",
       "Fuels"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 4,
     "chemResistanceFuels": 1,
     "adhesion": [
-      "Common"
+      "Common",
+      "DIfficult"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 4,
+    "adhesionDifficult": 3,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -2781,19 +2876,22 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Oils"
+      "Alcohols",
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 4,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 5,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 5,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2827,21 +2925,22 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
       "Cleaners",
-      "Fuels"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 1,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Common",
-      "Textured Surfaces"
+      "DIfficult"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -2883,24 +2982,25 @@
       "Laboratory",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
-      "Solvents"
+      "Solvents",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 2,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 1,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Common"
+      "Common",
+      "DIfficult"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -2945,21 +3045,21 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
-      "Cleaners",
-      "Oils",
-      "Fuels"
+      "Solvents",
+      "Oils"
     ],
     "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 3,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 1,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 2,
+    "chemResistanceFuels": 5,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "No",
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3000,18 +3100,23 @@
     "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
+    "chemicalResistance": [
+      "Cleaners",
+      "Solvents",
+      "Oils"
+    ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 3,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 2,
     "chemResistanceFuels": 3,
     "adhesion": [
       "Common",
+      "DIfficult",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 4,
+    "adhesionTypical": 2,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -3047,22 +3152,27 @@
     "printerLabelApplications": [
       "Laboratory"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 5,
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "DIfficult",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 2,
     "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3105,21 +3215,22 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
       "Solvents",
-      "Oils",
-      "Fuels"
+      "Oils"
     ],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 3,
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 1,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 2,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 3,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
     "adhesionTypical": 1,
     "adhesionDifficult": 5,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3158,23 +3269,22 @@
       "General Identification",
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Cleaners",
-      "Oils"
+      "Fuels"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 2,
-    "chemResistanceFuels": 4,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 1,
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
@@ -3211,12 +3321,14 @@
     "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
+    "chemicalResistance": [
+      "Oils"
+    ],
     "chemResistanceAlcohols": 3,
     "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 3,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
       "DIfficult",
@@ -3261,24 +3373,24 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Tag",
     "chemicalResistance": [
-      "Alcohols",
-      "Oils"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 5,
+    "chemResistanceAlcohols": 3,
+    "chemResistanceCleaners": 4,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 3,
     "adhesion": [
       "Common",
+      "DIfficult",
       "Textured Surfaces"
     ],
     "adhesionTypical": 3,
-    "adhesionDifficult": 5,
+    "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Tie",
     "shrinkRatio": null
@@ -3314,26 +3426,26 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
-      "Solvents"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 3,
-    "chemResistanceFuels": 3,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 4,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3368,18 +3480,17 @@
       "General Identification",
       "Laboratory"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents"
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 1,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 4,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Common",
       "Textured Surfaces"
@@ -3431,11 +3542,15 @@
     "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 5,
+    "chemicalResistance": [
+      "Alcohols",
+      "Solvents",
+      "Oils"
+    ],
+    "chemResistanceAlcohols": 2,
+    "chemResistanceCleaners": 5,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 2,
     "chemResistanceFuels": 4,
     "adhesion": [
       "Common",
@@ -3482,25 +3597,24 @@
       "General Identification",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Oils"
+      "Cleaners",
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 2,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 2,
+    "chemResistanceOils": 5,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Common"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3538,18 +3652,18 @@
     "chemicalResistance": [
       "Cleaners"
     ],
-    "chemResistanceAlcohols": 4,
+    "chemResistanceAlcohols": 3,
     "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 4,
     "chemResistanceOils": 5,
-    "chemResistanceFuels": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
-      "Textured Surfaces"
+      "DIfficult"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 2,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3585,26 +3699,27 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Self-Lam",
     "chemicalResistance": [
-      "Alcohols",
       "Cleaners",
-      "Solvents"
+      "Oils",
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 1,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 5,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 2,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "DIfficult",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
+    "adhesionTypical": 3,
     "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3642,20 +3757,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents"
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 1,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 1,
+    "chemResistanceSolvents": 3,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemResistanceFuels": 2,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "No",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3687,24 +3802,22 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents"
+      "Oils"
     ],
-    "chemResistanceAlcohols": 1,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 2,
-    "chemResistanceOils": 3,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 1,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Common",
-      "DIfficult"
+      "Common"
     ],
     "adhesionTypical": 1,
-    "adhesionDifficult": 3,
+    "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -3743,26 +3856,26 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
       "Cleaners",
-      "Oils",
       "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
+    "chemResistanceAlcohols": 1,
     "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 4,
-    "chemResistanceOils": 1,
-    "chemResistanceFuels": 2,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3804,19 +3917,20 @@
     "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 4,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 3,
-    "adhesion": [
-      "Common",
-      "Textured Surfaces"
+    "chemicalResistance": [
+      "Solvents"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 3,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 4,
+    "chemResistanceFuels": 4,
+    "adhesion": [
+      "Common"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 5,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3855,23 +3969,22 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [
-      "Alcohols"
-    ],
-    "chemResistanceAlcohols": 2,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 5,
     "chemResistanceSolvents": 4,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 5,
+    "chemResistanceOils": 5,
+    "chemResistanceFuels": 4,
     "adhesion": [
-      "Common"
+      "Common",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 2,
     "adhesionDifficult": 4,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -3910,14 +4023,13 @@
     "materialType": "Label",
     "chemicalResistance": [
       "Cleaners",
-      "Solvents",
-      "Fuels"
+      "Solvents"
     ],
-    "chemResistanceAlcohols": 3,
-    "chemResistanceCleaners": 2,
-    "chemResistanceSolvents": 1,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 2,
     "chemResistanceOils": 5,
-    "chemResistanceFuels": 2,
+    "chemResistanceFuels": 4,
     "adhesion": [
       "Common",
       "DIfficult",
@@ -3964,20 +4076,23 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Alcohols",
+      "Cleaners",
+      "Oils"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 5,
+    "chemResistanceAlcohols": 1,
+    "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 3,
+    "chemResistanceOils": 2,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
-      "DIfficult"
+      "DIfficult",
+      "Textured Surfaces"
     ],
-    "adhesionTypical": 3,
+    "adhesionTypical": 1,
     "adhesionDifficult": 3,
-    "adhesionTextured": "No",
+    "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -4012,20 +4127,26 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "outdoorDurabilityYears": null,
     "materialType": "Label",
-    "chemicalResistance": [],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 3,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 5,
-    "adhesion": [
-      "Common"
+    "chemicalResistance": [
+      "Cleaners",
+      "Solvents",
+      "Oils",
+      "Fuels"
     ],
-    "adhesionTypical": 1,
-    "adhesionDifficult": 5,
+    "chemResistanceAlcohols": 4,
+    "chemResistanceCleaners": 1,
+    "chemResistanceSolvents": 1,
+    "chemResistanceOils": 1,
+    "chemResistanceFuels": 2,
+    "adhesion": [
+      "Common",
+      "DIfficult"
+    ],
+    "adhesionTypical": 3,
+    "adhesionDifficult": 3,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
@@ -4067,22 +4188,20 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols",
-      "Solvents",
-      "Fuels"
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 2,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 5,
-    "chemResistanceFuels": 2,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
-      "Textured Surfaces"
+      "DIfficult"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 4,
-    "adhesionTextured": "Yes",
+    "adhesionTypical": 1,
+    "adhesionDifficult": 3,
+    "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
   },
@@ -4115,18 +4234,18 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Alcohols"
+      "Cleaners"
     ],
-    "chemResistanceAlcohols": 2,
-    "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 5,
-    "chemResistanceOils": 4,
-    "chemResistanceFuels": 4,
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": 2,
+    "chemResistanceSolvents": 3,
+    "chemResistanceOils": 3,
+    "chemResistanceFuels": 5,
     "adhesion": [
       "Common",
       "Textured Surfaces"
     ],
-    "adhesionTypical": 1,
+    "adhesionTypical": 2,
     "adhesionDifficult": 5,
     "adhesionTextured": "Yes",
     "attachmentMethod": "Adhesive",
@@ -4161,18 +4280,18 @@
     "outdoorDurabilityYears": null,
     "materialType": "Label",
     "chemicalResistance": [
-      "Solvents"
+      "Fuels"
     ],
-    "chemResistanceAlcohols": 3,
+    "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 4,
-    "chemResistanceSolvents": 2,
+    "chemResistanceSolvents": 5,
     "chemResistanceOils": 4,
-    "chemResistanceFuels": 5,
+    "chemResistanceFuels": 1,
     "adhesion": [
       "Common"
     ],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 3,
+    "adhesionDifficult": 4,
     "adhesionTextured": "No",
     "attachmentMethod": "Adhesive",
     "shrinkRatio": null
