@@ -1,515 +1,410 @@
 p, ul, li {
-  line-height: 1.375;
+     line-height: 1.375;
 }
-
-/*Remove this after font has been updated in BradyID CSS
-*/body {
-  font: 1.1rem/1.4em Roboto,sans-serif
+/*Remove this after font has been updated in BradyID CSS */
+body {
+     font: 1.1rem/1.4em Roboto,sans-serif 
 }
-
 /* Filter Box Styling */
 /* Leverage BradyID styles where possible */
-
 /* According Styling for Transistions */
-.BR-MatSelApp__Filter__Accordion {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height .3s, opacity .2s;
+ .BR-MatSelApp__Filter__Accordion {
+     max-height: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: max-height .3s, opacity .2s;
 }
-
 /* Color Swatch Filter stylings */
-/* MatSelApp not included in name since this could be used
-generically as a class for all color filters*/
-
-.BR-FilterColorSwatch {
-  display: flex;
-  justify-content: center;
-  margin: 4px;
-  text-align: center;
+/* MatSelApp not included in name since this could be used generically as a class for all color filters*/
+ .BR-FilterColorSwatch {
+     display: flex;
+     justify-content: center;
+     margin: 4px;
+     text-align: center;
 }
-
-.BR-FilterColorSwatch input[type=checkbox] +label:before {
-  display: none;
+ .BR-FilterColorSwatch input[type=checkbox] +label:before {
+     display: none;
 }
-
-.BR-FilterColorSwatch input[type=checkbox] {
-  display: none;
+ .BR-FilterColorSwatch input[type=checkbox] {
+     display: none;
 }
-
-.BR-FilterColorSwatch input[type=checkbox] +label {
-/*  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  line-height: 1.3;*/
-  padding: 0.125rem 0.125rem;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #666;
-  border-radius: 5px;
-  margin: 0 .375rem .375rem 0;
+ .BR-FilterColorSwatch input[type=checkbox] +label {
+     border: 1px solid #666;
+     border-radius: 5px;
+     height: 36px;
+     margin: 0 .375rem .375rem 0;
+     padding: 0.125rem 0.125rem;
+     width: 36px;
 }
-
-.BR-FilterColorSwatch:hover input[type=checkbox] +label {
-  border: 2px solid #000;
+ .BR-FilterColorSwatch:hover input[type=checkbox] +label {
+     border: 2px solid #000;
 }
-
-.BR-FilterColorSwatch input[type=checkbox]:checked +label {
-  border: 3px solid #000;
+ .BR-FilterColorSwatch input[type=checkbox]:checked +label {
+     border: 3px solid #000;
 }
-
-.BR-FilterColorSwatch input[type=checkbox]:disabled +label {
-  border: 0px solid #000;
-  opacity: .3;
-  cursor: not-allowed;
+ .BR-FilterColorSwatch input[type=checkbox]:disabled +label {
+     border: 0 solid #000;
+     cursor: not-allowed;
+     opacity: .3;
 }
-
 /* Hide color swatch tool tip when the swatch is disabled */
-.BR-FilterColorSwatch input[type=checkbox]:disabled +label span {
-  opacity: 0;
+ .BR-FilterColorSwatch input[type=checkbox]:disabled +label span {
+     opacity: 0;
 }
-
 /* Color Swatch Tool Tip Stylings */
-.BR-FilterColorSwatch__ToolTip {
-    position: relative;
-    display: inline-block;
+ .BR-FilterColorSwatch__ToolTip {
+     display: inline-block;
+     position: relative;
 }
-
-.BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text {
-    visibility: hidden;
-    width: 6rem;
-    background-color: #555;
-    color: #fff;
-    font-size: .875rem;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 6px;
-    padding: .375rem .375rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -3rem;
-    opacity: 0;
-    transition: opacity 400ms, bottom 400ms ;
-    transition-timing-function: ease-out;
+ .BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text {
+     background-color: #555;
+     border-radius: 6px;
+     bottom: 100%;
+     color: #fff;
+     font-size: .875rem;
+     font-weight: 500;
+     left: 50%;
+     margin-left: -3rem;
+     opacity: 0;
+     padding: .375rem .375rem;
+     position: absolute;
+     text-align: center;
+     transition: opacity 400ms, bottom 400ms ;
+     transition-timing-function: ease-out;
+     visibility: hidden;
+     width: 6rem;
+     z-index: 1;
 }
-
-.BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -.5rem;
-    border-width: .5rem;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+ .BR-FilterColorSwatch__ToolTip .BR-FilterColorSwatch__ToolTip__Text:after {
+     border-color: #555 transparent transparent transparent;
+     border-style: solid;
+     border-width: .5rem;
+     content: "";
+     left: 50%;
+     margin-left: -.5rem;
+     position: absolute;
+     top: 100%;
 }
-
-.BR-FilterColorSwatch__ToolTip:hover .BR-FilterColorSwatch__ToolTip__Text {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 250ms;
-    bottom: 140%;
+ .BR-FilterColorSwatch__ToolTip:hover .BR-FilterColorSwatch__ToolTip__Text {
+     bottom: 140%;
+     opacity: 1;
+     transition-delay: 250ms;
+     visibility: visible;
 }
-
 /*Color definitions for swatches*/
-.BR-FilterColorSwatch--Yellow {
-  background: yellow;
+ .BR-FilterColorSwatch--Yellow {
+     background: yellow;
 }
-
-.BR-FilterColorSwatch--Black {
-  background: #000;
+ .BR-FilterColorSwatch--Black {
+     background: #000;
 }
-
-.BR-FilterColorSwatch--Red {
-  background: #ff120d;
+ .BR-FilterColorSwatch--Red {
+     background: #ff120d;
 }
-
-.BR-FilterColorSwatch--Blue {
-  background: #0049d8;
+ .BR-FilterColorSwatch--Blue {
+     background: #0049d8;
 }
-
-.BR-FilterColorSwatch--Brown {
-  background: #6c3510;
+ .BR-FilterColorSwatch--Brown {
+     background: #6c3510;
 }
-
-.BR-FilterColorSwatch--Gold {
-  background: #c8a900;
+ .BR-FilterColorSwatch--Gold {
+     background: #c8a900;
 }
-
-.BR-FilterColorSwatch--Gray {
-  background: #747d83;
+ .BR-FilterColorSwatch--Gray {
+     background: #747d83;
 }
-
-.BR-FilterColorSwatch--Green {
-  background: #3bd600;
+ .BR-FilterColorSwatch--Green {
+     background: #3bd600;
 }
-
-.BR-FilterColorSwatch--Purple {
-  background: #2513e8;
+ .BR-FilterColorSwatch--Purple {
+     background: #2513e8;
 }
-
-.BR-FilterColorSwatch--Orange {
-  background: #ff6b21;
+ .BR-FilterColorSwatch--Orange {
+     background: #ff6b21;
 }
-
-.BR-FilterColorSwatch--Clear {
-  background: linear-gradient(45deg, #eee, #fff, #eee)
+ .BR-FilterColorSwatch--Clear {
+     background: linear-gradient(45deg, #eee, #fff, #eee) 
 }
-
-.BR-FilterColorSwatch--White {
-  background: #fff;
+ .BR-FilterColorSwatch--White {
+     background: #fff;
 }
-
-.BR-FilterColorSwatch--LightBlue {
-  background: #12cce8;
+ .BR-FilterColorSwatch--LightBlue {
+     background: #12cce8;
 }
-
-.BR-FilterColorSwatch--Pink {
-  background: #ffa6ff;
+ .BR-FilterColorSwatch--Pink {
+     background: #ffa6ff;
 }
-
-.BR-FilterColorSwatch--Violet {
-  background: #EE82EE;
+ .BR-FilterColorSwatch--Violet {
+     background: #EE82EE;
 }
-
-.BR-FilterColorSwatch--Metallized  {
-  background: linear-gradient(45deg, #ccc, #eee, #ccc);
+ .BR-FilterColorSwatch--Metallized {
+     background: linear-gradient(45deg, #ccc, #eee, #ccc);
 }
-
-.BR-FilterColorSwatch--Silver  {
-  background: linear-gradient(45deg, #ddd, #fff, #ddd);
+ .BR-FilterColorSwatch--Silver {
+     background: linear-gradient(45deg, #ddd, #fff, #ddd);
 }
-
-.BR-FilterColorSwatch--Amber {
-  background: #ffe8ab;
+ .BR-FilterColorSwatch--Amber {
+     background: #ffe8ab;
 }
-
-
 /*Fix the height of the input box. Add more specificity*/
-input[type=text]  {
-  height: 2.75rem;
+ input[type=text] {
+     height: 2.75rem;
 }
-
-
 /* No Results Screen Stylings */
-.BR-MatSelApp__NoResults {
-    font-size: 28px; 
-    padding: 2rem 4rem;
-    width: 100%;
+ .BR-MatSelApp__NoResults {
+     font-size: 28px;
+     padding: 2rem 4rem;
+     width: 100%;
 }
-
 /* Bnum Results Stylings */
-
-.BR-MatSelApp__BnumRow {
-  margin-bottom: .75rem;
-  width: 100%;
+ .BR-MatSelApp__BnumRow {
+     margin-bottom: .75rem;
+     width: 100%;
 }
-
-.BR-MatSelApp__BnumHeader {
-  cursor: pointer;
-  display:flex;
-  justify-content: space-between;
-  padding: .875rem 1rem;
-  max-width: 100%;
-  border: 1px solid #ccc;
-  color: #444;
-  background-color: #fff;
-  width: 100%;
-  text-align: left;
-  font-size: 1rem;
+ .BR-MatSelApp__BnumHeader {
+     background-color: #fff;
+     border: 1px solid #ccc;
+     color: #444;
+     cursor: pointer;
+     display: flex;
+     font-size: 1rem;
+     justify-content: space-between;
+     max-width: 100%;
+     padding: .875rem 1rem;
+     text-align: left;
+     width: 100%;
 }
-.active, .BR-MatSelApp__BnumHeader--Open, .BR-MatSelApp__BnumHeader:hover {
-  background-color: #1779BA;
-  color: #fff;
-  font-weight: 600;
-  border-color: #1779BA;
+ .active, .BR-MatSelApp__BnumHeader--Open, .BR-MatSelApp__BnumHeader:hover {
+     background-color: #1779BA;
+     border-color: #1779BA;
+     color: #fff;
+     font-weight: 600;
 }
-
-.BR-MatSelApp__BnumHeader:after {
-  min-width: 1.25rem;
-  height: 1.25rem;
-  background: #ccc;
-  color: #000;
-  float: right;
+ .BR-MatSelApp__BnumHeader:after {
+     background: #ccc;
+     color: #000;
+     float: right;
+     height: 1.25rem;
+     min-width: 1.25rem;
 }
-
-.BR-MatSelApp__BnumHeader--Open:after {
-  content: url(https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/minus.svg);
+ .BR-MatSelApp__BnumHeader--Open:after {
+     content: url(https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/minus.svg);
 }
-
-.BR-MatSelApp__BnumHeader--Closed:after {
-  content: url(https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/plus.svg);
+ .BR-MatSelApp__BnumHeader--Closed:after {
+     content: url(https://d37iyw84027v1q.cloudfront.net/na/bradyid/svg/plus.svg);
 }
-
-.BR-MatSelApp__BnumNumber {
-  font-weight: 700;
+ .BR-MatSelApp__BnumNumber {
+     font-weight: 700;
 }
-
-.BR-MatSelApp__BnumDescription {
-  margin-bottom: 0;
-  margin-right: 1rem;
+ .BR-MatSelApp__BnumDescription {
+     margin-bottom: 0;
+     margin-right: 1rem;
 }
-
 /*Bnum Details General Stylings*/
-
-.BR-MatSelApp__BnumDetails {
-  display: none;
-  flex-wrap: wrap;
-  width: 100%;
-  flex: 3;
-  margin: 0;
-  overflow: hidden;
-  background-color: #f2f2f2;
-  border: 1px solid #1779BA;
-  transition: max-height .2s, opacity .2s;
+ .BR-MatSelApp__BnumDetails {
+     background-color: #f2f2f2;
+     border: 1px solid #1779BA;
+     display: none;
+     flex: 3;
+     flex-wrap: wrap;
+     margin: 0;
+     overflow: hidden;
+     transition: max-height .2s, opacity .2s;
+     width: 100%;
 }
-
-.BR-MatSelApp__SubSection--MaxThreeAcross {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #Fefefe;
-  padding: 2rem;
-  border: 1px solid #ccc;
-  font-size: .875rem;
+ .BR-MatSelApp__SubSection--MaxThreeAcross {
+     background: #fefefe;
+     border: 1px solid #ccc;
+     flex-direction: column;
+     font-size: .875rem;
+     padding: 2rem;
+     width: 100%;
 }
-
-/* This class helps manage the size of the material profile 
-section which at larger screen sizes is shown at 66% */
-.BR-MatSelApp__SubSection--DoubleWide {
-  width: 100%;
+/* This class helps manage the size of the material profile section which at larger screen sizes is shown at 66% */
+ .BR-MatSelApp__SubSection--DoubleWide {
+     width: 100%;
 }
-
-/* This class helps manage the size of the more info
-section which grows to fill the space left when
-other sections have no data and so are hidden */
-.BR-MatSelApp__SubSection--Expanding {
-  flex-grow: 1;
-  -webkit-flex-grow: 1
+/* This class helps manage the size of the more info section which grows to fill the space left when other sections have no data and so are hidden */
+ .BR-MatSelApp__SubSection--Expanding {
+     flex-grow: 1;
+     -webkit-flex-grow: 1 
+    /* Safari 6.1+ */
 }
-
-
-.BR-MatSelApp__Subheading {
-  color: #000;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: .5rem;
+ .BR-MatSelApp__Subheading {
+     color: #000;
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: .5rem;
 }
-
-.BR-MatSelApp__AttributeHeading {
-  margin-bottom: .375rem;
+ .BR-MatSelApp__AttributeHeading {
+     margin-bottom: .375rem;
 }
-
 /*Material Properties Stylings*/
-
-.BR-MatSelApp__BnumListItem {
-  margin-bottom: .125rem;
+ .BR-MatSelApp__BnumListItem {
+     margin-bottom: .125rem;
 }
-
-.BR-MatSelApp__ProfileImage {
-  float: left;
-  margin-right: .5rem;
-  width: 125px;
-  height: 125px;
+ .BR-MatSelApp__ProfileImage {
+     float: left;
+     height: 125px;
+     margin-right: .5rem;
+     width: 125px;
 }
-
-.BR-MatSelApp__ProfileDescription {
-  font-size: 1rem;
+ .BR-MatSelApp__ProfileDescription {
+     font-size: 1rem;
 }
-
 /*Applications Stylings*/
-
-.BR-MatSelApp__AppsColors {
-  display: flex;
-  flex-wrap: wrap;
+ .BR-MatSelApp__AppsColors {
+     display: flex;
+     flex-wrap: wrap;
 }
-
-.BR-MatSelApp__AppsColorSwatch {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 3px;
-  border: 1px solid #666;
-  margin: 0 0 .5rem .5rem;
+ .BR-MatSelApp__AppsColorSwatch {
+     border: 1px solid #666;
+     border-radius: 3px;
+     height: 1.5rem;
+     margin: 0 0 .5rem .5rem;
+     width: 1.5rem;
 }
-
-.BR-MatSelApp__DisclaimerText {
-  font-size: .75rem;
-  font-style: italic;21
+ .BR-MatSelApp__DisclaimerText {
+     font-size: .75rem;
+     font-style: italic;
 }
-
 /*Special Properties Stylings*/
-
-.BR-MatSelApp__SpecProps {
-  list-style-type: none;
-  min-height: 36px;
-  background: url('default_icon.png') no-repeat;;
-  margin: .5rem 1.75rem 1rem 0rem;
-  padding-left: 3rem;
-  line-height: 1.125rem;
+ .BR-MatSelApp__SpecProps {
+     background: url('default_icon.png') no-repeat;
+     line-height: 1.125rem;
+     list-style-type: none;
+     margin: .5rem 1.75rem 1rem 0;
+     min-height: 36px;
+     padding-left: 3rem;
 }
-
-.BR-MatSelApp__SpecPropsIcon--HR {
-  background: url(heat_resistant_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--HR {
+     background: url(heat_resistant_icon.png) no-repeat;
 }
-
-.BR-MatSelApp__SpecPropsIcon--CR {
-  background: url(cold_resistant_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--CR {
+     background: url(cold_resistant_icon.png) no-repeat;
 }
-
-.BR-MatSelApp__SpecPropsIcon--FR {
-  background: url(flameretardent_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--FR {
+     background: url(flameretardent_icon.png) no-repeat;
 }
-
-.BR-MatSelApp__SpecPropsIcon--RM {
-  background: url(removable_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--RM {
+     background: url(removable_icon.png) no-repeat;
 }
-
-.BR-MatSelApp__SpecPropsIcon--PM {
-  background: url(permanent_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--PM {
+     background: url(permanent_icon.png) no-repeat;
 }
-
-.BR-MatSelApp__SpecPropsIcon--HE {
-  background: url(chem_resist_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--HE {
+     background: url(chem_resist_icon.png) no-repeat;
 }
-
-.BR-MatSelApp__ComplIcon {
-  display: inline-block;
-  height: 40px;
-  margin: .5rem 1rem 0 0;
+ .BR-MatSelApp__ComplIcon {
+     display: inline-block;
+     height: 40px;
+     margin: .5rem 1rem 0 0;
 }
-
 /* Chemical Resistance & Adhesion Stylings */
-
-.BR-MatSelApp__RatingsLegend {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-  color: #666;
+ .BR-MatSelApp__RatingsLegend {
+     color: #666;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 1.25rem;
 }
-
-.BR-MatSelApp__RatingsLegend__Text {
-  display: inline;
-  float: none;
-  font-weight: 600;
+ .BR-MatSelApp__RatingsLegend__Text {
+     display: inline;
+     float: none;
+     font-weight: 600;
 }
-
-.BR-MatSelApp__RatingsLegend__Text--Low:before {
-    content: "\25C0";
-    margin-right: .25em;
-    font-size: 1rem;
+ .BR-MatSelApp__RatingsLegend__Text--Low:before {
+     content: "\25C0";
+     font-size: 1rem;
+     margin-right: .25em;
 }
-
-.BR-MatSelApp__RatingsLegend__Text--High:after {
-    content: "\25B6";
-    margin-left: .25em;
-    font-size: 1rem;
+ .BR-MatSelApp__RatingsLegend__Text--High:after {
+     content: "\25B6";
+     font-size: 1rem;
+     margin-left: .25em;
 }
-
-.BR-MatSelApp__RatingCategoryHead {
-  font-weight: 600;
-  margin: .25rem 0;
+ .BR-MatSelApp__RatingCategoryHead {
+     font-weight: 600;
+     margin: 0;
 }
-
-.BR-MatSelApp__RatingCategoryExamples {
-  margin-bottom: .375rem;
+ .BR-MatSelApp__RatingCategoryExamples {
+     margin-bottom: .375rem;
 }
-
-.BR-MatSelApp__HorizDivider {
-  width: 100%;
-  border-top: 1px solid #ccc;
-  margin-bottom: .875rem;
+ .BR-MatSelApp__HorizDivider {
+     border-top: 1px solid #ccc;
+     margin-bottom: .875rem;
+     width: 100%;
 }
-
-.BR-MatSelApp__RatingBlock {
-  display: inline-block;
-  background: #CCC;
-  width: 18%;
-  height: .625rem;
-  margin-bottom: .625rem;
+ .BR-MatSelApp__RatingBlockContainer {
+     display: flex;
 }
-
-.BR-MatSelApp__RatingBlock--Filled {
-  background: #1779BA;
+ .BR-MatSelApp__RatingBlock {
+     background: #ccc;
+     display: flex;
+     flex-grow: 1;
+     height: .625rem;
+     margin-bottom: .625rem;
+     margin-right: 3px;
 }
-
-.BR-MatSelApp__Textured {
-  display: inline-flex;
-  align-items: center;
+ .BR-MatSelApp__RatingBlock--Filled {
+     background: #1779BA;
 }
-
-.BR-MatSelApp__TexturedIcon {
-  height: 1.25rem;
-  margin-right: .5rem;
+ .BR-MatSelApp__Textured {
+     align-items: center;
+     display: inline-flex;
 }
-
-.BR-MatSelApp__TestingImg {
-  width: 125px;
-  height: auto;
-  margin: 3rem auto;
+ .BR-MatSelApp__TexturedIcon {
+     height: 1.25rem;
+     margin-right: .5rem;
 }
-
+ .BR-MatSelApp__TestingImg {
+     height: auto;
+     margin: 3rem auto;
+     width: 125px;
+}
 /* More Info Stylings */
-
-.BR-MatSelApp__TDSLink {
-  margin-top: .5rem;
-  font-weight: 600;
+ .BR-MatSelApp__TDSLink {
+     font-weight: 600;
+     margin-top: .5rem;
 }
-
-.BR-MatSelApp__TDSImage {
-  width: 3rem;
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: .5rem;
+ .BR-MatSelApp__TDSImage {
+     display: inline-block;
+     padding-right: .5rem;
+     vertical-align: middle;
+     width: 3rem;
 }
-
-
-@media screen and (min-width: 720px) {
-  .BR-MatSelApp__SubSection--MaxThreeAcross {
-    width: 50%;
-  }
-
-  .BR-MatSelApp__SubSection--DoubleWide {
-    width: 100%;
-  }
+ @media screen and (min-width: 720px) {
+     .BR-MatSelApp__SubSection--MaxThreeAcross {
+         width: 50%;
+    }
+     .BR-MatSelApp__SubSection--DoubleWide {
+         width: 100%;
+    }
 }
-
-@media screen and (min-width: 1024px) {
-  .BR-MatSelApp__Results {
-    padding-left: 1.5rem;
-  }
+ @media screen and (min-width: 1024px) {
+     .BR-MatSelApp__Results {
+         padding-left: 1.5rem;
+    }
 }
-
-@media screen and (min-width: 1600px) {
-  .BR-MatSelApp__SubSection--MaxThreeAcross {
-    width: 33.33%;
-  }
-  .BR-MatSelApp__SubSection--DoubleWide {
-  width: 66.66%;
-  }
-  .BR-MatSelApp_SubSection--InteriorBox {
-/*    border-style: none;*/
-    padding: 1rem 2rem;
-  }
-/* When there are exactly 6 boxes being displayed
-   (when chem resistance and adhesion are not there)
-   change the presentation of the More Info box. */
-  .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding ul {
-    display: none;
-  }
-  .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding p {
-    margin-bottom: 0;
-  }
+ @media screen and (min-width: 1600px) {
+     .BR-MatSelApp__SubSection--MaxThreeAcross {
+         width: 33.33%;
+    }
+     .BR-MatSelApp__SubSection--DoubleWide {
+         width: 66.66%;
+    }
+     .BR-MatSelApp_SubSection--InteriorBox {
+         border-style: none;
+         padding: 1rem 2rem;
+    }
+    /* When there are exactly 6 boxes being displayed (when chem resistance and adhesion are not there) change the presentation of the More Info box. */
+     .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding {
+         flex-direction: row;
+         justify-content: space-between;
+    }
+     .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding ul {
+         display: none;
+    }
+     .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding p {
+         margin-bottom: 0;
+    }
 }
-
-
-
-
-
-
-
