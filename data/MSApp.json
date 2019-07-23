@@ -852,7 +852,7 @@
   {
     "num": "B-344",
     "adhesive": "None",
-    "finish": null,
+    "finish": "None",
     "outdoorAppropriate": null,
     "materialProperties": [
       "Flame-retardant",
@@ -4299,7 +4299,7 @@
   {
     "num": "B-7316",
     "adhesive": "None",
-    "finish": null,
+    "finish": "None",
     "outdoorAppropriate": "Outdoor Use",
     "materialProperties": [
       "Laser-engravable"
