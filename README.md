@@ -34,15 +34,9 @@ There are some differences in how the filters work compared to Bradyid. These in
 The search tool looks across all the available data for each material (name, description, special properties, finsih, etc.) and narrows the results to matches on the keywords entered. You can enter and apply any number of keywords.
 
 **Display of material information**
-
-
+tbd
 
 ## Acknowledgements
-
-This app leveraged code from several sources:
-* 
-
-Creating the context-sensitve classes to manage the 
-
+tbd
 Finally, thanks to Jason Dudley for providing some early guidance on code structure and Angular setup. 
 
