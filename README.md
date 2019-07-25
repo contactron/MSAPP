@@ -34,9 +34,30 @@ There are some differences in how the filters work compared to Bradyid. These in
 The search tool looks across all the available data for each material (name, description, special properties, finsih, etc.) and narrows the results to matches on the keywords entered. You can enter and apply any number of keywords.
 
 **Display of material information**
-tbd
+The list of materials displayed in the app shows the material number and name. The user can click on any material and it will expand to show some key material characteristics. This includes:
+- Material type (Label, Sleeve, etc.)
+- Material description
+- Material construction details (Finish, Base Material, Adhesive, etc.)
+- Applications for use
+- Available colors
+- Regulatory approvals and other certifications (ROHS, UL, etc.)
+- Chemical resistance details
+- Adhesion details
+- Link to the corresponding technical data sheet for the material
+
+As the characteristics differs for each material type, the different sections dynamically adjust to display the appropriate information. For example, adhesion is not appropriate for a heat shrink sleeve. In this case the section changes to show more appropriate messaging. Likewise, as data is not available for all sections of all materials, the app dynamically adjust to hide or show sections if there is nothing to display. 
+
+## Future Enhancements
+
+There are many planned improvements that are not yet realized. These include:
+- Adding additional material properties like minimum service temperature
+- Providing links to products made from the materials
+- Providing the ability to easily compare several materials side by side
 
 ## Acknowledgements
-tbd
-Finally, thanks to Jason Dudley for providing some early guidance on code structure and Angular setup. 
+
+I leveraged the work of many others as I in the building of the application. 
+- Classes and markup for the filtering section are borrowed from or closely follow code from BradyID website. 
+- Countless submissions from the Stack Overflow community provided guidance 
+- Also, many thanks to Jason Dudley from the BradyID dev team who provided some early guidance and encouragement on code structure and Angular setup. 
 
