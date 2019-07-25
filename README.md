@@ -4,7 +4,7 @@
 
 This project began as a professional development exercise to improve the Front End development skills I learned through Udacity's Front End NanoDegree. I took the opportunity too to explore AngularJS as a means for integrating the material data into the application. 
 
-The app is intended to help customers evaluate Brady materials (and products) to validate that it will meet their specific needs. 
+The app is intended to help customers evaluate Brady materials. It provides a user-friendly means to determine which of Brady's many materials meet their specific needs. 
 
 ## Running Instructions
 
@@ -58,6 +58,6 @@ There are many planned improvements that are not yet realized. These include:
 
 I leveraged the work of many others as I in the building of the application. 
 - Classes and markup for the filtering section are borrowed from or closely follow code from BradyID website. 
-- Countless submissions from the Stack Overflow community provided guidance 
+- Countless submissions from the Stack Overflow community and other online forums helped me through a multitude of issues. 
 - Also, many thanks to Jason Dudley from the BradyID dev team who provided some early guidance and encouragement on code structure and Angular setup. 
 
