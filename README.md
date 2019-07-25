@@ -58,6 +58,7 @@ There are many planned improvements that are not yet realized. These include:
 
 I leveraged the work of many others as I in the building of the application. 
 - Classes and markup for the filtering section are borrowed from or closely follow code from BradyID website. 
-- Countless submissions from the Stack Overflow community and other online forums helped me through a multitude of issues. 
+- Countless submissions from the Stack Overflow community and other online forums helped me through a multitude of issues.
+- My Brady Skunkworks team of subject matter experts volunteered their time giving me frequent feedback on the application and insights into customer behavior that greatly improved the app. 
 - Also, many thanks to Jason Dudley from the BradyID dev team who provided some early guidance and encouragement on code structure and Angular setup. 
 
