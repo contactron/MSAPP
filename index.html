@@ -1,426 +1,451 @@
 <!doctype html>
+
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Brady Material Selection App POC Nav</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://www.bradyid.com/content/styles.min.css?version=314">
-      <link rel="stylesheet" href="css/msapp.css">
-   </head>
-   <body>
-      <!-- Simulate BradyID containers -->
-      <section class="BR-Body js-Body">
-      <section class="BR-Main">
-         <section>
-            <!-- Controller Div -->
-            <div ng-app="MaterialApp" ng-controller="MaterialCtrl">
-            <!-- Banner compononet to simulate BradyID -->
-            <div class="BR-HierarchyBanner">
-               <div class="BR-LayoutConstraint">
-                  <h1 class="BR-HierarchyBanner__Title">Material Selection App Proof of Concept</h1>
-               </div>
-            </div>
-            <div class="BR-LayoutConstraint">
-               <div class="BR-Search">
-                  <section class="BR-Search__FilterAndResults">
-                     <!-- Filter Section -->
-                     <aside class="BR-Search__Filter BR-Filter">
-                        <!-- Filter Stage -->
-                        <div class="BR-Filter__Controls">
-                           <p class="BR-Filter__ControlButton" ng-click="collapseAll()">
-                              Collapse All
-                           </p>
-                           <p class="BR-Filter__ControlButton" ng-click="reset()">Reset</p>
-                        </div>
-                        <!-- Filter Title Area -->
-                        <div class="BR-Filter__Title">
-                           <p class="BR-Filter__Title__Name">Filter by:</p>
-                        </div>
-                        <!-- Filter stage -->
-                        <div class="BR-FilterStage">
-                           <div class="BR-FilterStage__Actors">
-                              <a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
-                                 <span class="BR-FilterStage__Actors__Item__Text"> {{ filter.FilterValue }} </span> 
-                                 <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path>
-                                 </svg>
-                              </a>
-                           </div>
-                        </div>
-                        <!-- Material Type Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[0].filteropen==true, 'BR-Filter--Closed': AllFilters[0].filteropen==false}" ng-click="Accordion($event,0)">
-                              <p class="BR-Filter__Item__Header__Name">Product Type</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[0].values | orderBy:'id'" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label ng-for="{{ fv.id }}">
-                              <span class="BR-FilterIconText__Icon">
-                              <img ng-src="img/{{ fv.id }}_FilterIcon.svg">
-                              </span>
-                              <span class="BR-FilterIconText__Text">
-                              {{ fv.id }} 
-                              </span>
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Application Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[1].filteropen==true, 'BR-Filter--Closed': AllFilters[1].filteropen==false}" ng-click="Accordion($event,1)">
-                              <p class="BR-Filter__Item__Header__Name">Application</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[1].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-                              {{ fv.id }} ({{ fv.count }})
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Chemical Resistance Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[6].filteropen==true, 'BR-Filter--Closed': AllFilters[6].filteropen==false}" ng-click="Accordion($event,6)">
-                              <p class="BR-Filter__Item__Header__Name">Chemical Resistance</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[6].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('6',AllFilters[6],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-                              {{ fv.id }} ({{ fv.count }})
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Regulatory Approvals Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[9].filteropen==true, 'BR-Filter--Closed': AllFilters[9].filteropen==false}" ng-click="Accordion($event,9)">
-                              <p class="BR-Filter__Item__Header__Name">Regulatory Approvals</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[9].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('9',AllFilters[9],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-                              {{ fv.id }} ({{ fv.count }})
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Special Properties Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[8].filteropen==true, 'BR-Filter--Closed': AllFilters[8].filteropen==false}" ng-click="Accordion($event,8)">
-                              <p class="BR-Filter__Item__Header__Name">Special Properties</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[8].values | orderBy:'id'" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('8',AllFilters[8],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label ng-for="{{ fv.id }}">
-                              <span class="BR-FilterIconText__Icon">
-                              <img ng-src="img/{{ fv.id }}_FilterIcon.svg">
-                              </span>
-                              <span class="BR-FilterIconText__Text">
-                              {{ fv.id }} 
-                              </span>
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Base Material Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[2].filteropen==true, 'BR-Filter--Closed': AllFilters[2].filteropen==false}" ng-click="Accordion($event,2)">
-                              <p class="BR-Filter__Item__Header__Name">Material</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[2].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="qafv.applied" ng-disabled="fv.disabled">
-                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-                              {{ fv.id }} ({{ fv.count }})
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Finish Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[3].filteropen==true, 'BR-Filter--Closed': AllFilters[3].filteropen==false}" ng-click="Accordion($event,3)">
-                              <p class="BR-Filter__Item__Header__Name">Finish</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[3].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-                              {{ fv.id }} ({{ fv.count }})
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Color Swatch Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[4].filteropen==true, 'BR-Filter--Closed': AllFilters[4].filteropen==false}" ng-click="Accordion($event,4)">
-                              <p class="BR-Filter__Item__Header__Name">Color</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[4].values | orderBy:'id'" class="BR-FilterColorSwatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': fv.id=='Yellow', 'BR-FilterColorSwatch--Black': fv.id=='Black', 'BR-FilterColorSwatch--Blue': fv.id=='Blue', 'BR-FilterColorSwatch--Red': fv.id=='Red', 'BR-FilterColorSwatch--Brown': fv.id=='Brown', 'BR-FilterColorSwatch--Gray': fv.id=='Gray', 'BR-FilterColorSwatch--Gold': fv.id=='Gold', 'BR-FilterColorSwatch--Green': fv.id=='Green', 'BR-FilterColorSwatch--Purple': fv.id=='Purple', 'BR-FilterColorSwatch--Orange': fv.id=='Orange', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--White': fv.id=='White', 'BR-FilterColorSwatch--LightBlue': fv.id=='Light Blue', 'BR-FilterColorSwatch--Metallized': fv.id=='Metallized', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--Violet': fv.id=='Violet', 'BR-FilterColorSwatch--Silver': fv.id=='Silver', 'BR-FilterColorSwatch--Pink': fv.id=='Pink', 'BR-FilterColorSwatch--Amber': fv.id=='Amber'}">
-                              <span class="BR-FilterColorSwatch__ToolTip__Text">{{ fv.id }}</span>					
-                              </label>
-                              </input>
-                              </span>
-                           </div>
-                        </div>
-                        <!-- Adhesion Checkbox Filter -->
-                        <div class="BR-Filter__Item">
-                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[7].filteropen==true, 'BR-Filter--Closed': AllFilters[7].filteropen==false}" ng-click="Accordion($event,7)">
-                              <p class="BR-Filter__Item__Header__Name">Adhesion</p>
-                           </header>
-                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
-                              <span ng-repeat="fv in AllFilters[7].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('7',AllFilters[7],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
-                              {{ fv.id }} ({{ fv.count }})
-                              </label>
-                              </span>
-                           </div>
-                        </div>
-                     </aside>
-                     <!-- Results Section -->
-                     <main class="BR-Search__Results BR-MatSelApp__Results">
-                        <!-- B# Results Table -->
-                        <div class="BR-FilterText"">
-                           <form class="BR-FilterText__Form ng-pristine ng-valid">
-                              <label class="BR-FilterText__Title">Filter by text:</label>
-                              <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm" placeholder="Enter keywords to narrow results">
-                              <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)"></button>
-                           </form>
-                        </div>
-                        <h3 ng-cloak class="BR-MatSelApp__ResultsText">{{ Bnum.length }} Brady material(s) match your criteria</h3>
-                        <!-- No Results Screen -->
-                        <div class="BR-MatSelApp__NoResults" ng-cloak ng-show="Bnum.length < 1">
-                           There are no results.
-                        </div>
-                        <!--Bnum Result -->
-                        <div ng-repeat="x in Bnum | orderBy:'num'" ng-cloak class="BR-MatSelApp__BnumRow">
-                           <!-- Bnum Header Section -->
-                           <header ng-click="AccordionBnums($event)" class="BR-MatSelApp__BnumHeader BR-MatSelApp__BnumHeader--Closed">
-                              <p class="BR-MatSelApp__BnumDescription"><span class="BR-MatSelApp__BnumNumber">{{ x.num }}: </span>{{ x.name }}</p>
-                           </header>
-                           <!--Bnum Details Section -->
-                           <div class="BR-MatSelApp__BnumDetails">
-                              <!--Material Profle Section -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--InteriorBox">
-                                 <div>
-                                    <img class="BR-MatSelApp__ProfileImage" ng-src="img/{{ x.materialType }}.svg">	
-                                    <h4 class="BR-MatSelApp__Subheading">Description</h4>
-                                    <p class="BR-MatSelApp__ProfileDescription">{{ x.description }}</p>
-                                 </div>
-                              </div>
-                              <!-- Label Construction Section -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
-                                 <h4 class="BR-MatSelApp__Subheading">Construction</h4>
-                                 <div>
-                                    <p class="BR-MatSelApp__AttributeHeading"><strong>Finish: </strong>{{ x.finish }}</p>
-                                    <p class="BR-MatSelApp__AttributeHeading"><strong>Base: </strong>{{ x.baseMaterial }}</p>
-                                    <p class="BR-MatSelApp__AttributeHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
-                                    <p class="BR-MatSelApp__AttributeHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
-                                 </div>
-                              </div>
-                              <!--Applications Section -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
-                                 <!-- <h4 class="BR-MatSelApp__Subheading">Applications</h4> -->
-                                 <h4 class="BR-MatSelApp__Subheading">Applications</h4>
-                                 <ul>
-                                    <li ng-repeat="i in x.printerLabelApplications" ng-cloak class="BR-MatSelApp__BnumListItem">{{ i }}
-                                 </ul>
-                                 <!-- Color Swatches Section -->
-                                 <p class="BR-MatSelApp__AttributeHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
-                                 <div class="MatSelApp__AppsColors">
-                                    <div ng-repeat="i in x.colors" ng-cloak class="BR-MatSelApp__AppsColorSwatch BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink', 'BR-FilterColorSwatch--Amber': i=='Amber'}">
-                                       <span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
-                                    </div>
-                                 </div>
-                                 <p class="BR-MatSelApp__DisclaimerText" ng-show="x.tapeColorable=='Yes'">*This material can be custom colored.</p>
-                              </div>
-                              <!--Bnum Rec Compliance Section -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
-                                 <div>
-                                    <h4 class="BR-MatSelApp__Subheading">
-                                       Regulatory Approvals
-                                       <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24">
-                                          <path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path>
-                                          <path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path>
-                                       </svg>
-                                    </h4>
-                                    <img ng-repeat="i in x.compliance" ng-cloak class="BR-MatSelApp__ComplIcon" ng-src="img/{{ i }}_icon.svg">
-                                    <p ng-cloak ng-if="x.compliance.length < 1" >There is no compliance information currently available for this material.
-                                    <p>
-                                 </div>
-                              </div>
-                              <!-- Spec Props Section -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
-                                 <h4 class="BR-MatSelApp__Subheading">Special Properties</h4>
-                                 <ul>
-                                    <li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProps" ng-class="{'BR-MatSelApp__SpecPropsIcon--HR': i=='Heat Resistant Labels', 'BR-MatSelApp__SpecPropsIcon--CR': i=='Low Temperature Labels', 'BR-MatSelApp__SpecPropsIcon--FR': i=='Flame-retardant', 'BR-MatSelApp__SpecPropsIcon--RM': i=='Removable Labels', 'BR-MatSelApp__SpecPropsIcon--PM': i=='Permanent Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--HE': i=='Harsh Environment Labels'}">{{ i }}
-                                 </ul>
-                                 <p ng-cloak ng-if="x.specialProperties.length < 1">This material is recommended for general applications.
-                                 <p>
-                              </div>
-                              <!--Chem Resistance Section Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length > 0)">
-                                 <h4 class="BR-MatSelApp__Subheading">
-                                    Chemical Resistance
-                                    <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24">
-                                       <path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path>
-                                       <path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path>
-                                    </svg>
-                                 </h4>
-                                 <div class="BR-MatSelApp__RatingsLegend">
-                                    <span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
-                                    <span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
-                                 </div>
-                                 <p class="BR-MatSelApp__RatingCategoryHead">Alcohols</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 2}"></div>
-                                 </div>
-                                 <p class="BR-MatSelApp__RatingCategoryHead">Cleaners</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
-                                 </div>
-                                 <p class="BR-MatSelApp__RatingCategoryHead">Solvents</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 2}"></div>
-                                 </div>
-                                 <p class="BR-MatSelApp__RatingCategoryHead">Oils</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 2}"></div>
-                                 </div>
-                                 <p class="BR-MatSelApp__RatingCategoryHead">Fuels</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 2}"></div>
-                                 </div>
-                              </div>
-                              <!--Chemical Resistance Section No Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
-                                 <h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
-                                 <img class="BR-MatSelApp__TestingImg" src="img/chemicaltesting.svg">
-                                 <p>There is no chemical resistance information available for this material. Please contact Brady customer service for more information.</p>
-                              </div>
-                              <!--Adhesion Specs Section Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length > 0)">
-                                 <h4 class="BR-MatSelApp__Subheading">
-                                    Adhesion
-                                    <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24">
-                                       <path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path>
-                                       <path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path>
-                                    </svg>
-                                 </h4>
-                                 <div class="BR-MatSelApp__RatingsLegend">
-                                    <span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
-                                    <span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
-                                 </div>
-                                 <p class="BR-MatSelApp__RatingCategoryHead">To Common Surfaces</p>
-                                 <p class="BR-MatSelApp__RatingCategoryExamples">Ex: Stainless Steel, Glass, Copper</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 2}"></div>
-                                 </div>
-                                 <hr class="BR-MatSelApp__HorizDivider">
-                                 <p class="BR-MatSelApp__RatingCategoryHead">To Difficult Surfaces</p>
-                                 <p class="BR-MatSelApp__RatingCategoryExamples">Ex: Polystyrene, Acetal, Powder Coatings</p>
-                                 <div class="BR-MatSelApp__RatingBlockContainer">
-                                    <div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
-                                    <div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
-                                 </div>
-                                 <hr class="BR-MatSelApp__HorizDivider">
-                                 <p class="BR-MatSelApp__RatingCategoryHead">To Textured Surfaces</p>
-                                 <span class="BR-MatSelApp__Textured" ng-if="x.adhesionTextured == 'Yes'">
-                                    <svg class="BR-MatSelApp__TexturedIcon" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                       <circle cx="33.946" cy="33.9" r="32.563" transform="matrix(1 .0014 0 1 -.946 -.947)" fill="#228b22"/>
-                                       <path d="M53.745 25.906l-7.578-7.645-18.114 18.114-8.746-8.816-7.645 7.646 16.391 16.391" fill="#fff"/>
-                                    </svg>
-                                    Recommended
-                                 </span>
-                                 <span class="BR-MatSelApp__Textured" ng-if="x.adhesionTextured == 'No'">
-                                    <svg class="BR-MatSelApp__TexturedIcon" viewBox="0 0 46.201 40.011" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                                       <path d="M46.2 40H0L23.1 0l11.55 20z" fill="#f90"></path>
-                                       <path fill="#fff" stroke="#fff" stroke-width="5.51" d="M22.7 15.2h.58v9.48h-.6z"></path>
-                                       <path fill="#fff" stroke="#fff" stroke-width="4.27" d="M22.12 32.5h1.83v1.83h-1.83z"></path>
-                                    </svg>
-                                    Not Recommended
-                                 </span>
-                              </div>
-                              <!--Adhesion Specs Section No Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
-                                 <h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
-                                 <img class="BR-MatSelApp__TestingImg" src="img/adhesiontesting.svg">
-                                 <p>There is no adhesion information available for this material. Please contact Brady customer service for more information.</p>
-                              </div>
-                              <!-- More Info Section -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--Expanding">
-                                 <div>
-                                    <h4 class="BR-MatSelApp__Subheading">Technical Data Sheet</h4>
-                                    <p>Consult our Technical Data Sheets for detailed material information including:</p>
-                                    <ul>
-                                       <li class="BR-MatSelApp__BnumListItem">Detailed testing results for Adhesion and Chemical Resistance
-                                       <li class="BR-MatSelApp__BnumListItem">Regulatory and Agency Approvals
-                                    </ul>
-                                 </div>
-                                 <div class="BR-MatSelApp__TDSLink">
-                                    <a href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">
-                                       <svg class="BR-MatSelApp__TDSImage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                          <path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/>
-                                          <path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/>
-                                          <path fill="#cad1d8" d="M480 224l-96-96h96z"/>
-                                          <path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/>
-                                          <g fill="#fff">
-                                             <path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/>
-                                          </g>
-                                          <path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/>
-                                       </svg>
-                                       {{ x.num }} Technical Data Sheet
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-               </div>
-               </main>
-            </div>
-            </section>
-         </section>
-      </section>
-      <!-- Load js files -->
-      <script src="https://www.bradyid.com/JS/smartsitescripts.min.js?v=1109194456"></script>  
-      <script src="js/msapp.js"></script>
-   </body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brady Material Selection App POC Nav</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.bradyid.com/content/styles.min.css?version=314">
+        <link rel="stylesheet" href="css/msapp.css">
+    </head>
+
+	<body>
+		<!-- Simulate BradyID containers -->
+		<section class="BR-Body js-Body">
+			<section class="BR-Main">
+				<section>
+					<!-- Controller Div -->
+					<div ng-app="MaterialApp" ng-controller="MaterialCtrl">
+
+						<!-- Banner compononet to simulate BradyID -->
+						<div class="BR-HierarchyBanner">
+				            <div class="BR-LayoutConstraint">
+				                <h1 class="BR-HierarchyBanner__Title">Material Selection App Proof of Concept</h1>
+				            </div>
+				        </div>
+
+						<div class="BR-LayoutConstraint">
+							<div class="BR-Search">
+								<section class="BR-Search__FilterAndResults">
+
+									<!-- Filter Section -->
+									<aside class="BR-Search__Filter BR-Filter">
+
+										<!-- Filter Stage -->
+							            <div class="BR-Filter__Controls">
+							                <p class="BR-Filter__ControlButton" ng-click="collapseAll()">
+							                    Collapse All
+							                </p>
+							                <p class="BR-Filter__ControlButton" ng-click="reset()">Reset</p>
+							            </div>
+
+											<!-- Filter Title Area -->
+
+											<div class="BR-Filter__Title">
+							                	<p class="BR-Filter__Title__Name">Filter by:</p>	
+							            	</div>
+
+											<!-- Filter stage -->
+											<div class="BR-FilterStage">
+								                <div class="BR-FilterStage__Actors">
+													<a class="BR-FilterStage__Actors__Item" ng-cloak ng-repeat="filter in setFilters" ng-click="removeFilter(filter.Position,filter.FilterId,filter.FilterValue)">
+									                        <span class="BR-FilterStage__Actors__Item__Text"> {{ filter.FilterValue }} </span> <svg class="BR-Svg svg-replaced BR-FilterStage__Actors__Item__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.313 4.687c-6.248-6.25-16.38-6.25-22.627 0-6.25 6.248-6.25 16.38 0 22.627 6.248 6.25 16.38 6.25 22.627 0 6.25-6.25 6.25-16.38 0-22.627zm-2.828 16.97l-2.828 2.83L16 18.828l-5.657 5.656-2.828-2.83L13.172 16l-5.657-5.657 2.828-2.83L16 13.172l5.657-5.656 2.828 2.83L18.828 16l5.657 5.657z"></path></svg>
+									                    </a>
+								                </div>
+								            </div>
+
+
+							                <!-- Material Type Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
+												<header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[0].filteropen==true, 'BR-Filter--Closed': AllFilters[0].filteropen==false}" ng-click="Accordion($event,0)">
+													<p class="BR-Filter__Item__Header__Name">Product Type</p>
+								                </header>
+
+									            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[0].values | orderBy:'id'" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('0',AllFilters[0],fv)">
+												        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+												        <label ng-for="{{ fv.id }}">
+												          <span class="BR-FilterIconText__Icon">
+												              <img ng-src="img/{{ fv.id }}_FilterIcon.svg">
+												          </span>
+												          <span class="BR-FilterIconText__Text">
+												               {{ fv.id }} 
+												          </span>
+												        </label>
+												    </span>
+												</div> 
+									      	</div>
+
+								            <!-- Application Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[1].filteropen==true, 'BR-Filter--Closed': AllFilters[1].filteropen==false}" ng-click="Accordion($event,1)">
+								                    <p class="BR-Filter__Item__Header__Name">Application</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[1].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('1',AllFilters[1],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+
+											<!-- Chemical Resistance Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[6].filteropen==true, 'BR-Filter--Closed': AllFilters[6].filteropen==false}" ng-click="Accordion($event,6)">
+								                    <p class="BR-Filter__Item__Header__Name">Chemical Resistance</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[6].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('6',AllFilters[6],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+
+								            <!-- Regulatory Approvals Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[9].filteropen==true, 'BR-Filter--Closed': AllFilters[9].filteropen==false}" ng-click="Accordion($event,9)">
+								                    <p class="BR-Filter__Item__Header__Name">Regulatory Approvals</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[9].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('9',AllFilters[9],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+
+								            <!-- Special Properties Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
+												<header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[8].filteropen==true, 'BR-Filter--Closed': AllFilters[8].filteropen==false}" ng-click="Accordion($event,8)">
+													<p class="BR-Filter__Item__Header__Name">Special Properties</p>
+								                </header>
+
+									            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[8].values | orderBy:'id'" ng-cloak class="BR-FilterIconText" ng-click="!fv.disabled && toggleFilter('8',AllFilters[8],fv)">
+												        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+												        <label ng-for="{{ fv.id }}">
+												          <span class="BR-FilterIconText__Icon">
+												              <img ng-src="img/{{ fv.id }}_FilterIcon.svg">
+												          </span>
+												          <span class="BR-FilterIconText__Text">
+												               {{ fv.id }} 
+												          </span>
+												        </label>
+												    </span>
+												</div> 
+									      	</div>
+
+							                <!-- Base Material Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[2].filteropen==true, 'BR-Filter--Closed': AllFilters[2].filteropen==false}" ng-click="Accordion($event,2)">
+								                    <p class="BR-Filter__Item__Header__Name">Material</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								 					<span ng-repeat="fv in AllFilters[2].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="qafv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>
+								            </div>
+
+								            <!-- Finish Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[3].filteropen==true, 'BR-Filter--Closed': AllFilters[3].filteropen==false}" ng-click="Accordion($event,3)">
+								                    <p class="BR-Filter__Item__Header__Name">Finish</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[3].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('3',AllFilters[3],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+
+								            <!-- Color Swatch Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[4].filteropen==true, 'BR-Filter--Closed': AllFilters[4].filteropen==false}" ng-click="Accordion($event,4)">
+								                    <p class="BR-Filter__Item__Header__Name">Color</p>
+								                </header>
+
+												<div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
+												    <span ng-repeat="fv in AllFilters[4].values | orderBy:'id'" class="BR-FilterColorSwatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
+														<input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+															<label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': fv.id=='Yellow', 'BR-FilterColorSwatch--Black': fv.id=='Black', 'BR-FilterColorSwatch--Blue': fv.id=='Blue', 'BR-FilterColorSwatch--Red': fv.id=='Red', 'BR-FilterColorSwatch--Brown': fv.id=='Brown', 'BR-FilterColorSwatch--Gray': fv.id=='Gray', 'BR-FilterColorSwatch--Gold': fv.id=='Gold', 'BR-FilterColorSwatch--Green': fv.id=='Green', 'BR-FilterColorSwatch--Purple': fv.id=='Purple', 'BR-FilterColorSwatch--Orange': fv.id=='Orange', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--White': fv.id=='White', 'BR-FilterColorSwatch--LightBlue': fv.id=='Light Blue', 'BR-FilterColorSwatch--Metallized': fv.id=='Metallized', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--Violet': fv.id=='Violet', 'BR-FilterColorSwatch--Silver': fv.id=='Silver', 'BR-FilterColorSwatch--Pink': fv.id=='Pink', 'BR-FilterColorSwatch--Amber': fv.id=='Amber'}">
+																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ fv.id }}</span>					
+															</label>
+														</input>
+													</span>
+												</div>
+											</div>
+
+								            <!-- Adhesion Checkbox Filter -->
+											<div class="BR-Filter__Item">
+								                <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[7].filteropen==true, 'BR-Filter--Closed': AllFilters[7].filteropen==false}" ng-click="Accordion($event,7)">
+								                    <p class="BR-Filter__Item__Header__Name">Adhesion</p>
+								                </header>
+								                <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+								                    <span ng-repeat="fv in AllFilters[7].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('7',AllFilters[7],fv)">
+								                        <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+								                        <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+								                            {{ fv.id }} ({{ fv.count }})
+								                        </label>
+								                    </span>
+								                </div>    
+								            </div>
+											
+
+										</aside>
+
+										<!-- Results Section -->
+										<main class="BR-Search__Results BR-MatSelApp__Results">
+
+											<!-- B# Results Table -->
+												
+											<div class="BR-FilterText"">
+								                <form class="BR-FilterText__Form ng-pristine ng-valid">
+								                    <label class="BR-FilterText__Title">Filter by text:</label>
+								                    <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm" placeholder="Enter keywords to narrow results">
+								                    <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)"></button>
+								                </form>
+								            </div>
+
+								            <h3 ng-cloak class="BR-MatSelApp__ResultsText">{{ Bnum.length }} Brady material(s) match your criteria</h3>
+
+
+											<!-- No Results Screen -->
+											<div class="BR-MatSelApp__NoResults" ng-cloak ng-show="Bnum.length < 1">
+												There are no results.
+											</div>
+
+											<!--Bnum Result -->
+								            <div ng-repeat="x in Bnum | orderBy:'num'" ng-cloak class="BR-MatSelApp__BnumRow">
+
+												<!-- Bnum Header Section -->
+									                <header ng-click="AccordionBnums($event)" class="BR-MatSelApp__BnumHeader BR-MatSelApp__BnumHeader--Closed">
+									                    <p class="BR-MatSelApp__BnumDescription"><span class="BR-MatSelApp__BnumNumber">{{ x.num }}: </span>{{ x.name }}</p>
+									                </header>
+												
+												<!--Bnum Details Section -->
+												<div class="BR-MatSelApp__BnumDetails">
+
+													<!--Material Profle Section -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--DoubleWide BR-MatSelApp_SubSection--InteriorBox">
+														<div>
+															<img class="BR-MatSelApp__ProfileImage" ng-src="img/{{ x.materialType }}.png">	
+															<h4 class="BR-MatSelApp__Subheading">Description</h4>
+															<p class="BR-MatSelApp__ProfileDescription">{{ x.description }}</p>
+														</div>							
+													</div>
+													
+													<!-- Label Construction Section -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
+														<h4 class="BR-MatSelApp__Subheading">Construction</h4>
+														<div>
+															<p class="BR-MatSelApp__AttributeHeading"><strong>Finish: </strong>{{ x.finish }}</p>
+															<p class="BR-MatSelApp__AttributeHeading"><strong>Base: </strong>{{ x.baseMaterial }}</p>
+															<p class="BR-MatSelApp__AttributeHeading"><strong>Adhesive: </strong>{{ x.adhesive }}</p>
+															<p class="BR-MatSelApp__AttributeHeading"><strong>Material Thickness: </strong>{{ x.thicknessIn }}</p>
+														</div>							
+													</div>	
+
+													<!--Applications Section -->
+												
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
+														<!-- <h4 class="BR-MatSelApp__Subheading">Applications</h4> -->
+														<h4 class="BR-MatSelApp__Subheading">Applications</h4>
+														<ul>
+															<li ng-repeat="i in x.printerLabelApplications" ng-cloak class="BR-MatSelApp__BnumListItem">{{ i }}
+														</ul>
+
+														<!-- Color Swatches Section -->
+														<p class="BR-MatSelApp__AttributeHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
+														<div class="MatSelApp__AppsColors">
+															<div ng-repeat="i in x.colors" ng-cloak class="BR-MatSelApp__AppsColorSwatch BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink', 'BR-FilterColorSwatch--Amber': i=='Amber'}">
+																<span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
+															</div>
+														</div>
+														<p class="BR-MatSelApp__DisclaimerText" ng-show="x.tapeColorable=='Yes'">*This material can be custom colored.</p>
+													</div>
+
+													<!--Bnum Rec Compliance Section -->
+
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
+														<div>
+															<h4 class="BR-MatSelApp__Subheading">Regulatory Approvals
+	                                                        <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24"><path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path><path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path></svg>
+	                                                     </h4>
+															<img ng-repeat="i in x.compliance" ng-cloak class="BR-MatSelApp__ComplIcon" ng-src="img/{{ i }}_icon.svg">
+															<p ng-cloak ng-if="x.compliance.length < 1" >There is no compliance information currently available for this material.<p>
+														</div>
+													</div>
+
+													<!-- Spec Props Section -->
+
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">	
+														<h4 class="BR-MatSelApp__Subheading">Special Properties</h4>
+														<ul>
+															<li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProps" ng-class="{'BR-MatSelApp__SpecPropsIcon--HR': i=='Heat Resistant Labels', 'BR-MatSelApp__SpecPropsIcon--CR': i=='Low Temperature Labels', 'BR-MatSelApp__SpecPropsIcon--FR': i=='Flame-retardant', 'BR-MatSelApp__SpecPropsIcon--RM': i=='Removable Labels', 'BR-MatSelApp__SpecPropsIcon--PM': i=='Permanent Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--HE': i=='Harsh Environment Labels'}">{{ i }}
+														</ul>
+														<p ng-cloak ng-if="x.specialProperties.length < 1">This material is recommended for general applications.<p>
+													</div>
+
+													<!--Chem Resistance Section Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length > 0)">	
+													
+														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance
+	                                                        <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24"><path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path><path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path></svg>
+	                                                     </h4>
+
+														<div class="BR-MatSelApp__RatingsLegend">
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Alcohols</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 2}"></div>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Cleaners</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
+														</div>
+
+														<p class="BR-MatSelApp__RatingCategoryHead">Solvents</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceSolvents < 2}"></div>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Oils</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceOils < 2}"></div>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">Fuels</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceFuels < 2}"></div>
+														</div>							
+													</div>
+
+													<!--Chemical Resistance Section No Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
+														<h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
+														<img class="BR-MatSelApp__TestingImg" src="img/chemicaltesting.svg">
+														<p>There is no chemical resistance information available for this material. Please contact Brady customer service for more information.</p>
+													</div>
+
+													<!--Adhesion Specs Section Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length > 0)">
+														
+														<h4 class="BR-MatSelApp__Subheading">Adhesion
+	                                                        <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24"><path d="M8.4 0C3.8 0 0 3.8 0 8.4s3.8 8.4 8.4 8.4 8.4-3.8 8.4-8.4c0-4.6-3.7-8.4-8.4-8.4" fill="#6aade4"></path><path d="M9.9 11.7c-.6.4-1.1.9-1.9 1 .1-.4.3-.7.4-.9.7-1.4 1.4-2.7 2-4.1.5-1.1.1-1.8-1.1-1.6-1.5.2-2.8.9-4 1.9-.1.1-.4.2-.2.5s.4.1.6-.1c.5-.4 1.1-.7 1.8-.9-.2.4-.3.7-.4.9-.7 1.4-1.4 2.8-2 4.2-.5 1.1-.2 1.7 1 1.6 1.7-.1 3-.9 4.2-2 .2-.1.3-.4.2-.6-.2-.3-.5-.1-.6.1m.6-9.8c-.9 0-1.7.7-1.8 1.6 0 .7.5 1.2 1.3 1.2 1 0 1.7-.7 1.8-1.5 0-.8-.5-1.3-1.3-1.3" fill="#fff"></path></svg>
+	                                                     </h4>
+														<div class="BR-MatSelApp__RatingsLegend">
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--Low">LOW</span>
+															<span class="BR-MatSelApp__RatingsLegend__Text BR-MatSelApp__RatingsLegend__Text--High">HIGH</span>
+														</div>
+														<p class="BR-MatSelApp__RatingCategoryHead">To Common Surfaces</p>
+														<p class="BR-MatSelApp__RatingCategoryExamples">Ex: Stainless Steel, Glass, Copper</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceAlcohols < 2}"></div>
+														</div>
+														<hr class="BR-MatSelApp__HorizDivider">
+														<p class="BR-MatSelApp__RatingCategoryHead">To Difficult Surfaces</p>
+														<p class="BR-MatSelApp__RatingCategoryExamples">Ex: Polystyrene, Acetal, Powder Coatings</p>
+														<div class="BR-MatSelApp__RatingBlockContainer">
+															<div class="BR-MatSelApp__RatingBlock BR-MatSelApp__RatingBlock--Filled"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 5}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 4}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 3}"></div>
+															<div class="BR-MatSelApp__RatingBlock" ng-class="{'BR-MatSelApp__RatingBlock--Filled': x.chemResistanceCleaners < 2}"></div>
+														</div>
+														<hr class="BR-MatSelApp__HorizDivider">
+														<p class="BR-MatSelApp__RatingCategoryHead">To Textured Surfaces</p>
+														<span class="BR-MatSelApp__Textured" ng-if="x.adhesionTextured == 'Yes'">
+															<svg class="BR-MatSelApp__TexturedIcon" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle cx="33.946" cy="33.9" r="32.563" transform="matrix(1 .0014 0 1 -.946 -.947)" fill="#228b22"/><path d="M53.745 25.906l-7.578-7.645-18.114 18.114-8.746-8.816-7.645 7.646 16.391 16.391" fill="#fff"/></svg>
+															Recommended
+														</span>	
+														<span class="BR-MatSelApp__Textured" ng-if="x.adhesionTextured == 'No'">
+															<svg class="BR-MatSelApp__TexturedIcon" viewBox="0 0 46.201 40.011" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M46.2 40H0L23.1 0l11.55 20z" fill="#f90"></path><path fill="#fff" stroke="#fff" stroke-width="5.51" d="M22.7 15.2h.58v9.48h-.6z"></path><path fill="#fff" stroke="#fff" stroke-width="4.27" d="M22.12 32.5h1.83v1.83h-1.83z"></path></svg>
+															Not Recommended
+														</span>								
+													</div>
+
+													<!--Adhesion Specs Section No Data -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
+														<h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
+														<img class="BR-MatSelApp__TestingImg" src="img/adhesiontesting.svg">
+														<p>There is no adhesion information available for this material. Please contact Brady customer service for more information.</p>
+													</div>
+
+													<!-- More Info Section -->
+													<div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--Expanding">
+														<div>
+															<h4 class="BR-MatSelApp__Subheading">Technical Data Sheet</h4>
+															<p>Consult our Technical Data Sheets for detailed material information including:</p>
+															<ul>
+																<li class="BR-MatSelApp__BnumListItem">Detailed testing results for Adhesion and Chemical Resistance
+																<li class="BR-MatSelApp__BnumListItem">Regulatory and Agency Approvals
+															</ul>
+														</div>
+														<div class="BR-MatSelApp__TDSLink">
+															<a href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">
+															<svg class="BR-MatSelApp__TDSImage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128L352 0H128z" fill="#e2e5e7"/><path d="M384 128h96L352 0v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M480 224l-96-96h96z"/><path d="M416 416c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16h352c8.8 0 16 7.2 16 16v160z" fill="#f15642"/><g fill="#fff"><path d="M101.744 303.152c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912V368.4h21.232c34.544 0 36.08-57.312 0-57.312H204.72zM303.872 312.112v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v.016z"/></g><path d="M400 432H96v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#cad1d8"/></svg>
+															{{ x.num }} Technical Data Sheet</a>
+														</div>
+													</div>	
+
+												</div>
+											</div>
+											
+										</div>
+									</main>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- Load js files -->
+        <script src="https://www.bradyid.com/JS/smartsitescripts.min.js?v=1109194456"></script>  
+		<script src="js/msapp.js"></script>
+
+	</body>
+
 </html>
+
+

@@ -28,6 +28,7 @@ app.controller('MaterialCtrl', function($scope, $filter, $http) {
                 // setFilters is used for the stage
                 $scope.setFilters = [];
                 $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
+                $scope.AccordionSetup();
             })
             .error(function (errorresponse) {
               // Server found but there was an error
