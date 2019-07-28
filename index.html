@@ -50,7 +50,6 @@
                         </div>
                         <!-- Material Type Checkbox Filter -->
                         <div class="BR-Filter__Item">
-                           <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
                            <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[0].filteropen==true, 'BR-Filter--Closed': AllFilters[0].filteropen==false}" ng-click="Accordion($event,0)">
                               <p class="BR-Filter__Item__Header__Name">Product Type</p>
                            </header>
@@ -166,9 +165,9 @@
                            <div class="BR-Filter__Item__Options BR-Filter__Item__Options--FilterBoxed BR-MatSelApp__Filter__Accordion">
                               <span ng-repeat="fv in AllFilters[4].values | orderBy:'id'" class="BR-FilterColorSwatch" ng-cloak ng-click="!fv.disabled && toggleFilter('4',AllFilters[4],fv)">
                               <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
-                              <label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': fv.id=='Yellow', 'BR-FilterColorSwatch--Black': fv.id=='Black', 'BR-FilterColorSwatch--Blue': fv.id=='Blue', 'BR-FilterColorSwatch--Red': fv.id=='Red', 'BR-FilterColorSwatch--Brown': fv.id=='Brown', 'BR-FilterColorSwatch--Gray': fv.id=='Gray', 'BR-FilterColorSwatch--Gold': fv.id=='Gold', 'BR-FilterColorSwatch--Green': fv.id=='Green', 'BR-FilterColorSwatch--Purple': fv.id=='Purple', 'BR-FilterColorSwatch--Orange': fv.id=='Orange', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--White': fv.id=='White', 'BR-FilterColorSwatch--LightBlue': fv.id=='Light Blue', 'BR-FilterColorSwatch--Metallized': fv.id=='Metallized', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--Violet': fv.id=='Violet', 'BR-FilterColorSwatch--Silver': fv.id=='Silver', 'BR-FilterColorSwatch--Pink': fv.id=='Pink', 'BR-FilterColorSwatch--Amber': fv.id=='Amber'}">
-                              <span class="BR-FilterColorSwatch__ToolTip__Text">{{ fv.id }}</span>					
-                              </label>
+                                 <label ng-for="{{ fv.id }}" class="BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': fv.id=='Yellow', 'BR-FilterColorSwatch--Black': fv.id=='Black', 'BR-FilterColorSwatch--Blue': fv.id=='Blue', 'BR-FilterColorSwatch--Red': fv.id=='Red', 'BR-FilterColorSwatch--Brown': fv.id=='Brown', 'BR-FilterColorSwatch--Gray': fv.id=='Gray', 'BR-FilterColorSwatch--Gold': fv.id=='Gold', 'BR-FilterColorSwatch--Green': fv.id=='Green', 'BR-FilterColorSwatch--Purple': fv.id=='Purple', 'BR-FilterColorSwatch--Orange': fv.id=='Orange', 'BR-FilterColorSwatch--Clear': fv.id=='Clear', 'BR-FilterColorSwatch--White': fv.id=='White', 'BR-FilterColorSwatch--LightBlue': fv.id=='Light Blue', 'BR-FilterColorSwatch--Metallized': fv.id=='Metallized', 'BR-FilterColorSwatch--Violet': fv.id=='Violet', 'BR-FilterColorSwatch--Silver': fv.id=='Silver', 'BR-FilterColorSwatch--Pink': fv.id=='Pink', 'BR-FilterColorSwatch--Amber': fv.id=='Amber'}">
+                                 <span class="BR-FilterColorSwatch__ToolTip__Text">{{ fv.id }}</span>					
+                                 </label>
                               </input>
                               </span>
                            </div>
@@ -191,7 +190,7 @@
                      <!-- Results Section -->
                      <main class="BR-Search__Results BR-MatSelApp__Results">
                         <!-- B# Results Table -->
-                        <div class="BR-FilterText"">
+                        <div class="BR-FilterText">
                            <form class="BR-FilterText__Form ng-pristine ng-valid">
                               <label class="BR-FilterText__Title">Filter by text:</label>
                               <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm" placeholder="Enter keywords to narrow results">
@@ -239,7 +238,7 @@
                                  <!-- Color Swatches Section -->
                                  <p class="BR-MatSelApp__AttributeHeading"><strong>Standard Colors<span ng-show="x.tapeColorable=='Yes'">*</span></strong></p>
                                  <div class="MatSelApp__AppsColors">
-                                    <div ng-repeat="i in x.colors" ng-cloak class="BR-MatSelApp__AppsColorSwatch BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink', 'BR-FilterColorSwatch--Amber': i=='Amber'}">
+                                    <div ng-repeat="i in x.colors" ng-cloak class="BR-MatSelApp__AppsColorSwatch BR-FilterColorSwatch__ToolTip" ng-class="{'BR-FilterColorSwatch--Yellow': i=='Yellow', 'BR-FilterColorSwatch--Black': i=='Black', 'BR-FilterColorSwatch--Blue': i=='Blue', 'BR-FilterColorSwatch--Red': i=='Red', 'BR-FilterColorSwatch--Brown': i=='Brown', 'BR-FilterColorSwatch--Gray': i=='Gray', 'BR-FilterColorSwatch--Gold': i=='Gold', 'BR-FilterColorSwatch--Green': i=='Green', 'BR-FilterColorSwatch--Purple': i=='Purple', 'BR-FilterColorSwatch--Orange': i=='Orange', 'BR-FilterColorSwatch--Clear': i=='Clear', 'BR-FilterColorSwatch--White': i=='White', 'BR-FilterColorSwatch--LightBlue': i=='Light Blue', 'BR-FilterColorSwatch--Metallized': i=='Metallized', 'BR-FilterColorSwatch--Violet': i=='Violet', 'BR-FilterColorSwatch--Silver': i=='Silver', 'BR-FilterColorSwatch--Pink': i=='Pink', 'BR-FilterColorSwatch--Amber': i=='Amber'}">
                                        <span class="BR-FilterColorSwatch__ToolTip__Text">{{ i }}</span>
                                     </div>
                                  </div>
