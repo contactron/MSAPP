@@ -11,6 +11,8 @@ The app is intended to help customers evaluate Brady materials. It provides a us
 The fully-functional application can be found here:
 https://contactron.github.io/MSAPP/
 
+If you wish to download the source files and run the application locally note that you will need to setup a local server as the material data JSON file is loaded separately as a $http request in the js file. 
+
 ## Functionality
 
 On launch the application will load and display a list of the Brady Materials available to the application. Along with the Material list, several filters and a search tool are presented to allow the user to refine the list of materials.
