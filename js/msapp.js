@@ -104,18 +104,35 @@ app.controller("MaterialCtrl", function($scope, $filter, $http) {
     $scope.updateTable = function() {
         // Create a temporary B# list of all B#s to filter down
         var TempBnums = $scope.AllBnums;
-        // Call the function to filter the temp full B# list by the setFilters list
+
         for (var i = 0; i < $scope.setFilters.length; i++) {
-            // Loop through the list of attribute/value pairs filter TempBnums repeatedly for each pair
-            var temp1 = $scope.setFilters[i].FilterId;
-            var temp2 = $scope.setFilters[i].FilterValue;
-            var TempBnums = $filter('filter')(TempBnums, {
-                [temp1]: temp2
-            });
+            // Loop through the list of attribute/value pairs in the stage (setFilters array)
+            // Filter TempBnums repeatedly for each pair
+            var tempFilterId = $scope.setFilters[i].FilterId;
+            var tempFilterValue = $scope.setFilters[i].FilterValue;
+            // call the filter method
+            var TempBnums = TempBnums.filter(trimBnumlist);
+            function trimBnumlist(bnumtocheck) {
+              // check to see if the filter values are an array (multiple)
+              // if it is not an array (single value) return on check
+              if (!Array.isArray(bnumtocheck[tempFilterId])) {
+                // its not an array so check the single filter value
+                return bnumtocheck[tempFilterId] == tempFilterValue;
+              // it is an array so, loop through all the values
+              } else {
+                for (var j = 0; j  < bnumtocheck[tempFilterId].length; j++) {
+                  if (bnumtocheck[tempFilterId][j] == tempFilterValue) {
+                    return true; // kick out if the value is found
+                  };
+                };
+                return false; // value was not found after looping the array
+              };
+            };
         };
         // Reset the Bnum list to the new filtered list of Bnums
         $scope.Bnum = TempBnums;
     };
+
 
     // Toggle checked filters on/off and remove from the set filters stage if needed
     $scope.toggleFilter = function(position, filterId, filterValue) {
