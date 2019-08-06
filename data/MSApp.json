@@ -39,7 +39,7 @@
       "Solvents",
       "Oils"
     ],
-    "chemResistanceAlcohols": 4,
+    "chemResistanceAlcohols": null,
     "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 1,
     "chemResistanceOils": 1,
@@ -201,7 +201,7 @@
       "Solvents"
     ],
     "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 5,
+    "chemResistanceCleaners": null,
     "chemResistanceSolvents": 2,
     "chemResistanceOils": 3,
     "chemResistanceFuels": 3,
@@ -258,7 +258,7 @@
     ],
     "chemResistanceAlcohols": 5,
     "chemResistanceCleaners": 1,
-    "chemResistanceSolvents": 2,
+    "chemResistanceSolvents": null,
     "chemResistanceOils": 3,
     "chemResistanceFuels": 5,
     "adhesion": [],
@@ -307,7 +307,7 @@
     "chemResistanceAlcohols": 3,
     "chemResistanceCleaners": 1,
     "chemResistanceSolvents": 3,
-    "chemResistanceOils": 4,
+    "chemResistanceOils": null,
     "chemResistanceFuels": 2,
     "adhesion": [
       "Common"
@@ -373,7 +373,7 @@
     "chemResistanceCleaners": 2,
     "chemResistanceSolvents": 1,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 4,
+    "chemResistanceFuels": null,
     "adhesion": [
       "Common"
     ],
@@ -427,7 +427,7 @@
     "chemResistanceCleaners": 4,
     "chemResistanceSolvents": 5,
     "chemResistanceOils": 2,
-    "chemResistanceFuels": 5,
+    "chemResistanceFuels": null,
     "adhesion": [
       "Common"
     ],
