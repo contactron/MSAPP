@@ -34,7 +34,6 @@ app.controller("MaterialCtrl", function($scope, $filter, $http) {
                 // Server found but there was an error
                 console.log("Error! The server was not happy." + errorresponse);
             });
-        // Handle JSON loading errors
     };
 
     $scope.capturefilters = function(Bnumlist) {
