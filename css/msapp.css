@@ -334,7 +334,12 @@ body {
      margin-bottom: .875rem;
      width: 100%;
 }
- .BR-MatSelApp__RatingBlockContainer {
+.BR-MatSelApp_NotTested {
+    color: #666;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+.BR-MatSelApp__RatingBlockContainer {
      display: flex;
 }
  .BR-MatSelApp__RatingBlock {
