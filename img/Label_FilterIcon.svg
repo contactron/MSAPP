@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="9 23 63 33" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 51 27" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style>.cls-1{fill:#fff;}.cls-2{fill:#ccc;}</style>
+    <style>.cls-1{fill:#ccc;}.cls-2{fill:#fff;}.cls-3,.cls-4,.cls-5{fill:none;stroke:#000;stroke-miterlimit:10;}.cls-4{stroke-dasharray:5.43 5.43;}.cls-5{stroke-dasharray:5.67 5.67;}</style>
   </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <rect class="cls-1" x="9.5" y="23.5" width="62" height="32"/>
-    <path d="M71,24V55H10V24H71m1-1H9V56H72V23Z"/>
-    <rect class="cls-2" x="13" y="30" width="26" height="19"/>
-    <path d="M31,30H27v1h4V30Zm-8,0H19v1h4V30Zm-8,0H13v1h0v1h1V31h1V30Zm-1,6H13v4h1V36Zm0,8H13v4h1V44Zm6,4H16v1h4V48Zm8,0H24v1h4V48Zm8,0H32v1h4V48Zm3-4H38v4h1V44Zm0-8H38v4h1V36Zm0-6H35v1h3v1h1V30Z"/>
-    <rect class="cls-2" x="42" y="30" width="26" height="19"/>
-    <path d="M60,30H56v1h4V30Zm-8,0H48v1h4V30Zm-8,0H42v1h0v1h1V31h1V30Zm-1,6H42v4h1V36Zm0,8H42v4h1V44Zm6,4H45v1h4V48Zm8,0H53v1h4V48Zm8,0H61v1h4V48Zm3-4H67v4h1V44Zm0-8H67v4h1V36Zm0-6H64v1h3v1h1V30Z"/>
+  <g id="Layer_2" data-name="Layer 2" transform="matrix(1, 0, 0, 1, -13.613343, -26.045351)">
+    <rect class="cls-2" x="17.5" y="28.5" width="43" height="22"/>
+    <polyline class="cls-3" points="60.5 48 60.5 50.5 58 50.5" style="stroke-width: 2px;"/>
+    <line class="cls-4" x1="52.57" y1="50.5" x2="22.71" y2="50.5" style="stroke-width: 2px;"/>
+    <polyline class="cls-3" points="20 50.5 17.5 50.5 17.5 48" style="stroke-width: 2px;"/>
+    <line class="cls-5" x1="17.5" y1="42.33" x2="17.5" y2="33.83" style="stroke-width: 2px;"/>
+    <polyline class="cls-3" points="17.5 31 17.5 28.5 20 28.5" style="stroke-width: 2px;"/>
+    <line class="cls-4" x1="25.43" y1="28.5" x2="55.29" y2="28.5" style="stroke-width: 2px;"/>
+    <polyline class="cls-3" points="58 28.5 60.5 28.5 60.5 31" style="stroke-width: 2px;"/>
+    <line class="cls-5" x1="60.5" y1="36.67" x2="60.5" y2="45.17" style="stroke-width: 2px;"/>
   </g>
 </svg>
