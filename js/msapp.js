@@ -116,6 +116,15 @@ app.controller("MaterialCtrl", function($scope, $filter, $http) {
               // if it is not an array (single value) return on check
               if (!Array.isArray(bnumtocheck[tempFilterId])) {
                 // its not an array so check the single filter value
+                // but first check to see if it is a search
+                if (tempFilterId == "searchString") {
+                    // It is a search so check for the term in the searchString
+                    // also, normalize on lowercase for the comparison
+                    if (bnumtocheck[tempFilterId].toLowerCase().indexOf(tempFilterValue.toLowerCase()) != -1) {
+                        return true; // kick out if the value is found
+                    };
+                    return false;
+                };
                 return bnumtocheck[tempFilterId] == tempFilterValue;
               // it is an array so, loop through all the values
               } else {
@@ -194,7 +203,7 @@ app.controller("MaterialCtrl", function($scope, $filter, $http) {
             // search filtering is different as this is not an attribute of the Bnum object
             attrvaluepair = {
                 "Position": "5",
-                "FilterId": "$", // lets angular filter know to search across the whole object
+                "FilterId": "searchString", // lets angular filter know to search across the whole object
                 "FilterValue": searchterm // the value to search for
             };
             $scope.setFilters.push(attrvaluepair);
