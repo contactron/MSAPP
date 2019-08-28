@@ -48,7 +48,7 @@
                               </a>
                            </div>
                         </div>
-                        <!-- Material Type Checkbox Filter -->
+                        <!-- Product Type Checkbox Filter -->
                         <div class="BR-Filter__Item">
                            <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[0].filteropen==true, 'BR-Filter--Closed': AllFilters[0].filteropen==false}" ng-click="Accordion($event,0)">
                               <p class="BR-Filter__Item__Header__Name">Product Type</p>
@@ -137,7 +137,7 @@
                            </header>
                            <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
                               <span ng-repeat="fv in AllFilters[2].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('2',AllFilters[2],fv)">
-                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="qafv.applied" ng-disabled="fv.disabled">
+                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
                               <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
                               {{ fv.id }} ({{ fv.count }})
                               </label>
@@ -270,7 +270,7 @@
                                  <p>
                               </div>
                               <!--Chem Resistance Section Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length > 0)">
+                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="!(x.chemResistanceAlcohols == null && x.chemResistanceCleaners == null &&  x.chemResistanceSolvents == null && x.chemResistanceOils == null && x.chemResistanceFuels == null)">
                                  <h4 class="BR-MatSelApp__Subheading">
                                     Chemical Resistance
                                     <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24">
@@ -339,13 +339,14 @@
                                  </div>
                               </div>
                               <!--Chemical Resistance Section No Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemicalResistance.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
+                              <!-- Show this section only if there is no Chemical Resistance data BUT there IS some Adhesion Data  -->
+                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.chemResistanceAlcohols == null && x.chemResistanceCleaners == null &&  x.chemResistanceSolvents == null && x.chemResistanceOils == null && x.chemResistanceFuels == null) && !((x.chemResistanceAlcohols == null && x.chemResistanceCleaners == null &&  x.chemResistanceSolvents == null && x.chemResistanceOils == null && x.chemResistanceFuels == null) && (x.adhesionTypical == null && x.adhesionDifficult == null &&  x.adhesionTextured == null))">
                                  <h4 class="BR-MatSelApp__Subheading">Chemical Resistance</h4>
                                  <img class="BR-MatSelApp__TestingImg" src="img/chemicaltesting.svg">
                                  <p>There is no chemical resistance information available for this material. Please contact Brady customer service for more information.</p>
                               </div>
                               <!--Adhesion Specs Section Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length > 0)">
+                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="!(x.adhesionTypical == null && x.adhesionDifficult == null &&  x.adhesionTextured == null)">
                                  <h4 class="BR-MatSelApp__Subheading">
                                     Adhesion
                                     <svg class="BR-Tooltip__Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.9 16.9" width="24" height="24">
@@ -404,7 +405,8 @@
                                  </span>
                               </div>
                               <!--Adhesion Specs Section No Data -->
-                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesion.length < 1) && !(x.chemicalResistance.length < 1 && x.adhesion.length < 1)">
+                              <!-- Show this section only if there is no Adhesion data BUT there IS some Chemical Resistance Data  -->
+                              <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="(x.adhesionTypical == null && x.adhesionDifficult == null &&  x.adhesionTextured == null) && !((x.chemResistanceAlcohols == null && x.chemResistanceCleaners == null &&  x.chemResistanceSolvents == null && x.chemResistanceOils == null && x.chemResistanceFuels == null) && (x.adhesionTypical == null && x.adhesionDifficult == null &&  x.adhesionTextured == null))">
                                  <h4 class="BR-MatSelApp__Subheading">Adhesion</h4>
                                  <img class="BR-MatSelApp__TestingImg" src="img/adhesiontesting.svg">
                                  <p>There is no adhesion information available for this material. Please contact Brady customer service for more information.</p>
