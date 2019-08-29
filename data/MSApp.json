@@ -4181,7 +4181,7 @@
   {
     "num": "B-7518",
     "adhesive": "Acrylic",
-    "finish": null,
+    "finish": "Gloss",
     "baseMaterial": "Polyester",
     "maxServiceTemperatureC": "100 °C",
     "maxServiceTemperatureF": "212 °F",
@@ -4673,7 +4673,7 @@
   {
     "num": "B-813",
     "adhesive": "Acrylic",
-    "finish": null,
+    "finish": "Matte",
     "baseMaterial": "Paper",
     "maxServiceTemperatureC": "60 °C",
     "maxServiceTemperatureF": "140 °F",
@@ -4719,7 +4719,7 @@
   {
     "num": "B-816",
     "adhesive": "Removable Acrylic",
-    "finish": null,
+    "finish": "Matte",
     "baseMaterial": "Paper",
     "maxServiceTemperatureC": "60 °C",
     "maxServiceTemperatureF": "140 °F",
