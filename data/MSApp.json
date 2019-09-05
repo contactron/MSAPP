@@ -1,7 +1,6 @@
 {
 
   "Bnums": 
-
 [
   {
     "num": "B-103",
@@ -72,7 +71,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "materialType": "Tag",
     "chemicalResistance": [
       "Alcohols",
@@ -243,7 +242,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Sleeve",
     "chemicalResistance": [],
     "chemResistanceAlcohols": null,
@@ -285,7 +284,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "materialType": "Sleeve",
     "chemicalResistance": [
       "Alcohols",
@@ -383,7 +382,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Sleeve",
     "chemicalResistance": [
       "Alcohols",
@@ -998,7 +997,7 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 3,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
@@ -1076,7 +1075,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 1,
@@ -1130,7 +1129,7 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
@@ -1225,7 +1224,7 @@
     "chemResistanceOils": 1,
     "chemResistanceFuels": 1,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": null,
     "adhesionDifficult": null,
@@ -1271,7 +1270,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
@@ -1483,7 +1482,7 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
@@ -1535,8 +1534,8 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": 2,
@@ -1588,8 +1587,8 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": null,
@@ -1681,6 +1680,7 @@
     "tapeColorable": "Yes",
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
       "Oils"
     ],
     "chemResistanceAlcohols": 3,
@@ -1693,7 +1693,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "Acrylic Matte Metallized Polyester UL, CSA, RoHS Thermal Transfer Printable Tamper Evident Matte Metallized Polyester Label Stock B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal.  Metallic Labels,Permanent Adhesive Labels,Tamper Evident Labels General Identification,Inspection Repair,Rating & Name Plates Label Oils,"
+    "searchString": "Acrylic Matte Metallized Polyester UL, CSA, RoHS Thermal Transfer Printable Tamper Evident Matte Metallized Polyester Label Stock B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal.  Metallic Labels,Permanent Adhesive Labels,Tamper Evident Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Oils"
   },
   {
     "num": "B-439",
@@ -1744,8 +1744,8 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": null,
@@ -1988,9 +1988,9 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 5,
     "adhesionDifficult": 4,
@@ -2038,7 +2038,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
@@ -2142,9 +2142,9 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 5,
     "adhesionDifficult": 4,
@@ -2196,9 +2196,9 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 5,
     "adhesionDifficult": 5,
@@ -2252,9 +2252,9 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 4,
     "adhesionDifficult": 3,
@@ -2360,9 +2360,9 @@
     "chemResistanceOils": 4,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 4,
     "adhesionDifficult": 3,
@@ -2500,7 +2500,7 @@
     "chemResistanceOils": 4,
     "chemResistanceFuels": 3,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
@@ -2549,7 +2549,7 @@
     "chemResistanceOils": 4,
     "chemResistanceFuels": 1,
     "adhesion": [
-      "Common"
+      "Strong for Common Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": 1,
@@ -2783,9 +2783,9 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 5,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": 5,
@@ -2966,7 +2966,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 1,
@@ -3053,7 +3053,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3099,7 +3099,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3188,7 +3188,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3234,7 +3234,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3280,7 +3280,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3326,7 +3326,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3449,6 +3449,74 @@
     "searchString": "None None Steel RoHS Stainless Steel Cable Tags Brady B­-7316 stainless steel cable tags are designed for labeling pipes, cables and wire bundles in harsh environments where extreme corrosion resistance and durability is required. The material can be laser etched or embossed for printed legends that are extremely durable. Tags are attached using stainless steel cable ties.   Tag "
   },
   {
+    "num": "B-732A",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.005 in",
+    "thicknessMm": "0.127 mm",
+    "colors": [],
+    "compliance": [],
+    "name": null,
+    "description": null,
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "materialType": null,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "Acrylic Gloss Polyimide       "
+  },
+  {
+    "num": "B-733A",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0052 in",
+    "thicknessMm": "0.132 mm",
+    "colors": [],
+    "compliance": [],
+    "name": null,
+    "description": null,
+    "specialProperties": [],
+    "printerLabelApplications": [],
+    "tapeColorable": null,
+    "materialType": null,
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": "No",
+    "shrinkRatio": null,
+    "searchString": "Acrylic Gloss Polyimide       "
+  },
+  {
     "num": "B-734",
     "adhesive": "Acrylic",
     "finish": "Matte",
@@ -3480,7 +3548,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3520,7 +3588,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -3610,9 +3678,9 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 4,
     "adhesionDifficult": 3,
@@ -3657,9 +3725,9 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": 3,
@@ -3703,9 +3771,9 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Common",
-      "DIfficult",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Difficult Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 4,
     "adhesionDifficult": 3,
@@ -4076,7 +4144,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -4127,8 +4195,8 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 4,
     "adhesion": [
-      "Common",
-      "Textured Surfaces"
+      "Strong for Common Surfaces",
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 3,
     "adhesionDifficult": null,
@@ -4172,7 +4240,7 @@
     "chemResistanceOils": 1,
     "chemResistanceFuels": 1,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": null,
     "adhesionDifficult": null,
@@ -4258,6 +4326,7 @@
     "tapeColorable": "Yes",
     "materialType": "Label",
     "chemicalResistance": [
+      "Alcohols",
       "Cleaners"
     ],
     "chemResistanceAlcohols": 3,
@@ -4270,7 +4339,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "Acrylic Satin Polyester UL, CSA, RoHS Bradybondz™ B-8423 Satin Polyester Thermal Printable Label Stock B-8423 is designed for general purpose label and rating plate applications that utilize high quality/density alphanumerics, barcodes and graphics. B-8423 can also be used for solar panel identification and post process labeling of printed circuit boards. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Cleaners,"
+    "searchString": "Acrylic Satin Polyester UL, CSA, RoHS Bradybondz™ B-8423 Satin Polyester Thermal Printable Label Stock B-8423 is designed for general purpose label and rating plate applications that utilize high quality/density alphanumerics, barcodes and graphics. B-8423 can also be used for solar panel identification and post process labeling of printed circuit boards. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners"
   },
   {
     "num": "B-8425",
@@ -4400,7 +4469,7 @@
     "chemResistanceOils": null,
     "chemResistanceFuels": null,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": null,
@@ -4542,7 +4611,7 @@
     "chemResistanceOils": 5,
     "chemResistanceFuels": 4,
     "adhesion": [
-      "Textured Surfaces"
+      "Strong for Highly Textured Surfaces"
     ],
     "adhesionTypical": 2,
     "adhesionDifficult": 2,
