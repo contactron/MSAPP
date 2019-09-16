@@ -368,14 +368,11 @@ body {
 /* More Info Stylings */
  .BR-MatSelApp__TDSLink {
      font-weight: 500;
-     line-height: 2.5;
-     margin-top: 1.5rem;
+     text-align: center;
 }
  .BR-MatSelApp__TDSImage {
-     float: left;
-     padding: 0 .75rem;
-     width: 4rem;
-
+     width: 125px;
+     margin-top: .5rem;
 }
  @media screen and (min-width: 720px) {
      .BR-MatSelApp__SubSection--MaxThreeAcross {
