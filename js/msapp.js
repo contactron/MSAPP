@@ -268,11 +268,13 @@ app.controller("MaterialCtrl", function($scope, $filter, $http) {
             panel.style.maxHeight = null;
             panel.style.opacity = null;
             panel.style.overflow = null;
+            // panel.style.display = "none";
             panel.previousElementSibling.style.background = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
             panel.style.opacity = 1;
             panel.style.overflow = "visible";
+            // panel.style.display = "block";
         };
     };
 

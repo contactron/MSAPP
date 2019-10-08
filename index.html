@@ -11,6 +11,16 @@
    <body>
       <!-- Simulate BradyID containers -->
       <section class="BR-Body js-Body">
+      <!-- Branded Header -->
+      <header class="BR-Header js-Header">
+        <text>
+            <div class="BR-LayoutConstraint">
+                <section class="BR-SiteId">
+                    <a href="/" class="BG-SiteLogo"><img src="https://www.bradyid.com/-/media/smartsite-images/background-and-logo/bradylogonew.ashx?h=84&la=en-US&w=300&hash=2772380E6610F1F5547DFF63C33DDFC0626432CC" alt="Home" width="300" height="84"></a>
+                </section>
+            </div>
+        </text>
+      </header>
       <section class="BR-Main">
          <section>
             <!-- Controller Div -->
@@ -18,7 +28,8 @@
             <!-- Banner compononet to simulate BradyID -->
             <div class="BR-HierarchyBanner">
                <div class="BR-LayoutConstraint">
-                  <h1 class="BR-HierarchyBanner__Title">Material Selection App Proof of Concept</h1>
+                  <h1 class="BR-HierarchyBanner__Title">We need your help!</h1>
+                  <p>While we are very proud of the performance of our propriety materials, we know it can be difficult choosing the right one for your needs. This new application is meant to help and we'd love your feedback on how to make it better. </p><br>
                </div>
             </div>
             <div class="BR-LayoutConstraint">
@@ -195,7 +206,8 @@
                            <form class="BR-FilterText__Form ng-pristine ng-valid">
                               <label class="BR-FilterText__Title">Filter by text:</label>
                               <input class="BR-FilterText__Input" type="text" name="Search Within" ngModel="searchTerm" placeholder="Enter keywords to narrow results">
-                              <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)"></button>
+                              <button class="BR-Icon BR-FilterText__Button" ng-click="setSearchFilter($event)">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M12.077 7.77c0-1.187-.422-2.201-1.264-3.044-.843-.843-1.858-1.264-3.044-1.264s-2.2.421-3.043 1.264-1.264 1.857-1.264 3.043c0 1.186.421 2.2 1.264 3.043s1.857 1.265 3.043 1.265c1.186 0 2.2-.422 3.043-1.264.843-.843 1.265-1.858 1.265-3.044zm4.923 8c0 .333-.122.621-.365.865a1.183 1.183 0 01-.866.365c-.346 0-.634-.122-.865-.365l-3.298-3.289a6.584 6.584 0 01-3.837 1.192 6.652 6.652 0 01-2.63-.533 6.768 6.768 0 01-2.163-1.443A6.768 6.768 0 011.534 10.4 6.652 6.652 0 011 7.769c0-.916.178-1.793.534-2.63a6.768 6.768 0 011.442-2.163 6.768 6.768 0 012.163-1.442A6.652 6.652 0 017.77 1c.917 0 1.793.178 2.63.534a6.768 6.768 0 012.164 1.442 6.768 6.768 0 011.442 2.163c.356.837.533 1.714.533 2.63 0 1.41-.397 2.69-1.192 3.837l3.298 3.298c.237.237.356.525.356.865z" fill="#fff"/></svg></button>
                            </form>
                         </div>
                         <h3 ng-cloak class="BR-MatSelApp__ResultsText">{{ Bnum.length }} Brady material(s) match your criteria</h3>
@@ -418,8 +430,8 @@
                                     <h4 class="BR-MatSelApp__Subheading">Technical Data Sheet</h4>
                                     <p>Consult our Technical Data Sheets for detailed material information.</p>
                                  </div>
-                                 <div class="BR-MatSelApp__TDSLink">
-                                    <a href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">
+                                 <div>
+                                    <a class="BR-MatSelApp__TDSLink" href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">
                                        <svg class="BR-MatSelApp__TDSImage" viewBox="0 0 402.217 536.036" xmlns="http://www.w3.org/2000/svg"><path d="M50.217 0c-17.6 0-32 14.4-32 32v448c0 17.6 14.4 32 32 32h320c17.6 0 32-14.4 32-32V128l-128-128h-224z" fill="#e2e5e7"/><path d="M306.217 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#b0b7bd"/><path fill="#cad1d8" d="M402.217 224l-96-96h96z"/><path d="M228.7 191.33c.042 4.276-4.198 7.774-9.421 7.774H10.345c-5.223 0-9.531-3.498-9.573-7.774L0 113.584c-.044-4.276 4.196-7.774 9.42-7.774h208.933c5.223 0 9.531 3.498 9.575 7.774l.772 77.746z" fill="#f15642"/><path d="M218.26 198.942H18.295L18.381 212h199.965c5.788 0 10.486-5.877 10.438-13.058l-.084-13.061c.046 7.184-4.652 13.061-10.44 13.061z" fill="#cad1d8"/><path d="M85.87 124.994l.075 9.317-17.104.026.372 46.526-11.506.018-.372-46.527-16.878.026-.074-9.317 45.488-.069zm24.3 55.807l-17.295.027-.446-55.844 17.183-.026c4.91-.007 9.308 1.092 13.197 3.298 3.893 2.207 6.942 5.347 9.149 9.422 2.207 4.075 3.331 8.708 3.373 13.9l.02 2.567c.041 5.191-.99 9.809-3.095 13.853-2.104 4.043-5.09 7.18-8.96 9.409-3.867 2.23-8.243 3.36-13.126 3.394zm-.484-46.526l-5.677.009.298 37.283 5.558-.009c4.5-.006 7.928-1.483 10.286-4.428 2.354-2.942 3.534-7.15 3.539-12.623l-.024-2.952c-.045-5.676-1.255-9.976-3.63-12.9-2.374-2.927-5.824-4.387-10.35-4.38zm63.073 31.782c-.018-2.174-.798-3.842-2.342-5.002-1.54-1.164-4.312-2.388-8.314-3.672-3.997-1.285-7.166-2.551-9.505-3.8-6.366-3.418-9.572-8.029-9.618-13.834-.025-3.017.804-5.71 2.486-8.079 1.682-2.365 4.108-4.216 7.28-5.553 3.172-1.332 6.741-2.002 10.706-2.008 3.988-.006 7.547.711 10.677 2.151 3.134 1.44 5.573 3.475 7.316 6.106 1.748 2.631 2.635 5.62 2.662 8.968l-11.506.018c-.02-2.555-.84-4.541-2.463-5.961-1.62-1.416-3.89-2.122-6.805-2.117-2.814.004-4.995.602-6.543 1.793-1.551 1.191-2.32 2.759-2.304 4.704.014 1.817.94 3.338 2.779 4.561 1.838 1.224 4.539 2.369 8.102 3.436 6.562 1.961 11.35 4.397 14.364 7.308 3.014 2.912 4.538 6.54 4.573 10.885.038 4.834-1.76 8.627-5.395 11.379-3.634 2.755-8.546 4.138-14.734 4.147-4.296.006-8.215-.774-11.756-2.341-3.538-1.567-6.245-3.717-8.121-6.449-1.877-2.736-2.83-5.906-2.858-9.51l11.545-.017c.05 6.162 3.755 9.237 11.117 9.226 2.74-.004 4.87-.564 6.392-1.68 1.526-1.112 2.28-2.665 2.265-4.659z" fill="#fff" white-space="pre"/><path d="M300.066 327.196v116.021h47.912L289.296 512H217.23l-58.682-68.783h47.912V327.196z" fill="#c9c9c9"/><path d="M300.066 308.996v116.02h47.912l-94.715 111.02-94.715-111.02h47.912v-116.02h93.606z" fill="#f15642"/></svg>
                                        <p>{{ x.num }} Technical Data Sheet</p>
                                     </a>

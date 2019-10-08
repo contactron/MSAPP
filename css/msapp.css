@@ -371,9 +371,12 @@ body {
      text-align: center;
 }
  .BR-MatSelApp__TDSImage {
-     width: 125px;
-     margin-top: .5rem;
+     display: block;
+     width: 7rem;
+     margin: 1rem auto .5rem;
 }
+
+
  @media screen and (min-width: 720px) {
      .BR-MatSelApp__SubSection--MaxThreeAcross {
          width: 50%;
@@ -404,13 +407,15 @@ body {
          flex-direction: row;
          justify-content: space-between;
     }
-     .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding ul {
-         display: none;
-    }
      .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding p {
          margin-bottom: 0;
     }
      .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding .BR-MatSelApp__TDSLink {
-          margin-top: .5rem;
+         display: flex;
+         align-items: center;
+    }
+    .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding .BR-MatSelApp__TDSImage {
+         width: 2rem;
+         margin: 0 1rem 0;
     }
 }
