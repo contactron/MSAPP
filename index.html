@@ -120,9 +120,27 @@
                               </span>
                            </div>
                         </div>
+
                         <!-- Special Properties Checkbox Filter -->
+
+                        <!-- TEMPORARY FOR TESTING - REMOVE AND REPLACE WITH CODE BELOW -->
                         <div class="BR-Filter__Item">
                            <!-- <header class="BR-Filter__Item__Header BR-Filter--Closed" ng-click="Accordion($event)"> -->
+                           <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[8].filteropen==true, 'BR-Filter--Closed': AllFilters[8].filteropen==false}" ng-click="Accordion($event,8)">
+                              <p class="BR-Filter__Item__Header__Name">Special Properties</p>
+                           </header>
+
+                           <div class="BR-Filter__Item__Options BR-MatSelApp__Filter__Accordion">
+                              <span ng-repeat="fv in AllFilters[8].values | orderBy:'id'" ng-cloak ng-click="!fv.disabled && toggleFilter('8',AllFilters[8],fv)">
+                              <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
+                              <label class="BR-FilterCheckbox" ng-for="{{ fv.id }}">
+                              {{ fv.id }} ({{ fv.count }})
+                              </label>
+                              </span>
+                           </div>
+                        </div>
+
+                        <!-- <div class="BR-Filter__Item">
                            <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[8].filteropen==true, 'BR-Filter--Closed': AllFilters[8].filteropen==false}" ng-click="Accordion($event,8)">
                               <p class="BR-Filter__Item__Header__Name">Special Properties</p>
                            </header>
@@ -131,7 +149,6 @@
                               <input id="{{ fv.id }}" type="checkbox" value="{{ fv.id }}" ng-checked="fv.applied" ng-disabled="fv.disabled">
                               <label ng-for="{{ fv.id }}">
                               <span class="BR-FilterIconText__Icon">
-                              <!-- <img ng-src="img/{{ fv.id }}_FilterIcon.svg"> -->
                               <img ng-src="img/TempIcon_FilterIcon.svg">
                               </span>
                               <span class="BR-FilterIconText__Text">
@@ -140,7 +157,8 @@
                               </label>
                               </span>
                            </div>
-                        </div>
+                        </div> -->
+
                         <!-- Base Material Checkbox Filter -->
                         <div class="BR-Filter__Item">
                            <header class="BR-Filter__Item__Header" ng-class="{'BR-Filter--Open': AllFilters[2].filteropen==true, 'BR-Filter--Closed': AllFilters[2].filteropen==false}" ng-click="Accordion($event,2)">
@@ -277,7 +295,8 @@
                               <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
                                  <h4 class="BR-MatSelApp__Subheading">Special Properties</h4>
                                  <ul>
-                                    <li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProps" ng-class="{'BR-MatSelApp__SpecPropsIcon--HR': i=='Heat Resistant Labels', 'BR-MatSelApp__SpecPropsIcon--CR': i=='Low Temperature Labels', 'BR-MatSelApp__SpecPropsIcon--FR': i=='Flame-retardant', 'BR-MatSelApp__SpecPropsIcon--RM': i=='Removable Labels', 'BR-MatSelApp__SpecPropsIcon--PM': i=='Permanent Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--HE': i=='Harsh Environment Labels'}">{{ i }}
+                                    <!-- <li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProps" ng-class="{'BR-MatSelApp__SpecPropsIcon--HR': i=='Heat Resistant Labels', 'BR-MatSelApp__SpecPropsIcon--CR': i=='Low Temperature Labels', 'BR-MatSelApp__SpecPropsIcon--FR': i=='Flame-retardant', 'BR-MatSelApp__SpecPropsIcon--RM': i=='Removable Labels', 'BR-MatSelApp__SpecPropsIcon--PM': i=='Permanent Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--HE': i=='Harsh Environment Labels'}">{{ i }} -->
+                                    <li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__BnumListItem">{{ i }}
                                  </ul>
                                  <p ng-cloak ng-if="x.specialProperties.length < 1">This material is recommended for general applications.
                                  <p>
