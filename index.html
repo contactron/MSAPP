@@ -381,7 +381,7 @@
                                        </svg> -->
                                  </h4>
                                  <img class="BR-MatSelApp__TestingImg" src="img/chemicaltesting.svg">
-                                 <p>There is no chemical resistance information available for this material. Please contact Brady customer service for more information.</p>
+                                 <p><a class="BR-MatSelApp__TDSLink" href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">Check the {{ x.num }} Technical Data Sheet</a> for chemical resistance information for this material.</p>
                               </div>
                               <!--Adhesion Specs Section Data -->
                               <div class="BR-MatSelApp__SubSection--MaxThreeAcross" ng-cloak ng-if="!(x.adhesionTypical == null && x.adhesionDifficult == null &&  x.adhesionTextured == null)">
@@ -454,7 +454,7 @@
                                  </h4>
 
                                  <img class="BR-MatSelApp__TestingImg" src="img/adhesiontesting.svg">
-                                 <p>There is no adhesion information available for this material. Please contact Brady customer service for more information.</p>
+                                 <p><a class="BR-MatSelApp__TDSLink" href="https://tds.bradyid.com/TDSdocs/{{ x.num }}.pdf" target="_blank">Check the {{ x.num }} Technical Data Sheet</a> for adhesion information for this material.</p>
                               </div>
                               <!-- More Info Section -->
                               <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--Expanding">
