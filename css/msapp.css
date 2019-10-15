@@ -146,6 +146,13 @@ body {
  .BR-FilterColorSwatch--Amber {
      background: #ffe8ab;
 }
+ .BR-FilterColorSwatch--Multi {
+     background: linear-gradient(90deg,red,orange,yellow,green,blue);
+}
+ .BR-FilterColorSwatch--LightGreen {
+     background: #a5cfc9;
+}
+
 /*Fix the height of the input box. Add more specificity*/
  input[type=text] {
      height: 2.75rem;
