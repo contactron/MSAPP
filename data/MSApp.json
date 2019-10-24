@@ -1,7 +1,6 @@
 {
 
   "Bnums": 
-
 [
   {
     "num": "B-103",
@@ -32,7 +31,7 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Self-Lam",
     "chemicalResistance": [],
     "chemResistanceAlcohols": null,
@@ -72,7 +71,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Tag",
     "chemicalResistance": [
       "Alcohols",
@@ -246,7 +245,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Sleeve",
     "chemicalResistance": [],
     "chemResistanceAlcohols": null,
@@ -332,7 +331,7 @@
     "printerLabelApplications": [
       "Wire & Cable"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Tag",
     "chemicalResistance": [
       "Oils"
@@ -649,7 +648,7 @@
       "Laboratory",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1112,7 +1111,7 @@
       "General Identification",
       "Rating and Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1434,7 +1433,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1490,7 +1489,7 @@
       "Laboratory",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1542,7 +1541,7 @@
       "General Identification",
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1596,7 +1595,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1651,7 +1650,7 @@
       "General Identification",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1755,7 +1754,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -1911,7 +1910,7 @@
     "printerLabelApplications": [
       "Laboratory"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Self-Lam",
     "chemicalResistance": [
       "Alcohols",
@@ -2337,7 +2336,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -3519,7 +3518,7 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -3565,7 +3564,7 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -3649,7 +3648,7 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -3695,7 +3694,7 @@
     "printerLabelApplications": [
       "Circuit Board"
     ],
-    "tapeColorable": "No",
+    "tapeColorable": "Yes",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -3891,7 +3890,7 @@
     "printerLabelApplications": [
       "Inspection Repair"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [],
     "chemResistanceAlcohols": null,
@@ -3938,7 +3937,7 @@
     "printerLabelApplications": [
       "Inspection Repair"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Cleaners"
@@ -3986,7 +3985,7 @@
     "printerLabelApplications": [
       "Inspection Repair"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -4094,7 +4093,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -4146,7 +4145,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -4437,7 +4436,7 @@
       "General Identification",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -4823,7 +4822,7 @@
     "printerLabelApplications": [
       "General Identification"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
@@ -4875,7 +4874,7 @@
       "Inspection Repair",
       "Rating & Name Plates"
     ],
-    "tapeColorable": "Yes",
+    "tapeColorable": "No",
     "materialType": "Label",
     "chemicalResistance": [
       "Alcohols",
