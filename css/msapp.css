@@ -251,10 +251,10 @@ body {
      margin-bottom: .125rem;
 }
  .BR-MatSelApp__ProfileImage {
-     float: left;
-     padding: .5rem;
-     margin: .25rem 1.5rem 0 0;
      width: 125px;
+     display: block;
+     margin: auto;
+     margin-bottom: 2rem;
 }
  .BR-MatSelApp__ProfileDescription {
      font-size: 1rem;
@@ -377,6 +377,10 @@ body {
     }
      .BR-MatSelApp__SubSection--DoubleWide {
          width: 100%;
+    }
+    .BR-MatSelApp__ProfileImage {
+        float: left;
+        margin: .25rem 1.5rem 0 0;
     }
 }
  @media (max-width:1600px) and (min-width:720px) {
