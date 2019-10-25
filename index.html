@@ -298,9 +298,28 @@
                               <!-- Spec Props Section -->
                               <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp_SubSection--InteriorBox">
                                  <h4 class="BR-MatSelApp__Subheading">Special Properties</h4>
-                                 <ul>
-                                    <li ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProps" ng-class="{'BR-MatSelApp__SpecPropsIcon--AA': i=='Aggressive Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--CR': i=='Chemical Resistant', 'BR-MatSelApp__SpecPropsIcon--HE': i=='Harsh Environment Labels', 'BR-MatSelApp__SpecPropsIcon--HR': i=='Heat Resistant Labels', 'BR-MatSelApp__SpecPropsIcon--HS': i=='Heat Shrink Sleeves', 'BR-MatSelApp__SpecPropsIcon--LT': i=='Low Temperature Labels', 'BR-MatSelApp__SpecPropsIcon--M': i=='Metallic Labels', 'BR-MatSelApp__SpecPropsIcon--OD': i=='Outdoor Durable', 'BR-MatSelApp__SpecPropsIcon--PA': i=='Permanent Adhesive Labels', 'BR-MatSelApp__SpecPropsIcon--RM': i=='Removable Labels', 'BR-MatSelApp__SpecPropsIcon--RP': i=='Repositionable Labels', 'BR-MatSelApp__SpecPropsIcon--SL': i=='Self Laminating Labels & Wraps', 'BR-MatSelApp__SpecPropsIcon--TE': i=='Tamper Evident Labels', 'BR-MatSelApp__SpecPropsIcon--TI': i=='Temperative Indicating Labels', 'BR-MatSelApp__SpecPropsIcon--WD': i=='Water Dissolvable Labels', 'BR-MatSelApp__SpecPropsIcon--WI': i=='Water Indicating Labels'}">{{ i }}
-                                 </ul>
+                                 <div ng-repeat="i in x.specialProperties" ng-cloak class="BR-MatSelApp__SpecProp" ng-switch on="i">
+                                    <!-- <img class="BR-MatSelApp__SpecProp-Img" src="/img/SpecProp_HR_icon.svg"> -->
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Aggressive Adhesive Labels" src="/img/SpecProp_AA_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Chemical Resistant" src="/img/SpecProp_CR_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Harsh Environment Labels" src="/img/SpecProp_HE_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Heat Resistant Labels" src="/img/SpecProp_HR_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Heat Shrink Sleeves" src="/img/SpecProp_HS_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Low Temperature Labels" src="/img/SpecProp_LT_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Metallic Labels" src="/img/SpecProp_M_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Outdoor Durable" src="/img/SpecProp_OD_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Permanent Adhesive Labels" src="/img/SpecProp_PA_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Removable Labels" src="/img/SpecProp_RM_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Repositionable Labels" src="/img/SpecProp_RP_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Self Laminating Labels & Wraps" src="/img/SpecProp_SL_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Tamper Evident Labels" src="/img/SpecProp_TE_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Temperature Indicating Labels" src="/img/SpecProp_TI_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Water Dissolvable Labels" src="/img/SpecProp_WD_icon.svg" alt="{{ i }}">
+                                    <img class="BR-MatSelApp__SpecProp-Img" ng-switch-when="Water Indicating Labels" src="/img/SpecProp_WI_icon.svg" alt="{{ i }}">
+                                    <div class="BR-MatSelApp__SpecProp-Name">
+                                       {{ i }}
+                                    </div>
+                                 </div>
                                  <p ng-cloak ng-if="x.specialProperties.length < 1">This material is recommended for general applications.
                                  <p>
                               </div>
