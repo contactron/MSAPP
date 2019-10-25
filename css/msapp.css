@@ -284,24 +284,58 @@ body {
      min-height: 36px;
      padding-left: 3rem;
 }
- .BR-MatSelApp__SpecPropsIcon--HR {
-     background: url(heat_resistant_icon.png) no-repeat;
+ .BR-MatSelApp__SpecPropsIcon--AA {
+     background: url(SpecProp_AA_icon.svg) no-repeat;
 }
  .BR-MatSelApp__SpecPropsIcon--CR {
-     background: url(cold_resistant_icon.png) no-repeat;
-}
- .BR-MatSelApp__SpecPropsIcon--FR {
-     background: url(flameretardent_icon.png) no-repeat;
-}
- .BR-MatSelApp__SpecPropsIcon--RM {
-     background: url(removable_icon.png) no-repeat;
-}
- .BR-MatSelApp__SpecPropsIcon--PM {
-     background: url(permanent_icon.png) no-repeat;
+     background: url(SpecProp_CR_icon.svg) no-repeat;
 }
  .BR-MatSelApp__SpecPropsIcon--HE {
-     background: url(chem_resist_icon.png) no-repeat;
+     background: url(SpecProp_HE_icon.svg) no-repeat;
 }
+ .BR-MatSelApp__SpecPropsIcon--HR {
+     background: url(SpecProp_HR_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--HS {
+     background: url(SpecProp_HS_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--LT {
+     background: url(SpecProp_LT_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--M {
+     background: url(SpecProp_M_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--OD {
+     background: url(SpecProp_OD_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--PA {
+     background: url(SpecProp_PA_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--RM {
+     background: url(SpecProp_RM_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--RP {
+     background: url(SpecProp_RM_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--SL {
+     background: url(SpecProp_SL_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--TE {
+     background: url(SpecProp_TE_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--TI {
+     background: url(SpecProp_TI_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--WD {
+     background: url(SpecProp_WD_icon.svg) no-repeat;
+}
+ .BR-MatSelApp__SpecPropsIcon--WI {
+     background: url(SpecProp_WI_icon.svg) no-repeat;
+}
+
+
+
+
  .BR-MatSelApp__ComplIcon {
      display: inline-block;
      height: 40px;
