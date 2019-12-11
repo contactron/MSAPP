@@ -317,8 +317,11 @@ body {
      margin-left: .25em;
 }
  .BR-MatSelApp__RatingCategoryHead {
-     font-weight: 600;
+     font-weight: 500;
      margin: 0;
+}
+ .BR-MatSelApp__RatingCategoryHead:first-of-type{
+     margin: .75rem 0 0;
 }
  .BR-MatSelApp__RatingCategoryExamples {
      margin-bottom: .375rem;
@@ -364,10 +367,20 @@ body {
      font-weight: 500;
      text-align: center;
 }
- .BR-MatSelApp__TDSImage {
-     display: block;
-     width: 6rem;
-     margin: 1.75rem auto .5rem;
+.BR-MatSelApp__InfoLink {
+     align-items: center;
+     background: #f1f4f8;
+     border: 1px solid #aaa;
+     border-radius: .5rem;
+     display: flex;
+     flex-wrap: nowrap;
+     margin: 1.25rem 0;
+     padding: .5rem;
+     line-height: 1.25;
+     width: 16rem;
+}
+.BR-MatSelApp__InfoLink:hover {
+     background: #e3e9f2;
 }
 
 
@@ -387,7 +400,8 @@ body {
      .BR-MatSelApp__SubSection--Expanding {
          display: flex;
          flex-direction: row;
-         justify-content: space-between;
+         justify-content: center;
+         flex-wrap: wrap;
     }
      .BR-MatSelApp__SubSection--Expanding p {
          margin-bottom: 0;
@@ -396,9 +410,8 @@ body {
          display: flex;
          align-items: center;
     }
-     .BR-MatSelApp__TDSImage {
-         width: 2.5rem;
-         margin: 0 1rem 0;
+    .BR-MatSelApp__InfoLink {
+         margin: 1rem 0 0 1.25rem;
     }
 }
  @media screen and (min-width: 1024px) {
@@ -430,8 +443,8 @@ body {
          display: flex;
          align-items: center;
     }
-    .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding .BR-MatSelApp__TDSImage {
-         width: 2.5rem;
-         margin: 0 1rem 0;
+    .BR-MatSelApp__BnumDetails div:nth-last-child(6):first-child ~div.BR-MatSelApp__SubSection--Expanding .BR-MatSelApp__InfoLink {
+         margin: 1rem 0 0 1.25rem;
+         width: 20rem;
     }
 }
