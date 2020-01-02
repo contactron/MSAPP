@@ -362,27 +362,22 @@ body {
      margin: 2rem auto;
      width: 125px;
 }
-/* More Info Stylings */
+
  .BR-MatSelApp__TDSLink {
      font-weight: 500;
      text-align: center;
 }
+
+/* More Info Stylings */
 .BR-MatSelApp__InfoLink {
      align-items: center;
-     background: #f1f4f8;
-     border: 1px solid #aaa;
-     border-radius: .5rem;
      display: flex;
      flex-wrap: nowrap;
-     margin: 1.25rem 0;
-     padding: .5rem;
-     line-height: 1.25;
-     width: 16rem;
+     font-weight: 600;
+     margin-top: .625rem;
+     padding: .5rem .125rem;
+     width: 100%;
 }
-.BR-MatSelApp__InfoLink:hover {
-     background: #e3e9f2;
-}
-
 
  @media screen and (min-width: 720px) {
      .BR-MatSelApp__SubSection--MaxThreeAcross {
