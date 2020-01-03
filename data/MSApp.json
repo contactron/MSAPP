@@ -1057,11 +1057,14 @@
     ],
     "name": "Matte White Laser Markable Polyester Label Stock",
     "description": "B-420 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board",
       "General Identification",
-      "Rating and Name Plates"
+      "Rating & Name Plates"
     ],
     "tapeColorable": "Yes",
     "materialType": "Label",
@@ -1082,7 +1085,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-420 B 420 B420 B#420 B# 420 Permanent Acrylic Matte Polyester White UL Matte White Laser Markable Polyester Label Stock B-420 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.  Circuit Board,General Identification,Rating and Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-420 B 420 B420 B#420 B# 420 Permanent Acrylic Matte Polyester White UL Matte White Laser Markable Polyester Label Stock B-420 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board,General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-421",
@@ -1105,11 +1108,14 @@
     ],
     "name": "Matte Black Laser Markable Polyester Label Stock",
     "description": "B-421 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board",
       "General Identification",
-      "Rating and Name Plates"
+      "Rating & Name Plates"
     ],
     "tapeColorable": "No",
     "materialType": "Label",
@@ -1132,7 +1138,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-421 B 421 B421 B#421 B# 421 Acrylic Matte Polyester Black UL Matte Black Laser Markable Polyester Label Stock B-421 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.  Circuit Board,General Identification,Rating and Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-421 B 421 B421 B#421 B# 421 Acrylic Matte Polyester Black UL Matte Black Laser Markable Polyester Label Stock B-421 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board,General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-422",
@@ -2221,7 +2227,7 @@
     "printerLabelApplications": [
       "Electrical",
       "General Identification",
-      "Rating and Name Plates",
+      "Rating & Name Plates",
       "Safety"
     ],
     "tapeColorable": "Yes",
@@ -2246,7 +2252,7 @@
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-483 B 483 B483 B#483 B# 483 Rubber Gloss Polyester White UL, CSA, RoHS Thermal Transfer Printable Label Stock B-483 is a thermal transfer printable label stock designed for good adhesion to powder coated surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating and Name Plates,Safety Label Alcohols,Cleaners,Oils,Fuels"
+    "searchString": "B-483 B 483 B483 B#483 B# 483 Rubber Gloss Polyester White UL, CSA, RoHS Thermal Transfer Printable Label Stock B-483 is a thermal transfer printable label stock designed for good adhesion to powder coated surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating & Name Plates,Safety Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
     "num": "B-484A",
@@ -3514,7 +3520,10 @@
     ],
     "name": "Matte Black Laser Markable Polyimide Label Stock",
     "description": "B-730 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board"
     ],
@@ -3537,7 +3546,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-730 B 730 B730 B#730 B# 730 Acrylic Matte Polyimide Black UL Matte Black Laser Markable Polyimide Label Stock B-730 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.  Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-730 B 730 B730 B#730 B# 730 Acrylic Matte Polyimide Black UL Matte Black Laser Markable Polyimide Label Stock B-730 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-731",
@@ -3560,7 +3569,10 @@
     ],
     "name": "Matte Black Laser Markable Static Dissipative Polyimide Label Stock",
     "description": "B-731 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board"
     ],
@@ -3583,7 +3595,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-731 B 731 B731 B#731 B# 731 Acrylic Matte Polyimide Black UL Matte Black Laser Markable Static Dissipative Polyimide Label Stock B-731 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.  Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-731 B 731 B731 B#731 B# 731 Acrylic Matte Polyimide Black UL Matte Black Laser Markable Static Dissipative Polyimide Label Stock B-731 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-7316",
@@ -3644,7 +3656,10 @@
     ],
     "name": "Glossy White Laser Markable Polyimide Label Stock",
     "description": "B-732A is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board"
     ],
@@ -3667,7 +3682,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-732A B 732A B732A B#732A B# 732A Acrylic Gloss Polyimide White UL Glossy White Laser Markable Polyimide Label Stock B-732A is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.  Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-732A B 732A B732A B#732A B# 732A Acrylic Gloss Polyimide White UL Glossy White Laser Markable Polyimide Label Stock B-732A is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-733A",
@@ -3690,7 +3705,10 @@
     ],
     "name": "Glossy White Laser Markable Static Dissipative Polyimide Label Stock",
     "description": "B-733A is a static dissipative material designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board"
     ],
@@ -3713,7 +3731,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-733A B 733A B733A B#733A B# 733A Acrylic Gloss Polyimide White UL Glossy White Laser Markable Static Dissipative Polyimide Label Stock B-733A is a static dissipative material designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008.  Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-733A B 733A B733A B#733A B# 733A Acrylic Gloss Polyimide White UL Glossy White Laser Markable Static Dissipative Polyimide Label Stock B-733A is a static dissipative material designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The product can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging materials as defined by ANSI/ESD S541-2008. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-734",
@@ -3736,7 +3754,10 @@
     ],
     "name": "Matte White Laser Markable Polyimide Label Stock",
     "description": "B-734 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board"
     ],
@@ -3761,7 +3782,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-734 B 734 B734 B#734 B# 734 Acrylic Matte Polyimide White UL Matte White Laser Markable Polyimide Label Stock B-734 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.  Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-734 B 734 B734 B#734 B# 734 Acrylic Matte Polyimide White UL Matte White Laser Markable Polyimide Label Stock B-734 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-735",
@@ -3784,7 +3805,10 @@
     ],
     "name": "Matte White Laser Markable Static Dissipative Polyimide Label Stock",
     "description": "B-735 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging.",
-    "specialProperties": [],
+    "specialProperties": [
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
     "printerLabelApplications": [
       "Circuit Board"
     ],
@@ -3809,7 +3833,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-735 B 735 B735 B#735 B# 735 Acrylic Matte Polyimide White UL Matte White Laser Markable Static Dissipative Polyimide Label Stock B-735 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging.  Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-735 B 735 B735 B#735 B# 735 Acrylic Matte Polyimide White UL Matte White Laser Markable Static Dissipative Polyimide Label Stock B-735 is designed to meet the requirements for pre-process labeling of printed circuit boards and electronic components when marked with standard IR lasers. The material can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. It is constructed with a static dissipative adhesive and has adhesive surface resistivity values in the recommended range for dissipative ESD packaging. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-7425",
