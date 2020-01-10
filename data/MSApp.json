@@ -2901,11 +2901,10 @@
     "chemResistanceFuels": 5,
     "adhesion": [
       "Strong for Common Surfaces",
-      "Strong for Difficult Surfaces",
       "Strong for Highly Textured Surfaces"
     ],
-    "adhesionTypical": 3,
-    "adhesionDifficult": 5,
+    "adhesionTypical": 5,
+    "adhesionDifficult": 1,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
     "searchString": "B-593  B 593  B593  B#593  B# 593  Acrylic-Foam Backed Gloss Polyester White, Yellow, Red, Green, Metallized UL, cUL, RoHS Raised Panel Label B-593 is an adhesive taped polyester label designed for patch panel identification including external push-buttons, switches,\nand internal connection points. B-593 is also used as rating and serial plates using alphanumerics that require name plate quality. Heat Resistant Labels,Permanent Adhesive Labels Electrical Label Alcohols,Cleaners,Oils,Fuels"
@@ -4430,6 +4429,53 @@
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
     "searchString": "B-776 B 776 B776 B#776 B# 776 Acrylic Gloss Polyimide Light Green UL, RoHS Glossy Light Green Thermal Transfer Printable Polyimide Label Stock B-776 is a light green polyimide material designed for printed circuit board and component preprocess labeling. It has high temperature and solvent resistance and can withstand multiple cycles of harsh condition washes for printed circuit boards. It can be used for visual differentiation between Lead (Pb) Free manufacturing and non-Lead (Pb) Free manufacturing.  Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Oils,Fuels"
+  },
+  {
+    "num": "B-777",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polyimide",
+    "maxServiceTemperatureC": "300 °C",
+    "maxServiceTemperatureF": "572 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-70 °C",
+    "minServiceTemperatureF": "-94 °F",
+    "thicknessIn": "0.0042 in",
+    "thicknessMm": "0.1041 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "UL",
+      "CSA"
+    ],
+    "name": "Glossy White Thermal Transfer Printable Polyimide Label Stock",
+    "description": "B-777 is a white polyimide material designed for printed cicuit board and component preprocess labeling. It is designed to withstand multiple cycles of harsh condition washes for printed circuit boards without reflow or preheating for improving print performance.",
+    "specialProperties": [
+      "Chemical Resistant",
+      "Heat Resistant Labels",
+      "Permanent Adhesive Labels"
+    ],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [
+      "Alcohols"
+    ],
+    "chemResistanceAlcohols": 5,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": 2,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-777 B 777 B777 B#777 B# 777 Acrylic Gloss Polyimide White UL, CSA  Glossy White Thermal Transfer Printable Polyimide Label Stock B-777 is a white polyimide material designed for printed cicuit board and component preprocess labeling. It is designed to withstand multiple cycles of harsh condition washes for printed circuit boards without reflow or preheating for improving print performance. Chemical Resistant, Heat Resistant Labels, Permanent Adhesive Labels Circuti Board Label Alcohols"
   },
   {
     "num": "B-8117",
