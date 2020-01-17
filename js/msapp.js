@@ -1,7 +1,7 @@
 // Controller
 var app = angular.module("MaterialApp", []);
 
-app.controller("MaterialCtrl", function($scope, $filter, $http) {
+app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
 
     $scope.init = function() {
         // load Bnum data from JSON file,
@@ -97,6 +97,40 @@ app.controller("MaterialCtrl", function($scope, $filter, $http) {
             };
         };
         return Filterlist;
+    };
+
+    // Check for and display Bnum based on URL parameter
+    $scope.preselectBnum = function() {
+        // timeout is req'd to make sure all B#s are rendered before checking
+        $timeout(function(){
+            // check for a Bnum in the URL
+            var presBnum = $scope.getQueryString("Bnum");
+            if (presBnum !== null) {
+                // get the element and expand the accordion
+                var elmnt = document.getElementById(presBnum);
+                elmnt.classList.remove("BR-MatSelApp__BnumHeader--Closed");
+                elmnt.classList.add("BR-MatSelApp__BnumHeader--Open");
+                elmnt.nextElementSibling.style.display = "flex";
+                // Call function to scroll to the B#
+                $scope.bnumScroll(elmnt);
+            };
+        }, 0);
+    };
+
+    // Scroll the page to the appropriate B#
+    $scope.bnumScroll = function(element) {
+        var elementPosition = element.getBoundingClientRect().top;
+        var headerOffset = 55;
+        var offsetPosition = elementPosition - headerOffset;
+        window.scrollTo(0,offsetPosition);
+    };
+
+    // Capture the requested query string parameter from the URL
+    $scope.getQueryString = function(field) {
+        var href = window.location.href;
+        var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+        var string = reg.exec(href);
+        return string ? string[1] : null;
     };
 
     // Update the B# list shown to the user

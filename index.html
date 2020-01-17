@@ -241,14 +241,10 @@
                            </form>
                         </div>
                         <h3 ng-cloak class="BR-MatSelApp__ResultsText">{{ Bnum.length }} Brady material(s) match your criteria</h3>
-                        <!-- No Results Screen -->
-                        <div class="BR-MatSelApp__NoResults" ng-cloak ng-show="Bnum.length < 1">
-                           There are no results.
-                        </div>
                         <!--Bnum Result -->
-                        <div ng-repeat="x in Bnum | orderBy:'num'" ng-cloak class="BR-MatSelApp__BnumRow">
+                        <div ng-repeat="x in Bnum | orderBy:'num'" ng-init="$last && preselectBnum()" ng-cloak class="BR-MatSelApp__BnumRow">
                            <!-- Bnum Header Section -->
-                           <header ng-click="AccordionBnums($event)" class="BR-MatSelApp__BnumHeader BR-MatSelApp__BnumHeader--Closed">
+                           <header id="{{ x.num }}" class="BR-MatSelApp__BnumHeader BR-MatSelApp__BnumHeader--Closed" ng-click="AccordionBnums($event)">
                               <p class="BR-MatSelApp__BnumDescription"><span class="BR-MatSelApp__BnumNumber">{{ x.num }}: </span>{{ x.name }}</p>
                            </header>
                            <!--Bnum Details Section -->
@@ -475,10 +471,13 @@
                                  </a>
 
                               </div>
-
                            </div>
                         </div>
-               </div>
+                        <!-- No Results Screen -->
+                        <div class="BR-MatSelApp__NoResults" ng-cloak ng-show="Bnum.length < 1">
+                           There are no results.
+                        </div>
+                  </div>
                </main>
             </div>
             </section>
