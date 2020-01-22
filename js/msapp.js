@@ -29,6 +29,8 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
                 // setFilters is used for the filter stage
                 $scope.setFilters = [];
                 $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
+                $scope.siteURL = $scope.setSite();
+                console.log($scope.siteURL);
             })
             .error(function(errorresponse) {
                 // Server found but there was an error
@@ -97,6 +99,29 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
             };
         };
         return Filterlist;
+    };
+
+    // Check for a website country parameter to understand
+    // what site to reference back to (for products, etc.) 
+    $scope.setSite = function() {
+        let siteMap = new Map([
+          ['UK', "https://www.brady.co.uk/products/productsearch?Ntt="],
+          ['US', "https://www.bradyid.com/en-us/products/productsearch?Ntt="]
+        ]);
+        // Default to the US
+        var siteURL = siteMap.get("US");
+        // Check for and get the passed Site value if it exists
+        var passedSite = $scope.getQueryString("Site");
+        if (passedSite !== null) {
+            // if the Site parameter is present, use the value to get the corresponding URL
+            var mappedSiteValue = siteMap.get(passedSite);
+            // if the value is mapped, use the URL value
+            // if the value isn't mapped, then default to the US
+            if (typeof mappedSiteValue !== 'undefined') {
+                siteURL = mappedSiteValue;
+            };
+        };
+        return siteURL;
     };
 
     // Check for and display Bnum based on URL parameter
