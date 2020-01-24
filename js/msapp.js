@@ -155,7 +155,7 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
         var href = window.location.href;
         var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
         var string = reg.exec(href);
-        return string ? string[1] : null;
+        return string ? string[1].toUpperCase() : null;
     };
 
     // Update the B# list shown to the user
