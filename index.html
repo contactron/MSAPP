@@ -12,12 +12,13 @@
       </script>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Brady Material Selection App POC Nav</title>
+      <title>Brady Material Selection App</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://www.bradyid.com/content/styles.min.css">
       <link rel="stylesheet" href="css/msapp.css">
    </head>
-   <body>
+   <!-- Controller -->
+   <body ng-app="MaterialApp" ng-controller="MaterialCtrl">
       <!-- Simulate BradyID containers -->
       <section class="BR-Body js-Body">
       <!-- Branded Header -->
@@ -25,15 +26,14 @@
         <text>
             <div class="BR-LayoutConstraint">
                 <section class="BR-SiteId">
-                    <a href="https://www.bradyid.com" class="BG-SiteLogo"><img src="https://www.bradyid.com/-/media/smartsite-images/background-and-logo/bradylogonew.ashx?h=84&la=en-US&w=300&hash=2772380E6610F1F5547DFF63C33DDFC0626432CC" alt="Home" width="300" height="84"></a>
+                    <a href="{{ siteURL }}" class="BG-SiteLogo"><img src="https://www.bradyid.com/-/media/smartsite-images/background-and-logo/bradylogonew.ashx?h=84&la=en-US&w=300&hash=2772380E6610F1F5547DFF63C33DDFC0626432CC" alt="Home" width="300" height="84"></a>
                 </section>
             </div>
         </text>
       </header>
       <section class="BR-Main">
          <section>
-            <!-- Controller Div -->
-            <div ng-app="MaterialApp" ng-controller="MaterialCtrl">
+            <div>
             <!-- Banner compononet to simulate BradyID -->
             <div class="BR-HierarchyBanner">
                <div class="BR-LayoutConstraint">
@@ -462,7 +462,7 @@
                                     <p>Search for products using this material or view the technical data sheet for even more detailed testing results and compliance information.</p>
                                  </div>
                                  
-                                 <a class="BR-Btn1 BR-MatSelApp__InfoLink" href="https://www.bradyid.com/en-us/products/productsearch?Ntt={{ x.num }}">
+                                 <a class="BR-Btn1 BR-MatSelApp__InfoLink" href="{{ siteURL }}/products/productsearch?Ntt={{ x.num }}"> 
                                     <img class="BR-MatSelApp__SpecProp-Img" src="img/Product_icon.svg" alt="Products for this Brady Material"> Find {{ x.num }}</strong> products
                                  </a>
 

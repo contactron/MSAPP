@@ -105,8 +105,8 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
     // what site to reference back to (for products, etc.) 
     $scope.setSite = function() {
         let siteMap = new Map([
-          ['UK', "https://www.brady.co.uk/products/productsearch?Ntt="],
-          ['US', "https://www.bradyid.com/en-us/products/productsearch?Ntt="]
+          ['UK', "https://www.brady.co.uk"],
+          ['US', "https://www.bradyid.com"]
         ]);
         // Default to the US
         var siteURL = siteMap.get("US");
