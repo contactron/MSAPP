@@ -103,6 +103,8 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
     // Check for a website country parameter to understand
     // what site to reference back to (for products, etc.) 
     $scope.setSite = function() {
+        // First check for a referring site 
+        // use it if it matches a Brady site
         var respectedSites = [
         "www.bradyid.com",
         "www.bradycanada.ca",
@@ -110,8 +112,9 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
         ];
         var refSite = document.referrer.split('/')[2];
         if (respectedSites.includes(refSite)) {
-            console.log("Got it by referrer which was " + refSite);
             return "https://" + refSite; } else {
+            // If there is no matching referrer
+            // check for a passed site parameter
             let siteMap = new Map([
               ['UK', "https://www.brady.co.uk"],
               ['US', "https://www.bradyid.com"],
@@ -119,10 +122,10 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
             ]);
             // Default to the US
             var siteURL = siteMap.get("US");
-            // Check for and get the passed Site value if it exists
+            // Check for and get the passed site value if it exists
             var passedSite = $scope.getQueryString("Site");
             if (passedSite !== null) {
-                // if the Site parameter is present, use the value to get the corresponding URL
+                // if the site parameter is present, use the value to get the corresponding URL
                 var mappedSiteValue = siteMap.get(passedSite);
                 // if the value is mapped, use the URL value
                 // if the value isn't mapped, then default to the US
@@ -130,7 +133,6 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
                     siteURL = mappedSiteValue;
                 };
             };
-            console.log("Got it by parameter which was " + siteURL);
             return siteURL;
         };
     };
