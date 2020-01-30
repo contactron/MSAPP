@@ -103,25 +103,36 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
     // Check for a website country parameter to understand
     // what site to reference back to (for products, etc.) 
     $scope.setSite = function() {
-        console.log("Site referrer is set to: " + document.referrer.split('/')[2]);
-        let siteMap = new Map([
-          ['UK', "https://www.brady.co.uk"],
-          ['US', "https://www.bradyid.com"]
-        ]);
-        // Default to the US
-        var siteURL = siteMap.get("US");
-        // Check for and get the passed Site value if it exists
-        var passedSite = $scope.getQueryString("Site");
-        if (passedSite !== null) {
-            // if the Site parameter is present, use the value to get the corresponding URL
-            var mappedSiteValue = siteMap.get(passedSite);
-            // if the value is mapped, use the URL value
-            // if the value isn't mapped, then default to the US
-            if (typeof mappedSiteValue !== 'undefined') {
-                siteURL = mappedSiteValue;
+        var respectedSites = [
+        "www.bradyid.com",
+        "www.bradycanada.ca",
+        "www.brady.co.uk"
+        ];
+        var refSite = document.referrer.split('/')[2];
+        if (respectedSites.includes(refSite)) {
+            console.log("Got it by referrer which was" + refSite);
+            return refSite; } else {
+            let siteMap = new Map([
+              ['UK', "www.brady.co.uk"],
+              ['US', "www.bradyid.com"],
+              ['CA', "www.bradycanada.ca"]
+            ]);
+            // Default to the US
+            var siteURL = siteMap.get("US");
+            // Check for and get the passed Site value if it exists
+            var passedSite = $scope.getQueryString("Site");
+            if (passedSite !== null) {
+                // if the Site parameter is present, use the value to get the corresponding URL
+                var mappedSiteValue = siteMap.get(passedSite);
+                // if the value is mapped, use the URL value
+                // if the value isn't mapped, then default to the US
+                if (typeof mappedSiteValue !== 'undefined') {
+                    siteURL = mappedSiteValue;
+                };
             };
+            console.log("Got it by parameter which was " + siteURL);
+            return siteURL;
         };
-        return siteURL;
     };
 
     // Check for and display Bnum based on URL parameter
