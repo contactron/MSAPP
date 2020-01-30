@@ -110,12 +110,12 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
         ];
         var refSite = document.referrer.split('/')[2];
         if (respectedSites.includes(refSite)) {
-            console.log("Got it by referrer which was" + refSite);
-            return refSite; } else {
+            console.log("Got it by referrer which was " + refSite);
+            return "https://" + refSite; } else {
             let siteMap = new Map([
-              ['UK', "www.brady.co.uk"],
-              ['US', "www.bradyid.com"],
-              ['CA', "www.bradycanada.ca"]
+              ['UK', "https://www.brady.co.uk"],
+              ['US', "https://www.bradyid.com"],
+              ['CA', "https://www.bradycanada.ca"]
             ]);
             // Default to the US
             var siteURL = siteMap.get("US");
