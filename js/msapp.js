@@ -30,7 +30,6 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
                 $scope.setFilters = [];
                 $scope.AllFilters = $scope.capturefilters($scope.AllBnums);
                 $scope.siteURL = $scope.setSite();
-                console.log($scope.siteURL);
             })
             .error(function(errorresponse) {
                 // Server found but there was an error
@@ -104,6 +103,7 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
     // Check for a website country parameter to understand
     // what site to reference back to (for products, etc.) 
     $scope.setSite = function() {
+        console.log("Site referrer is set to: " + document.referrer.split('/')[2]);
         let siteMap = new Map([
           ['UK', "https://www.brady.co.uk"],
           ['US', "https://www.bradyid.com"]
