@@ -108,7 +108,8 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
         var respectedSites = [
         "www.bradyid.com",
         "www.bradycanada.ca",
-        "www.brady.co.uk"
+        "www.brady.co.uk",
+        "www.brady.de"
         ];
         var refSite = document.referrer.split('/')[2];
         if (respectedSites.includes(refSite)) {
@@ -118,7 +119,8 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
             let siteMap = new Map([
               ['UK', "https://www.brady.co.uk"],
               ['US', "https://www.bradyid.com"],
-              ['CA', "https://www.bradycanada.ca"]
+              ['CA', "https://www.bradycanada.ca"],
+              ['DE', "https://www.brady.de"]
             ]);
             // Default to the US
             var siteURL = siteMap.get("US");
