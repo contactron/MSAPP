@@ -109,7 +109,9 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
         "www.bradyid.com",
         "www.bradycanada.ca",
         "www.brady.co.uk",
-        "www.brady.de"
+        "www.brady.de",
+        "www.brady.fr",
+        "www.brady.nl"
         ];
         var refSite = document.referrer.split('/')[2];
         if (respectedSites.includes(refSite)) {
@@ -120,7 +122,11 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
               ['UK', "https://www.brady.co.uk"],
               ['US', "https://www.bradyid.com"],
               ['CA', "https://www.bradycanada.ca"],
-              ['DE', "https://www.brady.de"]
+              ['DE', "https://www.brady.de"],
+              ['FR', "https://www.brady.fr"],
+              ['NL', "https://www.brady.nl"],
+              ['IT', "http://www.bradycorp.it"],
+              ['TR', "http://www.brady.com.tr"]
             ]);
             // Default to the US
             var siteURL = siteMap.get("US");
