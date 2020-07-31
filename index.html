@@ -458,11 +458,13 @@
                               <!-- More Info Section -->
                               <div class="BR-MatSelApp__SubSection--MaxThreeAcross BR-MatSelApp__SubSection--Expanding">
                                  <div>
-                                    <h4 class="BR-MatSelApp__Subheading">Products and More Info</h4>
-                                    <p>Search for products using this material or view the technical data sheet for even more detailed testing results and compliance information.</p>
+                                    <h4 class="BR-MatSelApp__Subheading"><span ng-show="siteURL.trans">Products and </span>More Info</h4>
+                                    <!-- Transactional Site --> <p ng-show="siteURL.trans">Search for products using this material or view the technical data sheet for even more detailed testing results and compliance information.</p>
+                                    <!-- Simple Site --><p ng-hide="siteURL.trans">View the technical data sheet for even more detailed testing results and compliance information.</p>
                                  </div>
                                  
-                                 <a class="BR-Btn1 BR-MatSelApp__InfoLink" href="{{ siteURL }}/products/productsearch?Ntt={{ x.num }}"> 
+                                 <!-- Show products button for transactional sites only --> 
+                                 <a ng-show="siteURL.trans" class="BR-Btn1 BR-MatSelApp__InfoLink" href="{{ siteURL.site }}/products/productsearch?Ntt={{ x.num }}">
                                     <img class="BR-MatSelApp__SpecProp-Img" src="img/Product_icon.svg" alt="Products for this Brady Material"> Find {{ x.num }}</strong> products
                                  </a>
 

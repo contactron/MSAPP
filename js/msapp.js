@@ -103,52 +103,45 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
     // Check for a website country parameter to understand
     // what site to reference back to (for products, etc.) 
     $scope.setSite = function() {
-        // First check for a referring site 
-        // use it if it matches a Brady site
-        var respectedSites = [
-        "www.bradyid.com",
-        "www.bradycanada.ca",
-        "www.brady.co.uk",
-        "www.brady.de",
-        "www.brady.fr",
-        "www.brady.nl",
-        "www.bradycorp.it",
-        "www.brady.com.tr",
-        "www.fr.brady.be",
-        "www.nl.brady.be"
-        ];
-        var refSite = document.referrer.split('/')[2];
-        if (respectedSites.includes(refSite)) {
-            return "https://" + refSite; } else {
-            // If there is no matching referrer
-            // check for a passed site parameter
-            let siteMap = new Map([
-              ['UK', "https://www.brady.co.uk"],
-              ['US', "https://www.bradyid.com"],
-              ['CA', "https://www.bradycanada.ca"],
-              ['DE', "https://www.brady.de"],
-              ['FR', "https://www.brady.fr"],
-              ['NL', "https://www.brady.nl"],
-              ['IT', "http://www.bradycorp.it"],
-              ['TR', "http://www.brady.com.tr"],
-              ['BEFR', " https://www.fr.brady.be/"],
-              ['BENL', " https://www.nl.brady.be/"]
-            ]);
-            // Default to the US
-            var siteURL = siteMap.get("US");
-            // Check for and get the passed site value if it exists
-            var passedSite = $scope.getQueryString("Site");
-            if (passedSite !== null) {
-                // if the site parameter is present, use the value to get the corresponding URL
-                var mappedSiteValue = siteMap.get(passedSite);
-                // if the value is mapped, use the URL value
-                // if the value isn't mapped, then default to the US
-                if (typeof mappedSiteValue !== 'undefined') {
-                    siteURL = mappedSiteValue;
-                };
+        let siteMap = new Map([
+            ['UK', {"site": "https://www.brady.co.uk", "trans": true}],
+            ['US', {"site": "https://www.bradyid.com", "trans": true}],
+            ['CA', {"site": "https://www.bradycanada.ca", "trans": true}],
+            ['DE', {"site": "https://www.brady.de", "trans": true}],
+            ['FR', {"site": "https://www.brady.fr", "trans": true}],
+            ['NL', {"site": "https://www.brady.nl", "trans": true}],
+            ['BEFR', {"site": "https://www.fr.brady.be", "trans": true}],
+            ['BENL', {"site": "https://www.nl.brady.be", "trans": true}],
+            ['MX', {"site": "http://www.bradyid.com.mx", "trans": true}],
+            ['IT', {"site": "http://www.bradycorp.it", "trans": false}],
+            ['TR', {"site": "http://www.brady.com.tr", "trans": false}],
+            ['CZ', {"site": "https://brady.cz", "trans": false}],
+            ['DK', {"site": "http://www.bradydenmark.dk", "trans": false}],
+            ['HU', {"site": "https://brady.hu", "trans": false}],
+            ['ME', {"site": "http://www.bradymiddleeast.com", "trans": false}],
+            ['NO', {"site": "http://www.brady.no", "trans": false}],
+            ['PL', {"site": "https://brady.pl", "trans": false}],
+            ['RO', {"site": "https://bradyeurope.ro", "trans": false}],
+            ['RU', {"site": "https://bradyeurope.ru", "trans": false}],
+            ['SK', {"site": "https://brady.sk", "trans": false}],
+            ['SA', {"site": "http://www.bradysouthafrica.com", "trans": false}],
+            ['ES', {"site": "https://www.brady.es", "trans": false}],
+            ['SE', {"site": "https://www.brady.se", "trans": false}],
+        ]);
+        // Default to the US
+        var siteURL = siteMap.get("US");
+        // Check for and get the passed site value if it exists
+        var passedSite = $scope.getQueryString("Site");
+        if (passedSite !== null) {
+            // if the site parameter is present, use the value to get the corresponding URL
+            var mappedSiteValue = siteMap.get(passedSite);
+            // if the value is mapped, use the URL value
+            // if the value isn't mapped, then default to the US
+            if (typeof mappedSiteValue !== 'undefined') {
+                siteURL = mappedSiteValue;
             };
-            return siteURL;
         };
+       return siteURL;
     };
 
     // Check for and display Bnum based on URL parameter
