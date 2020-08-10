@@ -992,6 +992,49 @@
     "searchString": "B-413 B 413 B413 B#413 B# 413 Acrylic Satin Polyester Silver UL, cUL, RoHS Thermal Transfer Printable Light Gray Polyester Label Stock With Acrylic Adhesive B-413 is non-metallized metallic looking label ideal for PCB and component identification. Aggressive Adhesive Labels,Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels Circuit Board,General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Oils"
   },
   {
+    "num": "B-414",
+    "adhesive": "None",
+    "finish": "Gloss",
+    "baseMaterial": "Polyester",
+    "maxServiceTemperatureC": "50 °C",
+    "maxServiceTemperatureF": "122 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": null,
+    "minServiceTemperatureF": null,
+    "thicknessIn": "0.015 in",
+    "thicknessMm": "0.381 mm",
+    "colors": [
+      "White"
+    ],
+    "compliance": [
+      "RoHS"
+    ],
+    "name": "Thermal Transfer Printable White Bradygrip™ Label Stock",
+    "description": "B-414 is a white polyester THT printable label stock designed to adhere to the loop side of hook-and-loop fasteners. Specific applications include wire and cable mangement products, such as Velcro® Brand One-Wrap®.",
+    "specialProperties": [
+      "Repositionable Labels"
+    ],
+    "printerLabelApplications": [
+      "Wire & Cable",
+      "General Identification"
+    ],
+    "tapeColorable": "Yes",
+    "materialType": "Label",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS Thermal Transfer Printable White Bradygrip™ Label Stock B-414 is a white polyester THT printable label stock designed to adhere to the loop side of hook-and-loop fasteners. Specific applications include wire and cable mangement products, such as Velcro® Brand One-Wrap®. Repositionable Labels Wire & Cable,General Identification Label "
+  },
+  {
     "num": "B-417",
     "adhesive": "Acrylic",
     "finish": "Matte",
