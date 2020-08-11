@@ -1,6 +1,7 @@
 {
 
   "Bnums": 
+
 [
   {
     "num": "B-103",
@@ -917,7 +918,8 @@
     "specialProperties": [],
     "printerLabelApplications": [
       "Wire & Cable",
-      "General Identification"
+      "General Identification",
+      "DataCom"
     ],
     "tapeColorable": "No",
     "materialType": "Tag",
@@ -936,7 +938,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-412 B 412 B412 B#412 B# 412 None Matte Polypropylene White RoHS Thermal Transfer Printable Polypropylene Tag Stock B-412 is a highly durable tag material designed for thermal transfer printing in outdoor and harsh environmental applications. It is ideal for wire and cable identification or product inventory identification where legibility and tensile strength are needed.  Wire & Cable,General Identification Tag Alcohols,Solvents,Oils"
+    "searchString": "B-412 B 412 B412 B#412 B# 412 None Matte Polypropylene White RoHS Thermal Transfer Printable Polypropylene Tag Stock B-412 is a highly durable tag material designed for thermal transfer printing in outdoor and harsh environmental applications. It is ideal for wire and cable identification or product inventory identification where legibility and tensile strength are needed.  Wire & Cable,General Identification, DataCom Tag Alcohols,Solvents,Oils"
   },
   {
     "num": "B-413",
@@ -1017,7 +1019,8 @@
     ],
     "printerLabelApplications": [
       "Wire & Cable",
-      "General Identification"
+      "General Identification",
+      "DataCom"
     ],
     "tapeColorable": "Yes",
     "materialType": "Label",
@@ -1032,7 +1035,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS Thermal Transfer Printable White Bradygrip™ Label Stock B-414 is a white polyester THT printable label stock designed to adhere to the loop side of hook-and-loop fasteners. Specific applications include wire and cable mangement products, such as Velcro® Brand One-Wrap®. Repositionable Labels Wire & Cable,General Identification Label "
+    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS Thermal Transfer Printable White BradyGrip™ Label Stock B-414 is a white polyester THT printable label stock designed to adhere to the loop side of hook-and-loop fasteners. Specific applications include wire and cable mangement products, such as Velcro® Brand One-Wrap®. Repositionable Labels Wire & Cable,General Identification, DataCom Label "
   },
   {
     "num": "B-417",
@@ -1214,7 +1217,8 @@
     "printerLabelApplications": [
       "General Identification",
       "Inspection Repair",
-      "Rating & Name Plates"
+      "Rating & Name Plates",
+      "DataCom"
     ],
     "tapeColorable": "Yes",
     "materialType": "Label",
@@ -1236,7 +1240,7 @@
     "adhesionDifficult": 2,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-422 B 422 B422 B#422 B# 422 Acrylic Gloss Polyester White UL, CSA, RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-422 is a glossy white film with permanent acrylic-based adhesive. It is designed for rough and textured surfaces and applications where increased adhesion is required. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+    "searchString": "B-422 B 422 B422 B#422 B# 422 Acrylic Gloss Polyester White UL, CSA, RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-422 is a glossy white film with permanent acrylic-based adhesive. It is designed for rough and textured surfaces and applications where increased adhesion is required. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates, DataCom Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
     "num": "B-423",
@@ -2271,7 +2275,8 @@
       "Electrical",
       "General Identification",
       "Rating & Name Plates",
-      "Safety"
+      "Safety",
+      "DataCom"
     ],
     "tapeColorable": "Yes",
     "materialType": "Label",
@@ -2295,7 +2300,7 @@
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-483 B 483 B483 B#483 B# 483 Rubber Gloss Polyester White UL, CSA, RoHS Thermal Transfer Printable Label Stock B-483 is a thermal transfer printable label stock designed for good adhesion to powder coated surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating & Name Plates,Safety Label Alcohols,Cleaners,Oils,Fuels"
+    "searchString": "B-483 B 483 B483 B#483 B# 483 Rubber Gloss Polyester White UL, CSA, RoHS Thermal Transfer Printable Label Stock B-483 is a thermal transfer printable label stock designed for good adhesion to powder coated surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating & Name Plates,Safety, DataCom Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
     "num": "B-484A",
