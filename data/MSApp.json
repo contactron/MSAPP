@@ -45,7 +45,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-103 B 103 B103 B#103 B# 103 Acrylic Gloss Polyester Clear RoHS Clear Polyester Overlaminating Tape B-103 is a clear polyester overlaminating tape which offers additional protection against dirt, chemicals and abrasion on already printed materials. Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification Self-Lam "
+    "searchString": "B-103 B 103 B103 B#103 B# 103 Acrylic Gloss Polyester Clear RoHS Clear Polyester Overlaminating Tape B-103 is a clear polyester overlaminating tape which offers additional protection against dirt, chemicals and abrasion on already printed materials. Harsh Environment Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification Self-Lam"
   },
   {
     "num": "B-109",
@@ -130,7 +130,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-121 B 121 B121 B#121 B# 121 Removable Rubber Matte Paper White RoHS Removable Paper Label Stock B-121 is a removable dot-matrix printable paper label for warehouses and maintenance. Removable Labels General Identification Label "
+    "searchString": "B-121 B 121 B121 B#121 B# 121 Removable Rubber Matte Paper White RoHS Removable Paper Label Stock B-121 is a removable dot-matrix printable paper label for warehouses and maintenance. Removable Labels General Identification Label"
   },
   {
     "num": "B-122",
@@ -175,7 +175,7 @@
     "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-122 B 122 B122 B#122 B# 122 Acrylic Matte Paper White RoHS Paper Label Stock B-122 is a permanent tamper proof paper label. It is designed for applications requiring a paper label that cannot be removed intact. Tamper Evident Labels General Identification Label "
+    "searchString": "B-122 B 122 B122 B#122 B# 122 Acrylic Matte Paper White RoHS Paper Label Stock B-122 is a permanent tamper proof paper label. It is designed for applications requiring a paper label that cannot be removed intact. Tamper Evident Labels General Identification Label"
   },
   {
     "num": "B-145",
@@ -222,6 +222,48 @@
     "searchString": "B-145 B 145 B145 B#145 B# 145 None Matte Polyethylene Gray RoHS Rigid Polyethylene Tag Material B-145 is a rigid polypropylene material that can be used for a variety of tag applications. B­-145 is extremely tear resistant.  Wire & Cable,Inspection Repair Tag Alcohols,Cleaners"
   },
   {
+    "num": "B-236",
+    "adhesive": "Acrylic",
+    "finish": "Gloss",
+    "baseMaterial": "Polycarbonate",
+    "maxServiceTemperatureC": "50℃",
+    "maxServiceTemperatureF": "122 °F",
+    "minApplicationTemperatureC": null,
+    "minApplicationTemperatureF": null,
+    "minServiceTemperatureC": "-40 °C",
+    "minServiceTemperatureF": "-40 °F",
+    "thicknessIn": null,
+    "thicknessMm": null,
+    "colors": [
+      "White"
+    ],
+    "compliance": [],
+    "name": "Inkjet Printable Polycarbonate Tags",
+    "description": "B-236 rigid polycarbonate cards are designed for general panel identification such as terminal block markers.",
+    "specialProperties": [
+      "Inkjet Printable",
+      "Removable Labels"
+    ],
+    "printerLabelApplications": [
+      "Electrical",
+      "Wire & Cable"
+    ],
+    "tapeColorable": "No",
+    "materialType": "Tag",
+    "chemicalResistance": [],
+    "chemResistanceAlcohols": null,
+    "chemResistanceCleaners": null,
+    "chemResistanceSolvents": null,
+    "chemResistanceOils": null,
+    "chemResistanceFuels": null,
+    "adhesion": [],
+    "adhesionTypical": null,
+    "adhesionDifficult": null,
+    "adhesionTextured": null,
+    "shrinkRatio": null,
+    "searchString": "B-236 B 236 B236 B#236 B# 236 Acrylic Gloss Polycarbonate White  Inkjet Printable Polycarbonate Tags B-236 rigid polycarbonate cards are designed for general panel identification such as terminal block markers.  Electrical,Wire & Cable Tag"
+  },
+  {
     "num": "B-312",
     "adhesive": "None",
     "finish": "Matte",
@@ -259,7 +301,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": "3:1",
-    "searchString": "B-312 B 312 B312 B#312 B# 312 None Matte Polyolefin White RoHS Permasleeve Commercial Grade Wire Marking Sleeve B-312 is a polyolefin heat shrink tubing designed for wire identification and insulation purposes.  Wire & Cable Sleeve "
+    "searchString": "B-312 B 312 B312 B#312 B# 312 None Matte Polyolefin White RoHS Permasleeve Commercial Grade Wire Marking Sleeve B-312 is a polyolefin heat shrink tubing designed for wire identification and insulation purposes.  Wire & Cable Sleeve"
   },
   {
     "num": "B-321",
@@ -281,7 +323,7 @@
       "RoHS"
     ],
     "name": "Bradysleeve Marker",
-    "description": "B-321 is a dot matrix printable, wire and cable heat-shrinkable sleeve.  It has excellent resistance to oil and solvents. ",
+    "description": "B-321 is a dot matrix printable, wire and cable heat-shrinkable sleeve.  It has excellent resistance to oil and solvents.",
     "specialProperties": [
       "Heat Shrink Sleeves"
     ],
@@ -379,11 +421,12 @@
       "RoHS"
     ],
     "name": "Permasleeve Marker",
-    "description": "B-342 is a heat-shrinkable sleeve with a 3:1 shrink ratio for wire and cable identification. Meets the material and physical property requirements of SAE AMS-DTL-23053/5C (class 1) for Insulation Sleeving and SAE AS-81531 for Marking of Electrical Insulating Materials and MIL-STD-202.\t",
+    "description": "B-342 is a heat-shrinkable sleeve with a 3:1 shrink ratio for wire and cable identification. Meets the material and physical property requirements of SAE AMS-DTL-23053/5C (class 1) for Insulation Sleeving and SAE AS-81531 for Marking of Electrical Insulating Materials and MIL-STD-202.",
     "specialProperties": [
       "Heat Shrink Sleeves"
     ],
     "printerLabelApplications": [
+      "Electrical",
       "Wire & Cable"
     ],
     "tapeColorable": "No",
@@ -403,7 +446,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": "3:1",
-    "searchString": "B-342 B 342 B342 B#342 B# 342 None Matte Polyolefin White, Yellow, Black, Red, Blue, Green, Orange, Gray, Pink, Violet, Brown RoHS Permasleeve Marker B-342 is a heat-shrinkable sleeve with a 3:1 shrink ratio for wire and cable identification. Meets the material and physical property requirements of SAE AMS-DTL-23053/5C (class 1) for Insulation Sleeving and SAE AS-81531 for Marking of Electrical Insulating Materials and MIL-STD-202.\t Heat Shrink Sleeves Wire & Cable Sleeve Alcohols,Oils,Fuels"
+    "searchString": "B-342 B 342 B342 B#342 B# 342 None Matte Polyolefin White, Yellow, Black, Red, Blue, Green, Orange, Gray, Pink, Violet, Brown RoHS Permasleeve Marker B-342 is a heat-shrinkable sleeve with a 3:1 shrink ratio for wire and cable identification. Meets the material and physical property requirements of SAE AMS-DTL-23053/5C (class 1) for Insulation Sleeving and SAE AS-81531 for Marking of Electrical Insulating Materials and MIL-STD-202.\t Heat Shrink Sleeves Electrical,Wire & Cable Sleeve Alcohols,Oils,Fuels"
   },
   {
     "num": "B-344",
@@ -433,7 +476,7 @@
     ],
     "compliance": [],
     "name": "Fluid Resistant Permasleeve® Marker",
-    "description": "B-344 PermaSleeve material is a polyolefin heat shrink tubing suitable for use in applications that require greater resistance to harsh chemicals such as fuel and high power cleaning solvents.\t",
+    "description": "B-344 PermaSleeve material is a polyolefin heat shrink tubing suitable for use in applications that require greater resistance to harsh chemicals such as fuel and high power cleaning solvents.",
     "specialProperties": [
       "Heat Shrink Sleeves"
     ],
@@ -803,7 +846,7 @@
     "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-402 B 402 B402 B#402 B# 402 Acrylic Matte Paper White RoHS Thermal Transfer Printable White Paper Label Stock B-402 is a thermal transfer-printable paper with permanent adhesive. It uses an aggressive adhesive for bonding to corrugated, films, plastic and steel surfaces. Permanent Adhesive Labels General Identification Label "
+    "searchString": "B-402 B 402 B402 B#402 B# 402 Acrylic Matte Paper White RoHS Thermal Transfer Printable White Paper Label Stock B-402 is a thermal transfer-printable paper with permanent adhesive. It uses an aggressive adhesive for bonding to corrugated, films, plastic and steel surfaces. Permanent Adhesive Labels General Identification Label"
   },
   {
     "num": "B-403",
@@ -825,7 +868,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Water Dissolvable Paper Label Stock",
-    "description": "B-403 is a water dissolvable paper label for temporary labeling applications. The label material dissolves completely in water leaving no adhesive residue ",
+    "description": "B-403 is a water dissolvable paper label for temporary labeling applications. The label material dissolves completely in water leaving no adhesive residue",
     "specialProperties": [
       "Removable Labels",
       "Water Dissolvable Labels"
@@ -850,7 +893,7 @@
     "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-403 B 403 B403 B#403 B# 403 Removable Acrylic Matte Paper White RoHS Thermal Transfer Printable Water Dissolvable Paper Label Stock B-403 is a water dissolvable paper label for temporary labeling applications. The label material dissolves completely in water leaving no adhesive residue  Removable Labels,Water Dissolvable Labels Laboratory,General Identification Label "
+    "searchString": "B-403 B 403 B403 B#403 B# 403 Removable Acrylic Matte Paper White RoHS Thermal Transfer Printable Water Dissolvable Paper Label Stock B-403 is a water dissolvable paper label for temporary labeling applications. The label material dissolves completely in water leaving no adhesive residue  Removable Labels,Water Dissolvable Labels Laboratory,General Identification Label"
   },
   {
     "num": "B-408",
@@ -892,7 +935,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-408 B 408 B408 B#408 B# 408 Removable Acrylic Matte Paper White RoHS Matte White Paper Label Stock B-408 is a white paper label for barcode and general labeling applications. It uses a special adhesive that allows the label to be easily removed or repositioned. Removable Labels General Identification Label "
+    "searchString": "B-408 B 408 B408 B#408 B# 408 Removable Acrylic Matte Paper White RoHS Matte White Paper Label Stock B-408 is a white paper label for barcode and general labeling applications. It uses a special adhesive that allows the label to be easily removed or repositioned. Removable Labels General Identification Label"
   },
   {
     "num": "B-412",
@@ -1035,7 +1078,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS Thermal Transfer Printable White BradyGrip™ Label Stock B-414 is a white polyester THT printable label stock designed to adhere to the loop side of hook-and-loop fasteners. Specific applications include wire and cable mangement products, such as Velcro® Brand One-Wrap®. Repositionable Labels Wire & Cable,General Identification, DataCom Label "
+    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS Thermal Transfer Printable White BradyGrip™ Label Stock B-414 is a white polyester THT printable label stock designed to adhere to the loop side of hook-and-loop fasteners. Specific applications include wire and cable mangement products, such as Velcro® Brand One-Wrap®. Repositionable Labels Wire & Cable,General Identification, DataCom Label"
   },
   {
     "num": "B-417",
@@ -1342,7 +1385,7 @@
     "adhesionDifficult": 5,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-424 B 424 B424 B#424 B# 424 Rubber Matte Paper White RoHS Thermal Transfer Printable White Paper Label Stock B-424 is a top-coated, thermal transfer-printable label material with a permanent latex adhesive. It is designed for use in labeling applications requiring a low-cost, general-purpose labeling material. Permanent Adhesive Labels General Identification,Laboratory Label "
+    "searchString": "B-424 B 424 B424 B#424 B# 424 Rubber Matte Paper White RoHS Thermal Transfer Printable White Paper Label Stock B-424 is a top-coated, thermal transfer-printable label material with a permanent latex adhesive. It is designed for use in labeling applications requiring a low-cost, general-purpose labeling material. Permanent Adhesive Labels General Identification,Laboratory Label"
   },
   {
     "num": "B-425A",
@@ -1425,7 +1468,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Translucent Vinyl Tape",
-    "description": "B-427 is self-laminating label material with a permanent acrylic adhesive and a topcoat specifically formulated for thermal transfer printing. It has excellent water, oil and solvent resistance with clarity and conformability. ",
+    "description": "B-427 is self-laminating label material with a permanent acrylic adhesive and a topcoat specifically formulated for thermal transfer printing. It has excellent water, oil and solvent resistance with clarity and conformability.",
     "specialProperties": [
       "Self Laminating Labels & Wraps"
     ],
@@ -1529,7 +1572,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Glossy Clear Polyester Label Stock",
-    "description": "B-430 is a thermal transfer-printable polyester label material with permanent acrylic-based adhesive. It withstands numerous solvents and can be applied to variable surfaces. It is designed for rating and serial plates using alphanumerics, barcodes, graphic symbols and logos that require name plate quality. ",
+    "description": "B-430 is a thermal transfer-printable polyester label material with permanent acrylic-based adhesive. It withstands numerous solvents and can be applied to variable surfaces. It is designed for rating and serial plates using alphanumerics, barcodes, graphic symbols and logos that require name plate quality.",
     "specialProperties": [
       "Aggressive Adhesive Labels",
       "Harsh Environment Labels",
@@ -1584,7 +1627,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Glossy Clear Polyester Label Stock",
-    "description": "B-432 is glossy clear thermal transfer-printable label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.  ",
+    "description": "B-432 is glossy clear thermal transfer-printable label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.",
     "specialProperties": [
       "Aggressive Adhesive Labels",
       "Heat Resistant Labels",
@@ -1747,7 +1790,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Label Stock",
-    "description": "B-437 is a self-extinguishing label material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries. ",
+    "description": "B-437 is a self-extinguishing label material used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.",
     "specialProperties": [
       "Self Laminating Labels & Wraps",
       "Harsh Environment Labels"
@@ -1796,7 +1839,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Tamper Evident Matte Metallized Polyester Label Stock",
-    "description": "B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal. ",
+    "description": "B-438 is a matte metallized polyester label material with a permanent adhesive that leaves a checkerboard footprint if removed. It is designed for applications requiring both high-performance and protection against removal.",
     "specialProperties": [
       "Metallic Labels",
       "Permanent Adhesive Labels",
@@ -2166,7 +2209,7 @@
     "compliance": [
       "RoHS"
     ],
-    "name": " StainerBondz™",
+    "name": "StainerBondz™",
     "description": "B-481 is a slide label material designed for laboratory specimens used in a staining process.",
     "specialProperties": [
       "Harsh Environment Labels",
@@ -2641,7 +2684,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable, Repositionable Coated Vinyl Cloth Label",
-    "description": "B-498 is a repositionable, coated vinyl cloth label stock. It is suitable for wire, cable and component marking as well as  general identification. Its reposistionable, rubber-based adhesive removes cleanly from surfaces. ",
+    "description": "B-498 is a repositionable, coated vinyl cloth label stock. It is suitable for wire, cable and component marking as well as  general identification. Its reposistionable, rubber-based adhesive removes cleanly from surfaces.",
     "specialProperties": [
       "Repositionable Labels"
     ],
@@ -2854,7 +2897,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-530 B 530 B530 B#530 B# 530 Acrylic Gloss Vinyl White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-­530 is a tamper-proof vinyl label for asset and equipment identification. It destructs upon removal, breaking into small pieces. Tamper Evident Labels General Identification Label "
+    "searchString": "B-530 B 530 B530 B#530 B# 530 Acrylic Gloss Vinyl White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-­530 is a tamper-proof vinyl label for asset and equipment identification. It destructs upon removal, breaking into small pieces. Tamper Evident Labels General Identification Label"
   },
   {
     "num": "B-533",
@@ -2876,7 +2919,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Glossy White Polyester Label Stock",
-    "description": "B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed. ",
+    "description": "B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.",
     "specialProperties": [
       "Heat Resistant Labels",
       "Removable Labels"
@@ -2898,7 +2941,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-533 B 533 B533 B#533 B# 533 Removable Acrylic Gloss Polyester White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.  Heat Resistant Labels,Removable Labels General Identification,Laboratory Label "
+    "searchString": "B-533 B 533 B533 B#533 B# 533 Removable Acrylic Gloss Polyester White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.  Heat Resistant Labels,Removable Labels General Identification,Laboratory Label"
   },
   {
     "num": "B-593",
@@ -2920,7 +2963,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Glossy White Polyester Label Stock",
-    "description": "B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed. ",
+    "description": "B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.",
     "specialProperties": [
       "Heat Resistant Labels",
       "Removable Labels"
@@ -2942,7 +2985,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-593 B 593 B593 B#593 B# 593 Acrylic-Foam Backed Gloss Polyester White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.  Heat Resistant Labels,Removable Labels General Identification,Laboratory Label "
+    "searchString": "B-593 B 593 B593 B#593 B# 593 Acrylic-Foam Backed Gloss Polyester White RoHS Thermal Transfer Printable Glossy White Polyester Label Stock B-533 is a white polyester label stock designed for electronic component marking and general purpose applications requiring good solvent, heat resistance and a label that can be easily removed.  Heat Resistant Labels,Removable Labels General Identification,Laboratory Label"
   },
   {
     "num": "B-619",
@@ -3260,7 +3303,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Glossy White Low Profile Static Dissipative Polyimide Label Stock",
-    "description": "B-718 is a low profile glossy polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. ",
+    "description": "B-718 is a low profile glossy polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards.",
     "specialProperties": [
       "Heat Resistant Labels",
       "Permanent Adhesive Labels"
@@ -3311,7 +3354,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Matte White Low Profile Static Dissipative Polyimide Label Stock",
-    "description": "B-719 is a low profile matte polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. ",
+    "description": "B-719 is a low profile matte polyimide label stock with a permanent static dissipative adhesive and a static dissipative release liner. It is designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards.",
     "specialProperties": [
       "Heat Resistant Labels",
       "Permanent Adhesive Labels"
@@ -3485,7 +3528,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-728 B 728 B728 B#728 B# 728 Acrylic Matte Polyimide White UL, RoHS Matte White Thermal Transfer Printable Polyimide Label Stock B-728 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its matte topcoat provides excellent resistance to solder balling. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label "
+    "searchString": "B-728 B 728 B728 B#728 B# 728 Acrylic Matte Polyimide White UL, RoHS Matte White Thermal Transfer Printable Polyimide Label Stock B-728 is a matte polyimide label stock with a permanent acrylic adhesive, designed to withstand the various processes, fluxes and cleaning solvents encountered in the manufacture of printed circuit boards. It can be used for top- or bottom-side component or board identification. Its matte topcoat provides excellent resistance to solder balling. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label"
   },
   {
     "num": "B-729",
@@ -3531,7 +3574,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-729 B 729 B729 B#729 B# 729 Acrylic Matte Polyimide White UL, RoHS Matte White Low Profile Thermal Transfer Printable Polyimide Label Stock B-729 is a high-temperature polyimide label for pre-process circuit board identification. It is designed to survive multiple cycles of harsh condition washes used for circuit board cleaning processes. Its matte topcoat resists solder balls from sticking to the label after exposure to molten wave solder. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label "
+    "searchString": "B-729 B 729 B729 B#729 B# 729 Acrylic Matte Polyimide White UL, RoHS Matte White Low Profile Thermal Transfer Printable Polyimide Label Stock B-729 is a high-temperature polyimide label for pre-process circuit board identification. It is designed to survive multiple cycles of harsh condition washes used for circuit board cleaning processes. Its matte topcoat resists solder balls from sticking to the label after exposure to molten wave solder. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label"
   },
   {
     "num": "B-730",
@@ -3667,7 +3710,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-7316 B 7316 B7316 B#7316 B# 7316 None None Steel Silver RoHS Stainless Steel Cable Tags B­-7316 stainless steel cable tags are designed for labeling pipes, cables and wire bundles in harsh environments where extreme corrosion resistance and durability is required. The material can be laser etched or embossed for printed legends that are extremely durable. Tags are attached using stainless steel cable ties.   Tag "
+    "searchString": "B-7316 B 7316 B7316 B#7316 B# 7316 None None Steel Silver RoHS Stainless Steel Cable Tags B­-7316 stainless steel cable tags are designed for labeling pipes, cables and wire bundles in harsh environments where extreme corrosion resistance and durability is required. The material can be laser etched or embossed for printed legends that are extremely durable. Tags are attached using stainless steel cable ties.   Tag"
   },
   {
     "num": "B-732A",
@@ -3940,7 +3983,7 @@
       "RoHS"
     ],
     "name": "Irreversible Temperature Labels For Low Temperatures",
-    "description": "B-7511 is a temperature indicating label indicating the highest temperature reached over the range 37°C to 143°C. It is irreversible showing a permanent record of the highest reached temperature.  ",
+    "description": "B-7511 is a temperature indicating label indicating the highest temperature reached over the range 37°C to 143°C. It is irreversible showing a permanent record of the highest reached temperature.",
     "specialProperties": [
       "Permanent Adhesive Labels",
       "Temperature Indicating Labels"
@@ -3965,7 +4008,7 @@
     "adhesionDifficult": 3,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-7511 B 7511 B7511 B#7511 B# 7511 Acrylic Gloss Polyester Multi RoHS Irreversible Temperature Labels For Low Temperatures B-7511 is a temperature indicating label indicating the highest temperature reached over the range 37°C to 143°C. It is irreversible showing a permanent record of the highest reached temperature.   Permanent Adhesive Labels,Temperature Indicating Labels Inspection Repair Label "
+    "searchString": "B-7511 B 7511 B7511 B#7511 B# 7511 Acrylic Gloss Polyester Multi RoHS Irreversible Temperature Labels For Low Temperatures B-7511 is a temperature indicating label indicating the highest temperature reached over the range 37°C to 143°C. It is irreversible showing a permanent record of the highest reached temperature.   Permanent Adhesive Labels,Temperature Indicating Labels Inspection Repair Label"
   },
   {
     "num": "B-7512",
@@ -3987,7 +4030,7 @@
       "RoHS"
     ],
     "name": "Irreversible Temperature Labels For Mid Temperatures",
-    "description": "B-7512 is a temperature indicating label indicating the highest temperature reached over the range 149°C to 177°C or 182°C to 210°C. It is irreversible showing a permanent record of the highest reached temperature.  ",
+    "description": "B-7512 is a temperature indicating label indicating the highest temperature reached over the range 149°C to 177°C or 182°C to 210°C. It is irreversible showing a permanent record of the highest reached temperature.",
     "specialProperties": [
       "Permanent Adhesive Labels",
       "Temperature Indicating Labels"
@@ -4293,7 +4336,7 @@
       "RoHS"
     ],
     "name": "Heatex 2:1 Marker",
-    "description": "B-7642 is a heat-shrinkable polyolefin sleeve with a 2:1 shrink ratio for wire and cable marking. Markers are supplied roll form in a flattened format on a carrier designed for use with computer driven printers. B­7642 is available in white and yellow. Custom colors are available. ",
+    "description": "B-7642 is a heat-shrinkable polyolefin sleeve with a 2:1 shrink ratio for wire and cable marking. Markers are supplied roll form in a flattened format on a carrier designed for use with computer driven printers. B­7642 is available in white and yellow. Custom colors are available.",
     "specialProperties": [
       "Heat Shrink Sleeves"
     ],
@@ -4339,7 +4382,7 @@
     "compliance": [
       "RoHS"
     ],
-    "name": " Zero Halogen Cable Markers",
+    "name": "Zero Halogen Cable Markers",
     "description": "Brady B­7643 is a zero-halogen, high density thermoplastic polyether polyurethane cable marker. The markers are tough, with a very high degree of mark permanence in almost any environment. The material is thermal transfer printable and available in multiple colors.",
     "specialProperties": [
       "Heat Shrink Sleeves"
@@ -4386,7 +4429,7 @@
     "compliance": [
       "RoHS"
     ],
-    "name": " Diesel Resistant Sleeve",
+    "name": "Diesel Resistant Sleeve",
     "description": "B­7646 is a diesel-resistant sleeve material. When printed with R6600 Series thermal transfer ribbons it meets the material and physical property requirements of SAE AS-81531and MIL-STD-202 method 215K and NF F 00-608 type A and H Flammability Testing.",
     "specialProperties": [
       "Heat Shrink Sleeves"
@@ -4435,7 +4478,7 @@
       "RoHS"
     ],
     "name": "Glossy Light Green Thermal Transfer Printable Polyimide Label Stock",
-    "description": "B-776 is a light green polyimide material designed for printed circuit board and component preprocess labeling. It has high temperature and solvent resistance and can withstand multiple cycles of harsh condition washes for printed circuit boards. It can be used for visual differentiation between Lead (Pb) Free manufacturing and non-Lead (Pb) Free manufacturing. ",
+    "description": "B-776 is a light green polyimide material designed for printed circuit board and component preprocess labeling. It has high temperature and solvent resistance and can withstand multiple cycles of harsh condition washes for printed circuit boards. It can be used for visual differentiation between Lead (Pb) Free manufacturing and non-Lead (Pb) Free manufacturing.",
     "specialProperties": [
       "Heat Resistant Labels",
       "Permanent Adhesive Labels"
@@ -4608,7 +4651,7 @@
     "adhesionDifficult": 5,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-813 B 813 B813 B#813 B# 813 Acrylic Matte Paper White RoHS Standard Direct Thermal Permanent Paper B-813 is a general purpose, thermal-printed paper label.  It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications. Permanent Adhesive Labels General Identification Label "
+    "searchString": "B-813 B 813 B813 B#813 B# 813 Acrylic Matte Paper White RoHS Standard Direct Thermal Permanent Paper B-813 is a general purpose, thermal-printed paper label.  It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications. Permanent Adhesive Labels General Identification Label"
   },
   {
     "num": "B-816",
@@ -4652,7 +4695,7 @@
     "adhesionDifficult": 5,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-816 B 816 B816 B#816 B# 816 Removable Acrylic Matte Paper White RoHS Standard Direct Thermal Removable Paper B-816 is a general purpose, thermal-printed paper label with an acryilc adhesive that allows for easy removal. It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications. Removable Labels General Identification Label "
+    "searchString": "B-816 B 816 B816 B#816 B# 816 Removable Acrylic Matte Paper White RoHS Standard Direct Thermal Removable Paper B-816 is a general purpose, thermal-printed paper label with an acryilc adhesive that allows for easy removal. It is recommended for labeling applications requiring a ribbonless, low cost label material. It is not recommended for high heat/humidity or outdoor applications. Removable Labels General Identification Label"
   },
   {
     "num": "B-8423",
@@ -4750,7 +4793,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-8425 B 8425 B8425 B#8425 B# 8425 Acrylic Gloss Polypropylene White UL, CSA, RoHS Bradybondz™ B-8425 Gloss Polypropylene Thermal Transfer Printable Labelstock B-8425 is a general purpose label material appropriate for asset identification, rating plate, and warning/instructional labeling. Aggressive Adhesive Labels,Permanent Adhesive Labels General Identification Label "
+    "searchString": "B-8425 B 8425 B8425 B#8425 B# 8425 Acrylic Gloss Polypropylene White UL, CSA, RoHS Bradybondz™ B-8425 Gloss Polypropylene Thermal Transfer Printable Labelstock B-8425 is a general purpose label material appropriate for asset identification, rating plate, and warning/instructional labeling. Aggressive Adhesive Labels,Permanent Adhesive Labels General Identification Label"
   },
   {
     "num": "B-8459",
@@ -4917,7 +4960,7 @@
     "compliance": [
       "RoHS"
     ],
-    "name": " Clear Polyester Overlaminating Tape",
+    "name": "Clear Polyester Overlaminating Tape",
     "description": "Brady B-966B is a clear polyester film used as an overlaminate and for permashield applications. It has excellent clarity and abrasion resistance, as well as very good high-temperature and solvent resistance.",
     "specialProperties": [
       "Harsh Environment Labels",
@@ -4967,7 +5010,7 @@
     "compliance": [
       "UL"
     ],
-    "name": " Matte Metallized Polyester Label Stock",
+    "name": "Matte Metallized Polyester Label Stock",
     "description": "Brady B-969A is a dot-matrix and THT-printable, metallized polyester label for general identification and rating plates. It has good smudge resistance, solvent resistance, and high temperature performance.",
     "specialProperties": [
       "Heat Resistant Labels",
