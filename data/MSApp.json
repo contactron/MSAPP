@@ -1096,10 +1096,10 @@
     "colors": [
       "White"
     ],
-    "compliance": [],
-    "name": "Thermal Transfer Printable Translucent Vinyl Tape",
-    "description": "B-417 is a self-laminating label material with good clarity, conformability and outstanding water and oil resistance. It is recommended for application onto small diameter wires with low surface energy wire jacketing materials.",
-    "specialProperties": [],
+    "compliance": ["UL"],
+    "name": "High Adhesion Self-Laminating Vinyl Wraps",
+    "description": "B-417 is a self-laminating material for tough conditions, including high-humidity environments, small diameter wires and newer wire jacketing materials.",
+    "specialProperties": ["Permanent Adhesive Labels","Self Laminating Labels & Wraps"],
     "printerLabelApplications": [
       "Wire & Cable"
     ],
