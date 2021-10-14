@@ -127,7 +127,7 @@ app.controller("MaterialCtrl", function($scope, $filter, $http, $timeout) {
             ['SA', {"site": "http://www.bradysouthafrica.com", "trans": false}],
             ['ES', {"site": "https://www.brady.es", "trans": false}],
             ['SE', {"site": "https://www.brady.se", "trans": false}],
-            ['EU', {"site": "https://www.brady.eu", "trans": false}],
+            ['EU', {"site": "https://www.brady.eu", "trans": true}],
         ]);
         // Default to the US
         var siteURL = siteMap.get("US");
