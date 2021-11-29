@@ -1055,7 +1055,7 @@
     "compliance": [
       "RoHS"
     ],
-    "name": "BradyGrip Print-on-Hook Labels featuring VELCO Brand Hook",
+    "name": "BradyGrip Print-on-Hook Labels featuring VELCRO Brand Hook",
     "description": "Use this reusable print-on hook and loop label material with VELCRO® Brand ONE-WRAP® to easily mark cable bundles.",
     "specialProperties": [
       "Repositionable Labels"
@@ -1078,7 +1078,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": null,
     "shrinkRatio": null,
-    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS BradyGrip Print-on-Hook Labels featuring VELCO Brand Hook Use this reusable print-on hook and loop label material with VELCRO® Brand ONE-WRAP® to easily mark cable bundles. Repositionable Labels Wire & Cable,General Identification, DataCom Label"
+    "searchString": "B-414 B 414 B414 B#414 B# 414 None Gloss Polyester White RoHS BradyGrip Print-on-Hook Labels featuring VELCRO Brand Hook Use this reusable print-on hook and loop label material with VELCRO® Brand ONE-WRAP® to easily mark cable bundles. Repositionable Labels Wire & Cable,General Identification, DataCom Label"
   },
   {
     "num": "B-417",
@@ -1665,18 +1665,18 @@
     "searchString": "B-432 B 432 B432 B#432 B# 432 Acrylic Gloss Polyester Clear UL, CSA, RoHS High Adhesion Multi-Purpose Clear Polyester Labels Use this clear polyester label material to permanently label circuit boards, panels, rating plates and solar panels. Aggressive Adhesive Labels,Heat Resistant Labels,Permanent Adhesive Labels General Identification,Laboratory Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
-    "num": "B-434",
+    "num": "B-434A",
     "adhesive": "Acrylic",
     "finish": "Gloss",
     "baseMaterial": "Metallized Polyester",
-    "maxServiceTemperatureC": "90 °C",
-    "maxServiceTemperatureF": "194 °F",
+    "maxServiceTemperatureC": "70 °C",
+    "maxServiceTemperatureF": "158 °F",
     "minApplicationTemperatureC": null,
     "minApplicationTemperatureF": null,
-    "minServiceTemperatureC": "-40 °C",
-    "minServiceTemperatureF": "-40 °F",
-    "thicknessIn": "0.004 in",
-    "thicknessMm": "0.102 mm",
+    "minServiceTemperatureC": "-20 °C",
+    "minServiceTemperatureF": "-4 °F",
+    "thicknessIn": "0.0068 in",
+    "thicknessMm": "0.173 mm",
     "colors": [
       "Silver"
     ],
@@ -1686,7 +1686,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Gloss Metallized Polyester Label Stock",
-    "description": "B-434 is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.",
+    "description": "B-434A is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required.",
     "specialProperties": [
       "Metallic Labels",
       "Permanent Adhesive Labels"
@@ -1717,10 +1717,10 @@
     "adhesionDifficult": 2,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-434 B 434 B434 B#434 B# 434 Acrylic Gloss Metallized Polyester Silver UL, CSA, RoHS Thermal Transfer Printable Gloss Metallized Polyester Label Stock B-434 is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required. Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+    "searchString": "B-434A B 434A B434A B#434A B# 434A Acrylic Gloss Metallized Polyester Silver UL, CSA, RoHS Thermal Transfer Printable Gloss Metallized Polyester Label Stock B-434A is a glossy metallized polyester label material with permanent acrylic-based adhesive. It is designed for rough surfaces and applications where increased adhesion is required. Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
-    "num": "B-435",
+    "num": "B-435A",
     "adhesive": "Acrylic",
     "finish": "Gloss",
     "baseMaterial": "Metallized Polyester",
@@ -1741,7 +1741,7 @@
       "RoHS"
     ],
     "name": "Metallized Polyester Labels",
-    "description": "B-435 is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling.",
+    "description": "B-435A is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling.",
     "specialProperties": [
       "Permanent Adhesive Labels",
       "Chemical Resistant",
@@ -1772,7 +1772,7 @@
     "adhesionDifficult": 2,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-435 B 435 B435 B#435 B# 435 Acrylic Gloss Metallized Polyester Silver UL, CSA, RoHS Metallized Polyester Labels B-435 is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling. Permanent Adhesive Labels,Chemical Resistant,Metallic Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
+    "searchString": "B-435A B 435A B435A B#435A B# 435A Acrylic Gloss Metallized Polyester Silver UL, CSA, RoHS Metallized Polyester Labels B-435A is a high-performance material designed for thermal transfer printing. It withstands numerous solvents while maintaining excellent image quality. It is ideal for rating plate applications and general purpose labeling. Permanent Adhesive Labels,Chemical Resistant,Metallic Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
     "num": "B-437",
@@ -2084,7 +2084,7 @@
     "adhesionDifficult": null,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-472 B 472 B472 B#472 B# 472 Acrylic Matte Polyimide White, Yellow, Gray, Violet, Green, Blue, Red, Pink, Orange UL, CSA, RoHS High Temp Flame Retardant Polyimide Wraps B-472 is specifically designed to self-extinguish and prevent flames from propagating. Used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.  THT and Dot matrix printable. Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Oils,Fuels"
+    "searchString": "B-472 B 472 B472 B#472 B# 472 Acrylic Matte Polyimide White, Yellow, Gray, Violet, Green, Blue, Red, Pink, Orange UL, CSA, RoHS High Temp Flame Retardant Polyimide Wraps B-472 is specifically designed to self-extinguish and prevent flames from propagating. Used for wire and cable marking applications, particularly in aerospace, defense and mass transit industries.  THT and Dot matrix printable. Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Oils,Fuels"
   },
   {
     "num": "B-473",
@@ -2294,7 +2294,7 @@
     "searchString": "B-482 B 482 B482 B#482 B# 482 Acrylic Matte Polyester White RoHS Tissue Cassette Label B-482 is label stock designed for use in tissue cassette labeling applications that can withstand a variety of laboratory processing fluids. Chemical Resistant,Harsh Environment Labels Laboratory Label Alcohols,Solvents,Oils,Fuels"
   },
   {
-    "num": "B-483",
+    "num": "B-483A",
     "adhesive": "Rubber",
     "finish": "Gloss",
     "baseMaterial": "Polyester",
@@ -2302,10 +2302,10 @@
     "maxServiceTemperatureF": "248 °F",
     "minApplicationTemperatureC": null,
     "minApplicationTemperatureF": null,
-    "minServiceTemperatureC": "-40 °C",
-    "minServiceTemperatureF": "-40 °F",
-    "thicknessIn": "0.004 in",
-    "thicknessMm": "0.102 mm",
+    "minServiceTemperatureC": "-29 °C",
+    "minServiceTemperatureF": "-20 °F",
+    "thicknessIn": "0.0069 in",
+    "thicknessMm": "0.175 mm",
     "colors": [
       "White"
     ],
@@ -2315,7 +2315,7 @@
       "RoHS"
     ],
     "name": "Ultra High Adhesion Multi-Purpose Polyester Labels",
-    "description": "Use this label material to permanently label products and equipment with extremely smooth or rough surfaces.",
+    "description": "B-483A label material is designed to permanently label products and equipment with extremely smooth or rough surfaces.",
     "specialProperties": [
       "Aggressive Adhesive Labels"
     ],
@@ -2348,7 +2348,7 @@
     "adhesionDifficult": 4,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-483 B 483 B483 B#483 B# 483 Rubber Gloss Polyester White UL, CSA, RoHS Ultra High Adhesion Multi-Purpose Polyester Labels Use this label material to permanently label products and equipment with extremely smooth or rough surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating & Name Plates,Safety, DataCom Label Alcohols,Cleaners,Oils,Fuels"
+    "searchString": "B-483A B 483A B483A B#483A B# 483A Rubber Gloss Polyester White UL, CSA, RoHS Ultra High Adhesion Multi-Purpose Polyester Labels B-483A label material is designed to permanently label products and equipment with extremely smooth or rough surfaces. Aggressive Adhesive Labels Electrical,General Identification,Rating & Name Plates,Safety, DataCom Label Alcohols,Cleaners,Oils,Fuels"
   },
   {
     "num": "B-484A",
