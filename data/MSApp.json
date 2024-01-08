@@ -1003,7 +1003,7 @@
       "RoHS"
     ],
     "name": "Thermal Transfer Printable Light Gray Polyester Label Stock With Acrylic Adhesive",
-    "description": "B-413 is non-metallized metallic looking label ideal for PCB and component identification.",
+    "description": "B-413 is non-metallized metallic looking label ideal for component identification.",
     "specialProperties": [
       "Aggressive Adhesive Labels",
       "Heat Resistant Labels",
@@ -1031,7 +1031,7 @@
     "adhesionDifficult": 2,
     "adhesionTextured": "No",
     "shrinkRatio": null,
-    "searchString": "B-413 B 413 B413 B#413 B# 413 Acrylic Satin Polyester Silver UL, cUL, RoHS Thermal Transfer Printable Light Gray Polyester Label Stock With Acrylic Adhesive B-413 is non-metallized metallic looking label ideal for PCB and component identification. Aggressive Adhesive Labels,Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Oils"
+    "searchString": "B-413 B 413 B413 B#413 B# 413 Acrylic Satin Polyester Silver UL, cUL, RoHS Thermal Transfer Printable Light Gray Polyester Label Stock With Acrylic Adhesive B-413 is non-metallized metallic looking label ideal for component identification. Aggressive Adhesive Labels,Heat Resistant Labels,Metallic Labels,Permanent Adhesive Labels General Identification,Inspection Repair,Rating & Name Plates Label Alcohols,Oils"
   },
   {
     "num": "B-414",
@@ -1128,57 +1128,6 @@
     "searchString": "B-417 B 417 B417 B#417 B# 417 Acrylic Matte Vinyl White UL High Adhesion Self-Laminating Vinyl Wraps Self-laminating labels for tough conditions, including high-humidity environments, small diameter wires and wire jacketing materials. Permanent Adhesive Labels,Self Laminating Labels & Wraps Wire & Cable Self-Lam Alcohols,Cleaners,Oils,Fuels"
   },
   {
-    "num": "B-420",
-    "adhesive": "Permanent Acrylic",
-    "finish": "Matte",
-    "baseMaterial": "Polyester",
-    "maxServiceTemperatureC": null,
-    "maxServiceTemperatureF": null,
-    "minApplicationTemperatureC": null,
-    "minApplicationTemperatureF": null,
-    "minServiceTemperatureC": null,
-    "minServiceTemperatureF": null,
-    "thicknessIn": "0.0058 in",
-    "thicknessMm": "0.147 mm",
-    "colors": [
-      "White"
-    ],
-    "compliance": [
-      "UL"
-    ],
-    "name": "Matte White Laser Markable Polyester Label Stock",
-    "description": "B-420 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system.",
-    "specialProperties": [
-      "Heat Resistant Labels",
-      "Permanent Adhesive Labels"
-    ],
-    "printerLabelApplications": [
-      "Circuit Board",
-      "General Identification",
-      "Rating & Name Plates"
-    ],
-    "tapeColorable": "Yes",
-    "materialType": "Label",
-    "chemicalResistance": [
-      "Alcohols",
-      "Cleaners",
-      "Solvents",
-      "Oils",
-      "Fuels"
-    ],
-    "chemResistanceAlcohols": 5,
-    "chemResistanceCleaners": 5,
-    "chemResistanceSolvents": 4,
-    "chemResistanceOils": 5,
-    "chemResistanceFuels": 5,
-    "adhesion": [],
-    "adhesionTypical": 2,
-    "adhesionDifficult": 1,
-    "adhesionTextured": "No",
-    "shrinkRatio": null,
-    "searchString": "B-420 B 420 B420 B#420 B# 420 Permanent Acrylic Matte Polyester White UL Matte White Laser Markable Polyester Label Stock B-420 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board,General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
-  },
-  {
     "num": "B-421",
     "adhesive": "Acrylic",
     "finish": "Matte",
@@ -1204,7 +1153,6 @@
       "Permanent Adhesive Labels"
     ],
     "printerLabelApplications": [
-      "Circuit Board",
       "General Identification",
       "Rating & Name Plates"
     ],
@@ -1229,7 +1177,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-421 B 421 B421 B#421 B# 421 Acrylic Matte Polyester Black UL Matte Black Laser Markable Polyester Label Stock B-421 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board,General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-421 B 421 B421 B#421 B# 421 Acrylic Matte Polyester Black UL Matte Black Laser Markable Polyester Label Stock B-421 is designed for use in labeling electronic PCB’s, component identification, bar coding, and rating plates when marked with a standard IR laser. It can be used for auto-dispensing applications and can meet small font requirements when used with a high resolution laser marking system. Heat Resistant Labels,Permanent Adhesive Labels General Identification,Rating & Name Plates Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-422",
@@ -3164,7 +3112,9 @@
       "Heat Resistant Labels",
       "Permanent Adhesive Labels"
     ],
-    "printerLabelApplications": [],
+    "printerLabelApplications": [
+      "Circuit Board"
+    ],
     "tapeColorable": "Yes",
     "materialType": "Label",
     "chemicalResistance": [
@@ -3186,7 +3136,7 @@
     "adhesionDifficult": 1,
     "adhesionTextured": "Yes",
     "shrinkRatio": null,
-    "searchString": "B-652 B 652 B652 B#652 B# 652 Acrylic Matte Polyimide Amber RoHS Dot Matrix / Laser Printable High Temperature Polyimide Label B-652 is a polyimide label with high heat resistance. It is recommended for electronic component pre-process labeling. Heat Resistant Labels,Permanent Adhesive Labels  Label Alcohols,Cleaners,Solvents,Oils,Fuels"
+    "searchString": "B-652 B 652 B652 B#652 B# 652 Acrylic Matte Polyimide Amber RoHS Dot Matrix / Laser Printable High Temperature Polyimide Label B-652 is a polyimide label with high heat resistance. It is recommended for electronic component pre-process labeling. Heat Resistant Labels,Permanent Adhesive Labels Circuit Board Label Alcohols,Cleaners,Solvents,Oils,Fuels"
   },
   {
     "num": "B-654",
